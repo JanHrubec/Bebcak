@@ -37,7 +37,7 @@ const openAbout = () => {
     </div>
 
     <!-- Contact -->
-    <div class="mt-8 md:mt-0">
+    <div class="mt-0">
       <a
         href="mailto:dusan@bebcak.com"
         class="text-sm font-light text-muted hover:text-accent transition-colors duration-300 tracking-wide"

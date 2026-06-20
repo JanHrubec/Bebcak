@@ -40,7 +40,7 @@ watch(
       <img
         :src="project.images[0]"
         alt=""
-        class="project-bg-blur w-full h-full object-cover scale-125 blur-xl opacity-60"
+        class="project-bg-blur w-full h-full object-cover scale-125 blur-xl opacity-40"
         aria-hidden="true"
       />
       <!-- Gradient overlay to prevent flash -->

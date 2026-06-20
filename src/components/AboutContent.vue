@@ -9,10 +9,10 @@
       </h2>
       <div class="space-y-6">
         <p class="leading-relaxed text-secondary/90 font-light">
-          Dušan Bebčák is a commercial costume designer based in Prague, specializing in editorial and cinematic fashion. With over a decade of experience, he has collaborated with leading fashion publications and brands across Europe.
+          DLorem ipsum dolor sit amet, consectetur adipiscing elit. In vel mattis risus, tempus faucibus ex. Cras id magna porta, elementum mi malesuada, pulvinar tortor. Pellentesque semper bibendum pellentesque. Nam euismod imperdiet pulvinar. Etiam facilisis pharetra magna. Sed eleifend commodo ipsum, et imperdiet sem cursus eget. Donec pharetra est arcu, ut congue nisl commodo ac. Mauris vitae eros arcu. Nullam metus nisi, tristique vel venenatis ut, aliquet ut elit. Integer elit risus, ullamcorper at mauris id, finibus venenatis odio. Aliquam erat volutpat.
         </p>
         <p class="leading-relaxed text-secondary/90 font-light">
-          His work explores the intersection of contemporary design and classical craftsmanship, creating costumes that tell stories and evoke emotion. Each project is approached with meticulous attention to detail and a deep understanding of character and narrative.
+          Sed imperdiet sem et nibh egestas dignissim. Integer elementum diam non tincidunt volutpat. Vestibulum est mi, pellentesque non tempus eu, gravida non dui. Ut vulputate, dolor in rutrum finibus, tellus neque lobortis nisi, sit amet fermentum velit ante id metus. Sed lectus ipsum, fringilla quis sodales vel, porttitor eget leo. Vestibulum nec magna pulvinar lorem placerat accumsan id in sem. Vestibulum nec mattis metus, ut tempor turpis. Aenean in est mauris. Vivamus rhoncus enim id arcu hendrerit, id tincidunt sapien consequat.
         </p>
       </div>
     </section>
@@ -22,11 +22,9 @@
         Selected Clients
       </h2>
       <ul class="space-y-2 font-light text-secondary/90">
-        <li>Vogue Czechoslovakia</li>
-        <li>Harper's Bazaar</li>
-        <li>Elle Magazine</li>
-        <li>Marie Claire</li>
-        <li>GQ</li>
+        <li>KFC</li>
+        <li>Škoda</li>
+        <li>Božkov</li>
       </ul>
     </section>
 
