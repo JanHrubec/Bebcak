@@ -38,9 +38,9 @@ watch(
     <!-- Background blur - behind content (avoid global img fade flicker) -->
     <div class="fixed inset-0 z-0 pointer-events-none overflow-hidden">
       <img
-        :src="project.images[0]"
+        :src="project.thumbnail"
         alt=""
-        class="project-bg-blur w-full h-full object-cover scale-125 blur-xl opacity-40"
+        class="project-bg-blur w-full h-full object-cover scale-125 blur-xl opacity-50"
         aria-hidden="true"
       />
       <!-- Gradient overlay to prevent flash -->

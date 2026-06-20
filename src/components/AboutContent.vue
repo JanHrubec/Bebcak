@@ -40,7 +40,7 @@
           dusan@bebcak.com
         </a>
         <a
-          href="https://instagram.com/dusanbebcak"
+          href="https://www.instagram.com/bebcak/"
           target="_blank"
           rel="noopener noreferrer"
           class="block text-[1.05rem] font-light text-secondary/90 hover:text-accent transition-colors duration-300"
