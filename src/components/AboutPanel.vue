@@ -11,26 +11,22 @@ const emit = defineEmits<{
 </script>
 
 <template>
-  <!-- Desktop Slide-over Panel - slides from LEFT -->
   <Teleport to="body">
-    <Transition name="slide-left">
+    <Transition name="about-panel" :duration="{ enter: 520, leave: 420 }">
       <div
         v-if="isOpen"
         class="fixed inset-0 z-50"
         @click="emit('close')"
       >
+        <div class="about-panel__overlay absolute inset-0 bg-black/55 backdrop-blur-md" />
 
-        <!-- Backdrop -->
-        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" />
-        
-        <!-- Panel - slides from left -->
         <div
-          class="absolute left-0 top-0 h-full w-full md:w-[520px] bg-surface overflow-y-auto"
+          class="about-panel__sheet absolute left-0 top-0 h-full w-full overflow-y-auto border-r border-white/10 bg-surface/95 shadow-[32px_0_80px_rgba(0,0,0,0.35)] md:w-[520px]"
           @click.stop
         >
-
-          <div class="px-8 md:px-12 pt-18 md:pt-18 pr-8 md:pr-12">
+          <div class="px-6 pb-8 pt-[4.5rem] sm:px-8 md:px-12">
             <button
+              type="button"
               @click="emit('close')"
               class="absolute top-8 right-8 text-muted hover:text-primary transition-colors duration-300"
               aria-label="Close about panel"
@@ -59,32 +55,90 @@ const emit = defineEmits<{
 </template>
 
 <style scoped>
-.slide-left-enter-active,
-.slide-left-leave-active {
-  transition: opacity 0.3s ease;
+.about-panel-enter-active,
+.about-panel-leave-active {
+  transition: opacity 0.42s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.slide-left-enter-active > div:last-child,
-.slide-left-leave-active > div:last-child {
-  transition: transform 0.3s ease;
+.about-panel__overlay,
+.about-panel__sheet {
+  will-change: opacity, transform, filter;
 }
 
-.slide-left-enter-from,
-.slide-left-leave-to {
+.about-panel-enter-active .about-panel__overlay,
+.about-panel-leave-active .about-panel__overlay {
+  transition:
+    opacity 0.42s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.42s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.about-panel-enter-active .about-panel__sheet,
+.about-panel-leave-active .about-panel__sheet {
+  transition:
+    transform 0.52s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.42s ease,
+    filter 0.52s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.about-panel-enter-from,
+.about-panel-leave-to {
   opacity: 0;
 }
 
-/* Mobile: slide in/out from TOP */
-.slide-left-enter-from > div:last-child,
-.slide-left-leave-to > div:last-child {
-  transform: translateY(-100%);
+.about-panel-enter-from .about-panel__overlay,
+.about-panel-leave-to .about-panel__overlay {
+  opacity: 0;
+  filter: blur(8px);
 }
 
-/* Desktop (md+): keep existing LEFT slide */
+.about-panel-enter-from .about-panel__sheet,
+.about-panel-leave-to .about-panel__sheet {
+  opacity: 0;
+  transform: translate3d(0, 18px, 0);
+  filter: blur(10px);
+}
+
+.about-panel-enter-to .about-panel__overlay,
+.about-panel-leave-from .about-panel__overlay,
+.about-panel-enter-to .about-panel__sheet,
+.about-panel-leave-from .about-panel__sheet {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  filter: blur(0);
+}
+
 @media (min-width: 768px) {
-  .slide-left-enter-from > div:last-child,
-  .slide-left-leave-to > div:last-child {
-    transform: translateX(-100%);
+  .about-panel-enter-from .about-panel__sheet,
+  .about-panel-leave-to .about-panel__sheet {
+    transform: translate3d(-42px, 0, 0);
+  }
+}
+
+@media (max-width: 767px) {
+  .about-panel-enter-from .about-panel__sheet,
+  .about-panel-leave-to .about-panel__sheet,
+  .about-panel-enter-to .about-panel__sheet,
+  .about-panel-leave-from .about-panel__sheet {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-panel-enter-active,
+  .about-panel-leave-active,
+  .about-panel-enter-active .about-panel__overlay,
+  .about-panel-leave-active .about-panel__overlay,
+  .about-panel-enter-active .about-panel__sheet,
+  .about-panel-leave-active .about-panel__sheet {
+    transition-duration: 0.01ms;
+  }
+
+  .about-panel-enter-from .about-panel__overlay,
+  .about-panel-leave-to .about-panel__overlay,
+  .about-panel-enter-from .about-panel__sheet,
+  .about-panel-leave-to .about-panel__sheet {
+    transform: none;
+    filter: none;
   }
 }
 </style>

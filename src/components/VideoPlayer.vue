@@ -1,23 +1,17 @@
 <script setup lang="ts">
-
-
-const props = defineProps<{
+defineProps<{
   src: string
 }>()
-
 </script>
 
-
 <template>
-  <div class="relative aspect-video bg-surface overflow-hidden">
-<video
+  <div class="relative aspect-video overflow-hidden bg-surface">
+    <video
       :src="src"
-      class="w-full h-full object-cover"
-
+      class="h-full w-full object-cover"
       controls
       controlsList="nodownload"
       playsinline
-      
     />
   </div>
 </template>

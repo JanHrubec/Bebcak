@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type Project } from '../data/projects'
+import type { Project } from '../data/projects'
 import ProjectCard from './ProjectCard.vue'
 
 defineProps<{
@@ -8,11 +8,13 @@ defineProps<{
 </script>
 
 <template>
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl">
-    <ProjectCard
+  <div class="project-grid mx-auto max-w-6xl">
+    <div
       v-for="project in projects"
       :key="project.id"
-      :project="project"
-    />
+      class="project-grid__item"
+    >
+      <ProjectCard :project="project" />
+    </div>
   </div>
 </template>
