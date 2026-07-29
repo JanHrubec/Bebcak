@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref, watch } from 'vue'
+import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { RouterView, useRoute, useRouter } from 'vue-router'
 import AboutPanel from './components/AboutPanel.vue'
 import ProjectBackdrop from './components/ProjectBackdrop.vue'
@@ -10,6 +10,11 @@ const router = useRouter()
 const route = useRoute()
 const sidebarCollapsed = ref(false)
 const showAboutPanel = ref(false)
+const desktopMediaQuery = typeof window === 'undefined'
+  ? undefined
+  : window.matchMedia('(min-width: 768px)')
+const isDesktop = ref(desktopMediaQuery?.matches ?? false)
+let headingFocusTimer = 0
 
 const isProjectPage = computed(() => route.name === 'project')
 
@@ -42,6 +47,59 @@ const routeViewKey = computed(() => {
   return String(route.name ?? route.fullPath)
 })
 
+const updateDesktopLayout = (event: MediaQueryListEvent) => {
+  isDesktop.value = event.matches
+}
+
+const updateDocumentMetadata = () => {
+  const project = activeProject.value
+  const projectNotFound = isProjectPage.value && !project
+  const isWardrobeView = activeView.value === 'wardrobe-stylist'
+  const title = projectNotFound
+    ? 'Project Not Found | Dušan Bebčák'
+    : project
+    ? `${project.title} | Dušan Bebčák`
+    : isWardrobeView
+      ? 'Wardrobe Stylist | Dušan Bebčák'
+      : 'Costume Designer | Dušan Bebčák'
+  const description = projectNotFound
+    ? 'The requested portfolio project could not be found.'
+    : project?.intro
+    ?? (isWardrobeView
+      ? 'Wardrobe styling portfolio by Dušan Bebčák for commercial productions and advertising campaigns.'
+      : 'Costume design portfolio by Dušan Bebčák, focused on character, silhouette, texture, and visual storytelling.')
+  const canonicalUrl = project
+    ? `https://bebcak.com/project/${project.slug}`
+    : projectNotFound
+      ? `https://bebcak.com${route.path}`
+      : 'https://bebcak.com/'
+
+  document.title = title
+  document.querySelector<HTMLMetaElement>('meta[name="description"]')?.setAttribute('content', description)
+  document.querySelector<HTMLMetaElement>('meta[property="og:title"]')?.setAttribute('content', title)
+  document.querySelector<HTMLMetaElement>('meta[property="og:description"]')?.setAttribute('content', description)
+  document.querySelector<HTMLMetaElement>('meta[property="og:url"]')?.setAttribute('content', canonicalUrl)
+  document.querySelector<HTMLMetaElement>('meta[name="robots"]')?.setAttribute(
+    'content',
+    projectNotFound ? 'noindex, follow' : 'index, follow',
+  )
+  document.querySelector<HTMLLinkElement>('link[rel="canonical"]')?.setAttribute('href', canonicalUrl)
+}
+
+const focusCurrentPageHeading = async () => {
+  await nextTick()
+
+  window.clearTimeout(headingFocusTimer)
+  headingFocusTimer = window.setTimeout(() => {
+    const headingType = isProjectPage.value ? 'project' : 'home'
+    const headings = Array.from(
+      document.querySelectorAll<HTMLElement>(`[data-page-heading="${headingType}"]`),
+    ).filter((heading) => heading.offsetParent !== null)
+
+    headings.at(-1)?.focus({ preventScroll: true })
+  }, routeTransitionDuration.value + 30)
+}
+
 watch(
   isProjectPage,
   (isProject) => {
@@ -49,6 +107,35 @@ watch(
   },
   { immediate: true },
 )
+
+watch(
+  [() => route.name, activeProject, activeView],
+  updateDocumentMetadata,
+  { immediate: true },
+)
+
+watch(
+  () => route.fullPath,
+  () => {
+    showAboutPanel.value = false
+  },
+)
+
+watch(
+  () => route.path,
+  () => {
+    void focusCurrentPageHeading()
+  },
+)
+
+onMounted(() => {
+  desktopMediaQuery?.addEventListener('change', updateDesktopLayout)
+})
+
+onBeforeUnmount(() => {
+  window.clearTimeout(headingFocusTimer)
+  desktopMediaQuery?.removeEventListener('change', updateDesktopLayout)
+})
 
 const openAbout = () => {
   showAboutPanel.value = true
@@ -77,9 +164,15 @@ const navigateHome = () => {
   <div class="min-h-screen bg-background">
     <ProjectBackdrop :src="activeProject?.thumbnail" />
 
-    <div class="app-shell md:hidden" :class="{ 'app-shell--blurred': showAboutPanel }">
+    <div
+      v-if="!isDesktop"
+      class="app-shell"
+      :class="{ 'app-shell--blurred': showAboutPanel }"
+      :aria-hidden="showAboutPanel ? 'true' : undefined"
+      :inert="showAboutPanel"
+    >
       <div
-        class="sticky top-0 flex items-center border-b border-white/10 bg-background/92 px-4 py-3 shadow-[0_1px_0_rgba(255,255,255,0.04)] backdrop-blur-md"
+        class="mobile-header sticky top-0 flex items-center border-b border-white/10 bg-background/92 px-4 py-3 shadow-[0_1px_0_rgba(255,255,255,0.04)] backdrop-blur-md"
         :class="showAboutPanel ? 'z-10' : 'z-[60]'"
       >
         <Transition name="sidebar-swap" mode="out-in" :duration="280">
@@ -87,7 +180,7 @@ const navigateHome = () => {
             v-if="sidebarCollapsed"
             key="mobile-home"
             type="button"
-            class="relative z-[60] flex h-9 w-9 items-center justify-center transition-colors duration-300 hover:text-accent"
+            class="relative z-[60] flex h-11 w-11 items-center justify-center transition-colors duration-300 hover:text-accent"
             aria-label="Back to projects"
             @click="navigateHome"
           >
@@ -117,7 +210,7 @@ const navigateHome = () => {
         </Transition>
       </div>
 
-      <main class="px-4 py-5 sm:px-5 sm:py-6">
+      <main class="mobile-main px-4 py-5 sm:px-5 sm:py-6">
         <div class="route-stage">
           <RouterView v-slot="{ Component }">
             <Transition :name="routeTransitionName" :duration="routeTransitionDuration" appear>
@@ -129,12 +222,15 @@ const navigateHome = () => {
     </div>
 
     <div
-      class="app-shell hidden min-h-screen md:flex"
+      v-else
+      class="app-shell flex min-h-screen"
       :class="{ 'app-shell--blurred': showAboutPanel }"
+      :aria-hidden="showAboutPanel ? 'true' : undefined"
+      :inert="showAboutPanel"
     >
       <aside
         class="relative z-20 flex-shrink-0 transition-all duration-500 ease-out"
-        :class="sidebarCollapsed ? 'w-20 p-6' : 'w-[28%] min-w-[280px] max-w-[400px] p-12'"
+        :class="sidebarCollapsed ? 'w-20 p-4' : 'w-[28%] min-w-[280px] max-w-[400px] p-12'"
       >
         <div class="sticky top-12" :class="sidebarCollapsed ? 'flex w-full justify-center' : ''">
           <Transition name="sidebar-swap" mode="out-in" :duration="280">

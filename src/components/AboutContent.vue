@@ -32,7 +32,7 @@
       <div class="space-y-2">
         <a
           href="mailto:dusan@bebcak.com"
-          class="block font-light text-secondary/90 transition-colors duration-300 hover:text-accent"
+          class="flex min-h-11 items-center font-light text-secondary/90 transition-colors duration-300 hover:text-accent"
         >
           dusan@bebcak.com
         </a>
@@ -40,7 +40,7 @@
           href="https://www.instagram.com/bebcak/"
           target="_blank"
           rel="noopener noreferrer"
-          class="block text-[1.05rem] font-light text-secondary/90 transition-colors duration-300 hover:text-accent"
+          class="flex min-h-11 items-center text-[1.05rem] font-light text-secondary/90 transition-colors duration-300 hover:text-accent"
         >
           Instagram
         </a>

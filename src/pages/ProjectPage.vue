@@ -28,7 +28,11 @@ const adjacent = computed(() => {
             <p class="mb-3 text-xs font-light uppercase tracking-[0.22em] text-muted">
               {{ project.role === 'costume-designer' ? 'Costume designer' : 'Wardrobe stylist' }}
             </p>
-            <h1 class="mb-4 text-2xl font-light tracking-wide text-primary md:text-3xl">
+            <h1
+              class="mb-4 text-2xl font-light tracking-wide text-primary md:text-3xl"
+              data-page-heading="project"
+              tabindex="-1"
+            >
               {{ project.title }}
             </h1>
             <p v-if="project.intro" class="max-w-2xl text-sm font-light leading-relaxed text-secondary">
@@ -99,12 +103,16 @@ const adjacent = computed(() => {
 
   <div v-else class="flex min-h-[60vh] items-center justify-center">
     <div class="text-center">
-      <h1 class="mb-4 text-xl font-light text-primary">
+      <h1
+        class="mb-4 text-xl font-light text-primary"
+        data-page-heading="project"
+        tabindex="-1"
+      >
         Project not found
       </h1>
       <router-link
         :to="{ name: 'home' }"
-        class="text-sm font-light text-muted transition-colors duration-300 hover:text-accent"
+        class="inline-flex min-h-11 items-center text-sm font-light text-muted transition-colors duration-300 hover:text-accent"
       >
         Return to homepage
       </router-link>

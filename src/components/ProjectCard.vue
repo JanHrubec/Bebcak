@@ -4,6 +4,7 @@ import MotionImage from './MotionImage.vue'
 
 defineProps<{
   project: Project
+  priority?: boolean
 }>()
 </script>
 
@@ -18,7 +19,8 @@ defineProps<{
         :src="project.thumbnail"
         :alt="project.title"
         class="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.035]"
-        loading="lazy"
+        :loading="priority ? 'eager' : 'lazy'"
+        :fetchpriority="priority ? 'high' : undefined"
       />
 
       <div class="absolute inset-0 flex items-end bg-gradient-to-t from-black/80 via-black/10 to-transparent p-5">

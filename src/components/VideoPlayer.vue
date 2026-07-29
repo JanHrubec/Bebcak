@@ -11,6 +11,7 @@ defineProps<{
       class="h-full w-full object-cover"
       controls
       controlsList="nodownload"
+      preload="metadata"
       playsinline
     />
   </div>

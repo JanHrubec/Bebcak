@@ -6,7 +6,7 @@
   --color-surface: #171717;
   --color-primary: #f5f5f5;
   --color-secondary: #a1a1aa;
-  --color-muted: #71717a;
+  --color-muted: #82828b;
   --color-accent: #d4b483;
   --font-sans: 'Manrope', system-ui, sans-serif;
 }
@@ -22,6 +22,21 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+}
+
+.app-shell {
+  min-height: 100dvh;
+}
+
+.mobile-header {
+  padding-top: max(0.75rem, env(safe-area-inset-top));
+  padding-right: max(1rem, env(safe-area-inset-right));
+  padding-left: max(1rem, env(safe-area-inset-left));
+}
+
+.mobile-main {
+  padding-right: max(1rem, env(safe-area-inset-right));
+  padding-left: max(1rem, env(safe-area-inset-left));
 }
 
 /* Custom scrollbar */
@@ -131,6 +146,10 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
   .motion-image,
   .motion-image--loaded,
   .motion-image--background,
@@ -282,6 +301,11 @@ body {
 
 .project-footer {
   padding-bottom: env(safe-area-inset-bottom);
+}
+
+.project-footer > div {
+  padding-right: max(1rem, env(safe-area-inset-right));
+  padding-left: max(1rem, env(safe-area-inset-left));
 }
 
 @media (max-width: 359px) {

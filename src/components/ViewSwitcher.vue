@@ -12,12 +12,12 @@ const emit = defineEmits<{
 </script>
 
 <template>
-  <div class="space-y-1.5 md:space-y-2">
+  <div class="space-y-0.5 md:space-y-1">
     <button
       v-for="option in options"
       :key="option.id"
       type="button"
-      class="block text-left transition-colors duration-300"
+      class="flex min-h-8 items-center text-left transition-colors duration-300 md:min-h-9"
       :class="activeView === option.id ? 'text-primary' : 'text-muted hover:text-accent'"
       :aria-pressed="activeView === option.id"
       :disabled="activeView === option.id"

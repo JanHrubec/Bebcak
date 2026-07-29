@@ -10,11 +10,11 @@ defineProps<{
 <template>
   <div class="project-grid mx-auto max-w-6xl">
     <div
-      v-for="project in projects"
+      v-for="(project, index) in projects"
       :key="project.id"
       class="project-grid__item"
     >
-      <ProjectCard :project="project" />
+      <ProjectCard :project="project" :priority="index < 2" />
     </div>
   </div>
 </template>

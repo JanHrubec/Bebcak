@@ -12,7 +12,7 @@ defineProps<{
     <router-link
       v-if="prev"
       :to="{ name: 'project', params: { slug: prev.slug }, query: { view: prev.role } }"
-      class="group flex min-w-0 items-center gap-3 justify-self-start text-muted transition-colors duration-300 hover:text-accent"
+      class="group flex min-h-11 min-w-0 items-center gap-3 justify-self-start text-muted transition-colors duration-300 hover:text-accent"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +42,7 @@ defineProps<{
     <router-link
       v-if="next"
       :to="{ name: 'project', params: { slug: next.slug }, query: { view: next.role } }"
-      class="group flex min-w-0 items-center gap-3 justify-self-end text-muted transition-colors duration-300 hover:text-accent"
+      class="group flex min-h-11 min-w-0 items-center gap-3 justify-self-end text-muted transition-colors duration-300 hover:text-accent"
     >
       <div class="min-w-0 text-right">
         <p class="hidden text-xs font-light uppercase tracking-wider text-muted sm:block">
