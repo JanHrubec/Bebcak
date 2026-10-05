@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { RouterView, useRoute, useRouter } from 'vue-router'
+import { Analytics } from '@vercel/analytics/vue'
 import AboutPanel from './components/AboutPanel.vue'
 import ProjectBackdrop from './components/ProjectBackdrop.vue'
 import SiteSidebar from './components/SiteSidebar.vue'
@@ -162,6 +163,7 @@ const navigateHome = () => {
 
 <template>
   <div class="min-h-screen bg-background">
+    <Analytics />
     <ProjectBackdrop :src="activeProject?.thumbnail" />
 
     <div
