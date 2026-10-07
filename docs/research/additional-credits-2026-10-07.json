@@ -1,0 +1,112 @@
+{
+  "reviewed": "2026-10-07",
+  "added_fields": 14,
+  "records": [
+    {
+      "project": "garnier",
+      "source": "https://www.mam.cz/novinky/kreativita-a-kampane/kampane/2024-03/garnier-v-nove-kampani-od-publicis-groupe-bojuje-proti-silenym-resenim-pri-problemech-s-vlasy/",
+      "added": [
+        {
+          "label": "Agency",
+          "value": "Publicis Groupe"
+        },
+        {
+          "label": "Production",
+          "value": "Publicis Groupe"
+        },
+        {
+          "label": "Cinematography",
+          "value": "Filip Knoll"
+        },
+        {
+          "label": "Producer",
+          "value": "Adam Filus"
+        }
+      ],
+      "evidence": "Agency-supplied press release identifies the exact local Fructis Crazy Decisions campaign, Petr Dvořák and the additional crew. It does not specify Dušan’s role."
+    },
+    {
+      "project": "national-museum",
+      "source": "https://vimeo.com/598206054",
+      "added": [
+        {
+          "label": "Producer",
+          "value": "Petr Oplatka"
+        },
+        {
+          "label": "Production design",
+          "value": "Stella Šonková"
+        }
+      ],
+      "evidence": "Primary Creative Embassy metadata for the exact 1080p film; not a new costume credit."
+    },
+    {
+      "project": "vodafone-youth",
+      "source": "https://www.adcawards.cz/en/public/gallery-item/2024?eid=27d7ce09-223e-4437-b40e-0876cf7b37e8&f=Vsechny-prihlasky&p=1",
+      "added": [
+        {
+          "label": "Executive producer",
+          "value": "Alžběta Šerclová"
+        },
+        {
+          "label": "Producer",
+          "value": "Albert Franc"
+        }
+      ],
+      "evidence": "Exact McCann campaign submission. Existing director/production and gallery photos agree. No particular wardrobe role inferred."
+    },
+    {
+      "project": "pilsner-taste-worth-protecting",
+      "source": "https://www.adsoftheworld.com/campaigns/taste-worth-protecting-no-matter-what",
+      "added": [
+        {
+          "label": "Agency",
+          "value": "VCCP Prague"
+        },
+        {
+          "label": "Cinematography",
+          "value": "Jan Velický"
+        },
+        {
+          "label": "Production design",
+          "value": "Henrich Borároš"
+        }
+      ],
+      "evidence": "Producer-submitted campaign record; film 815348825 visually matches the striped-shirt/purple-waistcoat performer, woman’s jacket, seated man and brewery-office set in Dušan’s publication. The generic Tomáš Kotas showreel is not evidence for this film’s DOP."
+    },
+    {
+      "project": "vypsana-fixa-fakin-party",
+      "source": "https://www.instagram.com/p/DYXTNEtiB2S/",
+      "added": [
+        {
+          "label": "Photography",
+          "value": "Petr Jandera"
+        }
+      ],
+      "evidence": "Exact cinematographer’s campaign caption explicitly names the photographer. This does not label extracted film frames as his independent photographs."
+    },
+    {
+      "project": "skoda-split-screen",
+      "source": "https://www.instagram.com/p/DbJJC7pGubh/",
+      "added": [
+        {
+          "label": "Photography",
+          "value": "Vojtěch Veškrna"
+        }
+      ],
+      "evidence": "Exact director’s campaign caption credits @vojtechveskrna, also linked to the photographer’s agency account."
+    },
+    {
+      "project": "skoda-social-stories",
+      "source": "https://www.instagram.com/p/DYfX4ByGmOi/",
+      "added": [
+        {
+          "label": "Photography",
+          "value": "Vojtěch Veškrna"
+        }
+      ],
+      "evidence": "Exact separate social-series publication credits @vojtechveskrna; not the 130-year film."
+    }
+  ],
+  "limitations": "Further searches did not independently establish precise wardrobe roles for the remaining uncaptioned personal-portfolio posts. No same-name registry, unrelated Leffe campaign or different Garnier campaign was adopted. Historical Slza — Celibát artist-page styling credit is a research lead, not a newly published collection without image/identity matching."
+}

@@ -1,78 +1,43 @@
 <script setup lang="ts">
-import { nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
+import { onMounted, ref, watch } from 'vue'
 
-defineOptions({
-  inheritAttrs: false,
-})
-
+defineOptions({ inheritAttrs: false })
 const props = withDefaults(defineProps<{
   src: string
   alt?: string
   loading?: 'eager' | 'lazy'
   reveal?: 'soft' | 'background'
   ariaHidden?: boolean | 'true' | 'false'
-}>(), {
-  alt: '',
-  loading: 'lazy',
-  reveal: 'soft',
-  ariaHidden: undefined,
-})
+}>(), { alt: '', loading: 'lazy' })
 
-const imageRef = ref<HTMLImageElement | null>(null)
-const isLoaded = ref(false)
-let revealFrame = 0
-
-const revealImage = () => {
-  window.cancelAnimationFrame(revealFrame)
-
-  revealFrame = window.requestAnimationFrame(() => {
-    revealFrame = window.requestAnimationFrame(() => {
-      isLoaded.value = true
-    })
-  })
-}
-
-const revealCachedImage = async () => {
-  await nextTick()
-
-  const image = imageRef.value
-  if (image?.complete && image.naturalWidth > 0) {
-    revealImage()
-  }
-}
-
-watch(
-  () => props.src,
-  () => {
-    window.cancelAnimationFrame(revealFrame)
-    isLoaded.value = false
-    void revealCachedImage()
-  },
-)
-
+const failed = ref(false)
+const loaded = ref(false)
+const element = ref<HTMLImageElement>()
 onMounted(() => {
-  void revealCachedImage()
+  if (element.value?.complete) {
+    loaded.value = element.value.naturalWidth > 0
+    failed.value = !loaded.value
+  }
 })
-
-onBeforeUnmount(() => {
-  window.cancelAnimationFrame(revealFrame)
-})
+watch(() => props.src, () => { failed.value = false; loaded.value = false })
 </script>
 
 <template>
+  <div v-if="failed" v-bind="$attrs" class="image-fallback" role="img" :aria-label="`${alt || 'Project image'} unavailable`" :aria-hidden="ariaHidden">
+    <span>Image unavailable</span>
+  </div>
   <img
-    ref="imageRef"
+    v-else
+    ref="element"
     v-bind="$attrs"
     :src="src"
     :alt="alt"
     :loading="loading"
-    decoding="async"
     :aria-hidden="ariaHidden"
+    decoding="async"
     class="motion-image"
-    :class="[
-      `motion-image--${reveal}`,
-      { 'motion-image--loaded': isLoaded },
-    ]"
-    @load="revealImage"
+    :class="{ 'motion-image--loaded': loaded }"
+    @load="loaded = true"
+    @error="failed = true"
   />
 </template>

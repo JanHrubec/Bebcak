@@ -1,0 +1,832 @@
+{
+  "accessed": "2026-10-05",
+  "profile": "https://www.instagram.com/bebcak/",
+  "profile_bio": "Costume designer/ stylist",
+  "method": "Playwright in user-authenticated session; public professional profile only",
+  "coverage": "All 47 post links displayed on the profile, 17 June 2024–4 September 2026. No Stories, DMs, private account content or account credentials collected.",
+  "posts": [
+    {
+      "url": "https://www.instagram.com/bebcak/reel/DQKqcPIDGy2/",
+      "author": "bebcak",
+      "posted_at": "2025-10-23T21:20:42.000Z",
+      "display_date": "23 October 2025",
+      "summary": "Raiffeisen Bank International — shared wardrobe credit with @u_nik_orn; Stink / Maca Rubio / Santi Cantillo / LOCCO.",
+      "caption_credit_lines": [
+        "Director: @macarubio",
+        "DoP: @santicantillo",
+        "Production: @stink.prague",
+        "Client: Raiffeisen Bank International",
+        "Agency: @this_is_locco",
+        "Agency creative director: @pankovac",
+        "Agency producer: @marushka_zollerova",
+        "Production Designer: @jcavia @cornascavia",
+        "Wardrobe: @bebcak | @u_nik_orn"
+      ],
+      "reference_files": [
+        "docs/research/assets/instagram/DQKqcPIDGy2-start.jpg",
+        "docs/research/assets/instagram/DQKqcPIDGy2-middle.jpg",
+        "docs/research/assets/instagram/DQKqcPIDGy2-end.jpg"
+      ],
+      "comments_note": "Visible comments inspected; no substantive costume explanation from @bebcak identified."
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/reel/C8UZaTqN7uX/",
+      "author": "bebcak",
+      "posted_at": "2024-06-17T13:37:00.000Z",
+      "display_date": "17 June 2024",
+      "summary": "Post Bellum — Mother. Marek Partyš / Bistro Films; the director’s complete film and production publication explicitly credit wardrobe Dušan Bebčák. Kept separate from McDonald’s Cheese Saga.",
+      "caption_credit_lines": [
+        "Director: @marek.partys , production: @bistro_films"
+      ],
+      "reference_files": [
+        "docs/research/assets/instagram/C8UZaTqN7uX-start.jpg",
+        "docs/research/assets/instagram/C8UZaTqN7uX-middle.jpg",
+        "docs/research/assets/instagram/C8UZaTqN7uX-end.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence.",
+      "full_film_review": "2026-10-05; see media-audit.md for sources and photographic gaps",
+      "identity_reviewed": "2026-10-07"
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/reel/Dc4Ek6WSHlF/",
+      "author": "bebcak",
+      "posted_at": "2026-09-04T18:52:09.000Z",
+      "display_date": "4 September",
+      "summary": "T-Mobile Magenta TV — Crime Story; explicit Wardrobe Stylist Dušan Bebčák @bebcak; Stink / Jan Ruttner / Tomáš Šťastný / Ogilvy.",
+      "caption_credit_lines": [
+        "Name: T-Mobile Magenta TV - Crime Story",
+        "Client: T-Mobile Czech Republic @tmobile_cze",
+        "Agency: Ogilvy @weareogilvy",
+        "Production House: Stink Czech Republic",
+        "Director: Jan Ruttner @ruttner_j",
+        "Director of Photography: Tomáš Šťastný @stastlivka98",
+        "Production Designer: Mariana Hadler @marianahadler_film",
+        "Wardrobe Stylist : Dušan Bebčák @bebcak"
+      ],
+      "reference_files": [
+        "docs/research/assets/instagram/Dc4Ek6WSHlF-start.jpg",
+        "docs/research/assets/instagram/Dc4Ek6WSHlF-middle.jpg",
+        "docs/research/assets/instagram/Dc4Ek6WSHlF-end.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence."
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/reel/Dc4Dh7QtqiD/",
+      "author": "bebcak",
+      "posted_at": "2026-09-04T18:42:20.000Z",
+      "display_date": "4 September",
+      "summary": "Beer spot, Budvar 33 branding observed during playback — explicit costume designer; Luboš Rezler / Kryštof Melka / Ogilvy. Exact campaign title unstated.",
+      "caption_credit_lines": [
+        "Director & Editor: @lubosrezler",
+        "DOP: @krystofmelka",
+        "Production Designer: @tomas__bukacek",
+        "Costume Designer: @bebcak",
+        "Agency creative : @michal_janci @ogilvyoneprague"
+      ],
+      "reference_files": [
+        "docs/research/assets/instagram/Dc4Dh7QtqiD-start.jpg",
+        "docs/research/assets/instagram/Dc4Dh7QtqiD-middle.jpg",
+        "docs/research/assets/instagram/Dc4Dh7QtqiD-end.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence."
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/reel/Dc4DPU9NAFl/",
+      "author": "bebcak",
+      "posted_at": "2026-09-04T18:39:45.000Z",
+      "display_date": "4 September",
+      "summary": "Second beer spot with same Rezler/Melka/Ogilvy credits and explicit costume designer; same visual campaign group, individual title unstated.",
+      "caption_credit_lines": [
+        "Director & Editor: @lubosrezler",
+        "DOP: @krystofmelka",
+        "Production Designer: @tomas__bukacek",
+        "Costume Designer: @bebcak",
+        "Agency creative : @michal_janci @ogilvyoneprague"
+      ],
+      "reference_files": [
+        "docs/research/assets/instagram/Dc4DPU9NAFl-start.jpg",
+        "docs/research/assets/instagram/Dc4DPU9NAFl-middle.jpg",
+        "docs/research/assets/instagram/Dc4DPU9NAFl-end.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence."
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/reel/Dc4C_PJt3Q4/",
+      "author": "bebcak",
+      "posted_at": "2026-09-04T18:37:47.000Z",
+      "display_date": "4 September",
+      "summary": "Third beer spot with same Rezler/Melka/Ogilvy credits and explicit costume designer; same visual campaign group, individual title unstated.",
+      "caption_credit_lines": [
+        "Director & Editor: @lubosrezler",
+        "DOP: @krystofmelka",
+        "Production Designer: @tomas__bukacek",
+        "Costume Designer: @bebcak",
+        "Agency creative : @michal_janci @ogilvyoneprague"
+      ],
+      "reference_files": [
+        "docs/research/assets/instagram/Dc4C_PJt3Q4-start.jpg",
+        "docs/research/assets/instagram/Dc4C_PJt3Q4-middle.jpg",
+        "docs/research/assets/instagram/Dc4C_PJt3Q4-end.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence."
+    },
+    {
+      "url": "https://www.instagram.com/boogiefilms_prague/reel/DZKAr3nMbjq/",
+      "author": "boogiefilms_prague",
+      "posted_at": "2026-06-04T08:24:17.000Z",
+      "display_date": "4 June",
+      "summary": "mBank — explicit styling @bebcak; caption by Boogie Films (collaborative post), director @je_veronika, DOP Tomáš Šťastný, DDB.about95.",
+      "caption_credit_lines": [
+        "client @mbank_cz_sk ",
+        "agency ddb.about95",
+        "director @je_veronika ",
+        "DOP @stastlivka98 ",
+        "styling @bebcak "
+      ],
+      "reference_files": [
+        "docs/research/assets/instagram/DZKAr3nMbjq-start.jpg",
+        "docs/research/assets/instagram/DZKAr3nMbjq-middle.jpg",
+        "docs/research/assets/instagram/DZKAr3nMbjq-end.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence."
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/reel/DRzoiZMDLoM/",
+      "author": "bebcak",
+      "posted_at": "2025-12-03T15:43:58.000Z",
+      "display_date": "3 December 2025",
+      "summary": "Uncaptioned costume/fitting montage — dark tailored garments and presentation/fitting photographs; project and role unstated.",
+      "caption_credit_lines": [],
+      "reference_files": [
+        "docs/research/assets/instagram/DRzoiZMDLoM-start.jpg",
+        "docs/research/assets/instagram/DRzoiZMDLoM-middle.jpg",
+        "docs/research/assets/instagram/DRzoiZMDLoM-end.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence."
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/reel/DRvRoeLDIEG/",
+      "author": "bebcak",
+      "posted_at": "2025-12-01T23:07:32.000Z",
+      "display_date": "2 December 2025",
+      "summary": "Uncaptioned colourful wardrobe montage — fitted outfits, grouped performers and colour sketches; project and role unstated.",
+      "caption_credit_lines": [],
+      "reference_files": [
+        "docs/research/assets/instagram/DRvRoeLDIEG-start.jpg",
+        "docs/research/assets/instagram/DRvRoeLDIEG-middle.jpg",
+        "docs/research/assets/instagram/DRvRoeLDIEG-end.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence."
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/reel/DQd6DDdjAqh/",
+      "author": "bebcak",
+      "posted_at": "2025-10-31T08:43:03.000Z",
+      "display_date": "31 October 2025",
+      "summary": "ROSSMANN — caption names client, DDB Prague, Novák & Nguyen and Filip Hájek; stylist role corroborated separately by Armada's production credits.",
+      "caption_credit_lines": [
+        "Client: ROSSMANN @rossmann_cz ",
+        "Agency: DDB Prague @ddbprague ",
+        "Dir: Novak&Nguyen @novaknguyen ",
+        "Dop: Filip Hajek @filiphayek "
+      ],
+      "reference_files": [
+        "docs/research/assets/instagram/DQd6DDdjAqh-start.jpg",
+        "docs/research/assets/instagram/DQd6DDdjAqh-middle.jpg",
+        "docs/research/assets/instagram/DQd6DDdjAqh-end.jpg"
+      ],
+      "comments_note": "Visible comments inspected; no substantive costume explanation from @bebcak identified."
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/p/DQd4pgojHgA/",
+      "author": "bebcak",
+      "posted_at": "2025-10-31T08:29:59.000Z",
+      "display_date": "31 October 2025",
+      "summary": "E.ON — logo and 'it's on us' visible; caption names VCCP, Mugshots, Michal Babinec, Anežka Stra and Boogie. Carousel includes wardrobe references; precise role unstated.",
+      "caption_credit_lines": [
+        "agency: @vccpprague",
+        "dir: @mugshots_directors",
+        "dop: @michalbabinec",
+        "production designer: @anezka_stra",
+        "production: @boogiefilms_prague"
+      ],
+      "reference_files": [
+        "docs/research/assets/instagram/DQd4pgojHgA-start.jpg",
+        "docs/research/assets/instagram/DQd4pgojHgA-middle.jpg",
+        "docs/research/assets/instagram/DQd4pgojHgA-end.jpg",
+        "docs/research/assets/instagram/DQd4pgojHgA-carousel-02.jpg",
+        "docs/research/assets/instagram/DQd4pgojHgA-carousel-03.jpg",
+        "docs/research/assets/instagram/DQd4pgojHgA-carousel-04.jpg",
+        "docs/research/assets/instagram/DQd4pgojHgA-carousel-05.jpg",
+        "docs/research/assets/instagram/DQd4pgojHgA-carousel-06.jpg",
+        "docs/research/assets/instagram/DQd4pgojHgA-carousel-07.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence."
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/p/DQc4eNJjIJ5/",
+      "author": "bebcak",
+      "posted_at": "2025-10-30T23:09:12.000Z",
+      "display_date": "31 October 2025",
+      "summary": "Raiffeisen Bank International — wardrobe jointly @bebcak and @u_nik_orn; accompanying carousel of set/wardrobe material; same credits as DQKqcPIDGy2.",
+      "caption_credit_lines": [
+        "Director: @macarubio",
+        "DoP: @santicantillo",
+        "Production: @stink.prague",
+        "Client: Raiffeisen Bank International",
+        "Agency: @this_is_locco",
+        "Agency creative director: @pankovac",
+        "Agency producer: @marushka_zollerova",
+        "Production Designer: @jcavia @cornascavia",
+        "Wardrobe: @bebcak | @u_nik_orn"
+      ],
+      "reference_files": [
+        "docs/research/assets/instagram/DQc4eNJjIJ5-start.jpg",
+        "docs/research/assets/instagram/DQc4eNJjIJ5-middle.jpg",
+        "docs/research/assets/instagram/DQc4eNJjIJ5-end.jpg",
+        "docs/research/assets/instagram/DQc4eNJjIJ5-carousel-02.jpg",
+        "docs/research/assets/instagram/DQc4eNJjIJ5-carousel-03.jpg",
+        "docs/research/assets/instagram/DQc4eNJjIJ5-carousel-04.jpg",
+        "docs/research/assets/instagram/DQc4eNJjIJ5-carousel-05.jpg",
+        "docs/research/assets/instagram/DQc4eNJjIJ5-carousel-06.jpg",
+        "docs/research/assets/instagram/DQc4eNJjIJ5-carousel-07.jpg",
+        "docs/research/assets/instagram/DQc4eNJjIJ5-carousel-08.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence."
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/p/DQUSnWNjNPi/",
+      "author": "bebcak",
+      "posted_at": "2025-10-27T15:04:28.000Z",
+      "display_date": "27 October 2025",
+      "summary": "Uncaptioned four-image wardrobe carousel — matching patterned dresses on two children, yellow alternatives and woman in burgundy. Visually matches RBI film's cast/costumes; connection is a visual observation.",
+      "caption_credit_lines": [],
+      "reference_files": [
+        "docs/research/assets/instagram/DQUSnWNjNPi-slide-01.jpg",
+        "docs/research/assets/instagram/DQUSnWNjNPi-slide-02.jpg",
+        "docs/research/assets/instagram/DQUSnWNjNPi-slide-03.jpg",
+        "docs/research/assets/instagram/DQUSnWNjNPi-slide-04.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence."
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/reel/DQKuox1jGWt/",
+      "author": "bebcak",
+      "posted_at": "2025-10-23T21:58:48.000Z",
+      "display_date": "23 October 2025",
+      "summary": "T-Mobile — Magenta TV + Netflix. Exact agency film matches the family at home, mustard outfit and layered mint/rust wardrobe. Ogilvy / Deutsche Telekom verified; director, production and particular wardrobe role remain unconfirmed. Wednesday programme footage is excluded from the costume gallery.",
+      "caption_credit_lines": [],
+      "reference_files": [
+        "docs/research/assets/instagram/DQKuox1jGWt-start.jpg",
+        "docs/research/assets/instagram/DQKuox1jGWt-middle.jpg",
+        "docs/research/assets/instagram/DQKuox1jGWt-end.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence.",
+      "full_film_review": "2026-10-05; see media-audit.md for sources and photographic gaps",
+      "identity_reviewed": "2026-10-07"
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/reel/DQKsAeEDOHi/",
+      "author": "bebcak",
+      "posted_at": "2025-10-23T21:34:18.000Z",
+      "display_date": "23 October 2025",
+      "summary": "Caviar / Hans Emanuel / Unit+Sofa film — explicit Wardrobe Stylist Dusan Bebcak @bebcak; DOP Roman de Bujo. Caption does not name client; see independently sourced INVEGA record.",
+      "caption_credit_lines": [
+        "Production Company : @caviar.tv",
+        "Director : Hans Emanuel @lethansitoplay",
+        "Dop : Roman de Bujo @romanmartinezdebujo",
+        "Production Designer : Stella Sonkova @stellasonkova",
+        "Wardrobe Stylist : Dusan Bebcak @bebcak"
+      ],
+      "reference_files": [
+        "docs/research/assets/instagram/DQKsAeEDOHi-start.jpg",
+        "docs/research/assets/instagram/DQKsAeEDOHi-middle.jpg",
+        "docs/research/assets/instagram/DQKsAeEDOHi-end.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence."
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/p/DKMA4OnMTef/",
+      "author": "bebcak",
+      "posted_at": "2025-05-28T06:47:12.000Z",
+      "display_date": "28 May 2025",
+      "summary": "Photographic shoot and black/yellow suit references — caption credits photographer Pavel Hejný and agency VCCP; client and Dušan's role unstated.",
+      "caption_credit_lines": [
+        "Photographer :  @pavel.hejny_photography , agency :  @vccpprague"
+      ],
+      "reference_files": [
+        "docs/research/assets/instagram/DKMA4OnMTef-slide-01.jpg",
+        "docs/research/assets/instagram/DKMA4OnMTef-slide-02.jpg",
+        "docs/research/assets/instagram/DKMA4OnMTef-slide-03.jpg",
+        "docs/research/assets/instagram/DKMA4OnMTef-slide-04.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence."
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/reel/DJD5173MM7i/",
+      "author": "bebcak",
+      "posted_at": "2025-04-30T06:42:22.000Z",
+      "display_date": "30 April 2025",
+      "summary": "LEGO Friends — brand/end card visible; caption credits The Great Escape and Bethan Seller; costume role unstated.",
+      "caption_credit_lines": [
+        "Prod.Co: @thegreatescape.tv ",
+        "Dir: @bethanseller"
+      ],
+      "reference_files": [
+        "docs/research/assets/instagram/DJD5173MM7i-start.jpg",
+        "docs/research/assets/instagram/DJD5173MM7i-middle.jpg",
+        "docs/research/assets/instagram/DJD5173MM7i-end.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence."
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/reel/DIajKOQCqmR/",
+      "author": "bebcak",
+      "posted_at": "2025-04-14T05:13:47.000Z",
+      "display_date": "14 April 2025",
+      "summary": "Uncaptioned wardrobe fitting montage — colourful everyday outfits; title, client and role unstated.",
+      "caption_credit_lines": [],
+      "reference_files": [
+        "docs/research/assets/instagram/DIajKOQCqmR-start.jpg",
+        "docs/research/assets/instagram/DIajKOQCqmR-middle.jpg",
+        "docs/research/assets/instagram/DIajKOQCqmR-end.jpg"
+      ],
+      "comments_note": "Visible comments inspected; no substantive costume explanation from @bebcak identified."
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/p/DFlPHEJMUbB/",
+      "author": "bebcak",
+      "posted_at": "2025-02-02T19:15:36.000Z",
+      "display_date": "2 February 2025",
+      "summary": "Three-photo costume carousel: the fitted medieval performers match Talkmore — Duedekning; the leafy performer matches Talkmore — Nøkken. The green workshop breastplate remains unassigned. Shared carousel publication does not establish a single campaign.",
+      "caption_credit_lines": [],
+      "reference_files": [
+        "docs/research/assets/instagram/DFlPHEJMUbB-slide-01.jpg",
+        "docs/research/assets/instagram/DFlPHEJMUbB-slide-02.jpg",
+        "docs/research/assets/instagram/DFlPHEJMUbB-slide-03.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence.",
+      "identity_reviewed": "2026-10-07"
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/reel/DFlNv-nszcb/",
+      "author": "bebcak",
+      "posted_at": "2025-02-02T19:06:08.000Z",
+      "display_date": "2 February 2025",
+      "summary": "Talkmore — Nøkken. The full-film character matches the leafy costume photograph in DFlPHEJMUbB; matching Armada production credits Stian Johansen / Einar Film. Precise costume role remains unstated.",
+      "caption_credit_lines": [],
+      "reference_files": [
+        "docs/research/assets/instagram/DFlNv-nszcb-start.jpg",
+        "docs/research/assets/instagram/DFlNv-nszcb-middle.jpg",
+        "docs/research/assets/instagram/DFlNv-nszcb-end.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence.",
+      "full_film_review": "2026-10-05; see media-audit.md for sources and photographic gaps"
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/reel/DFh6Sg1smBS/",
+      "author": "bebcak",
+      "posted_at": "2025-02-01T12:18:07.000Z",
+      "display_date": "1 February 2025",
+      "summary": "Slovenská sporiteľňa — explicit Wardrobe Dusan Bebcák; Lucia Janicová / Wolfberg / Alexander Šurkala / Bistro Films / Zaraguza.",
+      "caption_credit_lines": [
+        "Cast: Lucia Janicová @lucia.janicova",
+        "Client: Slovenská Sporitelña@slovenska_sporitelna",
+        "Agency: Zaraguza @zaraguzask",
+        "Director's duo: Wolfberg @wolfberg_",
+        "DOP: Alexander Surkala@surkala_alex",
+        "Production Company: Bistro Films @bistro_films",
+        "Wardrobe: Dusan Bebcák",
+        "Production Designer: Mariana Hädler"
+      ],
+      "reference_files": [
+        "docs/research/assets/instagram/DFh6Sg1smBS-start.jpg",
+        "docs/research/assets/instagram/DFh6Sg1smBS-middle.jpg",
+        "docs/research/assets/instagram/DFh6Sg1smBS-end.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence."
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/reel/DCT3S7tMzxC/",
+      "author": "bebcak",
+      "posted_at": "2024-11-13T11:46:44.000Z",
+      "display_date": "13 November 2024",
+      "summary": "Talkmore — Duedekning. Einar Film’s complete 1080p film matches all three medieval performers, cabin, pigeon-letter story and costumes. Director Stian Johansen / Einar Film; precise wardrobe role unconfirmed.",
+      "caption_credit_lines": [],
+      "reference_files": [
+        "docs/research/assets/instagram/DCT3S7tMzxC-start.jpg",
+        "docs/research/assets/instagram/DCT3S7tMzxC-middle.jpg",
+        "docs/research/assets/instagram/DCT3S7tMzxC-end.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence.",
+      "full_film_review": "2026-10-05; see media-audit.md for sources and photographic gaps",
+      "identity_reviewed": "2026-10-07"
+    },
+    {
+      "url": "https://www.instagram.com/frame.set/p/DCCz2MCRSd2/",
+      "author": "frame.set",
+      "posted_at": "2024-11-06T20:49:00.000Z",
+      "display_date": "6 November 2024",
+      "summary": "Rohlík — Mothers; frame.set collaborative feature explicitly credits Wardrobe Stylist @bebcak; Stink / Maca Rubio / Santi Cantillo / B&T. Director's quote belongs to Rubio.",
+      "caption_credit_lines": [
+        "Commercial Feature: Rohlik - “Mothers”",
+        "Director: @macarubio",
+        "DP: @santicantillo",
+        "Production Designer: Petr Macho ",
+        "Wardrobe Stylist: @bebcak",
+        "Agency: @bntagency",
+        "Production Company: @stink.prague"
+      ],
+      "reference_files": [
+        "docs/research/assets/instagram/DCCz2MCRSd2-start.jpg",
+        "docs/research/assets/instagram/DCCz2MCRSd2-middle.jpg",
+        "docs/research/assets/instagram/DCCz2MCRSd2-end.jpg",
+        "docs/research/assets/instagram/DCCz2MCRSd2-carousel-02.jpg",
+        "docs/research/assets/instagram/DCCz2MCRSd2-carousel-03.jpg",
+        "docs/research/assets/instagram/DCCz2MCRSd2-carousel-04.jpg",
+        "docs/research/assets/instagram/DCCz2MCRSd2-carousel-05.jpg",
+        "docs/research/assets/instagram/DCCz2MCRSd2-carousel-06.jpg",
+        "docs/research/assets/instagram/DCCz2MCRSd2-carousel-07.jpg",
+        "docs/research/assets/instagram/DCCz2MCRSd2-carousel-08.jpg",
+        "docs/research/assets/instagram/DCCz2MCRSd2-carousel-09.jpg",
+        "docs/research/assets/instagram/DCCz2MCRSd2-carousel-10.jpg"
+      ],
+      "comments_note": "Visible comments inspected; no substantive costume explanation from @bebcak identified."
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/reel/C8madAFtC4z/",
+      "author": "bebcak",
+      "posted_at": "2024-06-24T13:32:24.000Z",
+      "display_date": "24 June 2024",
+      "summary": "mBank — branding visible; caption credits Maxmilián Turek / Boogie / DDB Prague; role unstated.",
+      "caption_credit_lines": [
+        "Director: @maxmilianturek , production : @boogiefilms_prague , agency : @ddbprague"
+      ],
+      "reference_files": [
+        "docs/research/assets/instagram/C8madAFtC4z-start.jpg",
+        "docs/research/assets/instagram/C8madAFtC4z-middle.jpg",
+        "docs/research/assets/instagram/C8madAFtC4z-end.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence."
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/p/C8lmaBTtkQv/",
+      "author": "bebcak",
+      "posted_at": "2024-06-24T05:56:37.000Z",
+      "display_date": "24 June 2024",
+      "summary": "Uncaptioned purple/yellow superhero — finished costume and concept drawing; client, character name, drawing authorship and build responsibility unstated.",
+      "caption_credit_lines": [],
+      "reference_files": [
+        "docs/research/assets/instagram/C8lmaBTtkQv-slide-01.jpg",
+        "docs/research/assets/instagram/C8lmaBTtkQv-slide-02.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence."
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/p/C8llXDgNFOV/",
+      "author": "bebcak",
+      "posted_at": "2024-06-24T05:47:29.000Z",
+      "display_date": "24 June 2024",
+      "summary": "Space-suit references and two fitted suits, silver/purple and orange. Visually matched to the LEGO space film C8Ud2fmtEap by the helmets, coloured tubes, chest panels and orange suit detailing. Exact campaign title and design/build responsibility remain unassigned.",
+      "caption_credit_lines": [],
+      "reference_files": [
+        "docs/research/assets/instagram/C8llXDgNFOV-slide-01.jpg",
+        "docs/research/assets/instagram/C8llXDgNFOV-slide-02.jpg"
+      ],
+      "comments_note": "Visible comments inspected; no substantive costume explanation from @bebcak identified.",
+      "full_film_review": "2026-10-05; see media-audit.md for sources and photographic gaps"
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/p/C8lkOq9Nrts/",
+      "author": "bebcak",
+      "posted_at": "2024-06-24T05:37:36.000Z",
+      "display_date": "24 June 2024",
+      "summary": "Uncaptioned blue-haired fantasy armour — character reference beside realised costume; matches demo-design-05 composition; named character/client unverified.",
+      "caption_credit_lines": [],
+      "reference_files": [
+        "docs/research/assets/instagram/C8lkOq9Nrts-slide-01.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence."
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/p/C8lkMZzNOy9/",
+      "author": "bebcak",
+      "posted_at": "2024-06-24T05:37:17.000Z",
+      "display_date": "24 June 2024",
+      "summary": "Uncaptioned gold/white fantasy armour, large shield and staff — reference beside realised costume; matches demo-design-04 composition; named character/client unverified.",
+      "caption_credit_lines": [],
+      "reference_files": [
+        "docs/research/assets/instagram/C8lkMZzNOy9-slide-01.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence."
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/reel/C8ljbbFNNWD/",
+      "author": "bebcak",
+      "posted_at": "2024-06-24T05:31:20.000Z",
+      "display_date": "24 June 2024",
+      "summary": "Orange — jersey branding observed; caption credits Tomáš Řehořek and Armada Films; exact client campaign and role unstated.",
+      "caption_credit_lines": [
+        "Director: @tomas.rehorek ,",
+        "Production: @armadafilms"
+      ],
+      "reference_files": [
+        "docs/research/assets/instagram/C8ljbbFNNWD-start.jpg",
+        "docs/research/assets/instagram/C8ljbbFNNWD-middle.jpg",
+        "docs/research/assets/instagram/C8ljbbFNNWD-end.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence."
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/reel/C8h_7oZtFtv/",
+      "author": "bebcak",
+      "posted_at": "2024-06-22T20:22:55.000Z",
+      "display_date": "22 June 2024",
+      "summary": "McDonald’s — Dům Ronalda McDonalda. Full-film end cards identify the charity fundraiser and the striped T-shirt/denim-dungarees family film. Director, production and particular wardrobe role remain unconfirmed; later similarly named campaigns are not interchangeable.",
+      "caption_credit_lines": [],
+      "reference_files": [
+        "docs/research/assets/instagram/C8h_7oZtFtv-start.jpg",
+        "docs/research/assets/instagram/C8h_7oZtFtv-middle.jpg",
+        "docs/research/assets/instagram/C8h_7oZtFtv-end.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence.",
+      "full_film_review": "2026-10-05; see media-audit.md for sources and photographic gaps",
+      "identity_reviewed": "2026-10-07"
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/reel/C8UmP9cNWK3/",
+      "author": "bebcak",
+      "posted_at": "2024-06-17T15:30:43.000Z",
+      "display_date": "17 June 2024",
+      "summary": "McDonald’s — Cheese Saga. Matching Ivan Ardura creative portfolio; Marek Partyš / Bistro Films. Kept separate from Mother.",
+      "caption_credit_lines": [
+        "Director: @marek.partys , production: @bistro_films"
+      ],
+      "reference_files": [
+        "docs/research/assets/instagram/C8UmP9cNWK3-start.jpg",
+        "docs/research/assets/instagram/C8UmP9cNWK3-middle.jpg",
+        "docs/research/assets/instagram/C8UmP9cNWK3-end.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence.",
+      "full_film_review": "2026-10-05; see media-audit.md for sources and photographic gaps"
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/reel/C8UezzXNHd1/",
+      "author": "bebcak",
+      "posted_at": "2024-06-17T14:23:17.000Z",
+      "display_date": "17 June 2024",
+      "summary": "LEGO NINJAGO Dragons Rising — branding and 'Gift Like a Ninja' end card; caption credits Peder Pedersen / The Great Escape; role unstated.",
+      "caption_credit_lines": [
+        "Director: @pederpedersendotcom , production: @thegreatescape.tv"
+      ],
+      "reference_files": [
+        "docs/research/assets/instagram/C8UezzXNHd1-start.jpg",
+        "docs/research/assets/instagram/C8UezzXNHd1-middle.jpg",
+        "docs/research/assets/instagram/C8UezzXNHd1-end.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence."
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/reel/C8Ud2fmtEap/",
+      "author": "bebcak",
+      "posted_at": "2024-06-17T14:15:53.000Z",
+      "display_date": "17 June 2024",
+      "summary": "LEGO space film: branding verified on the full-resolution LEGO/NASA product end card. Caption explicitly names Peter Harton / The Great Escape. The silver/purple and orange suits match C8llXDgNFOV; Hera & Hunter was not established as the title of this film. Precise costume role remains unstated.",
+      "caption_credit_lines": [
+        "Director: @doctorharton , production: @thegreatescape.tv"
+      ],
+      "reference_files": [
+        "docs/research/assets/instagram/C8Ud2fmtEap-start.jpg",
+        "docs/research/assets/instagram/C8Ud2fmtEap-middle.jpg",
+        "docs/research/assets/instagram/C8Ud2fmtEap-end.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence.",
+      "full_film_review": "2026-10-05; see media-audit.md for sources and photographic gaps"
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/reel/C8UZZf_tn8r/",
+      "author": "bebcak",
+      "posted_at": "2024-06-17T13:36:47.000Z",
+      "display_date": "17 June 2024",
+      "summary": "Untitled film — caption credits @comiprdelprokop; exact client and role unstated.",
+      "caption_credit_lines": [
+        "Director: @comiprdelprokop"
+      ],
+      "reference_files": [
+        "docs/research/assets/instagram/C8UZZf_tn8r-start.jpg",
+        "docs/research/assets/instagram/C8UZZf_tn8r-middle.jpg",
+        "docs/research/assets/instagram/C8UZZf_tn8r-end.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence."
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/reel/C8UY_Dctrd9/",
+      "author": "bebcak",
+      "posted_at": "2024-06-17T13:32:48.000Z",
+      "display_date": "17 June 2024",
+      "summary": "Leffe — branded beer imagery observed; caption credits Wolfberg; exact campaign and Dušan's role unstated.",
+      "caption_credit_lines": [
+        "Director: @wolfberg_"
+      ],
+      "reference_files": [
+        "docs/research/assets/instagram/C8UY_Dctrd9-start.jpg",
+        "docs/research/assets/instagram/C8UY_Dctrd9-middle.jpg",
+        "docs/research/assets/instagram/C8UY_Dctrd9-end.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence."
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/reel/C8UYnTFtsI3/",
+      "author": "bebcak",
+      "posted_at": "2024-06-17T13:29:16.000Z",
+      "display_date": "17 June 2024",
+      "summary": "Uncaptioned fashion/shoe film — street outfits, shoes and dogs; Creative Embassy end card; brand/role not established.",
+      "caption_credit_lines": [],
+      "reference_files": [
+        "docs/research/assets/instagram/C8UYnTFtsI3-start.jpg",
+        "docs/research/assets/instagram/C8UYnTFtsI3-middle.jpg",
+        "docs/research/assets/instagram/C8UYnTFtsI3-end.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence."
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/reel/C8UXeVTNMyO/",
+      "author": "bebcak",
+      "posted_at": "2024-06-17T13:19:22.000Z",
+      "display_date": "17 June 2024",
+      "summary": "Czech Technical University in Prague — university end card, 'powered by avast'; no caption/wardrobe credit.",
+      "caption_credit_lines": [],
+      "reference_files": [
+        "docs/research/assets/instagram/C8UXeVTNMyO-start.jpg",
+        "docs/research/assets/instagram/C8UXeVTNMyO-middle.jpg",
+        "docs/research/assets/instagram/C8UXeVTNMyO-end.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence."
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/reel/C8UWyawtXuq/",
+      "author": "bebcak",
+      "posted_at": "2024-06-17T13:13:41.000Z",
+      "display_date": "17 June 2024",
+      "summary": "Národní muzeum — exhibition campaign. Full-film end card and Creative Embassy project establish the museum; do not substitute a different museum campaign title.",
+      "caption_credit_lines": [],
+      "reference_files": [
+        "docs/research/assets/instagram/C8UWyawtXuq-start.jpg",
+        "docs/research/assets/instagram/C8UWyawtXuq-middle.jpg",
+        "docs/research/assets/instagram/C8UWyawtXuq-end.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence.",
+      "full_film_review": "2026-10-05; see media-audit.md for sources and photographic gaps"
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/reel/C8UV-S1N_eq/",
+      "author": "bebcak",
+      "posted_at": "2024-06-17T13:06:21.000Z",
+      "display_date": "17 June 2024",
+      "summary": "Pilsner Urquell — Taste Worth Protecting. Full-resolution final end card verifies brand and slogan; matching campaign entry verifies Wolfberg / Boogie. Not Staropramen.",
+      "caption_credit_lines": [
+        "Director: @wolfberg_ , production: @boogiefilms_prague"
+      ],
+      "reference_files": [
+        "docs/research/assets/instagram/C8UV-S1N_eq-start.jpg",
+        "docs/research/assets/instagram/C8UV-S1N_eq-middle.jpg",
+        "docs/research/assets/instagram/C8UV-S1N_eq-end.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence.",
+      "full_film_review": "2026-10-05; see media-audit.md for sources and photographic gaps"
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/reel/C8UVrB8tIMe/",
+      "author": "bebcak",
+      "posted_at": "2024-06-17T13:03:26.000Z",
+      "display_date": "17 June 2024",
+      "summary": "Pilsner Urquell — branded bottle/end card, 'Tastes better with foam'; caption credits Petr Dvořák / Punk Film; role unstated.",
+      "caption_credit_lines": [
+        "Director: @dvorakpetr_ , production: @wearepunkfilm"
+      ],
+      "reference_files": [
+        "docs/research/assets/instagram/C8UVrB8tIMe-start.jpg",
+        "docs/research/assets/instagram/C8UVrB8tIMe-middle.jpg",
+        "docs/research/assets/instagram/C8UVrB8tIMe-end.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence."
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/reel/C8UVf4mtukg/",
+      "author": "bebcak",
+      "posted_at": "2024-06-17T13:01:56.000Z",
+      "display_date": "17 June 2024",
+      "summary": "Garnier — branded end card and hair/colour scenes; caption credits Petr Dvořák; exact product/campaign and role unstated.",
+      "caption_credit_lines": [
+        "Director: @dvorakpetr_"
+      ],
+      "reference_files": [
+        "docs/research/assets/instagram/C8UVf4mtukg-start.jpg",
+        "docs/research/assets/instagram/C8UVf4mtukg-middle.jpg",
+        "docs/research/assets/instagram/C8UVf4mtukg-end.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence."
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/reel/C8UVQNPt85_/",
+      "author": "bebcak",
+      "posted_at": "2024-06-17T12:59:49.000Z",
+      "display_date": "17 June 2024",
+      "summary": "BITmarkets — brand visible in the full-film end card; caption credits Petr Dvořák / Punk Film. Precise costume role remains unstated.",
+      "caption_credit_lines": [
+        "Director: @dvorakpetr_ , production: @wearepunkfilm"
+      ],
+      "reference_files": [
+        "docs/research/assets/instagram/C8UVQNPt85_-start.jpg",
+        "docs/research/assets/instagram/C8UVQNPt85_-middle.jpg",
+        "docs/research/assets/instagram/C8UVQNPt85_-end.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence.",
+      "full_film_review": "2026-10-05; see media-audit.md for sources and photographic gaps"
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/reel/C8T3ZOJtsUl/",
+      "author": "bebcak",
+      "posted_at": "2024-06-17T08:39:01.000Z",
+      "display_date": "17 June 2024",
+      "summary": "Vodafone — Youth. Full-film Vodafone end card; N+N / Procoma. Precise costume role remains unstated.",
+      "caption_credit_lines": [
+        "Director: @novaknguyen"
+      ],
+      "reference_files": [
+        "docs/research/assets/instagram/C8T3ZOJtsUl-start.jpg",
+        "docs/research/assets/instagram/C8T3ZOJtsUl-middle.jpg",
+        "docs/research/assets/instagram/C8T3ZOJtsUl-end.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence.",
+      "full_film_review": "2026-10-05; see media-audit.md for sources and photographic gaps"
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/reel/C8T3TdvtbM7/",
+      "author": "bebcak",
+      "posted_at": "2024-06-17T08:38:15.000Z",
+      "display_date": "17 June 2024",
+      "summary": "Vodafone — Youth, second portrait short. Full-film Vodafone end card; N+N / Procoma. Precise costume role remains unstated.",
+      "caption_credit_lines": [
+        "Director: @novaknguyen"
+      ],
+      "reference_files": [
+        "docs/research/assets/instagram/C8T3TdvtbM7-start.jpg",
+        "docs/research/assets/instagram/C8T3TdvtbM7-middle.jpg",
+        "docs/research/assets/instagram/C8T3TdvtbM7-end.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence.",
+      "full_film_review": "2026-10-05; see media-audit.md for sources and photographic gaps"
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/reel/C8T3SIsN6TJ/",
+      "author": "bebcak",
+      "posted_at": "2024-06-17T08:38:13.000Z",
+      "display_date": "17 June 2024",
+      "summary": "Untitled youth/group film — caption credits Novák & Nguyen / Boogie; Contagious representation end card; client/role unstated.",
+      "caption_credit_lines": [
+        "Director: @novaknguyen , production: @boogiefilms_prague"
+      ],
+      "reference_files": [
+        "docs/research/assets/instagram/C8T3SIsN6TJ-start.jpg",
+        "docs/research/assets/instagram/C8T3SIsN6TJ-middle.jpg",
+        "docs/research/assets/instagram/C8T3SIsN6TJ-end.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence."
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/reel/C8TzysvtOur/",
+      "author": "bebcak",
+      "posted_at": "2024-06-17T08:08:02.000Z",
+      "display_date": "17 June 2024",
+      "summary": "Telekom — brand visible in the full-film end card; caption credits Adam Hashemi / Armada. Individual campaign title and precise costume role remain unassigned.",
+      "caption_credit_lines": [
+        "Director: @adamhashemi , production: @armadafilms"
+      ],
+      "reference_files": [
+        "docs/research/assets/instagram/C8TzysvtOur-start.jpg",
+        "docs/research/assets/instagram/C8TzysvtOur-middle.jpg",
+        "docs/research/assets/instagram/C8TzysvtOur-end.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence.",
+      "full_film_review": "2026-10-05; see media-audit.md for sources and photographic gaps"
+    },
+    {
+      "url": "https://www.instagram.com/bebcak/reel/C8TzvRXNBoK/",
+      "author": "bebcak",
+      "posted_at": "2024-06-17T08:07:06.000Z",
+      "display_date": "17 June 2024",
+      "summary": "innogy — Domácí asistence. Full-film end card corrects the initial ČEZ misidentification; matching Médiář campaign confirms Jiří Havelka / Armada. Precise costume role remains unstated in this post.",
+      "caption_credit_lines": [
+        "Director: Jiří Havelka , production: @armadafilms"
+      ],
+      "reference_files": [
+        "docs/research/assets/instagram/C8TzvRXNBoK-start.jpg",
+        "docs/research/assets/instagram/C8TzvRXNBoK-middle.jpg",
+        "docs/research/assets/instagram/C8TzvRXNBoK-end.jpg"
+      ],
+      "comments_note": "No comment text rendered on inspection; not proof of absence.",
+      "full_film_review": "2026-10-05; see media-audit.md for sources and photographic gaps"
+    }
+  ]
+}

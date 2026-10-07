@@ -1,0 +1,10 @@
+{
+  "reviewed": "2026-10-07",
+  "collections": 58,
+  "galleryImages": 291,
+  "nativeFilms": 50,
+  "uniqueActiveImages": 338,
+  "dimensionMismatches": [],
+  "duplicateGalleryFiles": [],
+  "method": "Decoded native/responsive dimensions compared against data; SHA-256 duplicate checks within galleries. All 58 covers and 288 preceding images inspected on contact sheets; six official innogy replacement frames separately inspected and matched to the full original. Native display caps avoid upscaling; older public sources are not universally Retina resolution."
+}

@@ -1,0 +1,2824 @@
+[
+  {
+    "project": "proud-zero-gravity",
+    "title": "Proud — Zero Gravity",
+    "scope": "campaign",
+    "videos": [
+      "/videos/proud-zero-gravity-hd.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/black-and-yellow-suit/image-1.webp",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/proud-zero-gravity-hd.mp4",
+          "note": "Dušan’s Proud carousel compared against VCCP’s Zero Gravity TVC: matching black suits, yellow centre zip/upper sleeves/knees and white lower sleeves/legs. Fitting, garment and pattern images are published together with the matching Proud campaign artwork. Agency independently confirms client and campaign name."
+        }
+      },
+      {
+        "asset": "/images/work/black-and-yellow-suit/proud-fitting-higher-resolution.webp",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/proud-zero-gravity-hd.mp4",
+          "note": "Dušan’s Proud carousel compared against VCCP’s Zero Gravity TVC: matching black suits, yellow centre zip/upper sleeves/knees and white lower sleeves/legs. Fitting, garment and pattern images are published together with the matching Proud campaign artwork. Agency independently confirms client and campaign name."
+        }
+      },
+      {
+        "asset": "/images/work/black-and-yellow-suit/image-3.webp",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/proud-zero-gravity-hd.mp4",
+          "note": "Dušan’s Proud carousel compared against VCCP’s Zero Gravity TVC: matching black suits, yellow centre zip/upper sleeves/knees and white lower sleeves/legs. Fitting, garment and pattern images are published together with the matching Proud campaign artwork. Agency independently confirms client and campaign name."
+        }
+      },
+      {
+        "asset": "/images/work/black-and-yellow-suit/image-4.webp",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/proud-zero-gravity-hd.mp4",
+          "note": "Dušan’s Proud carousel compared against VCCP’s Zero Gravity TVC: matching black suits, yellow centre zip/upper sleeves/knees and white lower sleeves/legs. Fitting, garment and pattern images are published together with the matching Proud campaign artwork. Agency independently confirms client and campaign name."
+        }
+      },
+      {
+        "asset": "/images/work/black-and-yellow-suit/hd-costume-3.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/proud-zero-gravity-hd.mp4",
+          "note": "Visually reviewed frame at 7.64s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/black-and-yellow-suit/hd-costume-4.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/proud-zero-gravity-hd.mp4",
+          "note": "Visually reviewed frame at 10.45s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/black-and-yellow-suit/proud-published-campaign.webp",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/proud-zero-gravity-hd.mp4",
+          "note": "Dušan’s Proud carousel compared against VCCP’s Zero Gravity TVC: matching black suits, yellow centre zip/upper sleeves/knees and white lower sleeves/legs. Fitting, garment and pattern images are published together with the matching Proud campaign artwork. Agency independently confirms client and campaign name."
+        }
+      }
+    ]
+  },
+  {
+    "project": "lego-hera-hunter",
+    "title": "LEGO — Hera & Hunter",
+    "scope": "campaign",
+    "videos": [
+      "/videos/lego-hera-hunter-hd.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/space-suits/image-2.webp",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/lego-hera-hunter-hd.mp4",
+          "note": "Visually matched against Armada’s full Hera & Hunter film: same actors, helmets, silver heart chest panel and coloured tubing, orange suit with dark stripes. The reference is a design reference published with the actual fitting, not a separate finished costume."
+        }
+      },
+      {
+        "asset": "/images/work/lego-space/hd-costume-1.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/lego-hera-hunter-hd.mp4",
+          "note": "Visually reviewed frame at 10.01s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/lego-space/hd-costume-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/lego-hera-hunter-hd.mp4",
+          "note": "Visually reviewed frame at 24.02s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/lego-space/hd-costume-4.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/lego-hera-hunter-hd.mp4",
+          "note": "Visually reviewed frame at 52.04s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/lego-space/hd-costume-5.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/lego-hera-hunter-hd.mp4",
+          "note": "Visually reviewed frame at 66.05s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/lego-space/hd-costume-6.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/lego-hera-hunter-hd.mp4",
+          "note": "Visually reviewed frame at 80.06s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/space-suits/image-1.webp",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/lego-hera-hunter-hd.mp4",
+          "note": "Visually matched against Armada’s full Hera & Hunter film: same actors, helmets, silver heart chest panel and coloured tubing, orange suit with dark stripes. The reference is a design reference published with the actual fitting, not a separate finished costume."
+        }
+      }
+    ]
+  },
+  {
+    "project": "raiffeisen-spooky-vintage-shopping",
+    "title": "Raiffeisen — Spooky Vintage Shopping",
+    "scope": "campaign",
+    "videos": [
+      "/videos/DQKqcPIDGy2.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/raiffeisen-spooky-vintage-shopping/image-1.webp",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/DQKqcPIDGy2.mp4",
+          "note": "Compared with the full film: identical distinctive patterned dresses and burgundy coat on the same staircase/set; grey/yellow striped jumper and dark trousers match the opening character. Yellow alternative dress excluded."
+        }
+      },
+      {
+        "asset": "/images/work/raiffeisen-spooky-vintage-shopping/image-2.webp",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/DQKqcPIDGy2.mp4",
+          "note": "Compared with the full film: identical distinctive patterned dresses and burgundy coat on the same staircase/set; grey/yellow striped jumper and dark trousers match the opening character. Yellow alternative dress excluded."
+        }
+      },
+      {
+        "asset": "/images/work/raiffeisen-spooky-vintage-shopping/image-4.webp",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/DQKqcPIDGy2.mp4",
+          "note": "Compared with the full film: identical distinctive patterned dresses and burgundy coat on the same staircase/set; grey/yellow striped jumper and dark trousers match the opening character. Yellow alternative dress excluded."
+        }
+      }
+    ]
+  },
+  {
+    "project": "talkmore-nokken",
+    "title": "Talkmore — Nøkken",
+    "scope": "campaign",
+    "videos": [
+      "/videos/talkmore-nokken-hd.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/woodland-costumes/image-3.webp",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/talkmore-nokken-hd.mp4",
+          "note": "Compared with the full film: same woodland performer, leafy body, blue/green headpiece and goggles. Unmatched armour photographs remain separate."
+        }
+      },
+      {
+        "asset": "/images/work/talkmore-nokken/hd-costume-1.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/talkmore-nokken-hd.mp4",
+          "note": "Visually reviewed frame at 6.01s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/talkmore-nokken/hd-costume-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/talkmore-nokken-hd.mp4",
+          "note": "Visually reviewed frame at 14.42s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/talkmore-nokken/hd-costume-5.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/talkmore-nokken-hd.mp4",
+          "note": "Visually reviewed frame at 39.66s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/talkmore-nokken/hd-costume-6.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/talkmore-nokken-hd.mp4",
+          "note": "Visually reviewed frame at 48.07s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "vypsana-fixa-fakin-party",
+    "title": "Vypsaná fixa — Fakin party",
+    "scope": "campaign",
+    "videos": [
+      "/videos/fakin-party.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/vypsana-fixa-fakin-party/published-39.webp",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/fakin-party.mp4",
+          "note": "Exact costumes and performers compared with the full Fakin party film from the credited colourist’s portfolio: blue shirt/red sleeveless knitwear, navy suit, party set and ensemble outfits. Publication explicitly credits Dušan Bebčák / @bebcak for wardrobe."
+        }
+      },
+      {
+        "asset": "/images/work/vypsana-fixa-fakin-party/published-41.webp",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/fakin-party.mp4",
+          "note": "Exact costumes and performers compared with the full Fakin party film from the credited colourist’s portfolio: blue shirt/red sleeveless knitwear, navy suit, party set and ensemble outfits. Publication explicitly credits Dušan Bebčák / @bebcak for wardrobe."
+        }
+      },
+      {
+        "asset": "/images/work/vypsana-fixa-fakin-party/published-40.webp",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/fakin-party.mp4",
+          "note": "Exact costumes and performers compared with the full Fakin party film from the credited colourist’s portfolio: blue shirt/red sleeveless knitwear, navy suit, party set and ensemble outfits. Publication explicitly credits Dušan Bebčák / @bebcak for wardrobe."
+        }
+      },
+      {
+        "asset": "/images/work/vypsana-fixa-fakin-party/published-42.webp",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/fakin-party.mp4",
+          "note": "Exact costumes and performers compared with the full Fakin party film from the credited colourist’s portfolio: blue shirt/red sleeveless knitwear, navy suit, party set and ensemble outfits. Publication explicitly credits Dušan Bebčák / @bebcak for wardrobe."
+        }
+      },
+      {
+        "asset": "/images/work/vypsana-fixa-fakin-party/published-43.webp",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/fakin-party.mp4",
+          "note": "Exact costumes and performers compared with the full Fakin party film from the credited colourist’s portfolio: blue shirt/red sleeveless knitwear, navy suit, party set and ensemble outfits. Publication explicitly credits Dušan Bebčák / @bebcak for wardrobe."
+        }
+      },
+      {
+        "asset": "/images/work/vypsana-fixa-fakin-party/published-44.webp",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/fakin-party.mp4",
+          "note": "Exact costumes and performers compared with the full Fakin party film from the credited colourist’s portfolio: blue shirt/red sleeveless knitwear, navy suit, party set and ensemble outfits. Publication explicitly credits Dušan Bebčák / @bebcak for wardrobe."
+        }
+      },
+      {
+        "asset": "/images/work/vypsana-fixa-fakin-party/published-46.webp",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/fakin-party.mp4",
+          "note": "Exact costumes and performers compared with the full Fakin party film from the credited colourist’s portfolio: blue shirt/red sleeveless knitwear, navy suit, party set and ensemble outfits. Publication explicitly credits Dušan Bebčák / @bebcak for wardrobe."
+        }
+      },
+      {
+        "asset": "/images/work/vypsana-fixa-fakin-party/published-38.webp",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/fakin-party.mp4",
+          "note": "Exact costumes and performers compared with the full Fakin party film from the credited colourist’s portfolio: blue shirt/red sleeveless knitwear, navy suit, party set and ensemble outfits. Publication explicitly credits Dušan Bebčák / @bebcak for wardrobe."
+        }
+      },
+      {
+        "asset": "/images/work/vypsana-fixa-fakin-party/published-45.webp",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/fakin-party.mp4",
+          "note": "Exact costumes and performers compared with the full Fakin party film from the credited colourist’s portfolio: blue shirt/red sleeveless knitwear, navy suit, party set and ensemble outfits. Publication explicitly credits Dušan Bebčák / @bebcak for wardrobe."
+        }
+      }
+    ]
+  },
+  {
+    "project": "mcdonalds-cheese-saga",
+    "title": "McDonald’s — Cheese Saga",
+    "scope": "campaign",
+    "videos": [
+      "/videos/mcdonalds-cheese-saga-hd.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/mcdonalds-cheese-saga/hd-costume-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/mcdonalds-cheese-saga-hd.mp4",
+          "note": "Exact matching director’s cut, 5.5s. Same ball-pit cast, shirts and outfits as the Instagram publication; not a different Cheese Saga campaign."
+        }
+      },
+      {
+        "asset": "/images/work/mcdonalds-cheese-saga/hd-costume-4.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/mcdonalds-cheese-saga-hd.mp4",
+          "note": "Exact matching director’s cut, 18s. Same ball-pit cast, shirts and outfits as the Instagram publication; not a different Cheese Saga campaign."
+        }
+      },
+      {
+        "asset": "/images/work/mcdonalds-cheese-saga/hd-costume-5.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/mcdonalds-cheese-saga-hd.mp4",
+          "note": "Exact matching director’s cut, 25s. Same ball-pit cast, shirts and outfits as the Instagram publication; not a different Cheese Saga campaign."
+        }
+      },
+      {
+        "asset": "/images/work/mcdonalds-cheese-saga/hd-costume-6.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/mcdonalds-cheese-saga-hd.mp4",
+          "note": "Exact matching director’s cut, 31s. Same ball-pit cast, shirts and outfits as the Instagram publication; not a different Cheese Saga campaign."
+        }
+      },
+      {
+        "asset": "/images/work/mcdonalds-cheese-saga/hd-detail-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/mcdonalds-cheese-saga-hd.mp4",
+          "note": "Inspected frame from the same full 1080p director’s cut. Cast and ball-pit wardrobes match the original portfolio film."
+        }
+      },
+      {
+        "asset": "/images/work/mcdonalds-cheese-saga/hd-detail-4.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/mcdonalds-cheese-saga-hd.mp4",
+          "note": "Inspected frame from the same full 1080p director’s cut. Cast and ball-pit wardrobes match the original portfolio film."
+        }
+      },
+      {
+        "asset": "/images/work/mcdonalds-cheese-saga/hd-detail-5.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/mcdonalds-cheese-saga-hd.mp4",
+          "note": "Inspected frame from the same full 1080p director’s cut. Cast and ball-pit wardrobes match the original portfolio film."
+        }
+      }
+    ]
+  },
+  {
+    "project": "adidas-you-got-this",
+    "title": "adidas — You Got This",
+    "scope": "campaign",
+    "videos": [
+      "/videos/adidas-you-got-this-hd.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/adidas-you-got-this/hd-detail-4.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/adidas-you-got-this-hd.mp4",
+          "note": "Reviewed frame at 15s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
+        }
+      },
+      {
+        "asset": "/images/work/adidas-you-got-this/hd-detail-5.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/adidas-you-got-this-hd.mp4",
+          "note": "Reviewed frame at 19s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
+        }
+      },
+      {
+        "asset": "/images/work/adidas-you-got-this/hd-detail-6.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/adidas-you-got-this-hd.mp4",
+          "note": "Reviewed frame at 24s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "komercni-banka",
+    "title": "Komerční banka — Eva Adamczyková",
+    "scope": "campaign",
+    "videos": [
+      "/videos/komercni-banka-hd.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/komercni-banka/hd-detail-1.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/komercni-banka-hd.mp4",
+          "note": "Reviewed frame at 3s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
+        }
+      },
+      {
+        "asset": "/images/work/komercni-banka/hd-detail-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/komercni-banka-hd.mp4",
+          "note": "Reviewed frame at 7s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
+        }
+      },
+      {
+        "asset": "/images/work/komercni-banka/hd-detail-3.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/komercni-banka-hd.mp4",
+          "note": "Reviewed frame at 11s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
+        }
+      },
+      {
+        "asset": "/images/work/komercni-banka/hd-detail-4.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/komercni-banka-hd.mp4",
+          "note": "Reviewed frame at 15s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "rohlik-mothers",
+    "title": "Rohlík — Mothers",
+    "scope": "campaign",
+    "videos": [
+      "/videos/rohlik-mothers.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/rohlik-mothers/rohlik-mothers-still-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/rohlik-mothers.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "asset": "/images/work/rohlik-mothers/detail-1.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/rohlik-mothers.mp4",
+          "note": "Visually inspected costume frame at 7.378 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/rohlik-mothers/detail-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/rohlik-mothers.mp4",
+          "note": "Visually inspected costume frame at 29.51 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/rohlik-mothers/final-detail-2-clean.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/rohlik-mothers.mp4",
+          "note": "Visually inspected wardrobe frame at 20.29s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/rohlik-mothers/final-detail-3-clean.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/rohlik-mothers.mp4",
+          "note": "Visually inspected wardrobe frame at 32.28s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/rohlik-mothers/final-detail-7-clean.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/rohlik-mothers.mp4",
+          "note": "Visually inspected wardrobe frame at 81.15s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "slovenska-sporitelna",
+    "title": "Slovenská sporiteľňa — Everest",
+    "scope": "campaign",
+    "videos": [
+      "/videos/slsp-climber-hd.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/slovenska-sporitelna/verified-hd-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/slsp-climber-hd.mp4",
+          "note": "Visually inspected wardrobe frame at 8.55s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/slovenska-sporitelna/verified-hd-3.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/slsp-climber-hd.mp4",
+          "note": "Visually inspected wardrobe frame at 13.53s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/slovenska-sporitelna/verified-hd-4.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/slsp-climber-hd.mp4",
+          "note": "Visually inspected wardrobe frame at 18.52s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/slovenska-sporitelna/verified-hd-5.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/slsp-climber-hd.mp4",
+          "note": "Visually inspected wardrobe frame at 23.5s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/slovenska-sporitelna/verified-hd-6.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/slsp-climber-hd.mp4",
+          "note": "Visually inspected wardrobe frame at 28.49s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/slovenska-sporitelna/verified-hd-7.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/slsp-climber-hd.mp4",
+          "note": "Visually inspected wardrobe frame at 33.12s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "budvar-33",
+    "title": "Budvar 33",
+    "scope": "campaign",
+    "videos": [
+      "/videos/Dc4Dh7QtqiD.mp4",
+      "/videos/Dc4DPU9NAFl.mp4",
+      "/videos/Dc4C_PJt3Q4.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/budvar-33/Dc4C_PJt3Q4-still-3.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/Dc4C_PJt3Q4.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "asset": "/images/work/budvar-33/detail-1.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/Dc4Dh7QtqiD.mp4",
+          "note": "Visually inspected costume frame at 0.81 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/budvar-33/costume-v2-1.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/Dc4DPU9NAFl.mp4",
+          "note": "Costume-focused frame at 1.22s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      },
+      {
+        "asset": "/images/work/budvar-33/costume-v2-6.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/Dc4DPU9NAFl.mp4",
+          "note": "Costume-focused frame at 6.916s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      },
+      {
+        "asset": "/images/work/budvar-33/costume-v3-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/Dc4C_PJt3Q4.mp4",
+          "note": "Costume-focused frame at 2.339s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      },
+      {
+        "asset": "/images/work/budvar-33/costume-v3-8.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/Dc4C_PJt3Q4.mp4",
+          "note": "Costume-focused frame at 8.848s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "post-bellum-mother",
+    "title": "Post Bellum — Mother",
+    "scope": "campaign",
+    "videos": [
+      "/videos/post-bellum-mother-hd.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/mother/hd-costume-1.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/post-bellum-mother-hd.mp4",
+          "note": "Visually reviewed frame at 9.51s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/mother/hd-costume-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/post-bellum-mother-hd.mp4",
+          "note": "Visually reviewed frame at 22.81s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/mother/hd-costume-4.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/post-bellum-mother-hd.mp4",
+          "note": "Visually reviewed frame at 49.43s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/mother/hd-costume-5.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/post-bellum-mother-hd.mp4",
+          "note": "Visually reviewed frame at 62.74s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/mother/hd-costume-6.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/post-bellum-mother-hd.mp4",
+          "note": "Visually reviewed frame at 76.05s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "national-museum",
+    "title": "Národní muzeum — Nové expozice",
+    "scope": "campaign",
+    "videos": [
+      "/videos/narodni-muzeum-hd.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/national-museum/hd-costume-1.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/narodni-muzeum-hd.mp4",
+          "note": "Visually reviewed frame at 6.63s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/national-museum/hd-costume-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/narodni-muzeum-hd.mp4",
+          "note": "Visually reviewed frame at 15.91s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/national-museum/hd-costume-3.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/narodni-muzeum-hd.mp4",
+          "note": "Visually reviewed frame at 25.19s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/national-museum/hd-costume-4.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/narodni-muzeum-hd.mp4",
+          "note": "Visually reviewed frame at 34.47s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/national-museum/hd-costume-5.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/narodni-muzeum-hd.mp4",
+          "note": "Visually reviewed frame at 43.74s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/national-museum/hd-costume-6.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/narodni-muzeum-hd.mp4",
+          "note": "Visually reviewed frame at 53.02s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "lego-friends",
+    "title": "LEGO Friends — Heartlake City",
+    "scope": "campaign",
+    "videos": [
+      "/videos/lego-friends-hd.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/lego-friends/hd-detail-9.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/lego-friends-hd.mp4",
+          "note": "Reviewed frame at 9s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
+        }
+      },
+      {
+        "asset": "/images/work/lego-friends/hd-detail-1.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/lego-friends-hd.mp4",
+          "note": "Reviewed frame at 1s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
+        }
+      },
+      {
+        "asset": "/images/work/lego-friends/hd-detail-4.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/lego-friends-hd.mp4",
+          "note": "Reviewed frame at 4s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
+        }
+      },
+      {
+        "asset": "/images/work/lego-friends/hd-detail-20.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/lego-friends-hd.mp4",
+          "note": "Reviewed frame at 20s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
+        }
+      },
+      {
+        "asset": "/images/work/lego-friends/hd-detail-23.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/lego-friends-hd.mp4",
+          "note": "Reviewed frame at 23s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
+        }
+      },
+      {
+        "asset": "/images/work/lego-friends/hd-detail-25.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/lego-friends-hd.mp4",
+          "note": "Reviewed frame at 25s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "engelmuller-drive-to-win",
+    "title": "Engelmüller — Drive to Win",
+    "scope": "campaign",
+    "videos": [
+      "/videos/396010194.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/engelmuller-drive-to-win/396010194-still-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/396010194.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "asset": "/images/work/engelmuller-drive-to-win/costume-v1-1.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/396010194.mp4",
+          "note": "Costume-focused frame at 14.73s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      },
+      {
+        "asset": "/images/work/engelmuller-drive-to-win/costume-v1-3.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/396010194.mp4",
+          "note": "Costume-focused frame at 44.19s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      },
+      {
+        "asset": "/images/work/engelmuller-drive-to-win/costume-v1-6.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/396010194.mp4",
+          "note": "Costume-focused frame at 83.47s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      },
+      {
+        "asset": "/images/work/engelmuller-drive-to-win/final-detail-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/396010194.mp4",
+          "note": "Visually inspected wardrobe frame at 27.0s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/engelmuller-drive-to-win/final-detail-5.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/396010194.mp4",
+          "note": "Visually inspected wardrobe frame at 76.11s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/engelmuller-drive-to-win/final-detail-6.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/396010194.mp4",
+          "note": "Visually inspected wardrobe frame at 93.29s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "czech-technical-university",
+    "title": "ČVUT — Science across generations",
+    "scope": "campaign",
+    "videos": [
+      "/videos/cvut-hd.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/czech-technical-university/hd-costume-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/cvut-hd.mp4",
+          "note": "Visually reviewed frame at 14.03s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/czech-technical-university/hd-costume-3.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/cvut-hd.mp4",
+          "note": "Visually reviewed frame at 22.21s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/czech-technical-university/hd-costume-4.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/cvut-hd.mp4",
+          "note": "Visually reviewed frame at 30.39s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/czech-technical-university/hd-costume-6.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/cvut-hd.mp4",
+          "note": "Visually reviewed frame at 46.76s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/czech-technical-university/hd-costume-7.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/cvut-hd.mp4",
+          "note": "Visually reviewed frame at 54.36s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "bata-all-in-two",
+    "title": "Baťa — All in two",
+    "scope": "campaign",
+    "videos": [
+      "/videos/277521929.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/bata-all-in-two/277521929-still-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/277521929.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "asset": "/images/work/bata-all-in-two/detail-1.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/277521929.mp4",
+          "note": "Visually inspected costume frame at 3.843 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/bata-all-in-two/detail-3.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/277521929.mp4",
+          "note": "Visually inspected costume frame at 27.863 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/bata-all-in-two/detail-4.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/277521929.mp4",
+          "note": "Visually inspected costume frame at 39.393 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/bata-all-in-two/final-detail-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/277521929.mp4",
+          "note": "Visually inspected wardrobe frame at 10.57s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/bata-all-in-two/final-detail-4.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/277521929.mp4",
+          "note": "Visually inspected wardrobe frame at 23.06s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/bata-all-in-two/final-detail-7.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/277521929.mp4",
+          "note": "Visually inspected wardrobe frame at 42.28s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "billa-masterchef",
+    "title": "BILLA — MasterChef",
+    "scope": "campaign",
+    "videos": [
+      "/videos/797238968.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/billa-masterchef/797238968-still-3.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/797238968.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "asset": "/images/work/billa-masterchef/detail-1.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/797238968.mp4",
+          "note": "Visually inspected costume frame at 1.2 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/billa-masterchef/detail-3.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/797238968.mp4",
+          "note": "Visually inspected costume frame at 8.7 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/billa-masterchef/final-detail-4.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/797238968.mp4",
+          "note": "Visually inspected wardrobe frame at 7.2s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "favorit",
+    "title": "Favorit",
+    "scope": "campaign",
+    "videos": [
+      "/videos/268355869.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/favorit/268355869-still-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/268355869.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "asset": "/images/work/favorit/detail-1.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/268355869.mp4",
+          "note": "Visually inspected costume frame at 7.962 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/favorit/detail-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/268355869.mp4",
+          "note": "Visually inspected costume frame at 31.846 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/favorit/detail-4.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/268355869.mp4",
+          "note": "Visually inspected costume frame at 81.606 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "rossmann",
+    "title": "ROSSMANN",
+    "scope": "campaign",
+    "videos": [
+      "/videos/DQd6DDdjAqh.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/rossmann/DQd6DDdjAqh-still-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/DQd6DDdjAqh.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "asset": "/images/work/rossmann/detail-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/DQd6DDdjAqh.mp4",
+          "note": "Visually inspected costume frame at 19.84 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/rossmann/detail-4.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/DQd6DDdjAqh.mp4",
+          "note": "Visually inspected costume frame at 50.84 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/rossmann/published-47.webp",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/DQd6DDdjAqh.mp4",
+          "note": "Same mother/daughter campaign, apartment set and performers in the director’s detailed campaign carousel. Directors, DOP, client, agency and production match the portfolio film; caption explicitly credits @bebcak and @ze_ni_ta jointly."
+        }
+      }
+    ]
+  },
+  {
+    "project": "vitana-gorilovacka",
+    "title": "Vitana — Gorilovačka",
+    "scope": "campaign",
+    "videos": [
+      "/videos/540684470.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/vitana-gorilovacka/540684470-still-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/540684470.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "asset": "/images/work/vitana-gorilovacka/detail-1.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/540684470.mp4",
+          "note": "Visually inspected costume frame at 2.4 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/vitana-gorilovacka/detail-3.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/540684470.mp4",
+          "note": "Visually inspected costume frame at 17.4 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/vitana-gorilovacka/final-detail-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/540684470.mp4",
+          "note": "Visually inspected wardrobe frame at 6.6s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/vitana-gorilovacka/final-detail-5.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/540684470.mp4",
+          "note": "Visually inspected wardrobe frame at 18.6s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/vitana-gorilovacka/final-detail-6.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/540684470.mp4",
+          "note": "Visually inspected wardrobe frame at 22.8s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "skoda-130-let",
+    "title": "Škoda — 130 let",
+    "scope": "campaign",
+    "videos": [
+      "/videos/1143365815.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/skoda-130-let/1143365815-still-3.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/1143365815.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "asset": "/images/work/skoda-130-let/detail-1.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/1143365815.mp4",
+          "note": "Visually inspected costume frame at 4.864 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/skoda-130-let/detail-4.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/1143365815.mp4",
+          "note": "Visually inspected costume frame at 49.856 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "tmobile-magenta-tv",
+    "title": "T-Mobile — Magenta TV: Crime Story",
+    "scope": "campaign",
+    "videos": [
+      "/videos/tmobile-crime-story-hd.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/tmobile-magenta-tv/verified-hd-1.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/tmobile-crime-story-hd.mp4",
+          "note": "Visually reviewed at 1s from Ogilvy’s complete 1080p film. Same cast, bookcase interview, night-vision sequence and family costumes as Dušan’s portrait repost. Not a fitting or BTS photograph."
+        }
+      },
+      {
+        "asset": "/images/work/tmobile-magenta-tv/verified-hd-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/tmobile-crime-story-hd.mp4",
+          "note": "Visually reviewed at 16.2s from Ogilvy’s complete 1080p film. Same cast, bookcase interview, night-vision sequence and family costumes as Dušan’s portrait repost. Not a fitting or BTS photograph."
+        }
+      },
+      {
+        "asset": "/images/work/tmobile-magenta-tv/verified-hd-3.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/tmobile-crime-story-hd.mp4",
+          "note": "Visually reviewed at 18.3s from Ogilvy’s complete 1080p film. Same cast, bookcase interview, night-vision sequence and family costumes as Dušan’s portrait repost. Not a fitting or BTS photograph."
+        }
+      },
+      {
+        "asset": "/images/work/tmobile-magenta-tv/verified-hd-4.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/tmobile-crime-story-hd.mp4",
+          "note": "Visually reviewed at 20.7s from Ogilvy’s complete 1080p film. Same cast, bookcase interview, night-vision sequence and family costumes as Dušan’s portrait repost. Not a fitting or BTS photograph."
+        }
+      },
+      {
+        "asset": "/images/work/tmobile-magenta-tv/verified-hd-5.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/tmobile-crime-story-hd.mp4",
+          "note": "Visually reviewed at 14.5s from Ogilvy’s complete 1080p film. Same cast, bookcase interview, night-vision sequence and family costumes as Dušan’s portrait repost. Not a fitting or BTS photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "tmobile-magenta-tv-netflix",
+    "title": "T-Mobile — Magenta TV + Netflix",
+    "scope": "campaign",
+    "videos": [
+      "/videos/tmobile-magenta-tv-netflix-hd.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/tmobile-restaurant/verified-hd-1.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/tmobile-magenta-tv-netflix-hd.mp4",
+          "note": "Visually inspected wardrobe frame at 2.5s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/tmobile-restaurant/verified-hd-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/tmobile-magenta-tv-netflix-hd.mp4",
+          "note": "Visually inspected wardrobe frame at 7.2s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/tmobile-restaurant/verified-hd-3.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/tmobile-magenta-tv-netflix-hd.mp4",
+          "note": "Visually inspected wardrobe frame at 13s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/tmobile-restaurant/verified-hd-4.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/tmobile-magenta-tv-netflix-hd.mp4",
+          "note": "Visually inspected wardrobe frame at 15.6s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/tmobile-restaurant/verified-hd-5.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/tmobile-magenta-tv-netflix-hd.mp4",
+          "note": "Visually inspected wardrobe frame at 19.84s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "vodafone-youth",
+    "title": "Vodafone — Unlimited Honesty",
+    "scope": "campaign",
+    "videos": [
+      "/videos/C8T3ZOJtsUl.mp4",
+      "/videos/C8T3TdvtbM7.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/vodafone-youth/C8T3ZOJtsUl-still-1.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8T3ZOJtsUl.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "asset": "/images/work/vodafone-youth/detail-1.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8T3ZOJtsUl.mp4",
+          "note": "Visually inspected costume frame at 1.206 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/vodafone-youth/adc-original-1.webp",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/C8T3ZOJtsUl.mp4",
+          "note": "Official ADC campaign submission: the same cast, location and distinctive outfits as this campaign’s corresponding portfolio short. First image matches the greenhouse group; second matches the outdoor courtside group. Directors Novák & Nguyen and Procoma agree with the original end cards."
+        }
+      },
+      {
+        "asset": "/images/work/vodafone-youth/adc-original-2.webp",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/C8T3TdvtbM7.mp4",
+          "note": "Official ADC campaign submission: the same cast, location and distinctive outfits as this campaign’s corresponding portfolio short. First image matches the greenhouse group; second matches the outdoor courtside group. Directors Novák & Nguyen and Procoma agree with the original end cards."
+        }
+      }
+    ]
+  },
+  {
+    "project": "loreal-men-expert",
+    "title": "L’Oréal Men Expert — Hydra Energetic",
+    "scope": "campaign",
+    "videos": [
+      "/videos/loreal-men-expert.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/loreal-men-expert/published-29.webp",
+        "evidence": {
+          "basis": "same-publication",
+          "videoSrc": "/videos/loreal-men-expert.mp4",
+          "note": "The director publishes this Hydra Energetic campaign series together and explicitly credits @bebcak. The portrait photographs include Boris Valábik and Gergely Siklósi. The attached complete 20-second variant is from the same publication. Photographs of series performers are not claimed to be frames or fitting photographs from that individual cut."
+        }
+      },
+      {
+        "asset": "/images/work/loreal-men-expert/published-26.webp",
+        "evidence": {
+          "basis": "same-publication",
+          "videoSrc": "/videos/loreal-men-expert.mp4",
+          "note": "The director publishes this Hydra Energetic campaign series together and explicitly credits @bebcak. The portrait photographs include Boris Valábik and Gergely Siklósi. The attached complete 20-second variant is from the same publication. Photographs of series performers are not claimed to be frames or fitting photographs from that individual cut."
+        }
+      },
+      {
+        "asset": "/images/work/loreal-men-expert/published-28.webp",
+        "evidence": {
+          "basis": "same-publication",
+          "videoSrc": "/videos/loreal-men-expert.mp4",
+          "note": "The director publishes this Hydra Energetic campaign series together and explicitly credits @bebcak. The portrait photographs include Boris Valábik and Gergely Siklósi. The attached complete 20-second variant is from the same publication. Photographs of series performers are not claimed to be frames or fitting photographs from that individual cut."
+        }
+      },
+      {
+        "asset": "/images/work/loreal-men-expert/published-30.webp",
+        "evidence": {
+          "basis": "same-publication",
+          "videoSrc": "/videos/loreal-men-expert.mp4",
+          "note": "The director publishes this Hydra Energetic campaign series together and explicitly credits @bebcak. The portrait photographs include Boris Valábik and Gergely Siklósi. The attached complete 20-second variant is from the same publication. Photographs of series performers are not claimed to be frames or fitting photographs from that individual cut."
+        }
+      },
+      {
+        "asset": "/images/work/loreal-men-expert/published-31.webp",
+        "evidence": {
+          "basis": "same-publication",
+          "videoSrc": "/videos/loreal-men-expert.mp4",
+          "note": "The director publishes this Hydra Energetic campaign series together and explicitly credits @bebcak. The portrait photographs include Boris Valábik and Gergely Siklósi. The attached complete 20-second variant is from the same publication. Photographs of series performers are not claimed to be frames or fitting photographs from that individual cut."
+        }
+      },
+      {
+        "asset": "/images/work/loreal-men-expert/published-extra-27.webp",
+        "evidence": {
+          "basis": "same-publication",
+          "videoSrc": "/videos/loreal-men-expert.mp4",
+          "note": "The director publishes this Hydra Energetic campaign series together and explicitly credits @bebcak. The portrait photographs include Boris Valábik and Gergely Siklósi. The attached complete 20-second variant is from the same publication. Photographs of series performers are not claimed to be frames or fitting photographs from that individual cut."
+        }
+      }
+    ]
+  },
+  {
+    "project": "mbank",
+    "title": "mBank — Father & son",
+    "scope": "campaign",
+    "videos": [
+      "/videos/DZKAr3nMbjq.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/mbank/wardrobe-still.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/DZKAr3nMbjq.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "asset": "/images/work/mbank/detail-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/DZKAr3nMbjq.mp4",
+          "note": "Visually inspected costume frame at 9.629 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/mbank/detail-4.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/DZKAr3nMbjq.mp4",
+          "note": "Visually inspected costume frame at 24.674 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "pilsner-taste-worth-protecting",
+    "title": "Pilsner Urquell — Taste Worth Protecting",
+    "scope": "campaign",
+    "videos": [
+      "/videos/C8UV-S1N_eq.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/staropramen/C8UV-S1N_eq-still-3.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UV-S1N_eq.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "asset": "/images/work/pilsner-taste-worth-protecting/detail-3.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UV-S1N_eq.mp4",
+          "note": "Visually inspected costume frame at 37.926 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/pilsner-taste-worth-protecting/costume-v1-3.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UV-S1N_eq.mp4",
+          "note": "Costume-focused frame at 23.54s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      },
+      {
+        "asset": "/images/work/pilsner-taste-worth-protecting/costume-v1-5.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UV-S1N_eq.mp4",
+          "note": "Costume-focused frame at 38.58s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "orange",
+    "title": "Orange — Hockey generations",
+    "scope": "campaign",
+    "videos": [
+      "/videos/C8ljbbFNNWD.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/orange/C8ljbbFNNWD-still-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8ljbbFNNWD.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "asset": "/images/work/orange/detail-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8ljbbFNNWD.mp4",
+          "note": "Visually inspected costume frame at 9.59 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/orange/costume-v1-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8ljbbFNNWD.mp4",
+          "note": "Costume-focused frame at 6.893s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      },
+      {
+        "asset": "/images/work/orange/costume-v1-4.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8ljbbFNNWD.mp4",
+          "note": "Costume-focused frame at 13.786s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      },
+      {
+        "asset": "/images/work/orange/costume-v1-7.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8ljbbFNNWD.mp4",
+          "note": "Costume-focused frame at 23.077s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "leffe",
+    "title": "Leffe — Monks & armour",
+    "scope": "campaign",
+    "videos": [
+      "/videos/C8UY_Dctrd9.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/leffe/C8UY_Dctrd9-still-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UY_Dctrd9.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "asset": "/images/work/leffe/detail-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UY_Dctrd9.mp4",
+          "note": "Visually inspected costume frame at 19.222 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/leffe/costume-v1-6.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UY_Dctrd9.mp4",
+          "note": "Costume-focused frame at 40.848s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      },
+      {
+        "asset": "/images/work/leffe/costume-v1-7.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UY_Dctrd9.mp4",
+          "note": "Costume-focused frame at 46.254s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "talkmore-duedekning",
+    "title": "Talkmore — Duedekning",
+    "scope": "campaign",
+    "videos": [
+      "/videos/talkmore-duedekning-hd.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/woodland-costumes/image-1.webp",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/talkmore-duedekning-hd.mp4",
+          "note": "Compared against Einar’s complete 1080p Duedekning film: same two performers, helmet and chin strap, segmented shoulder/body plates, maroon belt and studded leather cuffs; matching chain-mail hood, leaf-shaped shoulders, curved gold neck plate, brown tunic and boots. The separate green workshop armour is not assigned to this film."
+        }
+      },
+      {
+        "asset": "/images/work/talkmore-medieval/verified-hd-1.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/talkmore-duedekning-hd.mp4",
+          "note": "Visually inspected wardrobe frame at 14s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/talkmore-medieval/verified-hd-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/talkmore-duedekning-hd.mp4",
+          "note": "Visually inspected wardrobe frame at 16.5s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/talkmore-medieval/verified-hd-3.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/talkmore-duedekning-hd.mp4",
+          "note": "Visually inspected wardrobe frame at 20s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/talkmore-medieval/verified-hd-4.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/talkmore-duedekning-hd.mp4",
+          "note": "Visually inspected wardrobe frame at 26s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/talkmore-medieval/verified-hd-5.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/talkmore-duedekning-hd.mp4",
+          "note": "Visually inspected wardrobe frame at 32s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/talkmore-medieval/verified-hd-6.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/talkmore-duedekning-hd.mp4",
+          "note": "Visually inspected wardrobe frame at 34.5s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "eon",
+    "title": "E.ON — It’s on us",
+    "scope": "campaign",
+    "videos": [
+      "/videos/DQd4pgojHgA.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/eon/checked-blazer-upright.webp",
+        "evidence": {
+          "basis": "same-publication",
+          "videoSrc": "/videos/DQd4pgojHgA.mp4",
+          "note": "Same E.ON carousel and visibly identical checked blazer/blue shirt in the attached film."
+        }
+      },
+      {
+        "asset": "/images/work/eon/detail-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/DQd4pgojHgA.mp4",
+          "note": "Visually inspected costume frame at 9.162 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/eon/detail-3.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/DQd4pgojHgA.mp4",
+          "note": "Visually inspected costume frame at 16.605 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "garnier",
+    "title": "Garnier — Crazy decisions",
+    "scope": "campaign",
+    "videos": [
+      "/videos/C8UVf4mtukg.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/garnier/detail-3.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UVf4mtukg.mp4",
+          "note": "Visually inspected costume frame at 12.134 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/garnier/detail-4.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UVf4mtukg.mp4",
+          "note": "Visually inspected costume frame at 17.154 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/garnier/costume-v1-1.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UVf4mtukg.mp4",
+          "note": "Costume-focused frame at 2.51s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      },
+      {
+        "asset": "/images/work/garnier/costume-v1-3.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UVf4mtukg.mp4",
+          "note": "Costume-focused frame at 7.531s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "invega",
+    "title": "INVEGA",
+    "scope": "campaign",
+    "videos": [
+      "/videos/DQKsAeEDOHi.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/invega/DQKsAeEDOHi-still-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/DQKsAeEDOHi.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "asset": "/images/work/invega/detail-4.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/DQKsAeEDOHi.mp4",
+          "note": "Visually inspected costume frame at 110.667 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/invega/costume-v1-6.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/DQKsAeEDOHi.mp4",
+          "note": "Costume-focused frame at 91.773s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      },
+      {
+        "asset": "/images/work/invega/costume-v1-7.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/DQKsAeEDOHi.mp4",
+          "note": "Costume-focused frame at 103.919s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "konto-bariery",
+    "title": "Konto Bariéry",
+    "scope": "campaign",
+    "videos": [
+      "/videos/891619491.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/konto-bariery/891619491-still-3.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/891619491.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "asset": "/images/work/konto-bariery/detail-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/891619491.mp4",
+          "note": "Visually inspected costume frame at 9.6 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/konto-bariery/detail-4.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/891619491.mp4",
+          "note": "Visually inspected costume frame at 24.6 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/konto-bariery/final-detail-1.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/891619491.mp4",
+          "note": "Visually inspected wardrobe frame at 2.4s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/konto-bariery/final-detail-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/891619491.mp4",
+          "note": "Visually inspected wardrobe frame at 6.6s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/konto-bariery/final-detail-7.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/891619491.mp4",
+          "note": "Visually inspected wardrobe frame at 26.4s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "mcdonalds-ronald-mcdonald-house",
+    "title": "McDonald’s — Dům Ronalda McDonalda",
+    "scope": "campaign",
+    "videos": [
+      "/videos/C8h_7oZtFtv.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/mcdonalds-kitchen/C8h_7oZtFtv-still-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8h_7oZtFtv.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "asset": "/images/work/mcdonalds-kitchen/detail-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8h_7oZtFtv.mp4",
+          "note": "Visually inspected costume frame at 9.318 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/mcdonalds-kitchen/detail-4.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8h_7oZtFtv.mp4",
+          "note": "Visually inspected costume frame at 23.878 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "innogy-domaci-asistence",
+    "title": "innogy — Domácí asistence",
+    "scope": "campaign",
+    "videos": [
+      "/videos/innogy-domaci-asistence-hd.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/innogy-domaci-asistence/official-hd-1.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/innogy-domaci-asistence-hd.mp4",
+          "note": "Inspected frame at 1.3244s from innogycz’s complete 33-second official advert. Same performers, green/yellow outfit, grandfather’s shirt changes, red cardigan, blue repair uniform, kitchen/laundry story and end card as Dušan’s cropped Instagram repost. Not a fitting or BTS photograph."
+        }
+      },
+      {
+        "asset": "/images/work/innogy-domaci-asistence/official-hd-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/innogy-domaci-asistence-hd.mp4",
+          "note": "Inspected frame at 11.8s from innogycz’s complete 33-second official advert. Same performers, green/yellow outfit, grandfather’s shirt changes, red cardigan, blue repair uniform, kitchen/laundry story and end card as Dušan’s cropped Instagram repost. Not a fitting or BTS photograph."
+        }
+      },
+      {
+        "asset": "/images/work/innogy-domaci-asistence/official-hd-3.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/innogy-domaci-asistence-hd.mp4",
+          "note": "Inspected frame at 14.9s from innogycz’s complete 33-second official advert. Same performers, green/yellow outfit, grandfather’s shirt changes, red cardigan, blue repair uniform, kitchen/laundry story and end card as Dušan’s cropped Instagram repost. Not a fitting or BTS photograph."
+        }
+      },
+      {
+        "asset": "/images/work/innogy-domaci-asistence/official-hd-4.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/innogy-domaci-asistence-hd.mp4",
+          "note": "Inspected frame at 17.4s from innogycz’s complete 33-second official advert. Same performers, green/yellow outfit, grandfather’s shirt changes, red cardigan, blue repair uniform, kitchen/laundry story and end card as Dušan’s cropped Instagram repost. Not a fitting or BTS photograph."
+        }
+      },
+      {
+        "asset": "/images/work/innogy-domaci-asistence/official-hd-5.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/innogy-domaci-asistence-hd.mp4",
+          "note": "Inspected frame at 21.5s from innogycz’s complete 33-second official advert. Same performers, green/yellow outfit, grandfather’s shirt changes, red cardigan, blue repair uniform, kitchen/laundry story and end card as Dušan’s cropped Instagram repost. Not a fitting or BTS photograph."
+        }
+      },
+      {
+        "asset": "/images/work/innogy-domaci-asistence/official-hd-6.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/innogy-domaci-asistence-hd.mp4",
+          "note": "Inspected frame at 28s from innogycz’s complete 33-second official advert. Same performers, green/yellow outfit, grandfather’s shirt changes, red cardigan, blue repair uniform, kitchen/laundry story and end card as Dušan’s cropped Instagram repost. Not a fitting or BTS photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "telekom",
+    "title": "Telekom — Christmas bookshop",
+    "scope": "campaign",
+    "videos": [
+      "/videos/C8TzysvtOur.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/telekom/C8TzysvtOur-still-3.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8TzysvtOur.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "asset": "/images/work/telekom/detail-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8TzysvtOur.mp4",
+          "note": "Visually inspected costume frame at 19.213 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/telekom/detail-3.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8TzysvtOur.mp4",
+          "note": "Visually inspected costume frame at 34.823 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "mbank-maxmilian-turek",
+    "title": "mBank — Colourful wardrobes",
+    "scope": "campaign",
+    "videos": [
+      "/videos/C8madAFtC4z.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/mbank-maxmilian-turek/C8madAFtC4z-still-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8madAFtC4z.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "asset": "/images/work/mbank-maxmilian-turek/detail-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8madAFtC4z.mp4",
+          "note": "Visually inspected costume frame at 9.6 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/mbank-maxmilian-turek/detail-3.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8madAFtC4z.mp4",
+          "note": "Visually inspected costume frame at 17.4 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "pilsner-urquell",
+    "title": "Pilsner Urquell — At the pub",
+    "scope": "campaign",
+    "videos": [
+      "/videos/C8UVrB8tIMe.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/pilsner-urquell/C8UVrB8tIMe-still-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UVrB8tIMe.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "asset": "/images/work/pilsner-urquell/costume-v1-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UVrB8tIMe.mp4",
+          "note": "Costume-focused frame at 4.602s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      },
+      {
+        "asset": "/images/work/pilsner-urquell/costume-v1-5.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UVrB8tIMe.mp4",
+          "note": "Costume-focused frame at 11.806s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      },
+      {
+        "asset": "/images/work/pilsner-urquell/costume-v1-8.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UVrB8tIMe.mp4",
+          "note": "Costume-focused frame at 17.409s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "tropicana-vitality",
+    "title": "Tropicana — Vitality",
+    "scope": "campaign",
+    "videos": [
+      "/videos/272173846.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/tropicana-vitality/wardrobe-still.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/272173846.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "asset": "/images/work/tropicana-vitality/costume-v1-1.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/272173846.mp4",
+          "note": "Costume-focused frame at 2.401s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      },
+      {
+        "asset": "/images/work/tropicana-vitality/costume-v1-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/272173846.mp4",
+          "note": "Costume-focused frame at 4.602s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "deeptime",
+    "title": "Deeptime — We Turn Sand Into Sound",
+    "scope": "campaign",
+    "videos": [
+      "/videos/307295801.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/deeptime/307295801-still-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/307295801.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "asset": "/images/work/deeptime/costume-v1-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/307295801.mp4",
+          "note": "Costume-focused frame at 25.134s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      },
+      {
+        "asset": "/images/work/deeptime/costume-v1-6.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/307295801.mp4",
+          "note": "Costume-focused frame at 74.31s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      },
+      {
+        "asset": "/images/work/deeptime/costume-v1-7.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/307295801.mp4",
+          "note": "Costume-focused frame at 84.146s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "bitmarkets",
+    "title": "BITmarkets — Investor stories",
+    "scope": "campaign",
+    "videos": [
+      "/videos/C8UVQNPt85_.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/bitmarkets/C8UVQNPt85_-still-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UVQNPt85_.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "asset": "/images/work/bitmarkets/detail-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UVQNPt85_.mp4",
+          "note": "Visually inspected costume frame at 11.203 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/bitmarkets/detail-4.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UVQNPt85_.mp4",
+          "note": "Visually inspected costume frame at 28.708 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "lego-ninjago",
+    "title": "LEGO NINJAGO — Gift Like a Ninja",
+    "scope": "campaign",
+    "videos": [
+      "/videos/C8UezzXNHd1.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/lego-ninjago/detail-1.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UezzXNHd1.mp4",
+          "note": "Visually inspected costume frame at 1.206 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/lego-ninjago/detail-4.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UezzXNHd1.mp4",
+          "note": "Visually inspected costume frame at 12.357 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/lego-ninjago/costume-v1-1.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UezzXNHd1.mp4",
+          "note": "Costume-focused frame at 1.808s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "bolito-one-damn-photo",
+    "title": "Vagonáři — One Damn Photo",
+    "scope": "campaign",
+    "videos": [
+      "/videos/238833581.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/bolito-one-damn-photo/238833581-still-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/238833581.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "asset": "/images/work/bolito-one-damn-photo/detail-1.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/238833581.mp4",
+          "note": "Visually inspected costume frame at 7.201 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/bolito-one-damn-photo/detail-4.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/238833581.mp4",
+          "note": "Visually inspected costume frame at 73.808 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "bolito",
+    "title": "Bolíto — 70 °C",
+    "scope": "campaign",
+    "videos": [
+      "/videos/466122798.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/bolito/466122798-still-3.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/466122798.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "asset": "/images/work/bolito/detail-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/466122798.mp4",
+          "note": "Visually inspected costume frame at 17.933 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/bolito/costume-v1-1.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/466122798.mp4",
+          "note": "Costume-focused frame at 6.725s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      },
+      {
+        "asset": "/images/work/bolito/costume-v1-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/466122798.mp4",
+          "note": "Costume-focused frame at 12.889s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      }
+    ]
+  },
+  {
+    "project": "skoda-split-screen",
+    "title": "Škoda Superb — Split-screen campaign",
+    "scope": "study",
+    "videos": [],
+    "images": [
+      {
+        "asset": "/images/work/skoda-split-screen/published-4.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "Director’s exact split-screen Superb campaign publication credits @bebcak. The actress and brown jacket match its film; no playable film is attached because the recovered DASH tracks have inconsistent timing."
+        }
+      },
+      {
+        "asset": "/images/work/skoda-split-screen/published-9.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "Director’s exact split-screen Superb campaign publication credits @bebcak. The actress and brown jacket match its film; no playable film is attached because the recovered DASH tracks have inconsistent timing."
+        }
+      },
+      {
+        "asset": "/images/work/skoda-split-screen/film-detail-3.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "Visually reviewed frame from this exact credited publication’s film. Kept in the verified photographic collection without attaching an incorrectly timed film."
+        }
+      },
+      {
+        "asset": "/images/work/skoda-split-screen/film-detail-5.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "Visually reviewed frame from this exact credited publication’s film. Kept in the verified photographic collection without attaching an incorrectly timed film."
+        }
+      }
+    ]
+  },
+  {
+    "project": "skoda-social-stories",
+    "title": "Škoda — Social stories",
+    "scope": "study",
+    "videos": [],
+    "images": [
+      {
+        "asset": "/images/work/skoda-social-stories/published-24.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "Director’s client-specific campaign publication explicitly credits @bebcak. No film is attached: these photographs are not paired with the unrelated 130-year advert."
+        }
+      },
+      {
+        "asset": "/images/work/skoda-social-stories/published-15.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "Director’s client-specific campaign publication explicitly credits @bebcak. No film is attached: these photographs are not paired with the unrelated 130-year advert."
+        }
+      },
+      {
+        "asset": "/images/work/skoda-social-stories/published-25.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "Director’s client-specific campaign publication explicitly credits @bebcak. No film is attached: these photographs are not paired with the unrelated 130-year advert."
+        }
+      },
+      {
+        "asset": "/images/work/skoda-social-stories/published-22.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "Director’s client-specific campaign publication explicitly credits @bebcak. No film is attached: these photographs are not paired with the unrelated 130-year advert."
+        }
+      },
+      {
+        "asset": "/images/work/skoda-social-stories/published-extra-13.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "Director’s client-specific campaign publication explicitly credits @bebcak. No film is attached: these photographs are not paired with the unrelated 130-year advert."
+        }
+      },
+      {
+        "asset": "/images/work/skoda-social-stories/published-extra-16.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "Director’s client-specific campaign publication explicitly credits @bebcak. No film is attached: these photographs are not paired with the unrelated 130-year advert."
+        }
+      }
+    ]
+  },
+  {
+    "project": "raiffeisen-wardrobe",
+    "title": "Raiffeisen — Wardrobe fittings",
+    "scope": "study",
+    "videos": [],
+    "images": [
+      {
+        "asset": "/images/work/raiffeisen-spooky-vintage-shopping/image-5.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/raiffeisen-spooky-vintage-shopping/image-6.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/raiffeisen-spooky-vintage-shopping/image-7.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/raiffeisen-spooky-vintage-shopping/image-8.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/raiffeisen-spooky-vintage-shopping/image-9.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/raiffeisen-spooky-vintage-shopping/image-10.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/raiffeisen-spooky-vintage-shopping/image-11.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/raiffeisen-spooky-vintage-shopping/image-12.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      }
+    ]
+  },
+  {
+    "project": "eon-wardrobe",
+    "title": "E.ON — Wardrobe fittings",
+    "scope": "study",
+    "videos": [],
+    "images": [
+      {
+        "asset": "/images/work/eon/image-4.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/eon/image-6.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/eon/image-7.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      }
+    ]
+  },
+  {
+    "project": "period-fittings",
+    "title": "Period wardrobe",
+    "scope": "study",
+    "videos": [],
+    "images": [
+      {
+        "asset": "/images/work/period-fittings/fitting-05.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/period-fittings/fitting-06.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/period-fittings/fitting-07.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/period-fittings/fitting-12.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/period-fittings/fitting-15.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/period-fittings/fitting-16.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/period-fittings/fitting-17.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      }
+    ]
+  },
+  {
+    "project": "armour-fittings",
+    "title": "Armour workshop",
+    "scope": "study",
+    "videos": [],
+    "images": [
+      {
+        "asset": "/images/work/woodland-costumes/image-2.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      }
+    ]
+  },
+  {
+    "project": "purple-and-gold-character",
+    "title": "Purple and gold costume",
+    "scope": "study",
+    "videos": [],
+    "images": [
+      {
+        "asset": "/images/work/purple-and-gold-character/image-1.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/purple-and-gold-character/image-2.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      }
+    ]
+  },
+  {
+    "project": "blue-haired-armour",
+    "title": "Blue-haired character costume",
+    "scope": "study",
+    "videos": [],
+    "images": [
+      {
+        "asset": "/images/work/blue-haired-armour/image-1.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      }
+    ]
+  },
+  {
+    "project": "gold-and-white-armour",
+    "title": "Gold and white armour",
+    "scope": "study",
+    "videos": [],
+    "images": [
+      {
+        "asset": "/images/work/gold-and-white-armour/image-1.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      }
+    ]
+  },
+  {
+    "project": "wardrobe-fittings",
+    "title": "Colour studies & fittings",
+    "scope": "study",
+    "videos": [],
+    "images": [
+      {
+        "asset": "/images/work/wardrobe-fittings/fitting-03.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/wardrobe-fittings/fitting-04.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/wardrobe-fittings/fitting-07.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/wardrobe-fittings/fitting-09.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/wardrobe-fittings/fitting-14.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/wardrobe-fittings/fitting-16.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/wardrobe-fittings/fitting-17.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/wardrobe-fittings/fitting-18.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      }
+    ]
+  },
+  {
+    "project": "everyday-fittings",
+    "title": "Everyday wardrobe",
+    "scope": "study",
+    "videos": [],
+    "images": [
+      {
+        "asset": "/images/work/everyday-fittings/fitting-01.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/everyday-fittings/fitting-02.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/everyday-fittings/fitting-03.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/everyday-fittings/fitting-04.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/everyday-fittings/fitting-05.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/everyday-fittings/fitting-06.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/everyday-fittings/fitting-08.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/everyday-fittings/fitting-09.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/everyday-fittings/fitting-10.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/everyday-fittings/fitting-11.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/everyday-fittings/fitting-12.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/everyday-fittings/fitting-13.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/everyday-fittings/fitting-15.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/everyday-fittings/fitting-16.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/everyday-fittings/fitting-17.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/everyday-fittings/fitting-18.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/everyday-fittings/fitting-20.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/everyday-fittings/fitting-21.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/everyday-fittings/fitting-23.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/everyday-fittings/fitting-24.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/everyday-fittings/fitting-26.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/everyday-fittings/fitting-28.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/everyday-fittings/fitting-29.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/everyday-fittings/fitting-30.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/everyday-fittings/fitting-31.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "asset": "/images/work/raiffeisen-spooky-vintage-shopping/image-3.webp",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      }
+    ]
+  },
+  {
+    "project": "youth-wardrobe",
+    "title": "Youth wardrobe",
+    "scope": "campaign",
+    "videos": [
+      "/videos/C8T3SIsN6TJ.mp4"
+    ],
+    "images": [
+      {
+        "asset": "/images/work/youth-wardrobe/wardrobe-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8T3SIsN6TJ.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "asset": "/images/work/youth-wardrobe/detail-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8T3SIsN6TJ.mp4",
+          "note": "Visually inspected costume frame at 13.526 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "asset": "/images/work/youth-wardrobe/costume-v1-1.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8T3SIsN6TJ.mp4",
+          "note": "Costume-focused frame at 5.072s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      },
+      {
+        "asset": "/images/work/youth-wardrobe/costume-v1-2.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8T3SIsN6TJ.mp4",
+          "note": "Costume-focused frame at 9.722s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      },
+      {
+        "asset": "/images/work/youth-wardrobe/costume-v1-6.webp",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8T3SIsN6TJ.mp4",
+          "note": "Costume-focused frame at 28.744s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      }
+    ]
+  }
+]

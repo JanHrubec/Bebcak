@@ -6,18 +6,20 @@
   "scripts": {
     "dev": "vite",
     "test": "node --disable-warning=ExperimentalWarning --experimental-strip-types --test tests/projects.test.mjs",
-    "build": "vue-tsc -b && vite build",
+    "build": "vue-tsc -b && vite build && node scripts/prerender.mjs",
     "check": "npm run test && npm run build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "media:upload": "node --disable-warning=ExperimentalWarning --experimental-strip-types --env-file-if-exists=.env.local scripts/upload-media.mjs",
+    "media:verify": "node --disable-warning=ExperimentalWarning --experimental-strip-types scripts/verify-media.mjs"
   },
   "dependencies": {
-    "@vercel/analytics": "^1.4.1",
+    "@vercel/analytics": "^1.6.1",
     "vue": "^3.5.34"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.1",
-    "@tailwindcss/typography": "^0.5.20",
     "@types/node": "^24.12.3",
+    "@vercel/blob": "^2.8.1",
     "@vitejs/plugin-vue": "^6.0.6",
     "@vue/tsconfig": "^0.9.1",
     "autoprefixer": "^10.5.0",
@@ -25,7 +27,6 @@
     "tailwindcss": "^4.3.1",
     "typescript": "~6.0.2",
     "vite": "^8.0.12",
-    "vite-plugin-sitemap": "^0.8.2",
     "vue-router": "^4.6.4",
     "vue-tsc": "^3.2.8"
   }

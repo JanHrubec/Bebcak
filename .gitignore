@@ -1,5 +1,17 @@
+# Dependencies and generated builds
+node_modules/
+dist/
+dist-ssr/
+*.tsbuildinfo
+
+# Local environment configuration (keep the documented template)
+.env
+.env.*
+!.env.example
+*.local
+
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -7,19 +19,31 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Test coverage and browser automation artifacts
+coverage/
+.playwright-mcp/
+playwright-report/
+test-results/
 
-# Editor directories and files
-.vscode/*
-.vscode
-.vscode/extensions.json
-.idea
+# Editor and operating-system files
+.vscode/
+.idea/
 .DS_Store
+._*
+Thumbs.db
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+*~
+
+# Local Vercel link and media-upload checkpoint
+.vercel/
+src/data/hosted-videos.json.tmp
+
+# Videos live in Blob; keep the public URL manifest in Git
+/public/videos/
+
+# Downloaded research originals stay in the local archive
+/docs/research/assets/

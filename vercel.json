@@ -1,0 +1,37 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/project/lego-space",
+      "destination": "/project/lego-hera-hunter",
+      "permanent": true
+    },
+    {
+      "source": "/project/black-and-yellow-suit",
+      "destination": "/project/proud-zero-gravity",
+      "permanent": true
+    },
+    {
+      "source": "/project/mother",
+      "destination": "/project/post-bellum-mother",
+      "permanent": true
+    },
+    {
+      "source": "/project/talkmore-medieval",
+      "destination": "/project/talkmore-duedekning",
+      "permanent": true
+    },
+    {
+      "source": "/project/tmobile-restaurant",
+      "destination": "/project/tmobile-magenta-tv-netflix",
+      "permanent": true
+    },
+    {
+      "source": "/project/mcdonalds-kitchen",
+      "destination": "/project/mcdonalds-ronald-mcdonald-house",
+      "permanent": true
+    }
+  ]
+}

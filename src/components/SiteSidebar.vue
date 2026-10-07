@@ -1,63 +1,32 @@
 <script setup lang="ts">
-import type { PortfolioView } from '../data/projects'
-import { viewOptions } from '../data/projects'
-import ViewSwitcher from './ViewSwitcher.vue'
-
-defineProps<{
-  activeView: PortfolioView
-}>()
-
-const emit = defineEmits<{
-  openAbout: []
-  switchView: [view: PortfolioView]
-}>()
+import ProjectNavigation from './ProjectNavigation.vue'
+import ContactDetails from './ContactDetails.vue'
+import { getAdjacentProjects, type Project } from '../data/projects'
+defineProps<{ project?: Project }>()
 </script>
-
 <template>
-  <aside class="grid grid-cols-[minmax(0,1fr)_auto] items-start gap-x-5 gap-y-2 md:flex md:h-full md:flex-col md:justify-between">
-    <div class="min-w-0">
-      <div class="md:mb-12">
-        <h1
-          class="text-base font-light tracking-wide text-primary sm:text-lg md:text-2xl"
-          data-page-heading="home"
-          tabindex="-1"
-        >
-          Dušan Bebčák
-        </h1>
-        <div class="mt-2 border-l border-white/10 pl-3 md:mt-4 md:pl-4">
-          <ViewSwitcher
-            :active-view="activeView"
-            :options="viewOptions"
-            @switch-view="emit('switchView', $event)"
-          />
-        </div>
-      </div>
-
-      <nav class="hidden space-y-4 md:block">
-        <button
-          type="button"
-          class="flex min-h-9 items-center text-sm font-light tracking-wide text-muted transition-colors duration-300 hover:text-accent"
-          @click="emit('openAbout')"
-        >
-          About
-        </button>
+  <aside class="site-sidebar" aria-label="Portfolio">
+    <div class="sidebar-top">
+      <router-link :to="{ name: 'home' }" class="site-identity" aria-label="Dušan Bebčák — all work"><span class="site-identity__name">Dušan Bebčák</span></router-link>
+      <nav class="site-nav" aria-label="Main navigation">
+        <router-link :to="{ name: 'home' }" :aria-current="$route.name === 'home' ? 'page' : $route.name === 'project' ? 'true' : undefined">Work</router-link>
+        <router-link :to="{ name: 'about' }" :aria-current="$route.name === 'about' ? 'page' : undefined">About & contact</router-link>
       </nav>
     </div>
-
-    <div class="flex min-w-0 flex-col items-end gap-2 pt-0.5 text-right md:block md:pt-0 md:text-left">
-      <button
-        type="button"
-        class="flex min-h-8 items-center text-xs font-light tracking-wide text-muted transition-colors duration-300 hover:text-accent md:hidden"
-        @click="emit('openAbout')"
-      >
-        About
-      </button>
-      <a
-        href="mailto:dusan@bebcak.com"
-        class="flex min-h-8 max-w-[42vw] items-center truncate text-xs font-light tracking-wide text-muted transition-colors duration-300 hover:text-accent md:min-h-9 md:max-w-none md:text-sm"
-      >
-        dusan@bebcak.com
-      </a>
+    <ProjectNavigation v-if="project" :prev="getAdjacentProjects(project.slug).prev" :next="getAdjacentProjects(project.slug).next" />
+    <div v-if="project" class="sidebar-project">
+      <Transition name="sidebar-copy" mode="out-in">
+        <div :key="project.slug">
+          <h2 data-page-heading tabindex="-1">{{ project.title }}</h2>
+          <dl v-if="project.facts.length" class="project-credits">
+            <div v-for="fact in project.facts" :key="fact.label"><dt>{{ fact.label }}</dt><dd>{{ fact.value }}</dd></div>
+          </dl>
+        </div>
+      </Transition>
     </div>
+    <section v-if="$route.name === 'home'" class="sidebar-contact" aria-label="Contact">
+      <h2>Get in touch</h2>
+      <ContactDetails />
+    </section>
   </aside>
 </template>

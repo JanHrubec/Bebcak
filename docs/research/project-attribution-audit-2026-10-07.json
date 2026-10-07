@@ -1,0 +1,417 @@
+{
+  "reviewed": "2026-10-07",
+  "method": "All active projects checked against exact primary credits, the 47-post @bebcak inventory and credited tagged publications. Own portfolio publication establishes a professional association; it does not establish a particular costume-making role. Demo-only studies are withheld.",
+  "projects": [
+    {
+      "slug": "proud-zero-gravity",
+      "title": "Proud — Zero Gravity",
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/DKMA4OnMTef/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    },
+    {
+      "slug": "lego-hera-hunter",
+      "title": "LEGO — Hera & Hunter",
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/C8llXDgNFOV/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    },
+    {
+      "slug": "raiffeisen-spooky-vintage-shopping",
+      "title": "Raiffeisen — Spooky Vintage Shopping",
+      "basis": "explicit-credit",
+      "source": "https://www.instagram.com/p/DQKqcPIDGy2/",
+      "note": "Direct campaign publication or Dušan’s own caption explicitly credits @bebcak / Dušan Bebčák. Shared roles remain shared, and the source caption/crew record is retained in the research dossier."
+    },
+    {
+      "slug": "talkmore-nokken",
+      "title": "Talkmore — Nøkken",
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/DFlPHEJMUbB/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    },
+    {
+      "slug": "vypsana-fixa-fakin-party",
+      "title": "Vypsaná fixa — Fakin party",
+      "basis": "explicit-credit",
+      "source": "https://www.instagram.com/p/DYXTNEtiB2S/",
+      "note": "Direct campaign publication or Dušan’s own caption explicitly credits @bebcak / Dušan Bebčák. Shared roles remain shared, and the source caption/crew record is retained in the research dossier."
+    },
+    {
+      "slug": "mcdonalds-cheese-saga",
+      "title": "McDonald’s — Cheese Saga",
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/C8UmP9cNWK3/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    },
+    {
+      "slug": "adidas-you-got-this",
+      "title": "adidas — You Got This",
+      "basis": "explicit-credit",
+      "source": "https://vimeo.com/1088383230",
+      "note": "Exact director/producer campaign credits explicitly name Dušan Bebčák for costume design."
+    },
+    {
+      "slug": "komercni-banka",
+      "title": "Komerční banka — Eva Adamczyková",
+      "basis": "explicit-credit",
+      "source": "https://vimeo.com/1020676248",
+      "note": "Exact director/producer campaign credits explicitly name Dušan Bebčák for costume design."
+    },
+    {
+      "slug": "rohlik-mothers",
+      "title": "Rohlík — Mothers",
+      "basis": "explicit-credit",
+      "source": "https://www.instagram.com/p/DCCz2MCRSd2/",
+      "note": "Direct campaign publication or Dušan’s own caption explicitly credits @bebcak / Dušan Bebčák. Shared roles remain shared, and the source caption/crew record is retained in the research dossier."
+    },
+    {
+      "slug": "slovenska-sporitelna",
+      "title": "Slovenská sporiteľňa — Everest",
+      "basis": "explicit-credit",
+      "source": "https://www.instagram.com/p/DFh6Sg1smBS/",
+      "note": "Direct campaign publication or Dušan’s own caption explicitly credits @bebcak / Dušan Bebčák. Shared roles remain shared, and the source caption/crew record is retained in the research dossier."
+    },
+    {
+      "slug": "budvar-33",
+      "title": "Budvar 33",
+      "basis": "explicit-credit",
+      "source": "https://www.instagram.com/p/Dc4Dh7QtqiD/",
+      "note": "Direct campaign publication or Dušan’s own caption explicitly credits @bebcak / Dušan Bebčák. Shared roles remain shared, and the source caption/crew record is retained in the research dossier."
+    },
+    {
+      "slug": "post-bellum-mother",
+      "title": "Post Bellum — Mother",
+      "basis": "explicit-credit",
+      "source": "https://vimeo.com/912061653",
+      "note": "Exact primary campaign credits explicitly name Dušan Bebčák for the wardrobe/styling role recorded in this project’s facts."
+    },
+    {
+      "slug": "national-museum",
+      "title": "Národní muzeum — Nové expozice",
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/C8UWyawtXuq/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    },
+    {
+      "slug": "lego-friends",
+      "title": "LEGO Friends — Heartlake City",
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/DJD5173MM7i/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    },
+    {
+      "slug": "engelmuller-drive-to-win",
+      "title": "Engelmüller — Drive to Win",
+      "basis": "explicit-credit",
+      "source": "https://vimeo.com/396010194",
+      "note": "Exact director/producer campaign credits explicitly name Dušan Bebčák for costume design."
+    },
+    {
+      "slug": "czech-technical-university",
+      "title": "ČVUT — Science across generations",
+      "basis": "explicit-credit",
+      "source": "https://www.creativeembassy.net/wolfberg-cvut",
+      "note": "Exact primary campaign credits explicitly name Dušan Bebčák for the wardrobe/styling role recorded in this project’s facts."
+    },
+    {
+      "slug": "bata-all-in-two",
+      "title": "Baťa — All in two",
+      "basis": "explicit-credit",
+      "source": "https://vimeo.com/277521929",
+      "note": "Exact director/producer campaign credits explicitly name Dušan Bebčák for costume design."
+    },
+    {
+      "slug": "billa-masterchef",
+      "title": "BILLA — MasterChef",
+      "basis": "explicit-credit",
+      "source": "https://vimeo.com/797238968",
+      "note": "Exact director/producer campaign credits explicitly name Dušan Bebčák for wardrobe / costumes."
+    },
+    {
+      "slug": "favorit",
+      "title": "Favorit",
+      "basis": "explicit-credit",
+      "source": "https://vimeo.com/268355869",
+      "note": "Exact director/producer campaign credits explicitly name Dušan Bebčák for wardrobe."
+    },
+    {
+      "slug": "rossmann",
+      "title": "ROSSMANN",
+      "basis": "explicit-credit",
+      "source": "https://cz.linkedin.com/company/armada-films",
+      "note": "Armada’s exact mother/daughter production publication explicitly credits Stylist Dusan Bebcak and agrees with Dušan’s Novák & Nguyen / Filip Hájek caption. The shared wardrobe entry is separately corroborated by the matched professional fitting publication. Not the earlier Mugshots ROSSMANN film, which has different stylists."
+    },
+    {
+      "slug": "vitana-gorilovacka",
+      "title": "Vitana — Gorilovačka",
+      "basis": "explicit-credit",
+      "source": "https://vimeo.com/540684470",
+      "note": "Exact director/producer campaign credits explicitly name Dušan Bebčák for costume design."
+    },
+    {
+      "slug": "skoda-130-let",
+      "title": "Škoda — 130 let",
+      "basis": "explicit-credit",
+      "source": "https://www.mugshots.cz/",
+      "note": "Exact director/producer campaign credits explicitly name Dušan Bebčák for styling."
+    },
+    {
+      "slug": "tmobile-magenta-tv",
+      "title": "T-Mobile — Magenta TV: Crime Story",
+      "basis": "explicit-credit",
+      "source": "https://www.instagram.com/p/Dc4Ek6WSHlF/",
+      "note": "Direct campaign publication or Dušan’s own caption explicitly credits @bebcak / Dušan Bebčák. Shared roles remain shared, and the source caption/crew record is retained in the research dossier."
+    },
+    {
+      "slug": "tmobile-magenta-tv-netflix",
+      "title": "T-Mobile — Magenta TV + Netflix",
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/DQKuox1jGWt/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    },
+    {
+      "slug": "vodafone-youth",
+      "title": "Vodafone — Unlimited Honesty",
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/C8T3ZOJtsUl/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    },
+    {
+      "slug": "loreal-men-expert",
+      "title": "L’Oréal Men Expert — Hydra Energetic",
+      "basis": "explicit-credit",
+      "source": "https://www.instagram.com/p/DUoPG4EEp4z/",
+      "note": "Direct campaign publication or Dušan’s own caption explicitly credits @bebcak / Dušan Bebčák. Shared roles remain shared, and the source caption/crew record is retained in the research dossier."
+    },
+    {
+      "slug": "mbank",
+      "title": "mBank — Father & son",
+      "basis": "explicit-credit",
+      "source": "https://www.instagram.com/boogiefilms_prague/reel/DZKAr3nMbjq/",
+      "note": "Direct campaign publication or Dušan’s own caption explicitly credits @bebcak / Dušan Bebčák. Shared roles remain shared, and the source caption/crew record is retained in the research dossier."
+    },
+    {
+      "slug": "pilsner-taste-worth-protecting",
+      "title": "Pilsner Urquell — Taste Worth Protecting",
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/C8UV-S1N_eq/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    },
+    {
+      "slug": "orange",
+      "title": "Orange — Hockey generations",
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/C8ljbbFNNWD/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    },
+    {
+      "slug": "leffe",
+      "title": "Leffe — Monks & armour",
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/C8UY_Dctrd9/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    },
+    {
+      "slug": "talkmore-duedekning",
+      "title": "Talkmore — Duedekning",
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/DCT3S7tMzxC/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    },
+    {
+      "slug": "eon",
+      "title": "E.ON — It’s on us",
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/DQd4pgojHgA/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    },
+    {
+      "slug": "garnier",
+      "title": "Garnier — Crazy decisions",
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/C8UVf4mtukg/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    },
+    {
+      "slug": "invega",
+      "title": "INVEGA",
+      "basis": "explicit-credit",
+      "source": "https://www.instagram.com/p/DQKsAeEDOHi/",
+      "note": "Direct campaign publication or Dušan’s own caption explicitly credits @bebcak / Dušan Bebčák. Shared roles remain shared, and the source caption/crew record is retained in the research dossier."
+    },
+    {
+      "slug": "konto-bariery",
+      "title": "Konto Bariéry",
+      "basis": "explicit-credit",
+      "source": "https://vimeo.com/891619491",
+      "note": "Exact director/producer campaign credits explicitly name Dušan Bebčák for costume design."
+    },
+    {
+      "slug": "mcdonalds-ronald-mcdonald-house",
+      "title": "McDonald’s — Dům Ronalda McDonalda",
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/C8h_7oZtFtv/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    },
+    {
+      "slug": "innogy-domaci-asistence",
+      "title": "innogy — Domácí asistence",
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/C8TzvRXNBoK/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    },
+    {
+      "slug": "telekom",
+      "title": "Telekom — Christmas bookshop",
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/C8TzysvtOur/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    },
+    {
+      "slug": "mbank-maxmilian-turek",
+      "title": "mBank — Colourful wardrobes",
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/C8madAFtC4z/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    },
+    {
+      "slug": "pilsner-urquell",
+      "title": "Pilsner Urquell — At the pub",
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/C8UVrB8tIMe/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    },
+    {
+      "slug": "tropicana-vitality",
+      "title": "Tropicana — Vitality",
+      "basis": "explicit-credit",
+      "source": "https://vimeo.com/272173846",
+      "note": "Exact director/producer campaign credits explicitly name Dušan Bebčák for wardrobe styling."
+    },
+    {
+      "slug": "deeptime",
+      "title": "Deeptime — We Turn Sand Into Sound",
+      "basis": "explicit-credit",
+      "source": "https://www.creativeembassy.net/vacke-deeptime",
+      "note": "Exact director/producer campaign credits explicitly name Dušan Bebčák for costume design."
+    },
+    {
+      "slug": "bitmarkets",
+      "title": "BITmarkets — Investor stories",
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/C8UVQNPt85_/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    },
+    {
+      "slug": "lego-ninjago",
+      "title": "LEGO NINJAGO — Gift Like a Ninja",
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/C8UezzXNHd1/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    },
+    {
+      "slug": "bolito-one-damn-photo",
+      "title": "Vagonáři — One Damn Photo",
+      "basis": "explicit-credit",
+      "source": "https://vimeo.com/238833581",
+      "note": "Exact director/producer campaign credits explicitly name Dušan Bebčák for costume design."
+    },
+    {
+      "slug": "bolito",
+      "title": "Bolíto — 70 °C",
+      "basis": "explicit-credit",
+      "source": "https://vimeo.com/466122798",
+      "note": "Exact director/producer campaign credits explicitly name Dušan Bebčák for costume design."
+    },
+    {
+      "slug": "skoda-split-screen",
+      "title": "Škoda Superb — Split-screen campaign",
+      "basis": "explicit-credit",
+      "source": "https://www.instagram.com/p/DbJJC7pGubh/",
+      "note": "Direct campaign publication or Dušan’s own caption explicitly credits @bebcak / Dušan Bebčák. Shared roles remain shared, and the source caption/crew record is retained in the research dossier."
+    },
+    {
+      "slug": "skoda-social-stories",
+      "title": "Škoda — Social stories",
+      "basis": "explicit-credit",
+      "source": "https://www.instagram.com/p/DYfX4ByGmOi/",
+      "note": "Direct campaign publication or Dušan’s own caption explicitly credits @bebcak / Dušan Bebčák. Shared roles remain shared, and the source caption/crew record is retained in the research dossier."
+    },
+    {
+      "slug": "raiffeisen-wardrobe",
+      "title": "Raiffeisen — Wardrobe fittings",
+      "basis": "explicit-credit",
+      "source": "https://www.instagram.com/p/DQc4eNJjIJ5/",
+      "note": "Direct campaign publication or Dušan’s own caption explicitly credits @bebcak / Dušan Bebčák. Shared roles remain shared, and the source caption/crew record is retained in the research dossier."
+    },
+    {
+      "slug": "eon-wardrobe",
+      "title": "E.ON — Wardrobe fittings",
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/DQd4pgojHgA/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    },
+    {
+      "slug": "period-fittings",
+      "title": "Period wardrobe",
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/DRzoiZMDLoM/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    },
+    {
+      "slug": "armour-fittings",
+      "title": "Armour workshop",
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/DFlPHEJMUbB/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    },
+    {
+      "slug": "purple-and-gold-character",
+      "title": "Purple and gold costume",
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/C8lmaBTtkQv/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    },
+    {
+      "slug": "blue-haired-armour",
+      "title": "Blue-haired character costume",
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/C8lkOq9Nrts/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    },
+    {
+      "slug": "gold-and-white-armour",
+      "title": "Gold and white armour",
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/C8lkMZzNOy9/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    },
+    {
+      "slug": "wardrobe-fittings",
+      "title": "Colour studies & fittings",
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/DRvRoeLDIEG/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    },
+    {
+      "slug": "everyday-fittings",
+      "title": "Everyday wardrobe",
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/DIajKOQCqmR/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    },
+    {
+      "slug": "youth-wardrobe",
+      "title": "Youth wardrobe",
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/C8T3SIsN6TJ/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    }
+  ],
+  "withheld": [
+    "animal-costumes",
+    "utility-costume",
+    "dark-costumes"
+  ]
+}

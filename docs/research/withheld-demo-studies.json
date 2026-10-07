@@ -1,0 +1,133 @@
+{
+  "reviewed": "2026-10-07",
+  "reason": "These studies appeared only on an unverified third-party demo. No matching publication on @bebcak or explicit professional credit was established. Retained as research references and withheld from the public portfolio.",
+  "projects": [
+    {
+      "id": "animal-costumes",
+      "slug": "animal-costumes",
+      "title": "Animal costume studies",
+      "thumbnail": {
+        "src": "/images/work/animal-costumes/cover.webp",
+        "smallSrc": "/images/work/animal-costumes/cover-480.webp",
+        "smallWidth": 480,
+        "width": 1000,
+        "height": 500,
+        "alt": "Animal costumes & character studies"
+      },
+      "images": [
+        {
+          "src": "/images/work/animal-costumes/image-1.webp",
+          "smallSrc": "/images/work/animal-costumes/image-1-480.webp",
+          "smallWidth": 480,
+          "width": 1024,
+          "height": 512,
+          "alt": "Animal costumes & character studies — wardrobe photograph 1",
+          "evidence": {
+            "basis": "unassigned",
+            "note": "No advert attached; no campaign association inferred."
+          }
+        },
+        {
+          "src": "/images/work/animal-costumes/image-2.webp",
+          "smallSrc": "/images/work/animal-costumes/image-2-480.webp",
+          "smallWidth": 480,
+          "width": 873,
+          "height": 610,
+          "alt": "Animal costumes & character studies — wardrobe photograph 2",
+          "evidence": {
+            "basis": "unassigned",
+            "note": "No advert attached; no campaign association inferred."
+          }
+        }
+      ],
+      "videos": [],
+      "credit": "",
+      "facts": [],
+      "sources": [
+        {
+          "label": "Project source",
+          "url": "https://createwebs.eu/demo-dusan-bebcak/"
+        }
+      ],
+      "portrait": false,
+      "scope": "study"
+    },
+    {
+      "id": "utility-costume",
+      "slug": "utility-costume",
+      "title": "Utility costume study",
+      "thumbnail": {
+        "src": "/images/work/utility-costume/cover.webp",
+        "smallSrc": "/images/work/utility-costume/cover-480.webp",
+        "smallWidth": 480,
+        "width": 962,
+        "height": 628,
+        "alt": "Utility costume & character reference"
+      },
+      "images": [
+        {
+          "src": "/images/work/utility-costume/image-1.webp",
+          "smallSrc": "/images/work/utility-costume/image-1-480.webp",
+          "smallWidth": 480,
+          "width": 983,
+          "height": 640,
+          "alt": "Utility costume & character reference — wardrobe photograph 1",
+          "evidence": {
+            "basis": "unassigned",
+            "note": "No advert attached; no campaign association inferred."
+          }
+        }
+      ],
+      "videos": [],
+      "credit": "",
+      "facts": [],
+      "sources": [
+        {
+          "label": "Project source",
+          "url": "https://createwebs.eu/demo-dusan-bebcak/"
+        }
+      ],
+      "portrait": false,
+      "scope": "study"
+    },
+    {
+      "id": "dark-costumes",
+      "slug": "dark-costumes",
+      "title": "Dark character studies",
+      "thumbnail": {
+        "src": "/images/work/dark-costumes/cover.webp",
+        "smallSrc": "/images/work/dark-costumes/cover-480.webp",
+        "smallWidth": 480,
+        "width": 836,
+        "height": 695,
+        "alt": "Dark character costumes"
+      },
+      "images": [
+        {
+          "src": "/images/work/dark-costumes/image-1.webp",
+          "smallSrc": "/images/work/dark-costumes/image-1-480.webp",
+          "smallWidth": 480,
+          "width": 852,
+          "height": 709,
+          "alt": "Dark character costumes — wardrobe photograph 1",
+          "evidence": {
+            "basis": "unassigned",
+            "note": "No advert attached; no campaign association inferred."
+          }
+        }
+      ],
+      "videos": [],
+      "credit": "",
+      "facts": [],
+      "sources": [
+        {
+          "label": "Project source",
+          "url": "https://createwebs.eu/demo-dusan-bebcak/"
+        }
+      ],
+      "portrait": false,
+      "scope": "study"
+    }
+  ],
+  "media_location": "assets/withheld-demo/<slug>/; moved out of public/images/work to prevent publishing unverified demo material."
+}

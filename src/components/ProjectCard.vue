@@ -1,44 +1,13 @@
 <script setup lang="ts">
 import type { Project } from '../data/projects'
 import MotionImage from './MotionImage.vue'
-
-defineProps<{
-  project: Project
-  priority?: boolean
-}>()
+defineProps<{ project: Project; priority?: boolean }>()
 </script>
-
 <template>
-  <router-link
-    :to="{ name: 'project', params: { slug: project.slug }, query: { view: project.role } }"
-    class="group block"
-    :aria-label="`View project: ${project.title}`"
-  >
-    <div class="relative aspect-[3/4] overflow-hidden bg-surface">
-      <MotionImage
-        :src="project.thumbnail"
-        :alt="project.title"
-        class="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.035]"
-        :loading="priority ? 'eager' : 'lazy'"
-        :fetchpriority="priority ? 'high' : undefined"
-      />
-
-      <div class="absolute inset-0 flex items-end bg-gradient-to-t from-black/80 via-black/10 to-transparent p-5">
-        <div class="translate-y-2 transition-transform duration-300 group-hover:translate-y-0">
-          <h3 class="mb-2 text-lg font-light tracking-wide text-primary">
-            {{ project.title }}
-          </h3>
-          <div v-if="project.cardMeta?.length" class="space-y-1">
-            <p
-              v-for="item in project.cardMeta"
-              :key="item"
-              class="text-sm font-light text-secondary"
-            >
-              {{ item }}
-            </p>
-          </div>
-        </div>
-      </div>
+  <router-link :to="{ name: 'project', params: { slug: project.slug } }" class="project-card" :aria-label="`View project: ${project.title}`">
+    <div class="project-card__image" :style="{ aspectRatio: `${project.thumbnail.width} / ${project.thumbnail.height}`, maxWidth: `${project.thumbnail.width}px` }">
+      <MotionImage :src="project.thumbnail.src" :srcset="project.thumbnail.smallWidth < project.thumbnail.width ? `${project.thumbnail.smallSrc} ${project.thumbnail.smallWidth}w, ${project.thumbnail.src} ${project.thumbnail.width}w` : undefined" sizes="(max-width: 639px) calc(100vw - 32px), (max-width: 959px) 48vw, (min-width: 1600px) 393px, 26vw" :width="project.thumbnail.width" :height="project.thumbnail.height" :alt="project.thumbnail.alt" class="h-full w-full object-contain" :loading="priority ? 'eager' : 'lazy'" :fetchpriority="priority ? 'high' : undefined" />
     </div>
+    <div class="project-card__caption"><h2>{{ project.title }}</h2></div>
   </router-link>
 </template>
