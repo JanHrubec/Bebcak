@@ -1,0 +1,203 @@
+{
+  "reviewed": "2026-10-11",
+  "added_fields": 25,
+  "records": [
+    {
+      "project": "lego-hera-hunter",
+      "source": "https://www.cameo.dk/commercials",
+      "added": [
+        {
+          "label": "Cinematography",
+          "value": "Kasper Wind"
+        },
+        {
+          "label": "Editor",
+          "value": "Ole Krogstad"
+        }
+      ],
+      "evidence": "CAMEO’s named Hera and Hunter entry matches director Peter Harton and TheGreatEscape. Producer names containing an apparent typo were omitted."
+    },
+    {
+      "project": "talkmore-nokken",
+      "source": "https://www.kreativtforum.no/arbeider/talkmore-lokker-med-kjent-eventyrkarakter",
+      "added": [
+        {
+          "label": "Agency",
+          "value": "POL"
+        },
+        {
+          "label": "Cinematography",
+          "value": "Jon Gaute Espevold"
+        },
+        {
+          "label": "Producer",
+          "value": "Rut Solli"
+        }
+      ],
+      "evidence": "POL’s exact Nøkken campaign submission names the film crew. Norwegian Foto in the Einar Film crew list refers to film photography; no independent still photographer is inferred."
+    },
+    {
+      "project": "mcdonalds-cheese-saga",
+      "source": "https://www.ivanardura.com/project/mcdonalds-cheese-saga",
+      "added": [
+        {
+          "label": "Agency",
+          "value": "DDB Prague"
+        },
+        {
+          "label": "Photography",
+          "value": "Pavel Hejný"
+        }
+      ],
+      "evidence": "The campaign creative’s primary portfolio names the exact Cheese Saga 2023 ball-pit campaign, Marek Partyš and Bistro Films. Gallery film frames are not relabelled as the photographer’s photographs."
+    },
+    {
+      "project": "orange",
+      "source": "https://strategie.hnonline.sk/news/marketing/96144391-orange-prichadza-s-novou-hokejovou-kampanou-s-hviezdou-marianom-hossom",
+      "added": [
+        {
+          "label": "Agency",
+          "value": "MADE BY VACULIK"
+        },
+        {
+          "label": "Photography",
+          "value": "Jakub Dohnálek"
+        },
+        {
+          "label": "Featuring",
+          "value": "Marián Hossa"
+        }
+      ],
+      "evidence": "Campaign announcement and full crew card for the exact April 2024 hockey campaign, already identified in the earlier Omediach source and the matching Instagram publication."
+    },
+    {
+      "project": "vitana-gorilovacka",
+      "source": "https://vimeo.com/540684470",
+      "added": [
+        {
+          "label": "Producers",
+          "value": "Petr Oplatka / Matouš Heger"
+        }
+      ],
+      "evidence": "Exact public film metadata re-fetched on 11 October 2026. Film and costume matching were already reviewed; additional fields are explicit in the refreshed crew list."
+    },
+    {
+      "project": "bata-all-in-two",
+      "source": "https://vimeo.com/277521929",
+      "added": [
+        {
+          "label": "Executive producer",
+          "value": "Petr Oplatka"
+        }
+      ],
+      "evidence": "Exact public film metadata re-fetched on 11 October 2026. Film and costume matching were already reviewed; additional fields are explicit in the refreshed crew list."
+    },
+    {
+      "project": "billa-masterchef",
+      "source": "https://vimeo.com/797238968",
+      "added": [
+        {
+          "label": "Producer",
+          "value": "Alžběta Šerclová"
+        },
+        {
+          "label": "Production design",
+          "value": "Nina Feriancová"
+        }
+      ],
+      "evidence": "Exact public film metadata re-fetched on 11 October 2026. Film and costume matching were already reviewed; additional fields are explicit in the refreshed crew list."
+    },
+    {
+      "project": "favorit",
+      "source": "https://vimeo.com/268355869",
+      "added": [
+        {
+          "label": "Producer",
+          "value": "Petr Oplatka"
+        }
+      ],
+      "evidence": "Exact public film metadata re-fetched on 11 October 2026. Film and costume matching were already reviewed; additional fields are explicit in the refreshed crew list."
+    },
+    {
+      "project": "engelmuller-drive-to-win",
+      "source": "https://vimeo.com/396010194",
+      "added": [
+        {
+          "label": "Set design",
+          "value": "Mariana Kuchařová"
+        },
+        {
+          "label": "Executive producer",
+          "value": "Petr Oplatka"
+        }
+      ],
+      "evidence": "Exact public film metadata re-fetched on 11 October 2026. Film and costume matching were already reviewed; additional fields are explicit in the refreshed crew list."
+    },
+    {
+      "project": "tropicana-vitality",
+      "source": "https://vimeo.com/272173846",
+      "added": [
+        {
+          "label": "Art direction (Prague)",
+          "value": "Barbara Bencová"
+        },
+        {
+          "label": "Executive producers (Prague)",
+          "value": "Petr Oplatka / Vašek Sládek"
+        }
+      ],
+      "evidence": "Exact public film metadata re-fetched on 11 October 2026. Film and costume matching were already reviewed; additional fields are explicit in the refreshed crew list."
+    },
+    {
+      "project": "adidas-you-got-this",
+      "source": "https://vimeo.com/1088383230",
+      "added": [
+        {
+          "label": "Producers",
+          "value": "Jan Šipan / Lucie Jánová"
+        }
+      ],
+      "evidence": "Exact public film metadata re-fetched on 11 October 2026. Film and costume matching were already reviewed; additional fields are explicit in the refreshed crew list."
+    },
+    {
+      "project": "konto-bariery",
+      "source": "https://vimeo.com/891619491",
+      "added": [
+        {
+          "label": "Executive producer",
+          "value": "Lucie Jánová"
+        },
+        {
+          "label": "Producer",
+          "value": "Jan Šipan"
+        },
+        {
+          "label": "Production design",
+          "value": "Alex Kurel"
+        }
+      ],
+      "evidence": "Exact public film metadata re-fetched on 11 October 2026. Film and costume matching were already reviewed; additional fields are explicit in the refreshed crew list."
+    },
+    {
+      "project": "deeptime",
+      "source": "https://vimeo.com/307295801",
+      "added": [
+        {
+          "label": "Art direction",
+          "value": "Stella Šonková"
+        },
+        {
+          "label": "Executive producers",
+          "value": "Petr Oplatka / Vašek Sládek"
+        }
+      ],
+      "evidence": "Exact public film metadata re-fetched on 11 October 2026. Film and costume matching were already reviewed; additional fields are explicit in the refreshed crew list."
+    }
+  ],
+  "excluded": [
+    "Telekom Questions that matter connect us more: 2023 family-dinner film cannot establish credits for the existing Christmas bookshop clip.",
+    "LEGO Friends Forest: different Bethan Seller campaign; its cinematographer was not assigned to Heartlake City.",
+    "Leffe Always Welcome: no conclusive matching crew evidence for the existing monk/armour publication.",
+    "Uncaptioned fitting collections: no client, director or costume role inferred from a visual resemblance."
+  ]
+}

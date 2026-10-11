@@ -274,3 +274,12 @@ The [final website pass](final-website-pass-2026-10-07.md) supersedes prior coun
 ## Owner-supplied contact details — 7 October 2026
 
 The website owner directly supplied **dusan@bebcak.com** and **+420 774 704 716** for publication. These supersede the earlier unverified-demo contact limitation. Both are implemented as clickable professional contact links; no contact value was inferred from a same-name record.
+
+
+## Gallery and credits pass — 11 October 2026
+
+The [gallery and curation review](gallery-and-curation-pass-2026-10-11.md) records the responsive photo layout, project ordering and revised lead previews. [25 added credit fields](additional-credits-2026-10-11.json) across 13 exact campaigns are supported by public sources; roles for unidentified fittings remain unassigned.
+
+### Final source and gallery review — 11 October 2026
+
+See [Raiffeisen / E.ON source tracing](raiffeisen-eon-source-review-2026-10-11.md) and [gallery and curation review](gallery-and-curation-pass-2026-10-11.md). E.ON is consolidated with three official HD campaign films. Raiffeisen shop/workshop retains verified caption credits without an unmatched film. AFK Arena’s Grezhul and Lucius are combined; the armour-workshop entry is removed.

@@ -1,8 +1,28 @@
 <script setup lang="ts">
-import { computed, onBeforeUnmount, ref } from 'vue'
-import MotionImage from './MotionImage.vue'
+import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
+import PortfolioPhoto from './PortfolioPhoto.vue'
 import type { PortfolioImage } from '../data/projects'
+import { galleryRows, imageDimensions } from '../utils/galleryLayout'
 const props = defineProps<{ images: PortfolioImage[] }>()
+const gallery = ref<HTMLDivElement>()
+const availableWidth = ref(960)
+const rows = computed(() => galleryRows(props.images, availableWidth.value).map(row => ({
+  ...row,
+  photos: row.indexes.map(index => {
+    const photo = props.images[index]!
+    const dimensions = imageDimensions(photo)
+    return { index, photo, width: row.height * dimensions.width / dimensions.height }
+  }),
+})))
+let observer: ResizeObserver | undefined
+onMounted(() => {
+  if (!gallery.value) return
+  availableWidth.value = gallery.value.clientWidth
+  observer = new ResizeObserver(([entry]) => {
+    if (entry) availableWidth.value = entry.contentRect.width
+  })
+  observer.observe(gallery.value)
+})
 const dialog = ref<HTMLDialogElement>()
 const selected = ref(0)
 const image = computed(() => props.images[selected.value])
@@ -27,16 +47,18 @@ const keydown = (event: KeyboardEvent) => {
     move(event.key === 'ArrowRight' ? 1 : -1)
   }
 }
-onBeforeUnmount(() => { if (isOpen.value) { dialog.value?.close(); closed() } })
+onBeforeUnmount(() => { observer?.disconnect(); if (isOpen.value) { dialog.value?.close(); closed() } })
 </script>
 <template>
-  <div class="project-gallery" :class="{ 'project-gallery--single': images.length === 1 }">
-    <figure v-for="(photo, index) in images" :key="photo.src" class="project-gallery__item" :class="{ 'project-gallery__item--wide': photo.width / photo.height > 2.25 || (index === 0 && photo.width > photo.height) }" :style="{ maxWidth: `${photo.width}px` }">
-      <button type="button" class="gallery-open" :aria-label="`Enlarge: ${photo.alt}`" @click="open(index)">
-        <MotionImage :src="photo.src" :srcset="photo.smallWidth < photo.width ? `${photo.smallSrc} ${photo.smallWidth}w, ${photo.src} ${photo.width}w` : undefined" :sizes="photo.width / photo.height > 2.25 || (index === 0 && photo.width > photo.height) || images.length === 1 ? `(min-width: 1600px) ${Math.min(photo.width, images.length === 1 ? 760 : 1200)}px, (min-width: 960px) 75vw, calc(100vw - 32px)` : '(max-width: 639px) calc(100vw - 32px), (min-width: 1600px) 592px, (min-width: 960px) 38vw, 48vw'" :width="photo.width" :height="photo.height" :alt="photo.alt" loading="lazy" />
-        <span class="gallery-enlarge" aria-hidden="true">↗</span>
-      </button>
-    </figure>
+  <div ref="gallery" class="project-gallery">
+    <div v-for="row in rows" :key="row.indexes[0]" class="project-gallery__row" :style="{ width: `${row.width}px` }">
+      <figure v-for="{ index, photo, width } in row.photos" :key="`${photo.src}-${index}`" class="project-gallery__item" :style="{ width: `${width}px` }">
+        <button type="button" class="gallery-open" :aria-label="`Enlarge: ${photo.alt}`" @click="open(index)">
+          <PortfolioPhoto :photo="photo" :sizes="`${Math.ceil(width)}px`" loading="lazy" />
+          <span class="gallery-enlarge" aria-hidden="true">↗</span>
+        </button>
+      </figure>
+    </div>
   </div>
   <dialog ref="dialog" class="image-viewer" aria-label="Costume photograph" @close="closed" @keydown="keydown">
     <div class="viewer-toolbar">
@@ -44,7 +66,7 @@ onBeforeUnmount(() => { if (isOpen.value) { dialog.value?.close(); closed() } })
       <button type="button" class="viewer-close" aria-label="Close photograph" @click="close">Close <span aria-hidden="true">×</span></button>
     </div>
     <div class="viewer-scroll">
-      <img v-if="image && isOpen" :src="image.src" :alt="image.alt" :width="image.width" :height="image.height" />
+      <PortfolioPhoto v-if="image && isOpen" :photo="image" loading="eager" />
     </div>
     <div class="viewer-footer">
       <button type="button" aria-label="Previous photograph" :disabled="images.length === 1" @click="move(-1)">←</button>

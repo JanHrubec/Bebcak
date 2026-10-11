@@ -4,6 +4,7 @@ import { resolve } from 'node:path'
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { projects, getProjectBySlug, getAdjacentProjects } from '../src/data/projects.ts'
+import { galleryRows } from '../src/utils/galleryLayout.ts'
 import { getVideoUrl, hostedVideos } from '../src/data/media.ts'
 const exists = path => path.startsWith('/') && existsSync(resolve('public', path.slice(1)))
 test('the real collection has unique routes, source references and unified navigation', () => {
@@ -27,9 +28,13 @@ test('responsive photographs exist and films use valid local or public sources',
       assert.ok(exists(image.smallSrc), image.smallSrc)
       assert.ok(image.width > 0 && image.height > 0 && image.smallWidth <= image.width)
       assert.ok(image.alt)
+      if (image.crop) {
+        assert.ok(image.crop.x >= 0 && image.crop.y >= 0 && image.crop.width > 0 && image.crop.height > 0)
+        assert.ok(image.crop.x + image.crop.width <= image.width && image.crop.y + image.crop.height <= image.height)
+      }
     }
     assert.ok(project.images.length, `${project.title} needs photographs or clearly identified film stills`)
-    const hashes = project.images.map(image => createHash('sha256').update(readFileSync(resolve('public', image.src.slice(1)))).digest('hex'))
+    const hashes = project.images.map(image => createHash('sha256').update(readFileSync(resolve('public', image.src.slice(1)))).digest('hex') + JSON.stringify(image.crop ?? null))
     assert.equal(new Set(hashes).size, hashes.length, `${project.title} repeats a gallery image`)
     for (const video of project.videos) {
       assert.equal(new URL(video.url).protocol, 'https:')
@@ -61,7 +66,8 @@ test('reviewed end cards and costume matches retain the corrected campaign ident
   assert.equal(getProjectBySlug('tmobile-magenta-tv-netflix').title, 'T-Mobile — Magenta TV + Netflix')
   assert.equal(getProjectBySlug('talkmore-duedekning').title, 'Talkmore — Duedekning')
   assert.ok(getProjectBySlug('talkmore-duedekning').images.some(i => i.src === '/images/work/woodland-costumes/image-1.webp' && i.evidence.basis === 'visual-match'))
-  assert.equal(getProjectBySlug('armour-fittings').images.length, 1, 'different green workshop armour stays unassigned')
+  assert.equal(getProjectBySlug('armour-fittings'), undefined, 'workshop armour removed at the owner’s request')
+  assert.equal(getProjectBySlug('afk-arena-grezhul-lucius').images.length, 4)
   for (const slug of ['proud-zero-gravity', 'lego-hera-hunter', 'talkmore-nokken', 'post-bellum-mother', 'national-museum', 'czech-technical-university', 'lego-friends', 'adidas-you-got-this', 'komercni-banka', 'talkmore-duedekning', 'tmobile-magenta-tv-netflix', 'tmobile-magenta-tv', 'slovenska-sporitelna', 'innogy-domaci-asistence']) {
     const project = getProjectBySlug(slug)
     assert.equal(project.videos[0].height, 1080, `${project.title} must retain its verified HD film`)
@@ -81,8 +87,10 @@ test('photographs attached to adverts have reviewed evidence for that exact film
       } else assert.equal(image.evidence.basis, 'unassigned')
     }
   }
-  assert.equal(getProjectBySlug('eon').images.filter(i => i.evidence.basis !== 'film-frame').length, 1)
-  assert.equal(getProjectBySlug('eon-wardrobe').videos.length, 0)
+  assert.equal(getProjectBySlug('eon').images.filter(i => i.evidence.basis !== 'film-frame').length, 4)
+  assert.equal(getProjectBySlug('eon').videos.length, 3)
+  assert.ok(getProjectBySlug('eon').videos.every(v => v.width === 1920 && v.height === 1080))
+  assert.equal(getProjectBySlug('eon-wardrobe'), undefined)
   assert.equal(getProjectBySlug('wardrobe-fittings').videos.length, 0)
 })
 test('unidentified costume studies preserve uncertainty instead of inventing credits', () => {
@@ -107,4 +115,21 @@ test('every published collection has Dušan’s own publication or an explicit p
     }
   }
   for (const slug of ['animal-costumes', 'utility-costume', 'dark-costumes']) assert.equal(getProjectBySlug(slug), undefined, 'demo-only studies must remain unpublished')
+})
+
+test('gallery rows retain every photograph in order, fit the container and preserve original resolution', () => {
+  for (const project of projects) {
+    for (const width of [320, 358, 600, 704, 960, 1051, 1200]) {
+      const rows = galleryRows(project.images, width)
+      assert.deepEqual(rows.flatMap(row => row.indexes), project.images.map((_, i) => i))
+      for (const row of rows) {
+        assert.ok(row.width <= width + .001, `${project.slug} overflows at ${width}px`)
+        assert.ok(row.height > 0 && row.height <= 640)
+        for (const index of row.indexes) assert.ok(row.height <= project.images[index].height)
+        if (width < 600) assert.equal(row.indexes.length, 1)
+      }
+    }
+  }
+  const landscapes = Array.from({ length: 4 }, () => ({ width: 1920, height: 1080 }))
+  assert.deepEqual(galleryRows(landscapes, 1051).map(row => row.indexes.length), [2, 2])
 })

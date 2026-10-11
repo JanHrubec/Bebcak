@@ -32,6 +32,21 @@
       "source": "/project/mcdonalds-kitchen",
       "destination": "/project/mcdonalds-ronald-mcdonald-house",
       "permanent": true
+    },
+    {
+      "source": "/project/blue-haired-armour",
+      "destination": "/project/afk-arena-grezhul-lucius",
+      "permanent": true
+    },
+    {
+      "source": "/project/gold-and-white-armour",
+      "destination": "/project/afk-arena-grezhul-lucius",
+      "permanent": true
+    },
+    {
+      "source": "/project/eon-wardrobe",
+      "destination": "/project/eon",
+      "permanent": true
     }
   ]
 }

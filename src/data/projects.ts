@@ -1,4 +1,4 @@
-export interface PortfolioImage { src: string; smallSrc: string; smallWidth: number; width: number; height: number; alt: string; evidence?: { basis: 'film-frame' | 'same-publication' | 'visual-match' | 'unassigned'; videoSrc?: string; note: string } }
+export interface PortfolioImage { crop?: { x: number; y: number; width: number; height: number }; src: string; smallSrc: string; smallWidth: number; width: number; height: number; alt: string; evidence?: { basis: 'film-frame' | 'same-publication' | 'visual-match' | 'unassigned'; videoSrc?: string; note: string } }
 export interface ProjectVideo { provider: 'native'; title: string; url: string; width: number; height: number; src: string; poster?: PortfolioImage }
 export interface Project { id: string; slug: string; title: string; thumbnail: PortfolioImage; images: PortfolioImage[]; videos: ProjectVideo[]; credit: string; facts: { label: string; value: string }[]; sources: { label: string; url: string }[]; attribution: { basis: 'explicit-credit' | 'own-portfolio'; source: string; note: string }; portrait: boolean; scope: 'campaign' | 'study' }
 export const projects: Project[] = [
@@ -7,31 +7,19 @@ export const projects: Project[] = [
     "slug": "proud-zero-gravity",
     "title": "Proud — Zero Gravity",
     "thumbnail": {
-      "src": "/images/work/black-and-yellow-suit/image-1.webp",
-      "smallSrc": "/images/work/black-and-yellow-suit/image-1-480.webp",
-      "smallWidth": 391,
-      "width": 1170,
-      "height": 1435,
-      "alt": "Black & yellow jumpsuit — photograph 1",
+      "src": "/images/work/black-and-yellow-suit/hd-costume-3.webp",
+      "smallSrc": "/images/work/black-and-yellow-suit/hd-costume-3-480.webp",
+      "smallWidth": 480,
+      "width": 1920,
+      "height": 1080,
+      "alt": "Proud — Zero Gravity — black, yellow and white flight suit in the cabin, film still",
       "evidence": {
-        "basis": "unassigned",
-        "note": "No advert attached; no campaign association inferred."
+        "basis": "film-frame",
+        "videoSrc": "/videos/proud-zero-gravity-hd.mp4",
+        "note": "Visually reviewed frame at 7.64s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
       }
     },
     "images": [
-      {
-        "src": "/images/work/black-and-yellow-suit/image-1.webp",
-        "smallSrc": "/images/work/black-and-yellow-suit/image-1-480.webp",
-        "smallWidth": 391,
-        "width": 1170,
-        "height": 1435,
-        "alt": "Black & yellow jumpsuit — wardrobe photograph 1",
-        "evidence": {
-          "basis": "visual-match",
-          "videoSrc": "/videos/proud-zero-gravity-hd.mp4",
-          "note": "Dušan’s Proud carousel compared against VCCP’s Zero Gravity TVC: matching black suits, yellow centre zip/upper sleeves/knees and white lower sleeves/legs. Fitting, garment and pattern images are published together with the matching Proud campaign artwork. Agency independently confirms client and campaign name."
-        }
-      },
       {
         "src": "/images/work/black-and-yellow-suit/proud-fitting-higher-resolution.webp",
         "smallSrc": "/images/work/black-and-yellow-suit/proud-fitting-higher-resolution-480.webp",
@@ -65,6 +53,19 @@ export const projects: Project[] = [
         "width": 1305,
         "height": 1600,
         "alt": "Black & yellow jumpsuit — wardrobe photograph 4",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/proud-zero-gravity-hd.mp4",
+          "note": "Dušan’s Proud carousel compared against VCCP’s Zero Gravity TVC: matching black suits, yellow centre zip/upper sleeves/knees and white lower sleeves/legs. Fitting, garment and pattern images are published together with the matching Proud campaign artwork. Agency independently confirms client and campaign name."
+        }
+      },
+      {
+        "src": "/images/work/black-and-yellow-suit/image-1.webp",
+        "smallSrc": "/images/work/black-and-yellow-suit/image-1-480.webp",
+        "smallWidth": 391,
+        "width": 1170,
+        "height": 1435,
+        "alt": "Black & yellow jumpsuit — wardrobe photograph 1",
         "evidence": {
           "basis": "visual-match",
           "videoSrc": "/videos/proud-zero-gravity-hd.mp4",
@@ -321,6 +322,14 @@ export const projects: Project[] = [
       {
         "label": "Production",
         "value": "The Great Escape"
+      },
+      {
+        "label": "Cinematography",
+        "value": "Kasper Wind"
+      },
+      {
+        "label": "Editor",
+        "value": "Ole Krogstad"
       }
     ],
     "sources": [
@@ -335,6 +344,10 @@ export const projects: Project[] = [
       {
         "label": "Verified full film and production source",
         "url": "https://www.armadafilms.cz/works/J289XmsG/"
+      },
+      {
+        "label": "Exact campaign crew credits",
+        "url": "https://www.cameo.dk/commercials"
       }
     ],
     "portrait": true,
@@ -343,115 +356,6 @@ export const projects: Project[] = [
       "basis": "own-portfolio",
       "source": "https://www.instagram.com/p/C8llXDgNFOV/",
       "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
-    }
-  },
-  {
-    "id": "raiffeisen-spooky-vintage-shopping",
-    "slug": "raiffeisen-spooky-vintage-shopping",
-    "title": "Raiffeisen — Spooky Vintage Shopping",
-    "thumbnail": {
-      "src": "/images/work/raiffeisen-spooky-vintage-shopping/image-1.webp",
-      "smallSrc": "/images/work/raiffeisen-spooky-vintage-shopping/image-1-480.webp",
-      "smallWidth": 480,
-      "width": 877,
-      "height": 657,
-      "alt": "Raiffeisen — Spooky Vintage Shopping — photograph 1",
-      "evidence": {
-        "basis": "visual-match",
-        "videoSrc": "/videos/DQKqcPIDGy2.mp4",
-        "note": "Compared with the full film: identical distinctive patterned dresses and burgundy coat on the same staircase/set; grey/yellow striped jumper and dark trousers match the opening character. Yellow alternative dress excluded."
-      }
-    },
-    "images": [
-      {
-        "src": "/images/work/raiffeisen-spooky-vintage-shopping/image-1.webp",
-        "smallSrc": "/images/work/raiffeisen-spooky-vintage-shopping/image-1-480.webp",
-        "smallWidth": 480,
-        "width": 877,
-        "height": 657,
-        "alt": "Raiffeisen — Spooky Vintage Shopping — wardrobe photograph 1",
-        "evidence": {
-          "basis": "visual-match",
-          "videoSrc": "/videos/DQKqcPIDGy2.mp4",
-          "note": "Compared with the full film: identical distinctive patterned dresses and burgundy coat on the same staircase/set; grey/yellow striped jumper and dark trousers match the opening character. Yellow alternative dress excluded."
-        }
-      },
-      {
-        "src": "/images/work/raiffeisen-spooky-vintage-shopping/image-2.webp",
-        "smallSrc": "/images/work/raiffeisen-spooky-vintage-shopping/image-2-480.webp",
-        "smallWidth": 480,
-        "width": 1058,
-        "height": 797,
-        "alt": "Raiffeisen — Spooky Vintage Shopping — wardrobe photograph 2",
-        "evidence": {
-          "basis": "visual-match",
-          "videoSrc": "/videos/DQKqcPIDGy2.mp4",
-          "note": "Compared with the full film: identical distinctive patterned dresses and burgundy coat on the same staircase/set; grey/yellow striped jumper and dark trousers match the opening character. Yellow alternative dress excluded."
-        }
-      },
-      {
-        "src": "/images/work/raiffeisen-spooky-vintage-shopping/image-4.webp",
-        "smallSrc": "/images/work/raiffeisen-spooky-vintage-shopping/image-4-480.webp",
-        "smallWidth": 480,
-        "width": 1170,
-        "height": 881,
-        "alt": "Raiffeisen — Spooky Vintage Shopping — wardrobe photograph 4",
-        "evidence": {
-          "basis": "visual-match",
-          "videoSrc": "/videos/DQKqcPIDGy2.mp4",
-          "note": "Compared with the full film: identical distinctive patterned dresses and burgundy coat on the same staircase/set; grey/yellow striped jumper and dark trousers match the opening character. Yellow alternative dress excluded."
-        }
-      }
-    ],
-    "videos": [
-      {
-        "provider": "native",
-        "title": "Raiffeisen — Spooky Vintage Shopping",
-        "url": "https://www.instagram.com/p/DQKqcPIDGy2/",
-        "src": "/videos/DQKqcPIDGy2.mp4",
-        "width": 1048,
-        "height": 718
-      }
-    ],
-    "credit": "Wardrobe styling",
-    "facts": [
-      {
-        "label": "Director",
-        "value": "Maca Rubio"
-      },
-      {
-        "label": "Production",
-        "value": "Stink Prague"
-      },
-      {
-        "label": "Cinematography",
-        "value": "Santi Cantillo"
-      },
-      {
-        "label": "Wardrobe",
-        "value": "Dušan Bebčák / @u_nik_orn"
-      },
-      {
-        "label": "Agency",
-        "value": "LOCCO"
-      }
-    ],
-    "sources": [
-      {
-        "label": "Instagram",
-        "url": "https://www.instagram.com/p/DQKqcPIDGy2/"
-      },
-      {
-        "label": "Director’s portfolio",
-        "url": "https://www.kryptonfilmsinternational.com/director/maca_rubio"
-      }
-    ],
-    "portrait": false,
-    "scope": "campaign",
-    "attribution": {
-      "basis": "explicit-credit",
-      "source": "https://www.instagram.com/p/DQKqcPIDGy2/",
-      "note": "Direct campaign publication or Dušan’s own caption explicitly credits @bebcak / Dušan Bebčák. Shared roles remain shared, and the source caption/crew record is retained in the research dossier."
     }
   },
   {
@@ -570,6 +474,18 @@ export const projects: Project[] = [
       {
         "label": "Production",
         "value": "Einar Film / Armada Films"
+      },
+      {
+        "label": "Agency",
+        "value": "POL"
+      },
+      {
+        "label": "Cinematography",
+        "value": "Jon Gaute Espevold"
+      },
+      {
+        "label": "Producer",
+        "value": "Rut Solli"
       }
     ],
     "sources": [
@@ -580,6 +496,10 @@ export const projects: Project[] = [
       {
         "label": "Verified full film and production source",
         "url": "https://www.armadafilms.cz/works/wxzhoPh1/"
+      },
+      {
+        "label": "Exact campaign crew credits",
+        "url": "https://www.kreativtforum.no/arbeider/talkmore-lokker-med-kjent-eventyrkarakter"
       }
     ],
     "portrait": true,
@@ -591,1318 +511,20 @@ export const projects: Project[] = [
     }
   },
   {
-    "id": "vypsana-fixa-fakin-party",
-    "slug": "vypsana-fixa-fakin-party",
-    "title": "Vypsaná fixa — Fakin party",
-    "thumbnail": {
-      "src": "/images/work/vypsana-fixa-fakin-party/published-39.webp",
-      "smallSrc": "/images/work/vypsana-fixa-fakin-party/published-39-480.webp",
-      "smallWidth": 480,
-      "width": 2400,
-      "height": 1599,
-      "alt": "vypsana fixa fakin party — published campaign photograph",
-      "evidence": {
-        "basis": "visual-match",
-        "videoSrc": "/videos/fakin-party.mp4",
-        "note": "Exact costumes and performers compared with the full Fakin party film from the credited colourist’s portfolio: blue shirt/red sleeveless knitwear, navy suit, party set and ensemble outfits. Publication explicitly credits Dušan Bebčák / @bebcak for wardrobe."
-      }
-    },
-    "images": [
-      {
-        "src": "/images/work/vypsana-fixa-fakin-party/published-39.webp",
-        "smallSrc": "/images/work/vypsana-fixa-fakin-party/published-39-480.webp",
-        "smallWidth": 480,
-        "width": 2400,
-        "height": 1599,
-        "alt": "Vypsaná fixa — Fakin party — published campaign image 1",
-        "evidence": {
-          "basis": "visual-match",
-          "videoSrc": "/videos/fakin-party.mp4",
-          "note": "Exact costumes and performers compared with the full Fakin party film from the credited colourist’s portfolio: blue shirt/red sleeveless knitwear, navy suit, party set and ensemble outfits. Publication explicitly credits Dušan Bebčák / @bebcak for wardrobe."
-        }
-      },
-      {
-        "src": "/images/work/vypsana-fixa-fakin-party/published-41.webp",
-        "smallSrc": "/images/work/vypsana-fixa-fakin-party/published-41-480.webp",
-        "smallWidth": 480,
-        "width": 2400,
-        "height": 1599,
-        "alt": "Vypsaná fixa — Fakin party — published campaign image 2",
-        "evidence": {
-          "basis": "visual-match",
-          "videoSrc": "/videos/fakin-party.mp4",
-          "note": "Exact costumes and performers compared with the full Fakin party film from the credited colourist’s portfolio: blue shirt/red sleeveless knitwear, navy suit, party set and ensemble outfits. Publication explicitly credits Dušan Bebčák / @bebcak for wardrobe."
-        }
-      },
-      {
-        "src": "/images/work/vypsana-fixa-fakin-party/published-40.webp",
-        "smallSrc": "/images/work/vypsana-fixa-fakin-party/published-40-480.webp",
-        "smallWidth": 480,
-        "width": 2400,
-        "height": 1599,
-        "alt": "Vypsaná fixa — Fakin party — published campaign image 3",
-        "evidence": {
-          "basis": "visual-match",
-          "videoSrc": "/videos/fakin-party.mp4",
-          "note": "Exact costumes and performers compared with the full Fakin party film from the credited colourist’s portfolio: blue shirt/red sleeveless knitwear, navy suit, party set and ensemble outfits. Publication explicitly credits Dušan Bebčák / @bebcak for wardrobe."
-        }
-      },
-      {
-        "src": "/images/work/vypsana-fixa-fakin-party/published-42.webp",
-        "smallSrc": "/images/work/vypsana-fixa-fakin-party/published-42-480.webp",
-        "smallWidth": 480,
-        "width": 2400,
-        "height": 1599,
-        "alt": "Vypsaná fixa — Fakin party — published campaign image 4",
-        "evidence": {
-          "basis": "visual-match",
-          "videoSrc": "/videos/fakin-party.mp4",
-          "note": "Exact costumes and performers compared with the full Fakin party film from the credited colourist’s portfolio: blue shirt/red sleeveless knitwear, navy suit, party set and ensemble outfits. Publication explicitly credits Dušan Bebčák / @bebcak for wardrobe."
-        }
-      },
-      {
-        "src": "/images/work/vypsana-fixa-fakin-party/published-43.webp",
-        "smallSrc": "/images/work/vypsana-fixa-fakin-party/published-43-480.webp",
-        "smallWidth": 480,
-        "width": 2400,
-        "height": 1599,
-        "alt": "Vypsaná fixa — Fakin party — published campaign image 5",
-        "evidence": {
-          "basis": "visual-match",
-          "videoSrc": "/videos/fakin-party.mp4",
-          "note": "Exact costumes and performers compared with the full Fakin party film from the credited colourist’s portfolio: blue shirt/red sleeveless knitwear, navy suit, party set and ensemble outfits. Publication explicitly credits Dušan Bebčák / @bebcak for wardrobe."
-        }
-      },
-      {
-        "src": "/images/work/vypsana-fixa-fakin-party/published-44.webp",
-        "smallSrc": "/images/work/vypsana-fixa-fakin-party/published-44-480.webp",
-        "smallWidth": 480,
-        "width": 2400,
-        "height": 1599,
-        "alt": "Vypsaná fixa — Fakin party — published campaign image 6",
-        "evidence": {
-          "basis": "visual-match",
-          "videoSrc": "/videos/fakin-party.mp4",
-          "note": "Exact costumes and performers compared with the full Fakin party film from the credited colourist’s portfolio: blue shirt/red sleeveless knitwear, navy suit, party set and ensemble outfits. Publication explicitly credits Dušan Bebčák / @bebcak for wardrobe."
-        }
-      },
-      {
-        "src": "/images/work/vypsana-fixa-fakin-party/published-46.webp",
-        "smallSrc": "/images/work/vypsana-fixa-fakin-party/published-46-480.webp",
-        "smallWidth": 480,
-        "width": 2400,
-        "height": 1599,
-        "alt": "Vypsaná fixa — Fakin party — published campaign image 7",
-        "evidence": {
-          "basis": "visual-match",
-          "videoSrc": "/videos/fakin-party.mp4",
-          "note": "Exact costumes and performers compared with the full Fakin party film from the credited colourist’s portfolio: blue shirt/red sleeveless knitwear, navy suit, party set and ensemble outfits. Publication explicitly credits Dušan Bebčák / @bebcak for wardrobe."
-        }
-      },
-      {
-        "src": "/images/work/vypsana-fixa-fakin-party/published-38.webp",
-        "smallSrc": "/images/work/vypsana-fixa-fakin-party/published-38-480.webp",
-        "smallWidth": 480,
-        "width": 2400,
-        "height": 1599,
-        "alt": "Vypsaná fixa — Fakin party — published campaign image 8",
-        "evidence": {
-          "basis": "visual-match",
-          "videoSrc": "/videos/fakin-party.mp4",
-          "note": "Exact costumes and performers compared with the full Fakin party film from the credited colourist’s portfolio: blue shirt/red sleeveless knitwear, navy suit, party set and ensemble outfits. Publication explicitly credits Dušan Bebčák / @bebcak for wardrobe."
-        }
-      },
-      {
-        "src": "/images/work/vypsana-fixa-fakin-party/published-45.webp",
-        "smallSrc": "/images/work/vypsana-fixa-fakin-party/published-45-480.webp",
-        "smallWidth": 480,
-        "width": 2400,
-        "height": 1599,
-        "alt": "Vypsaná fixa — Fakin party — published campaign image 9",
-        "evidence": {
-          "basis": "visual-match",
-          "videoSrc": "/videos/fakin-party.mp4",
-          "note": "Exact costumes and performers compared with the full Fakin party film from the credited colourist’s portfolio: blue shirt/red sleeveless knitwear, navy suit, party set and ensemble outfits. Publication explicitly credits Dušan Bebčák / @bebcak for wardrobe."
-        }
-      }
-    ],
-    "videos": [
-      {
-        "provider": "native",
-        "title": "Vypsaná fixa — Fakin party",
-        "url": "https://misgena.tv/creation/fakin-party-vypsana-fixa/",
-        "src": "/videos/fakin-party.mp4",
-        "width": 1440,
-        "height": 960,
-        "poster": {
-          "src": "/images/work/vypsana-fixa-fakin-party/film-cover.webp",
-          "smallSrc": "/images/work/vypsana-fixa-fakin-party/film-cover-480.webp",
-          "width": 1920,
-          "height": 1280,
-          "smallWidth": 480,
-          "alt": "Vypsaná fixa — Fakin party — film preview"
-        }
-      }
-    ],
-    "credit": "",
-    "facts": [
-      {
-        "label": "Director",
-        "value": "Tomáš Bláha / Novák & Nguyen"
-      },
-      {
-        "label": "Production",
-        "value": "Roar Production / Publicis Praha"
-      },
-      {
-        "label": "Cinematography",
-        "value": "Mikuláš Hrdlička"
-      },
-      {
-        "label": "Wardrobe",
-        "value": "Dušan Bebčák"
-      },
-      {
-        "label": "Wardrobe assistant",
-        "value": "Andrea Konečná"
-      },
-      {
-        "label": "Photography",
-        "value": "Petr Jandera"
-      }
-    ],
-    "sources": [
-      {
-        "label": "Cinematographer’s credited publication",
-        "url": "https://www.instagram.com/p/DYXTNEtiB2S/"
-      },
-      {
-        "label": "Full film — colourist’s portfolio",
-        "url": "https://misgena.tv/creation/fakin-party-vypsana-fixa/"
-      }
-    ],
-    "portrait": false,
-    "scope": "campaign",
-    "attribution": {
-      "basis": "explicit-credit",
-      "source": "https://www.instagram.com/p/DYXTNEtiB2S/",
-      "note": "Direct campaign publication or Dušan’s own caption explicitly credits @bebcak / Dušan Bebčák. Shared roles remain shared, and the source caption/crew record is retained in the research dossier."
-    }
-  },
-  {
-    "id": "mcdonalds-cheese-saga",
-    "slug": "mcdonalds-cheese-saga",
-    "title": "McDonald’s — Cheese Saga",
-    "thumbnail": {
-      "src": "/images/work/mcdonalds-cheese-saga/hd-costume-2.webp",
-      "smallSrc": "/images/work/mcdonalds-cheese-saga/hd-costume-2-480.webp",
-      "smallWidth": 480,
-      "width": 1920,
-      "height": 1080,
-      "alt": "McDonald’s — Cheese Saga — blue overshirt and light shirt, frame from the film",
-      "evidence": {
-        "basis": "film-frame",
-        "videoSrc": "/videos/mcdonalds-cheese-saga-hd.mp4",
-        "note": "Exact matching director’s cut, 5.5s. Same ball-pit cast, shirts and outfits as the Instagram publication; not a different Cheese Saga campaign."
-      }
-    },
-    "images": [
-      {
-        "src": "/images/work/mcdonalds-cheese-saga/hd-costume-2.webp",
-        "smallSrc": "/images/work/mcdonalds-cheese-saga/hd-costume-2-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 1080,
-        "alt": "McDonald’s — Cheese Saga — blue overshirt and light shirt, frame from the film",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/mcdonalds-cheese-saga-hd.mp4",
-          "note": "Exact matching director’s cut, 5.5s. Same ball-pit cast, shirts and outfits as the Instagram publication; not a different Cheese Saga campaign."
-        }
-      },
-      {
-        "src": "/images/work/mcdonalds-cheese-saga/hd-costume-4.webp",
-        "smallSrc": "/images/work/mcdonalds-cheese-saga/hd-costume-4-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 1080,
-        "alt": "McDonald’s — Cheese Saga — pink blouse, frame from the film",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/mcdonalds-cheese-saga-hd.mp4",
-          "note": "Exact matching director’s cut, 18s. Same ball-pit cast, shirts and outfits as the Instagram publication; not a different Cheese Saga campaign."
-        }
-      },
-      {
-        "src": "/images/work/mcdonalds-cheese-saga/hd-costume-5.webp",
-        "smallSrc": "/images/work/mcdonalds-cheese-saga/hd-costume-5-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 1080,
-        "alt": "McDonald’s — Cheese Saga — green top and denim dungarees, frame from the film",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/mcdonalds-cheese-saga-hd.mp4",
-          "note": "Exact matching director’s cut, 25s. Same ball-pit cast, shirts and outfits as the Instagram publication; not a different Cheese Saga campaign."
-        }
-      },
-      {
-        "src": "/images/work/mcdonalds-cheese-saga/hd-costume-6.webp",
-        "smallSrc": "/images/work/mcdonalds-cheese-saga/hd-costume-6-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 1080,
-        "alt": "McDonald’s — Cheese Saga — mint shirt and beige cardigan, frame from the film",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/mcdonalds-cheese-saga-hd.mp4",
-          "note": "Exact matching director’s cut, 31s. Same ball-pit cast, shirts and outfits as the Instagram publication; not a different Cheese Saga campaign."
-        }
-      },
-      {
-        "src": "/images/work/mcdonalds-cheese-saga/hd-detail-2.webp",
-        "smallSrc": "/images/work/mcdonalds-cheese-saga/hd-detail-2-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 1080,
-        "alt": "McDonald’s — Cheese Saga — green knitwear, frame from the film",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/mcdonalds-cheese-saga-hd.mp4",
-          "note": "Inspected frame from the same full 1080p director’s cut. Cast and ball-pit wardrobes match the original portfolio film."
-        }
-      },
-      {
-        "src": "/images/work/mcdonalds-cheese-saga/hd-detail-4.webp",
-        "smallSrc": "/images/work/mcdonalds-cheese-saga/hd-detail-4-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 1080,
-        "alt": "McDonald’s — Cheese Saga — mint shirt and beige cardigan in motion, frame from the film",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/mcdonalds-cheese-saga-hd.mp4",
-          "note": "Inspected frame from the same full 1080p director’s cut. Cast and ball-pit wardrobes match the original portfolio film."
-        }
-      },
-      {
-        "src": "/images/work/mcdonalds-cheese-saga/hd-detail-5.webp",
-        "smallSrc": "/images/work/mcdonalds-cheese-saga/hd-detail-5-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 1080,
-        "alt": "McDonald’s — Cheese Saga — patterned knitwear and orange hat, frame from the film",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/mcdonalds-cheese-saga-hd.mp4",
-          "note": "Inspected frame from the same full 1080p director’s cut. Cast and ball-pit wardrobes match the original portfolio film."
-        }
-      }
-    ],
-    "videos": [
-      {
-        "provider": "native",
-        "title": "McDonald’s — Cheese Saga",
-        "url": "https://www.ivanardura.com/project/mcdonalds-cheese-saga",
-        "src": "/videos/mcdonalds-cheese-saga-hd.mp4",
-        "width": 1920,
-        "height": 1080,
-        "poster": {
-          "src": "/images/work/mcdonalds-cheese-saga/film-cover.webp",
-          "smallSrc": "/images/work/mcdonalds-cheese-saga/film-cover-480.webp",
-          "width": 1920,
-          "height": 1080,
-          "smallWidth": 480,
-          "alt": "McDonald’s — Cheese Saga — film preview"
-        }
-      }
-    ],
-    "credit": "",
-    "facts": [
-      {
-        "label": "Director",
-        "value": "Marek Partyš"
-      },
-      {
-        "label": "Production",
-        "value": "Bistro Films"
-      }
-    ],
-    "sources": [
-      {
-        "label": "Instagram",
-        "url": "https://www.instagram.com/p/C8UmP9cNWK3/"
-      },
-      {
-        "label": "Creative portfolio",
-        "url": "https://www.ivanardura.com/project/mcdonalds-cheese-saga"
-      }
-    ],
-    "portrait": false,
-    "scope": "campaign",
-    "attribution": {
-      "basis": "own-portfolio",
-      "source": "https://www.instagram.com/p/C8UmP9cNWK3/",
-      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
-    }
-  },
-  {
-    "id": "adidas-you-got-this",
-    "slug": "adidas-you-got-this",
-    "title": "adidas — You Got This",
-    "thumbnail": {
-      "src": "/images/work/adidas-you-got-this/hd-detail-4.webp",
-      "smallSrc": "/images/work/adidas-you-got-this/hd-detail-4-480.webp",
-      "smallWidth": 480,
-      "width": 1920,
-      "height": 1080,
-      "alt": "adidas — You Got This — red football kit and dark training layers, film still",
-      "evidence": {
-        "basis": "film-frame",
-        "videoSrc": "/videos/adidas-you-got-this-hd.mp4",
-        "note": "Reviewed frame at 15s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
-      }
-    },
-    "images": [
-      {
-        "src": "/images/work/adidas-you-got-this/hd-detail-4.webp",
-        "smallSrc": "/images/work/adidas-you-got-this/hd-detail-4-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 1080,
-        "alt": "adidas — You Got This — red football kit and dark training layers, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/adidas-you-got-this-hd.mp4",
-          "note": "Reviewed frame at 15s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
-        }
-      },
-      {
-        "src": "/images/work/adidas-you-got-this/hd-detail-5.webp",
-        "smallSrc": "/images/work/adidas-you-got-this/hd-detail-5-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 1080,
-        "alt": "adidas — You Got This — red training top and black padded vest, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/adidas-you-got-this-hd.mp4",
-          "note": "Reviewed frame at 19s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
-        }
-      },
-      {
-        "src": "/images/work/adidas-you-got-this/hd-detail-6.webp",
-        "smallSrc": "/images/work/adidas-you-got-this/hd-detail-6-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 1080,
-        "alt": "adidas — You Got This — red kit and blue football boots, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/adidas-you-got-this-hd.mp4",
-          "note": "Reviewed frame at 24s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
-        }
-      }
-    ],
-    "videos": [
-      {
-        "provider": "native",
-        "title": "adidas — You Got This",
-        "url": "https://www.advocadofilms.com/work/",
-        "src": "/videos/adidas-you-got-this-hd.mp4",
-        "width": 1920,
-        "height": 1080,
-        "poster": {
-          "src": "/images/work/adidas-you-got-this/hd-detail-4.webp",
-          "smallSrc": "/images/work/adidas-you-got-this/hd-detail-4-480.webp",
-          "smallWidth": 480,
-          "width": 1920,
-          "height": 1080,
-          "alt": "adidas — You Got This — red football kit and dark training layers, film still",
-          "evidence": {
-            "basis": "film-frame",
-            "videoSrc": "/videos/adidas-you-got-this-hd.mp4",
-            "note": "Reviewed frame at 15s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
-          }
-        }
-      }
-    ],
-    "credit": "Costume design",
-    "facts": [
-      {
-        "label": "Director",
-        "value": "Luboš Rezler"
-      },
-      {
-        "label": "Production",
-        "value": "ADvocado Films"
-      },
-      {
-        "label": "Cinematography",
-        "value": "Tomáš Kotas"
-      },
-      {
-        "label": "Agency",
-        "value": "KaspenJVM / 180heartbeats"
-      },
-      {
-        "label": "Costume design",
-        "value": "Dušan Bebčák"
-      },
-      {
-        "label": "Costume assistants",
-        "value": "Martina O’Neill / Milina Havrlantová"
-      },
-      {
-        "label": "Photography",
-        "value": "Alexander Dobrovodský"
-      }
-    ],
-    "sources": [
-      {
-        "label": "Exact full-resolution source film",
-        "url": "https://www.advocadofilms.com/work/"
-      },
-      {
-        "label": "Explicit professional credit",
-        "url": "https://vimeo.com/1088383230"
-      }
-    ],
-    "portrait": false,
-    "scope": "campaign",
-    "attribution": {
-      "basis": "explicit-credit",
-      "source": "https://vimeo.com/1088383230",
-      "note": "Exact director/producer campaign credits explicitly name Dušan Bebčák for costume design."
-    }
-  },
-  {
-    "id": "komercni-banka",
-    "slug": "komercni-banka",
-    "title": "Komerční banka — Eva Adamczyková",
-    "thumbnail": {
-      "src": "/images/work/komercni-banka/hd-detail-1.webp",
-      "smallSrc": "/images/work/komercni-banka/hd-detail-1-480.webp",
-      "smallWidth": 480,
-      "width": 1920,
-      "height": 1080,
-      "alt": "Komerční banka — Eva Adamczyková — full red dress in motion, film still",
-      "evidence": {
-        "basis": "film-frame",
-        "videoSrc": "/videos/komercni-banka-hd.mp4",
-        "note": "Reviewed frame at 3s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
-      }
-    },
-    "images": [
-      {
-        "src": "/images/work/komercni-banka/hd-detail-1.webp",
-        "smallSrc": "/images/work/komercni-banka/hd-detail-1-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 1080,
-        "alt": "Komerční banka — Eva Adamczyková — full red dress in motion, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/komercni-banka-hd.mp4",
-          "note": "Reviewed frame at 3s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
-        }
-      },
-      {
-        "src": "/images/work/komercni-banka/hd-detail-2.webp",
-        "smallSrc": "/images/work/komercni-banka/hd-detail-2-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 1080,
-        "alt": "Komerční banka — Eva Adamczyková — red dress and shoulder detail, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/komercni-banka-hd.mp4",
-          "note": "Reviewed frame at 7s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
-        }
-      },
-      {
-        "src": "/images/work/komercni-banka/hd-detail-3.webp",
-        "smallSrc": "/images/work/komercni-banka/hd-detail-3-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 1080,
-        "alt": "Komerční banka — Eva Adamczyková — high red neckline and gathered fabric, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/komercni-banka-hd.mp4",
-          "note": "Reviewed frame at 11s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
-        }
-      },
-      {
-        "src": "/images/work/komercni-banka/hd-detail-4.webp",
-        "smallSrc": "/images/work/komercni-banka/hd-detail-4-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 1080,
-        "alt": "Komerční banka — Eva Adamczyková — full-length red dress with raised arms, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/komercni-banka-hd.mp4",
-          "note": "Reviewed frame at 15s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
-        }
-      }
-    ],
-    "videos": [
-      {
-        "provider": "native",
-        "title": "Komerční banka — Eva Adamczyková",
-        "url": "https://www.advocadofilms.com/work/",
-        "src": "/videos/komercni-banka-hd.mp4",
-        "width": 1920,
-        "height": 1080,
-        "poster": {
-          "src": "/images/work/komercni-banka/hd-detail-1.webp",
-          "smallSrc": "/images/work/komercni-banka/hd-detail-1-480.webp",
-          "smallWidth": 480,
-          "width": 1920,
-          "height": 1080,
-          "alt": "Komerční banka — Eva Adamczyková — full red dress in motion, film still",
-          "evidence": {
-            "basis": "film-frame",
-            "videoSrc": "/videos/komercni-banka-hd.mp4",
-            "note": "Reviewed frame at 3s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
-          }
-        }
-      }
-    ],
-    "credit": "Costume design",
-    "facts": [
-      {
-        "label": "Director",
-        "value": "Andrii Lagutin"
-      },
-      {
-        "label": "Production",
-        "value": "ADvocado Films"
-      },
-      {
-        "label": "Cinematography",
-        "value": "Oleksandr Drobilko"
-      },
-      {
-        "label": "Featuring",
-        "value": "Eva Adamczyková Samková"
-      },
-      {
-        "label": "Agency",
-        "value": "VCCP"
-      },
-      {
-        "label": "Costume design",
-        "value": "Dušan Bebčák"
-      }
-    ],
-    "sources": [
-      {
-        "label": "Exact full-resolution source film",
-        "url": "https://www.advocadofilms.com/work/"
-      },
-      {
-        "label": "Explicit professional credit",
-        "url": "https://vimeo.com/1020676248"
-      }
-    ],
-    "portrait": false,
-    "scope": "campaign",
-    "attribution": {
-      "basis": "explicit-credit",
-      "source": "https://vimeo.com/1020676248",
-      "note": "Exact director/producer campaign credits explicitly name Dušan Bebčák for costume design."
-    }
-  },
-  {
-    "id": "rohlik-mothers",
-    "slug": "rohlik-mothers",
-    "title": "Rohlík — Mothers",
-    "thumbnail": {
-      "src": "/images/work/rohlik-mothers/final-detail-7-clean.webp",
-      "smallSrc": "/images/work/rohlik-mothers/final-detail-7-clean-480.webp",
-      "smallWidth": 480,
-      "width": 998,
-      "height": 600,
-      "alt": "Rohlík — Mothers — blue cardigan and white vest, film still",
-      "evidence": {
-        "basis": "film-frame",
-        "videoSrc": "/videos/rohlik-mothers.mp4",
-        "note": "Visually inspected wardrobe frame at 81.15s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
-      }
-    },
-    "images": [
-      {
-        "src": "/images/work/rohlik-mothers/rohlik-mothers-still-2.webp",
-        "smallSrc": "/images/work/rohlik-mothers/rohlik-mothers-still-2-480.webp",
-        "smallWidth": 480,
-        "width": 998,
-        "height": 720,
-        "alt": "Rohlík — Mothers — costume in the finished film, frame 2",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/rohlik-mothers.mp4",
-          "note": "Extracted from this film."
-        }
-      },
-      {
-        "src": "/images/work/rohlik-mothers/detail-1.webp",
-        "smallSrc": "/images/work/rohlik-mothers/detail-1-480.webp",
-        "smallWidth": 480,
-        "width": 997,
-        "height": 720,
-        "alt": "Rohlík — Mothers — frame from the advert",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/rohlik-mothers.mp4",
-          "note": "Visually inspected costume frame at 7.378 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/rohlik-mothers/detail-2.webp",
-        "smallSrc": "/images/work/rohlik-mothers/detail-2-480.webp",
-        "smallWidth": 480,
-        "width": 998,
-        "height": 720,
-        "alt": "Rohlík — Mothers — frame from the advert",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/rohlik-mothers.mp4",
-          "note": "Visually inspected costume frame at 29.51 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/rohlik-mothers/final-detail-2-clean.webp",
-        "smallSrc": "/images/work/rohlik-mothers/final-detail-2-clean-480.webp",
-        "smallWidth": 480,
-        "width": 998,
-        "height": 720,
-        "alt": "Rohlík — Mothers — orange T-shirt and casual teenage wardrobe, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/rohlik-mothers.mp4",
-          "note": "Visually inspected wardrobe frame at 20.29s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/rohlik-mothers/final-detail-3-clean.webp",
-        "smallSrc": "/images/work/rohlik-mothers/final-detail-3-clean-480.webp",
-        "smallWidth": 480,
-        "width": 998,
-        "height": 720,
-        "alt": "Rohlík — Mothers — pink maternity dress and checked shirt, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/rohlik-mothers.mp4",
-          "note": "Visually inspected wardrobe frame at 32.28s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/rohlik-mothers/final-detail-7-clean.webp",
-        "smallSrc": "/images/work/rohlik-mothers/final-detail-7-clean-480.webp",
-        "smallWidth": 480,
-        "width": 998,
-        "height": 600,
-        "alt": "Rohlík — Mothers — blue cardigan and white vest, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/rohlik-mothers.mp4",
-          "note": "Visually inspected wardrobe frame at 81.15s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
-        }
-      }
-    ],
-    "videos": [
-      {
-        "provider": "native",
-        "title": "Rohlík — Mothers",
-        "url": "https://vimeo.com/1056747428",
-        "src": "/videos/rohlik-mothers.mp4",
-        "width": 1280,
-        "height": 720,
-        "poster": {
-          "src": "/images/work/rohlik-mothers/rohlik-mothers-still-1.webp",
-          "smallSrc": "/images/work/rohlik-mothers/rohlik-mothers-still-1-480.webp",
-          "smallWidth": 480,
-          "width": 1280,
-          "height": 720,
-          "alt": "Rohlík — Mothers — costume in the finished film, frame 1"
-        }
-      }
-    ],
-    "credit": "Wardrobe styling",
-    "facts": [
-      {
-        "label": "Director",
-        "value": "Maca Rubio"
-      },
-      {
-        "label": "Production",
-        "value": "Stink Prague"
-      },
-      {
-        "label": "Cinematography",
-        "value": "Santi Cantillo"
-      },
-      {
-        "label": "Agency",
-        "value": "B&T"
-      },
-      {
-        "label": "Wardrobe styling",
-        "value": "Dušan Bebčák"
-      },
-      {
-        "label": "BTS photography",
-        "value": "Stefano Marotta"
-      }
-    ],
-    "sources": [
-      {
-        "label": "Instagram",
-        "url": "https://www.instagram.com/p/DCCz2MCRSd2/"
-      },
-      {
-        "label": "Director’s portfolio",
-        "url": "https://www.kryptonfilmsinternational.com/director/maca_rubio"
-      }
-    ],
-    "portrait": false,
-    "scope": "campaign",
-    "attribution": {
-      "basis": "explicit-credit",
-      "source": "https://www.instagram.com/p/DCCz2MCRSd2/",
-      "note": "Direct campaign publication or Dušan’s own caption explicitly credits @bebcak / Dušan Bebčák. Shared roles remain shared, and the source caption/crew record is retained in the research dossier."
-    }
-  },
-  {
-    "id": "slovenska-sporitelna",
-    "slug": "slovenska-sporitelna",
-    "title": "Slovenská sporiteľňa — Everest",
-    "thumbnail": {
-      "src": "/images/work/slovenska-sporitelna/verified-hd-2.webp",
-      "smallSrc": "/images/work/slovenska-sporitelna/verified-hd-2-480.webp",
-      "smallWidth": 480,
-      "width": 1920,
-      "height": 1080,
-      "alt": "Slovenská sporiteľňa — Everest — red climbing suit, harness and helmet, film still",
-      "evidence": {
-        "basis": "film-frame",
-        "videoSrc": "/videos/slsp-climber-hd.mp4",
-        "note": "Visually inspected wardrobe frame at 8.55s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
-      }
-    },
-    "images": [
-      {
-        "src": "/images/work/slovenska-sporitelna/verified-hd-2.webp",
-        "smallSrc": "/images/work/slovenska-sporitelna/verified-hd-2-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 1080,
-        "alt": "Slovenská sporiteľňa — Everest — red climbing suit, harness and helmet, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/slsp-climber-hd.mp4",
-          "note": "Visually inspected wardrobe frame at 8.55s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/slovenska-sporitelna/verified-hd-3.webp",
-        "smallSrc": "/images/work/slovenska-sporitelna/verified-hd-3-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 1080,
-        "alt": "Slovenská sporiteľňa — Everest — red climbing jacket and backpack, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/slsp-climber-hd.mp4",
-          "note": "Visually inspected wardrobe frame at 13.53s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/slovenska-sporitelna/verified-hd-4.webp",
-        "smallSrc": "/images/work/slovenska-sporitelna/verified-hd-4-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 1080,
-        "alt": "Slovenská sporiteľňa — Everest — helmet, jacket and harness on the climbing wall, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/slsp-climber-hd.mp4",
-          "note": "Visually inspected wardrobe frame at 18.52s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/slovenska-sporitelna/verified-hd-5.webp",
-        "smallSrc": "/images/work/slovenska-sporitelna/verified-hd-5-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 1080,
-        "alt": "Slovenská sporiteľňa — Everest — dark wardrobe and long necklace among the globes, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/slsp-climber-hd.mp4",
-          "note": "Visually inspected wardrobe frame at 23.5s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/slovenska-sporitelna/verified-hd-6.webp",
-        "smallSrc": "/images/work/slovenska-sporitelna/verified-hd-6-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 1080,
-        "alt": "Slovenská sporiteľňa — Everest — contemporary wardrobe among the books, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/slsp-climber-hd.mp4",
-          "note": "Visually inspected wardrobe frame at 28.49s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/slovenska-sporitelna/verified-hd-7.webp",
-        "smallSrc": "/images/work/slovenska-sporitelna/verified-hd-7-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 1080,
-        "alt": "Slovenská sporiteľňa — Everest — patterned blouse, burgundy knitwear and beige trousers, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/slsp-climber-hd.mp4",
-          "note": "Visually inspected wardrobe frame at 33.12s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
-        }
-      }
-    ],
-    "videos": [
-      {
-        "provider": "native",
-        "title": "Slovenská sporiteľňa — Everest",
-        "url": "https://www.bistrofilms.com/work/detail/climber-1",
-        "src": "/videos/slsp-climber-hd.mp4",
-        "width": 1920,
-        "height": 1080,
-        "poster": {
-          "src": "/images/work/slovenska-sporitelna/verified-hd-poster.webp",
-          "smallSrc": "/images/work/slovenska-sporitelna/verified-hd-poster-480.webp",
-          "smallWidth": 480,
-          "width": 1920,
-          "height": 1080,
-          "alt": "Slovenská sporiteľňa — Everest — film preview",
-          "evidence": {
-            "basis": "film-frame",
-            "videoSrc": "/videos/slsp-climber-hd.mp4",
-            "note": "Preview from the exact HD film, preserving its native frame."
-          }
-        }
-      }
-    ],
-    "credit": "Wardrobe styling",
-    "facts": [
-      {
-        "label": "Director",
-        "value": "Wolfberg"
-      },
-      {
-        "label": "Production",
-        "value": "Bistro Films"
-      },
-      {
-        "label": "Cinematography",
-        "value": "Alexander Šurkala"
-      },
-      {
-        "label": "Featuring",
-        "value": "Lucia Janicová"
-      },
-      {
-        "label": "Agency",
-        "value": "Zaraguza"
-      },
-      {
-        "label": "Wardrobe",
-        "value": "Dušan Bebčák"
-      }
-    ],
-    "sources": [
-      {
-        "label": "Instagram",
-        "url": "https://www.instagram.com/p/DFh6Sg1smBS/"
-      },
-      {
-        "label": "Campaign",
-        "url": "https://www.slsp.sk/sk/aktuality/2024/10/1/kazdy-moze-zdolat-svoj-everest-slovenska-sporitelna-novou-kampanou-povzbudzuje-slovakov"
-      },
-      {
-        "label": "Exact full-resolution production film",
-        "url": "https://www.bistrofilms.com/work/detail/climber-1"
-      }
-    ],
-    "portrait": false,
-    "scope": "campaign",
-    "attribution": {
-      "basis": "explicit-credit",
-      "source": "https://www.instagram.com/p/DFh6Sg1smBS/",
-      "note": "Direct campaign publication or Dušan’s own caption explicitly credits @bebcak / Dušan Bebčák. Shared roles remain shared, and the source caption/crew record is retained in the research dossier."
-    }
-  },
-  {
-    "id": "budvar-33",
-    "slug": "budvar-33",
-    "title": "Budvar 33",
-    "thumbnail": {
-      "src": "/images/work/budvar-33/costume-v3-2.webp",
-      "smallSrc": "/images/work/budvar-33/costume-v3-2-480.webp",
-      "smallWidth": 270,
-      "width": 720,
-      "height": 1280,
-      "alt": "Budvar 33 — costume in the finished film",
-      "evidence": {
-        "basis": "film-frame",
-        "videoSrc": "/videos/Dc4C_PJt3Q4.mp4",
-        "note": "Costume-focused frame at 2.339s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
-      }
-    },
-    "images": [
-      {
-        "src": "/images/work/budvar-33/Dc4C_PJt3Q4-still-3.webp",
-        "smallSrc": "/images/work/budvar-33/Dc4C_PJt3Q4-still-3-480.webp",
-        "smallWidth": 270,
-        "width": 720,
-        "height": 1280,
-        "alt": "Budvar 33 — costume in the finished film, frame 3",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/Dc4C_PJt3Q4.mp4",
-          "note": "Extracted from this film."
-        }
-      },
-      {
-        "src": "/images/work/budvar-33/detail-1.webp",
-        "smallSrc": "/images/work/budvar-33/detail-1-480.webp",
-        "smallWidth": 270,
-        "width": 720,
-        "height": 1280,
-        "alt": "Budvar 33 — frame from the advert",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/Dc4Dh7QtqiD.mp4",
-          "note": "Visually inspected costume frame at 0.81 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/budvar-33/costume-v2-1.webp",
-        "smallSrc": "/images/work/budvar-33/costume-v2-1-480.webp",
-        "smallWidth": 270,
-        "width": 720,
-        "height": 1280,
-        "alt": "Budvar 33 — costume in the finished film",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/Dc4DPU9NAFl.mp4",
-          "note": "Costume-focused frame at 1.22s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
-        }
-      },
-      {
-        "src": "/images/work/budvar-33/costume-v2-6.webp",
-        "smallSrc": "/images/work/budvar-33/costume-v2-6-480.webp",
-        "smallWidth": 270,
-        "width": 720,
-        "height": 1280,
-        "alt": "Budvar 33 — costume in the finished film",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/Dc4DPU9NAFl.mp4",
-          "note": "Costume-focused frame at 6.916s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
-        }
-      },
-      {
-        "src": "/images/work/budvar-33/costume-v3-2.webp",
-        "smallSrc": "/images/work/budvar-33/costume-v3-2-480.webp",
-        "smallWidth": 270,
-        "width": 720,
-        "height": 1280,
-        "alt": "Budvar 33 — costume in the finished film",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/Dc4C_PJt3Q4.mp4",
-          "note": "Costume-focused frame at 2.339s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
-        }
-      },
-      {
-        "src": "/images/work/budvar-33/costume-v3-8.webp",
-        "smallSrc": "/images/work/budvar-33/costume-v3-8-480.webp",
-        "smallWidth": 270,
-        "width": 720,
-        "height": 1280,
-        "alt": "Budvar 33 — costume in the finished film",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/Dc4C_PJt3Q4.mp4",
-          "note": "Costume-focused frame at 8.848s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
-        }
-      }
-    ],
-    "videos": [
-      {
-        "provider": "native",
-        "title": "Budvar 33",
-        "url": "https://www.instagram.com/p/Dc4Dh7QtqiD/",
-        "src": "/videos/Dc4Dh7QtqiD.mp4",
-        "width": 720,
-        "height": 1280,
-        "poster": {
-          "src": "/images/work/budvar-33/Dc4Dh7QtqiD-still-3.webp",
-          "smallSrc": "/images/work/budvar-33/Dc4Dh7QtqiD-still-3-480.webp",
-          "smallWidth": 270,
-          "width": 720,
-          "height": 1280,
-          "alt": "Budvar 33 — costume in the finished film, frame 3"
-        }
-      },
-      {
-        "provider": "native",
-        "title": "Budvar 33",
-        "url": "https://www.instagram.com/p/Dc4DPU9NAFl/",
-        "src": "/videos/Dc4DPU9NAFl.mp4",
-        "width": 720,
-        "height": 1280,
-        "poster": {
-          "src": "/images/work/budvar-33/Dc4DPU9NAFl-still-3.webp",
-          "smallSrc": "/images/work/budvar-33/Dc4DPU9NAFl-still-3-480.webp",
-          "smallWidth": 270,
-          "width": 720,
-          "height": 1280,
-          "alt": "Budvar 33 — costume in the finished film, frame 3"
-        }
-      },
-      {
-        "provider": "native",
-        "title": "Budvar 33",
-        "url": "https://www.instagram.com/p/Dc4C_PJt3Q4/",
-        "src": "/videos/Dc4C_PJt3Q4.mp4",
-        "width": 720,
-        "height": 1280,
-        "poster": {
-          "src": "/images/work/budvar-33/Dc4C_PJt3Q4-still-2.webp",
-          "smallSrc": "/images/work/budvar-33/Dc4C_PJt3Q4-still-2-480.webp",
-          "smallWidth": 270,
-          "width": 720,
-          "height": 1280,
-          "alt": "Budvar 33 — costume in the finished film, frame 2"
-        }
-      }
-    ],
-    "credit": "Costume design",
-    "facts": [
-      {
-        "label": "Director",
-        "value": "Luboš Rezler"
-      },
-      {
-        "label": "Production",
-        "value": "Bubenská Production"
-      },
-      {
-        "label": "Cinematography",
-        "value": "Kryštof Melka"
-      },
-      {
-        "label": "Agency",
-        "value": "Ogilvy"
-      },
-      {
-        "label": "Costume design",
-        "value": "Dušan Bebčák"
-      }
-    ],
-    "sources": [
-      {
-        "label": "Instagram",
-        "url": "https://www.instagram.com/p/Dc4Dh7QtqiD/"
-      },
-      {
-        "label": "Agency campaign",
-        "url": "https://ogilvy.cz/ogilvy-pripravilo-novou-kampan-pro-budvar-33"
-      }
-    ],
-    "portrait": false,
-    "scope": "campaign",
-    "attribution": {
-      "basis": "explicit-credit",
-      "source": "https://www.instagram.com/p/Dc4Dh7QtqiD/",
-      "note": "Direct campaign publication or Dušan’s own caption explicitly credits @bebcak / Dušan Bebčák. Shared roles remain shared, and the source caption/crew record is retained in the research dossier."
-    }
-  },
-  {
-    "id": "mother",
-    "slug": "post-bellum-mother",
-    "title": "Post Bellum — Mother",
-    "thumbnail": {
-      "src": "/images/work/mother/hd-costume-1.webp",
-      "smallSrc": "/images/work/mother/hd-costume-1-480.webp",
-      "smallWidth": 480,
-      "width": 1540,
-      "height": 1080,
-      "alt": "Post Bellum — Mother — orange roll-neck and patterned knitwear, film still",
-      "evidence": {
-        "basis": "film-frame",
-        "videoSrc": "/videos/post-bellum-mother-hd.mp4",
-        "note": "Visually reviewed frame at 9.51s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
-      }
-    },
-    "images": [
-      {
-        "src": "/images/work/mother/hd-costume-1.webp",
-        "smallSrc": "/images/work/mother/hd-costume-1-480.webp",
-        "smallWidth": 480,
-        "width": 1540,
-        "height": 1080,
-        "alt": "Post Bellum — Mother — orange roll-neck and patterned knitwear, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/post-bellum-mother-hd.mp4",
-          "note": "Visually reviewed frame at 9.51s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/mother/hd-costume-2.webp",
-        "smallSrc": "/images/work/mother/hd-costume-2-480.webp",
-        "smallWidth": 480,
-        "width": 1540,
-        "height": 1080,
-        "alt": "Post Bellum — Mother — blue jacket, striped t-shirt and red collar, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/post-bellum-mother-hd.mp4",
-          "note": "Visually reviewed frame at 22.81s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/mother/hd-costume-4.webp",
-        "smallSrc": "/images/work/mother/hd-costume-4-480.webp",
-        "smallWidth": 480,
-        "width": 1540,
-        "height": 1080,
-        "alt": "Post Bellum — Mother — coat and period uniforms, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/post-bellum-mother-hd.mp4",
-          "note": "Visually reviewed frame at 49.43s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/mother/hd-costume-5.webp",
-        "smallSrc": "/images/work/mother/hd-costume-5-480.webp",
-        "smallWidth": 480,
-        "width": 1540,
-        "height": 1080,
-        "alt": "Post Bellum — Mother — patterned dress, apron and suit, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/post-bellum-mother-hd.mp4",
-          "note": "Visually reviewed frame at 62.74s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/mother/hd-costume-6.webp",
-        "smallSrc": "/images/work/mother/hd-costume-6-480.webp",
-        "smallWidth": 480,
-        "width": 1540,
-        "height": 1080,
-        "alt": "Post Bellum — Mother — red coat and patterned childhood knitwear, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/post-bellum-mother-hd.mp4",
-          "note": "Visually reviewed frame at 76.05s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
-        }
-      }
-    ],
-    "videos": [
-      {
-        "provider": "native",
-        "title": "Post Bellum — Mother",
-        "url": "https://www.marekpartys.com/post-bellum-mother/",
-        "src": "/videos/post-bellum-mother-hd.mp4",
-        "width": 1540,
-        "height": 1080,
-        "poster": {
-          "src": "/images/work/mother/hd-film-poster.webp",
-          "smallSrc": "/images/work/mother/hd-film-poster-480.webp",
-          "smallWidth": 480,
-          "width": 1540,
-          "height": 1080,
-          "alt": "Post Bellum — Mother — film preview",
-          "evidence": {
-            "basis": "film-frame",
-            "videoSrc": "/videos/post-bellum-mother-hd.mp4",
-            "note": "Poster from the exact full film, preserving its native frame."
-          }
-        }
-      }
-    ],
-    "credit": "",
-    "facts": [
-      {
-        "label": "Director",
-        "value": "Marek Partyš"
-      },
-      {
-        "label": "Production",
-        "value": "Bistro Films"
-      },
-      {
-        "label": "Cinematography",
-        "value": "David Hofmann"
-      },
-      {
-        "label": "Wardrobe",
-        "value": "Dušan Bebčák"
-      },
-      {
-        "label": "Agency",
-        "value": "OAK"
-      }
-    ],
-    "sources": [
-      {
-        "label": "Instagram",
-        "url": "https://www.instagram.com/p/C8UZaTqN7uX/"
-      },
-      {
-        "label": "Production credits",
-        "url": "https://www.linkedin.com/posts/leanne-tarvin-361a7864_so-excited-to-share-with-you-marek-party%C5%A1-activity-7163892870645534720-cbH8"
-      },
-      {
-        "label": "Verified full film and production source",
-        "url": "https://www.marekpartys.com/post-bellum-mother/"
-      },
-      {
-        "label": "Director’s explicit wardrobe credit",
-        "url": "https://vimeo.com/912061653"
-      }
-    ],
-    "portrait": false,
-    "scope": "campaign",
-    "attribution": {
-      "basis": "explicit-credit",
-      "source": "https://vimeo.com/912061653",
-      "note": "Exact primary campaign credits explicitly name Dušan Bebčák for the wardrobe/styling role recorded in this project’s facts."
-    }
-  },
-  {
     "id": "national-museum",
     "slug": "national-museum",
     "title": "Národní muzeum — Nové expozice",
     "thumbnail": {
-      "src": "/images/work/national-museum/hd-costume-1.webp",
-      "smallSrc": "/images/work/national-museum/hd-costume-1-480.webp",
+      "src": "/images/work/national-museum/hd-costume-2.webp",
+      "smallSrc": "/images/work/national-museum/hd-costume-2-480.webp",
       "smallWidth": 480,
       "width": 1920,
       "height": 800,
-      "alt": "Národní muzeum — Nové expozice — white period dresses in the field, film still",
+      "alt": "Národní muzeum — Nové expozice — flat caps and dark work jackets, film still",
       "evidence": {
         "basis": "film-frame",
         "videoSrc": "/videos/narodni-muzeum-hd.mp4",
-        "note": "Visually reviewed frame at 6.63s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        "note": "Visually reviewed frame at 15.91s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
       }
     },
     "images": [
@@ -2207,6 +829,1157 @@ export const projects: Project[] = [
     }
   },
   {
+    "id": "talkmore-medieval",
+    "slug": "talkmore-duedekning",
+    "title": "Talkmore — Duedekning",
+    "thumbnail": {
+      "src": "/images/work/woodland-costumes/image-1.webp",
+      "smallSrc": "/images/work/woodland-costumes/image-1-480.webp",
+      "smallWidth": 384,
+      "width": 1280,
+      "height": 1600,
+      "alt": "Talkmore — Duedekning — fitted chain-mail hood, brown tunic and segmented armour",
+      "evidence": {
+        "basis": "visual-match",
+        "videoSrc": "/videos/talkmore-duedekning-hd.mp4",
+        "note": "Compared against Einar’s complete 1080p Duedekning film: same two performers, helmet and chin strap, segmented shoulder/body plates, maroon belt and studded leather cuffs; matching chain-mail hood, leaf-shaped shoulders, curved gold neck plate, brown tunic and boots. The separate green workshop armour is not assigned to this film."
+      }
+    },
+    "images": [
+      {
+        "src": "/images/work/woodland-costumes/image-1.webp",
+        "smallSrc": "/images/work/woodland-costumes/image-1-480.webp",
+        "smallWidth": 384,
+        "width": 1280,
+        "height": 1600,
+        "alt": "Talkmore — Duedekning — fitted chain-mail hood, brown tunic and segmented armour",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/talkmore-duedekning-hd.mp4",
+          "note": "Compared against Einar’s complete 1080p Duedekning film: same two performers, helmet and chin strap, segmented shoulder/body plates, maroon belt and studded leather cuffs; matching chain-mail hood, leaf-shaped shoulders, curved gold neck plate, brown tunic and boots. The separate green workshop armour is not assigned to this film."
+        }
+      },
+      {
+        "src": "/images/work/talkmore-medieval/verified-hd-1.webp",
+        "smallSrc": "/images/work/talkmore-medieval/verified-hd-1-480.webp",
+        "smallWidth": 480,
+        "width": 1920,
+        "height": 708,
+        "alt": "Talkmore — Duedekning — steel helmet, shoulder armour and chain-mail hood, film still",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/talkmore-duedekning-hd.mp4",
+          "note": "Visually inspected wardrobe frame at 14s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/talkmore-medieval/verified-hd-2.webp",
+        "smallSrc": "/images/work/talkmore-medieval/verified-hd-2-480.webp",
+        "smallWidth": 480,
+        "width": 1920,
+        "height": 708,
+        "alt": "Talkmore — Duedekning — layered tunics, leather belts and metal armour, film still",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/talkmore-duedekning-hd.mp4",
+          "note": "Visually inspected wardrobe frame at 16.5s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/talkmore-medieval/verified-hd-3.webp",
+        "smallSrc": "/images/work/talkmore-medieval/verified-hd-3-480.webp",
+        "smallWidth": 480,
+        "width": 1920,
+        "height": 708,
+        "alt": "Talkmore — Duedekning — full-length medieval wardrobes inside the cottage, film still",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/talkmore-duedekning-hd.mp4",
+          "note": "Visually inspected wardrobe frame at 20s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/talkmore-medieval/verified-hd-4.webp",
+        "smallSrc": "/images/work/talkmore-medieval/verified-hd-4-480.webp",
+        "smallWidth": 480,
+        "width": 1920,
+        "height": 708,
+        "alt": "Talkmore — Duedekning — contrasting armour and layered costumes beside the troll, film still",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/talkmore-duedekning-hd.mp4",
+          "note": "Visually inspected wardrobe frame at 26s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/talkmore-medieval/verified-hd-5.webp",
+        "smallSrc": "/images/work/talkmore-medieval/verified-hd-5-480.webp",
+        "smallWidth": 480,
+        "width": 1920,
+        "height": 708,
+        "alt": "Talkmore — Duedekning — chain-mail hood, neck plate and segmented armour, film still",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/talkmore-duedekning-hd.mp4",
+          "note": "Visually inspected wardrobe frame at 32s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/talkmore-medieval/verified-hd-6.webp",
+        "smallSrc": "/images/work/talkmore-medieval/verified-hd-6-480.webp",
+        "smallWidth": 480,
+        "width": 1920,
+        "height": 708,
+        "alt": "Talkmore — Duedekning — the three character costumes together, film still",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/talkmore-duedekning-hd.mp4",
+          "note": "Visually inspected wardrobe frame at 34.5s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      }
+    ],
+    "videos": [
+      {
+        "provider": "native",
+        "title": "Talkmore — Duedekning",
+        "url": "https://einarfilm.no/directors/stian-johansen/duedekning",
+        "src": "/videos/talkmore-duedekning-hd.mp4",
+        "width": 1920,
+        "height": 1080,
+        "poster": {
+          "src": "/images/work/talkmore-medieval/verified-hd-poster.webp",
+          "smallSrc": "/images/work/talkmore-medieval/verified-hd-poster-480.webp",
+          "smallWidth": 480,
+          "width": 1920,
+          "height": 1080,
+          "alt": "Talkmore — Duedekning — film preview",
+          "evidence": {
+            "basis": "film-frame",
+            "videoSrc": "/videos/talkmore-duedekning-hd.mp4",
+            "note": "Preview from the exact HD film, preserving its native frame."
+          }
+        }
+      }
+    ],
+    "credit": "",
+    "facts": [
+      {
+        "label": "Director",
+        "value": "Stian Johansen"
+      },
+      {
+        "label": "Production",
+        "value": "Einar Film"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/p/DCT3S7tMzxC/"
+      },
+      {
+        "label": "Director’s portfolio",
+        "url": "https://einarfilm.no/directors/stian-johansen"
+      },
+      {
+        "label": "Exact full-resolution production film",
+        "url": "https://einarfilm.no/directors/stian-johansen/duedekning"
+      },
+      {
+        "label": "Original costume fitting",
+        "url": "https://www.instagram.com/p/DFlPHEJMUbB/"
+      }
+    ],
+    "portrait": true,
+    "scope": "campaign",
+    "attribution": {
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/DCT3S7tMzxC/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    }
+  },
+  {
+    "id": "mcdonalds-cheese-saga",
+    "slug": "mcdonalds-cheese-saga",
+    "title": "McDonald’s — Cheese Saga",
+    "thumbnail": {
+      "src": "/images/work/mcdonalds-cheese-saga/hd-costume-2.webp",
+      "smallSrc": "/images/work/mcdonalds-cheese-saga/hd-costume-2-480.webp",
+      "smallWidth": 480,
+      "width": 1920,
+      "height": 1080,
+      "alt": "McDonald’s — Cheese Saga — blue overshirt and light shirt, frame from the film",
+      "evidence": {
+        "basis": "film-frame",
+        "videoSrc": "/videos/mcdonalds-cheese-saga-hd.mp4",
+        "note": "Exact matching director’s cut, 5.5s. Same ball-pit cast, shirts and outfits as the Instagram publication; not a different Cheese Saga campaign."
+      }
+    },
+    "images": [
+      {
+        "src": "/images/work/mcdonalds-cheese-saga/hd-costume-2.webp",
+        "smallSrc": "/images/work/mcdonalds-cheese-saga/hd-costume-2-480.webp",
+        "smallWidth": 480,
+        "width": 1920,
+        "height": 1080,
+        "alt": "McDonald’s — Cheese Saga — blue overshirt and light shirt, frame from the film",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/mcdonalds-cheese-saga-hd.mp4",
+          "note": "Exact matching director’s cut, 5.5s. Same ball-pit cast, shirts and outfits as the Instagram publication; not a different Cheese Saga campaign."
+        }
+      },
+      {
+        "src": "/images/work/mcdonalds-cheese-saga/hd-costume-4.webp",
+        "smallSrc": "/images/work/mcdonalds-cheese-saga/hd-costume-4-480.webp",
+        "smallWidth": 480,
+        "width": 1920,
+        "height": 1080,
+        "alt": "McDonald’s — Cheese Saga — pink blouse, frame from the film",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/mcdonalds-cheese-saga-hd.mp4",
+          "note": "Exact matching director’s cut, 18s. Same ball-pit cast, shirts and outfits as the Instagram publication; not a different Cheese Saga campaign."
+        }
+      },
+      {
+        "src": "/images/work/mcdonalds-cheese-saga/hd-costume-5.webp",
+        "smallSrc": "/images/work/mcdonalds-cheese-saga/hd-costume-5-480.webp",
+        "smallWidth": 480,
+        "width": 1920,
+        "height": 1080,
+        "alt": "McDonald’s — Cheese Saga — green top and denim dungarees, frame from the film",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/mcdonalds-cheese-saga-hd.mp4",
+          "note": "Exact matching director’s cut, 25s. Same ball-pit cast, shirts and outfits as the Instagram publication; not a different Cheese Saga campaign."
+        }
+      },
+      {
+        "src": "/images/work/mcdonalds-cheese-saga/hd-costume-6.webp",
+        "smallSrc": "/images/work/mcdonalds-cheese-saga/hd-costume-6-480.webp",
+        "smallWidth": 480,
+        "width": 1920,
+        "height": 1080,
+        "alt": "McDonald’s — Cheese Saga — mint shirt and beige cardigan, frame from the film",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/mcdonalds-cheese-saga-hd.mp4",
+          "note": "Exact matching director’s cut, 31s. Same ball-pit cast, shirts and outfits as the Instagram publication; not a different Cheese Saga campaign."
+        }
+      },
+      {
+        "src": "/images/work/mcdonalds-cheese-saga/hd-detail-2.webp",
+        "smallSrc": "/images/work/mcdonalds-cheese-saga/hd-detail-2-480.webp",
+        "smallWidth": 480,
+        "width": 1920,
+        "height": 1080,
+        "alt": "McDonald’s — Cheese Saga — green knitwear, frame from the film",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/mcdonalds-cheese-saga-hd.mp4",
+          "note": "Inspected frame from the same full 1080p director’s cut. Cast and ball-pit wardrobes match the original portfolio film."
+        }
+      },
+      {
+        "src": "/images/work/mcdonalds-cheese-saga/hd-detail-4.webp",
+        "smallSrc": "/images/work/mcdonalds-cheese-saga/hd-detail-4-480.webp",
+        "smallWidth": 480,
+        "width": 1920,
+        "height": 1080,
+        "alt": "McDonald’s — Cheese Saga — mint shirt and beige cardigan in motion, frame from the film",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/mcdonalds-cheese-saga-hd.mp4",
+          "note": "Inspected frame from the same full 1080p director’s cut. Cast and ball-pit wardrobes match the original portfolio film."
+        }
+      },
+      {
+        "src": "/images/work/mcdonalds-cheese-saga/hd-detail-5.webp",
+        "smallSrc": "/images/work/mcdonalds-cheese-saga/hd-detail-5-480.webp",
+        "smallWidth": 480,
+        "width": 1920,
+        "height": 1080,
+        "alt": "McDonald’s — Cheese Saga — patterned knitwear and orange hat, frame from the film",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/mcdonalds-cheese-saga-hd.mp4",
+          "note": "Inspected frame from the same full 1080p director’s cut. Cast and ball-pit wardrobes match the original portfolio film."
+        }
+      }
+    ],
+    "videos": [
+      {
+        "provider": "native",
+        "title": "McDonald’s — Cheese Saga",
+        "url": "https://www.ivanardura.com/project/mcdonalds-cheese-saga",
+        "src": "/videos/mcdonalds-cheese-saga-hd.mp4",
+        "width": 1920,
+        "height": 1080,
+        "poster": {
+          "src": "/images/work/mcdonalds-cheese-saga/film-cover.webp",
+          "smallSrc": "/images/work/mcdonalds-cheese-saga/film-cover-480.webp",
+          "width": 1920,
+          "height": 1080,
+          "smallWidth": 480,
+          "alt": "McDonald’s — Cheese Saga — film preview"
+        }
+      }
+    ],
+    "credit": "",
+    "facts": [
+      {
+        "label": "Director",
+        "value": "Marek Partyš"
+      },
+      {
+        "label": "Production",
+        "value": "Bistro Films"
+      },
+      {
+        "label": "Agency",
+        "value": "DDB Prague"
+      },
+      {
+        "label": "Photography",
+        "value": "Pavel Hejný"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/p/C8UmP9cNWK3/"
+      },
+      {
+        "label": "Creative portfolio",
+        "url": "https://www.ivanardura.com/project/mcdonalds-cheese-saga"
+      }
+    ],
+    "portrait": false,
+    "scope": "campaign",
+    "attribution": {
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/C8UmP9cNWK3/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    }
+  },
+  {
+    "id": "mother",
+    "slug": "post-bellum-mother",
+    "title": "Post Bellum — Mother",
+    "thumbnail": {
+      "src": "/images/work/mother/hd-costume-1.webp",
+      "smallSrc": "/images/work/mother/hd-costume-1-480.webp",
+      "smallWidth": 480,
+      "width": 1540,
+      "height": 1080,
+      "alt": "Post Bellum — Mother — orange roll-neck and patterned knitwear, film still",
+      "evidence": {
+        "basis": "film-frame",
+        "videoSrc": "/videos/post-bellum-mother-hd.mp4",
+        "note": "Visually reviewed frame at 9.51s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+      }
+    },
+    "images": [
+      {
+        "src": "/images/work/mother/hd-costume-1.webp",
+        "smallSrc": "/images/work/mother/hd-costume-1-480.webp",
+        "smallWidth": 480,
+        "width": 1540,
+        "height": 1080,
+        "alt": "Post Bellum — Mother — orange roll-neck and patterned knitwear, film still",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/post-bellum-mother-hd.mp4",
+          "note": "Visually reviewed frame at 9.51s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/mother/hd-costume-2.webp",
+        "smallSrc": "/images/work/mother/hd-costume-2-480.webp",
+        "smallWidth": 480,
+        "width": 1540,
+        "height": 1080,
+        "alt": "Post Bellum — Mother — blue jacket, striped t-shirt and red collar, film still",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/post-bellum-mother-hd.mp4",
+          "note": "Visually reviewed frame at 22.81s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/mother/hd-costume-4.webp",
+        "smallSrc": "/images/work/mother/hd-costume-4-480.webp",
+        "smallWidth": 480,
+        "width": 1540,
+        "height": 1080,
+        "alt": "Post Bellum — Mother — coat and period uniforms, film still",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/post-bellum-mother-hd.mp4",
+          "note": "Visually reviewed frame at 49.43s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/mother/hd-costume-5.webp",
+        "smallSrc": "/images/work/mother/hd-costume-5-480.webp",
+        "smallWidth": 480,
+        "width": 1540,
+        "height": 1080,
+        "alt": "Post Bellum — Mother — patterned dress, apron and suit, film still",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/post-bellum-mother-hd.mp4",
+          "note": "Visually reviewed frame at 62.74s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/mother/hd-costume-6.webp",
+        "smallSrc": "/images/work/mother/hd-costume-6-480.webp",
+        "smallWidth": 480,
+        "width": 1540,
+        "height": 1080,
+        "alt": "Post Bellum — Mother — red coat and patterned childhood knitwear, film still",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/post-bellum-mother-hd.mp4",
+          "note": "Visually reviewed frame at 76.05s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      }
+    ],
+    "videos": [
+      {
+        "provider": "native",
+        "title": "Post Bellum — Mother",
+        "url": "https://www.marekpartys.com/post-bellum-mother/",
+        "src": "/videos/post-bellum-mother-hd.mp4",
+        "width": 1540,
+        "height": 1080,
+        "poster": {
+          "src": "/images/work/mother/hd-film-poster.webp",
+          "smallSrc": "/images/work/mother/hd-film-poster-480.webp",
+          "smallWidth": 480,
+          "width": 1540,
+          "height": 1080,
+          "alt": "Post Bellum — Mother — film preview",
+          "evidence": {
+            "basis": "film-frame",
+            "videoSrc": "/videos/post-bellum-mother-hd.mp4",
+            "note": "Poster from the exact full film, preserving its native frame."
+          }
+        }
+      }
+    ],
+    "credit": "",
+    "facts": [
+      {
+        "label": "Director",
+        "value": "Marek Partyš"
+      },
+      {
+        "label": "Production",
+        "value": "Bistro Films"
+      },
+      {
+        "label": "Cinematography",
+        "value": "David Hofmann"
+      },
+      {
+        "label": "Wardrobe",
+        "value": "Dušan Bebčák"
+      },
+      {
+        "label": "Agency",
+        "value": "OAK"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/p/C8UZaTqN7uX/"
+      },
+      {
+        "label": "Production credits",
+        "url": "https://www.linkedin.com/posts/leanne-tarvin-361a7864_so-excited-to-share-with-you-marek-party%C5%A1-activity-7163892870645534720-cbH8"
+      },
+      {
+        "label": "Verified full film and production source",
+        "url": "https://www.marekpartys.com/post-bellum-mother/"
+      },
+      {
+        "label": "Director’s explicit wardrobe credit",
+        "url": "https://vimeo.com/912061653"
+      }
+    ],
+    "portrait": false,
+    "scope": "campaign",
+    "attribution": {
+      "basis": "explicit-credit",
+      "source": "https://vimeo.com/912061653",
+      "note": "Exact primary campaign credits explicitly name Dušan Bebčák for the wardrobe/styling role recorded in this project’s facts."
+    }
+  },
+  {
+    "id": "vitana-gorilovacka",
+    "slug": "vitana-gorilovacka",
+    "title": "Vitana — Gorilovačka",
+    "thumbnail": {
+      "src": "/images/work/vitana-gorilovacka/detail-1.webp",
+      "smallSrc": "/images/work/vitana-gorilovacka/detail-1-480.webp",
+      "smallWidth": 480,
+      "width": 1280,
+      "height": 720,
+      "alt": "Vitana — Gorilovačka — frame from the advert",
+      "evidence": {
+        "basis": "film-frame",
+        "videoSrc": "/videos/540684470.mp4",
+        "note": "Visually inspected costume frame at 2.4 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+      }
+    },
+    "images": [
+      {
+        "src": "/images/work/vitana-gorilovacka/540684470-still-2.webp",
+        "smallSrc": "/images/work/vitana-gorilovacka/540684470-still-2-480.webp",
+        "smallWidth": 480,
+        "width": 1280,
+        "height": 720,
+        "alt": "Vitana — Gorilovačka — costume in the finished film, frame 2",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/540684470.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "src": "/images/work/vitana-gorilovacka/detail-1.webp",
+        "smallSrc": "/images/work/vitana-gorilovacka/detail-1-480.webp",
+        "smallWidth": 480,
+        "width": 1280,
+        "height": 720,
+        "alt": "Vitana — Gorilovačka — frame from the advert",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/540684470.mp4",
+          "note": "Visually inspected costume frame at 2.4 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/vitana-gorilovacka/detail-3.webp",
+        "smallSrc": "/images/work/vitana-gorilovacka/detail-3-480.webp",
+        "smallWidth": 480,
+        "width": 1280,
+        "height": 720,
+        "alt": "Vitana — Gorilovačka — frame from the advert",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/540684470.mp4",
+          "note": "Visually inspected costume frame at 17.4 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/vitana-gorilovacka/final-detail-2.webp",
+        "smallSrc": "/images/work/vitana-gorilovacka/final-detail-2-480.webp",
+        "smallWidth": 480,
+        "width": 1280,
+        "height": 720,
+        "alt": "Vitana — Gorilovačka — striped red-and-white neckline, film still",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/540684470.mp4",
+          "note": "Visually inspected wardrobe frame at 6.6s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/vitana-gorilovacka/final-detail-5.webp",
+        "smallSrc": "/images/work/vitana-gorilovacka/final-detail-5-480.webp",
+        "smallWidth": 480,
+        "width": 1280,
+        "height": 720,
+        "alt": "Vitana — Gorilovačka — teal blouse at the garden table, film still",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/540684470.mp4",
+          "note": "Visually inspected wardrobe frame at 18.6s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/vitana-gorilovacka/final-detail-6.webp",
+        "smallSrc": "/images/work/vitana-gorilovacka/final-detail-6-480.webp",
+        "smallWidth": 480,
+        "width": 1280,
+        "height": 720,
+        "alt": "Vitana — Gorilovačka — denim waistcoat, jeans and the garden-party ensemble, film still",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/540684470.mp4",
+          "note": "Visually inspected wardrobe frame at 22.8s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      }
+    ],
+    "videos": [
+      {
+        "provider": "native",
+        "title": "Vitana — Gorilovačka",
+        "url": "https://vimeo.com/540684470",
+        "width": 1280,
+        "height": 720,
+        "src": "/videos/540684470.mp4",
+        "poster": {
+          "src": "/images/work/vitana-gorilovacka/540684470-still-1.webp",
+          "smallSrc": "/images/work/vitana-gorilovacka/540684470-still-1-480.webp",
+          "smallWidth": 480,
+          "width": 1280,
+          "height": 720,
+          "alt": "Vitana — Gorilovačka — costume in the finished film, frame 1"
+        }
+      }
+    ],
+    "credit": "Costume design",
+    "facts": [
+      {
+        "label": "Director",
+        "value": "Pavel Soukup"
+      },
+      {
+        "label": "Production",
+        "value": "Creative Embassy"
+      },
+      {
+        "label": "Cinematography",
+        "value": "Radim Střelka"
+      },
+      {
+        "label": "Agency",
+        "value": "WMC Grey"
+      },
+      {
+        "label": "Costume design",
+        "value": "Dušan Bebčák"
+      },
+      {
+        "label": "Costume assistant",
+        "value": "Klára Macková"
+      },
+      {
+        "label": "Producers",
+        "value": "Petr Oplatka / Matouš Heger"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Production credits",
+        "url": "https://vimeo.com/540684470"
+      }
+    ],
+    "portrait": false,
+    "scope": "campaign",
+    "attribution": {
+      "basis": "explicit-credit",
+      "source": "https://vimeo.com/540684470",
+      "note": "Exact director/producer campaign credits explicitly name Dušan Bebčák for costume design."
+    }
+  },
+  {
+    "id": "vypsana-fixa-fakin-party",
+    "slug": "vypsana-fixa-fakin-party",
+    "title": "Vypsaná fixa — Fakin party",
+    "thumbnail": {
+      "src": "/images/work/vypsana-fixa-fakin-party/published-39.webp",
+      "smallSrc": "/images/work/vypsana-fixa-fakin-party/published-39-480.webp",
+      "smallWidth": 480,
+      "width": 2400,
+      "height": 1599,
+      "alt": "vypsana fixa fakin party — published campaign photograph",
+      "evidence": {
+        "basis": "visual-match",
+        "videoSrc": "/videos/fakin-party.mp4",
+        "note": "Exact costumes and performers compared with the full Fakin party film from the credited colourist’s portfolio: blue shirt/red sleeveless knitwear, navy suit, party set and ensemble outfits. Publication explicitly credits Dušan Bebčák / @bebcak for wardrobe."
+      }
+    },
+    "images": [
+      {
+        "src": "/images/work/vypsana-fixa-fakin-party/published-39.webp",
+        "smallSrc": "/images/work/vypsana-fixa-fakin-party/published-39-480.webp",
+        "smallWidth": 480,
+        "width": 2400,
+        "height": 1599,
+        "alt": "Vypsaná fixa — Fakin party — published campaign image 1",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/fakin-party.mp4",
+          "note": "Exact costumes and performers compared with the full Fakin party film from the credited colourist’s portfolio: blue shirt/red sleeveless knitwear, navy suit, party set and ensemble outfits. Publication explicitly credits Dušan Bebčák / @bebcak for wardrobe."
+        }
+      },
+      {
+        "src": "/images/work/vypsana-fixa-fakin-party/published-41.webp",
+        "smallSrc": "/images/work/vypsana-fixa-fakin-party/published-41-480.webp",
+        "smallWidth": 480,
+        "width": 2400,
+        "height": 1599,
+        "alt": "Vypsaná fixa — Fakin party — published campaign image 2",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/fakin-party.mp4",
+          "note": "Exact costumes and performers compared with the full Fakin party film from the credited colourist’s portfolio: blue shirt/red sleeveless knitwear, navy suit, party set and ensemble outfits. Publication explicitly credits Dušan Bebčák / @bebcak for wardrobe."
+        }
+      },
+      {
+        "src": "/images/work/vypsana-fixa-fakin-party/published-40.webp",
+        "smallSrc": "/images/work/vypsana-fixa-fakin-party/published-40-480.webp",
+        "smallWidth": 480,
+        "width": 2400,
+        "height": 1599,
+        "alt": "Vypsaná fixa — Fakin party — published campaign image 3",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/fakin-party.mp4",
+          "note": "Exact costumes and performers compared with the full Fakin party film from the credited colourist’s portfolio: blue shirt/red sleeveless knitwear, navy suit, party set and ensemble outfits. Publication explicitly credits Dušan Bebčák / @bebcak for wardrobe."
+        }
+      },
+      {
+        "src": "/images/work/vypsana-fixa-fakin-party/published-42.webp",
+        "smallSrc": "/images/work/vypsana-fixa-fakin-party/published-42-480.webp",
+        "smallWidth": 480,
+        "width": 2400,
+        "height": 1599,
+        "alt": "Vypsaná fixa — Fakin party — published campaign image 4",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/fakin-party.mp4",
+          "note": "Exact costumes and performers compared with the full Fakin party film from the credited colourist’s portfolio: blue shirt/red sleeveless knitwear, navy suit, party set and ensemble outfits. Publication explicitly credits Dušan Bebčák / @bebcak for wardrobe."
+        }
+      },
+      {
+        "src": "/images/work/vypsana-fixa-fakin-party/published-43.webp",
+        "smallSrc": "/images/work/vypsana-fixa-fakin-party/published-43-480.webp",
+        "smallWidth": 480,
+        "width": 2400,
+        "height": 1599,
+        "alt": "Vypsaná fixa — Fakin party — published campaign image 5",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/fakin-party.mp4",
+          "note": "Exact costumes and performers compared with the full Fakin party film from the credited colourist’s portfolio: blue shirt/red sleeveless knitwear, navy suit, party set and ensemble outfits. Publication explicitly credits Dušan Bebčák / @bebcak for wardrobe."
+        }
+      },
+      {
+        "src": "/images/work/vypsana-fixa-fakin-party/published-44.webp",
+        "smallSrc": "/images/work/vypsana-fixa-fakin-party/published-44-480.webp",
+        "smallWidth": 480,
+        "width": 2400,
+        "height": 1599,
+        "alt": "Vypsaná fixa — Fakin party — published campaign image 6",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/fakin-party.mp4",
+          "note": "Exact costumes and performers compared with the full Fakin party film from the credited colourist’s portfolio: blue shirt/red sleeveless knitwear, navy suit, party set and ensemble outfits. Publication explicitly credits Dušan Bebčák / @bebcak for wardrobe."
+        }
+      },
+      {
+        "src": "/images/work/vypsana-fixa-fakin-party/published-46.webp",
+        "smallSrc": "/images/work/vypsana-fixa-fakin-party/published-46-480.webp",
+        "smallWidth": 480,
+        "width": 2400,
+        "height": 1599,
+        "alt": "Vypsaná fixa — Fakin party — published campaign image 7",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/fakin-party.mp4",
+          "note": "Exact costumes and performers compared with the full Fakin party film from the credited colourist’s portfolio: blue shirt/red sleeveless knitwear, navy suit, party set and ensemble outfits. Publication explicitly credits Dušan Bebčák / @bebcak for wardrobe."
+        }
+      },
+      {
+        "src": "/images/work/vypsana-fixa-fakin-party/published-38.webp",
+        "smallSrc": "/images/work/vypsana-fixa-fakin-party/published-38-480.webp",
+        "smallWidth": 480,
+        "width": 2400,
+        "height": 1599,
+        "alt": "Vypsaná fixa — Fakin party — published campaign image 8",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/fakin-party.mp4",
+          "note": "Exact costumes and performers compared with the full Fakin party film from the credited colourist’s portfolio: blue shirt/red sleeveless knitwear, navy suit, party set and ensemble outfits. Publication explicitly credits Dušan Bebčák / @bebcak for wardrobe."
+        }
+      },
+      {
+        "src": "/images/work/vypsana-fixa-fakin-party/published-45.webp",
+        "smallSrc": "/images/work/vypsana-fixa-fakin-party/published-45-480.webp",
+        "smallWidth": 480,
+        "width": 2400,
+        "height": 1599,
+        "alt": "Vypsaná fixa — Fakin party — published campaign image 9",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/fakin-party.mp4",
+          "note": "Exact costumes and performers compared with the full Fakin party film from the credited colourist’s portfolio: blue shirt/red sleeveless knitwear, navy suit, party set and ensemble outfits. Publication explicitly credits Dušan Bebčák / @bebcak for wardrobe."
+        }
+      }
+    ],
+    "videos": [
+      {
+        "provider": "native",
+        "title": "Vypsaná fixa — Fakin party",
+        "url": "https://misgena.tv/creation/fakin-party-vypsana-fixa/",
+        "src": "/videos/fakin-party.mp4",
+        "width": 1440,
+        "height": 960,
+        "poster": {
+          "src": "/images/work/vypsana-fixa-fakin-party/film-cover.webp",
+          "smallSrc": "/images/work/vypsana-fixa-fakin-party/film-cover-480.webp",
+          "width": 1920,
+          "height": 1280,
+          "smallWidth": 480,
+          "alt": "Vypsaná fixa — Fakin party — film preview"
+        }
+      }
+    ],
+    "credit": "",
+    "facts": [
+      {
+        "label": "Director",
+        "value": "Tomáš Bláha / Novák & Nguyen"
+      },
+      {
+        "label": "Production",
+        "value": "Roar Production / Publicis Praha"
+      },
+      {
+        "label": "Cinematography",
+        "value": "Mikuláš Hrdlička"
+      },
+      {
+        "label": "Wardrobe",
+        "value": "Dušan Bebčák"
+      },
+      {
+        "label": "Wardrobe assistant",
+        "value": "Andrea Konečná"
+      },
+      {
+        "label": "Photography",
+        "value": "Petr Jandera"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cinematographer’s credited publication",
+        "url": "https://www.instagram.com/p/DYXTNEtiB2S/"
+      },
+      {
+        "label": "Full film — colourist’s portfolio",
+        "url": "https://misgena.tv/creation/fakin-party-vypsana-fixa/"
+      }
+    ],
+    "portrait": false,
+    "scope": "campaign",
+    "attribution": {
+      "basis": "explicit-credit",
+      "source": "https://www.instagram.com/p/DYXTNEtiB2S/",
+      "note": "Direct campaign publication or Dušan’s own caption explicitly credits @bebcak / Dušan Bebčák. Shared roles remain shared, and the source caption/crew record is retained in the research dossier."
+    }
+  },
+  {
+    "id": "budvar-33",
+    "slug": "budvar-33",
+    "title": "Budvar 33",
+    "thumbnail": {
+      "src": "/images/work/budvar-33/costume-v3-2.webp",
+      "smallSrc": "/images/work/budvar-33/costume-v3-2-480.webp",
+      "smallWidth": 270,
+      "width": 720,
+      "height": 1280,
+      "alt": "Budvar 33 — costume in the finished film",
+      "evidence": {
+        "basis": "film-frame",
+        "videoSrc": "/videos/Dc4C_PJt3Q4.mp4",
+        "note": "Costume-focused frame at 2.339s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+      }
+    },
+    "images": [
+      {
+        "src": "/images/work/budvar-33/Dc4C_PJt3Q4-still-3.webp",
+        "smallSrc": "/images/work/budvar-33/Dc4C_PJt3Q4-still-3-480.webp",
+        "smallWidth": 270,
+        "width": 720,
+        "height": 1280,
+        "alt": "Budvar 33 — costume in the finished film, frame 3",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/Dc4C_PJt3Q4.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "src": "/images/work/budvar-33/detail-1.webp",
+        "smallSrc": "/images/work/budvar-33/detail-1-480.webp",
+        "smallWidth": 270,
+        "width": 720,
+        "height": 1280,
+        "alt": "Budvar 33 — frame from the advert",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/Dc4Dh7QtqiD.mp4",
+          "note": "Visually inspected costume frame at 0.81 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/budvar-33/costume-v2-1.webp",
+        "smallSrc": "/images/work/budvar-33/costume-v2-1-480.webp",
+        "smallWidth": 270,
+        "width": 720,
+        "height": 1280,
+        "alt": "Budvar 33 — costume in the finished film",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/Dc4DPU9NAFl.mp4",
+          "note": "Costume-focused frame at 1.22s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      },
+      {
+        "src": "/images/work/budvar-33/costume-v2-6.webp",
+        "smallSrc": "/images/work/budvar-33/costume-v2-6-480.webp",
+        "smallWidth": 270,
+        "width": 720,
+        "height": 1280,
+        "alt": "Budvar 33 — costume in the finished film",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/Dc4DPU9NAFl.mp4",
+          "note": "Costume-focused frame at 6.916s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      },
+      {
+        "src": "/images/work/budvar-33/costume-v3-2.webp",
+        "smallSrc": "/images/work/budvar-33/costume-v3-2-480.webp",
+        "smallWidth": 270,
+        "width": 720,
+        "height": 1280,
+        "alt": "Budvar 33 — costume in the finished film",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/Dc4C_PJt3Q4.mp4",
+          "note": "Costume-focused frame at 2.339s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      },
+      {
+        "src": "/images/work/budvar-33/costume-v3-8.webp",
+        "smallSrc": "/images/work/budvar-33/costume-v3-8-480.webp",
+        "smallWidth": 270,
+        "width": 720,
+        "height": 1280,
+        "alt": "Budvar 33 — costume in the finished film",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/Dc4C_PJt3Q4.mp4",
+          "note": "Costume-focused frame at 8.848s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      }
+    ],
+    "videos": [
+      {
+        "provider": "native",
+        "title": "Budvar 33",
+        "url": "https://www.instagram.com/p/Dc4Dh7QtqiD/",
+        "src": "/videos/Dc4Dh7QtqiD.mp4",
+        "width": 720,
+        "height": 1280,
+        "poster": {
+          "src": "/images/work/budvar-33/Dc4Dh7QtqiD-still-3.webp",
+          "smallSrc": "/images/work/budvar-33/Dc4Dh7QtqiD-still-3-480.webp",
+          "smallWidth": 270,
+          "width": 720,
+          "height": 1280,
+          "alt": "Budvar 33 — costume in the finished film, frame 3"
+        }
+      },
+      {
+        "provider": "native",
+        "title": "Budvar 33",
+        "url": "https://www.instagram.com/p/Dc4DPU9NAFl/",
+        "src": "/videos/Dc4DPU9NAFl.mp4",
+        "width": 720,
+        "height": 1280,
+        "poster": {
+          "src": "/images/work/budvar-33/Dc4DPU9NAFl-still-3.webp",
+          "smallSrc": "/images/work/budvar-33/Dc4DPU9NAFl-still-3-480.webp",
+          "smallWidth": 270,
+          "width": 720,
+          "height": 1280,
+          "alt": "Budvar 33 — costume in the finished film, frame 3"
+        }
+      },
+      {
+        "provider": "native",
+        "title": "Budvar 33",
+        "url": "https://www.instagram.com/p/Dc4C_PJt3Q4/",
+        "src": "/videos/Dc4C_PJt3Q4.mp4",
+        "width": 720,
+        "height": 1280,
+        "poster": {
+          "src": "/images/work/budvar-33/Dc4C_PJt3Q4-still-2.webp",
+          "smallSrc": "/images/work/budvar-33/Dc4C_PJt3Q4-still-2-480.webp",
+          "smallWidth": 270,
+          "width": 720,
+          "height": 1280,
+          "alt": "Budvar 33 — costume in the finished film, frame 2"
+        }
+      }
+    ],
+    "credit": "Costume design",
+    "facts": [
+      {
+        "label": "Director",
+        "value": "Luboš Rezler"
+      },
+      {
+        "label": "Production",
+        "value": "Bubenská Production"
+      },
+      {
+        "label": "Cinematography",
+        "value": "Kryštof Melka"
+      },
+      {
+        "label": "Agency",
+        "value": "Ogilvy"
+      },
+      {
+        "label": "Costume design",
+        "value": "Dušan Bebčák"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/p/Dc4Dh7QtqiD/"
+      },
+      {
+        "label": "Agency campaign",
+        "url": "https://ogilvy.cz/ogilvy-pripravilo-novou-kampan-pro-budvar-33"
+      }
+    ],
+    "portrait": false,
+    "scope": "campaign",
+    "attribution": {
+      "basis": "explicit-credit",
+      "source": "https://www.instagram.com/p/Dc4Dh7QtqiD/",
+      "note": "Direct campaign publication or Dušan’s own caption explicitly credits @bebcak / Dušan Bebčák. Shared roles remain shared, and the source caption/crew record is retained in the research dossier."
+    }
+  },
+  {
+    "id": "raiffeisen-spooky-vintage-shopping",
+    "slug": "raiffeisen-spooky-vintage-shopping",
+    "title": "Raiffeisen — Spooky Vintage Shopping",
+    "thumbnail": {
+      "src": "/images/work/raiffeisen-spooky-vintage-shopping/image-1.webp",
+      "smallSrc": "/images/work/raiffeisen-spooky-vintage-shopping/image-1-480.webp",
+      "smallWidth": 480,
+      "width": 877,
+      "height": 657,
+      "alt": "Raiffeisen — Spooky Vintage Shopping — photograph 1",
+      "evidence": {
+        "basis": "visual-match",
+        "videoSrc": "/videos/DQKqcPIDGy2.mp4",
+        "note": "Compared with the full film: identical distinctive patterned dresses and burgundy coat on the same staircase/set; grey/yellow striped jumper and dark trousers match the opening character. Yellow alternative dress excluded."
+      }
+    },
+    "images": [
+      {
+        "src": "/images/work/raiffeisen-spooky-vintage-shopping/image-1.webp",
+        "smallSrc": "/images/work/raiffeisen-spooky-vintage-shopping/image-1-480.webp",
+        "smallWidth": 480,
+        "width": 877,
+        "height": 657,
+        "alt": "Raiffeisen — Spooky Vintage Shopping — wardrobe photograph 1",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/DQKqcPIDGy2.mp4",
+          "note": "Compared with the full film: identical distinctive patterned dresses and burgundy coat on the same staircase/set; grey/yellow striped jumper and dark trousers match the opening character. Yellow alternative dress excluded."
+        }
+      },
+      {
+        "src": "/images/work/raiffeisen-spooky-vintage-shopping/image-2.webp",
+        "smallSrc": "/images/work/raiffeisen-spooky-vintage-shopping/image-2-480.webp",
+        "smallWidth": 480,
+        "width": 1058,
+        "height": 797,
+        "alt": "Raiffeisen — Spooky Vintage Shopping — wardrobe photograph 2",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/DQKqcPIDGy2.mp4",
+          "note": "Compared with the full film: identical distinctive patterned dresses and burgundy coat on the same staircase/set; grey/yellow striped jumper and dark trousers match the opening character. Yellow alternative dress excluded."
+        }
+      },
+      {
+        "src": "/images/work/raiffeisen-spooky-vintage-shopping/image-4.webp",
+        "smallSrc": "/images/work/raiffeisen-spooky-vintage-shopping/image-4-480.webp",
+        "smallWidth": 480,
+        "width": 1170,
+        "height": 881,
+        "alt": "Raiffeisen — Spooky Vintage Shopping — wardrobe photograph 4",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/DQKqcPIDGy2.mp4",
+          "note": "Compared with the full film: identical distinctive patterned dresses and burgundy coat on the same staircase/set; grey/yellow striped jumper and dark trousers match the opening character. Yellow alternative dress excluded."
+        }
+      }
+    ],
+    "videos": [
+      {
+        "provider": "native",
+        "title": "Raiffeisen — Spooky Vintage Shopping",
+        "url": "https://www.instagram.com/p/DQKqcPIDGy2/",
+        "src": "/videos/DQKqcPIDGy2.mp4",
+        "width": 1048,
+        "height": 718
+      }
+    ],
+    "credit": "Wardrobe styling",
+    "facts": [
+      {
+        "label": "Director",
+        "value": "Maca Rubio"
+      },
+      {
+        "label": "Production",
+        "value": "Stink Prague"
+      },
+      {
+        "label": "Cinematography",
+        "value": "Santi Cantillo"
+      },
+      {
+        "label": "Wardrobe",
+        "value": "Dušan Bebčák / @u_nik_orn"
+      },
+      {
+        "label": "Agency",
+        "value": "LOCCO"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/p/DQKqcPIDGy2/"
+      },
+      {
+        "label": "Director’s portfolio",
+        "url": "https://www.kryptonfilmsinternational.com/director/maca_rubio"
+      },
+      {
+        "label": "Instagram costume photographs",
+        "url": "https://www.instagram.com/p/DQUSnWNjNPi/"
+      }
+    ],
+    "portrait": false,
+    "scope": "campaign",
+    "attribution": {
+      "basis": "explicit-credit",
+      "source": "https://www.instagram.com/p/DQKqcPIDGy2/",
+      "note": "Direct campaign publication or Dušan’s own caption explicitly credits @bebcak / Dušan Bebčák. Shared roles remain shared, and the source caption/crew record is retained in the research dossier."
+    }
+  },
+  {
     "id": "engelmuller-drive-to-win",
     "slug": "engelmuller-drive-to-win",
     "title": "Engelmüller — Drive to Win",
@@ -2359,6 +2132,14 @@ export const projects: Project[] = [
       {
         "label": "Photography",
         "value": "Pavel Hejný"
+      },
+      {
+        "label": "Set design",
+        "value": "Mariana Kuchařová"
+      },
+      {
+        "label": "Executive producer",
+        "value": "Petr Oplatka"
       }
     ],
     "sources": [
@@ -2380,113 +2161,126 @@ export const projects: Project[] = [
     }
   },
   {
-    "id": "czech-technical-university",
-    "slug": "czech-technical-university",
-    "title": "ČVUT — Science across generations",
+    "id": "slovenska-sporitelna",
+    "slug": "slovenska-sporitelna",
+    "title": "Slovenská sporiteľňa — Everest",
     "thumbnail": {
-      "src": "/images/work/czech-technical-university/hd-costume-2.webp",
-      "smallSrc": "/images/work/czech-technical-university/hd-costume-2-480.webp",
+      "src": "/images/work/slovenska-sporitelna/verified-hd-2.webp",
+      "smallSrc": "/images/work/slovenska-sporitelna/verified-hd-2-480.webp",
       "smallWidth": 480,
       "width": 1920,
       "height": 1080,
-      "alt": "ČVUT — Science across generations — white laboratory coat and period shirt, film still",
+      "alt": "Slovenská sporiteľňa — Everest — red climbing suit, harness and helmet, film still",
       "evidence": {
         "basis": "film-frame",
-        "videoSrc": "/videos/cvut-hd.mp4",
-        "note": "Visually reviewed frame at 14.03s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        "videoSrc": "/videos/slsp-climber-hd.mp4",
+        "note": "Visually inspected wardrobe frame at 8.55s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
       }
     },
     "images": [
       {
-        "src": "/images/work/czech-technical-university/hd-costume-2.webp",
-        "smallSrc": "/images/work/czech-technical-university/hd-costume-2-480.webp",
+        "src": "/images/work/slovenska-sporitelna/verified-hd-2.webp",
+        "smallSrc": "/images/work/slovenska-sporitelna/verified-hd-2-480.webp",
         "smallWidth": 480,
         "width": 1920,
         "height": 1080,
-        "alt": "ČVUT — Science across generations — white laboratory coat and period shirt, film still",
+        "alt": "Slovenská sporiteľňa — Everest — red climbing suit, harness and helmet, film still",
         "evidence": {
           "basis": "film-frame",
-          "videoSrc": "/videos/cvut-hd.mp4",
-          "note": "Visually reviewed frame at 14.03s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+          "videoSrc": "/videos/slsp-climber-hd.mp4",
+          "note": "Visually inspected wardrobe frame at 8.55s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
         }
       },
       {
-        "src": "/images/work/czech-technical-university/hd-costume-3.webp",
-        "smallSrc": "/images/work/czech-technical-university/hd-costume-3-480.webp",
+        "src": "/images/work/slovenska-sporitelna/verified-hd-3.webp",
+        "smallSrc": "/images/work/slovenska-sporitelna/verified-hd-3-480.webp",
         "smallWidth": 480,
         "width": 1920,
         "height": 1080,
-        "alt": "ČVUT — Science across generations — checked work shirt in the workshop, film still",
+        "alt": "Slovenská sporiteľňa — Everest — red climbing jacket and backpack, film still",
         "evidence": {
           "basis": "film-frame",
-          "videoSrc": "/videos/cvut-hd.mp4",
-          "note": "Visually reviewed frame at 22.21s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+          "videoSrc": "/videos/slsp-climber-hd.mp4",
+          "note": "Visually inspected wardrobe frame at 13.53s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
         }
       },
       {
-        "src": "/images/work/czech-technical-university/hd-costume-4.webp",
-        "smallSrc": "/images/work/czech-technical-university/hd-costume-4-480.webp",
+        "src": "/images/work/slovenska-sporitelna/verified-hd-4.webp",
+        "smallSrc": "/images/work/slovenska-sporitelna/verified-hd-4-480.webp",
         "smallWidth": 480,
         "width": 1920,
         "height": 1080,
-        "alt": "ČVUT — Science across generations — green sweater, grey shorts and football socks, film still",
+        "alt": "Slovenská sporiteľňa — Everest — helmet, jacket and harness on the climbing wall, film still",
         "evidence": {
           "basis": "film-frame",
-          "videoSrc": "/videos/cvut-hd.mp4",
-          "note": "Visually reviewed frame at 30.39s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+          "videoSrc": "/videos/slsp-climber-hd.mp4",
+          "note": "Visually inspected wardrobe frame at 18.52s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
         }
       },
       {
-        "src": "/images/work/czech-technical-university/hd-costume-6.webp",
-        "smallSrc": "/images/work/czech-technical-university/hd-costume-6-480.webp",
+        "src": "/images/work/slovenska-sporitelna/verified-hd-5.webp",
+        "smallSrc": "/images/work/slovenska-sporitelna/verified-hd-5-480.webp",
         "smallWidth": 480,
         "width": 1920,
         "height": 1080,
-        "alt": "ČVUT — Science across generations — period waistcoat, white shirt and tie, film still",
+        "alt": "Slovenská sporiteľňa — Everest — dark wardrobe and long necklace among the globes, film still",
         "evidence": {
           "basis": "film-frame",
-          "videoSrc": "/videos/cvut-hd.mp4",
-          "note": "Visually reviewed frame at 46.76s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+          "videoSrc": "/videos/slsp-climber-hd.mp4",
+          "note": "Visually inspected wardrobe frame at 23.5s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
         }
       },
       {
-        "src": "/images/work/czech-technical-university/hd-costume-7.webp",
-        "smallSrc": "/images/work/czech-technical-university/hd-costume-7-480.webp",
+        "src": "/images/work/slovenska-sporitelna/verified-hd-6.webp",
+        "smallSrc": "/images/work/slovenska-sporitelna/verified-hd-6-480.webp",
         "smallWidth": 480,
         "width": 1920,
         "height": 1080,
-        "alt": "ČVUT — Science across generations — helmet and illuminated futuristic costume, film still",
+        "alt": "Slovenská sporiteľňa — Everest — contemporary wardrobe among the books, film still",
         "evidence": {
           "basis": "film-frame",
-          "videoSrc": "/videos/cvut-hd.mp4",
-          "note": "Visually reviewed frame at 54.36s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+          "videoSrc": "/videos/slsp-climber-hd.mp4",
+          "note": "Visually inspected wardrobe frame at 28.49s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/slovenska-sporitelna/verified-hd-7.webp",
+        "smallSrc": "/images/work/slovenska-sporitelna/verified-hd-7-480.webp",
+        "smallWidth": 480,
+        "width": 1920,
+        "height": 1080,
+        "alt": "Slovenská sporiteľňa — Everest — patterned blouse, burgundy knitwear and beige trousers, film still",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/slsp-climber-hd.mp4",
+          "note": "Visually inspected wardrobe frame at 33.12s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
         }
       }
     ],
     "videos": [
       {
         "provider": "native",
-        "title": "ČVUT — Science across generations",
-        "url": "https://www.creativeembassy.net/wolfberg-cvut",
-        "src": "/videos/cvut-hd.mp4",
+        "title": "Slovenská sporiteľňa — Everest",
+        "url": "https://www.bistrofilms.com/work/detail/climber-1",
+        "src": "/videos/slsp-climber-hd.mp4",
         "width": 1920,
         "height": 1080,
         "poster": {
-          "src": "/images/work/czech-technical-university/hd-film-poster.webp",
-          "smallSrc": "/images/work/czech-technical-university/hd-film-poster-480.webp",
+          "src": "/images/work/slovenska-sporitelna/verified-hd-poster.webp",
+          "smallSrc": "/images/work/slovenska-sporitelna/verified-hd-poster-480.webp",
           "smallWidth": 480,
           "width": 1920,
           "height": 1080,
-          "alt": "ČVUT — Science across generations — film preview",
+          "alt": "Slovenská sporiteľňa — Everest — film preview",
           "evidence": {
             "basis": "film-frame",
-            "videoSrc": "/videos/cvut-hd.mp4",
-            "note": "Poster from the exact full film, preserving its native frame."
+            "videoSrc": "/videos/slsp-climber-hd.mp4",
+            "note": "Preview from the exact HD film, preserving its native frame."
           }
         }
       }
     ],
-    "credit": "",
+    "credit": "Wardrobe styling",
     "facts": [
       {
         "label": "Director",
@@ -2494,33 +2288,45 @@ export const projects: Project[] = [
       },
       {
         "label": "Production",
-        "value": "Creative Embassy"
+        "value": "Bistro Films"
       },
       {
         "label": "Cinematography",
-        "value": "David Hofmann"
+        "value": "Alexander Šurkala"
       },
       {
-        "label": "Styling",
+        "label": "Featuring",
+        "value": "Lucia Janicová"
+      },
+      {
+        "label": "Agency",
+        "value": "Zaraguza"
+      },
+      {
+        "label": "Wardrobe",
         "value": "Dušan Bebčák"
       }
     ],
     "sources": [
       {
         "label": "Instagram",
-        "url": "https://www.instagram.com/p/C8UXeVTNMyO/"
+        "url": "https://www.instagram.com/p/DFh6Sg1smBS/"
       },
       {
-        "label": "Verified full film and production source",
-        "url": "https://www.creativeembassy.net/wolfberg-cvut"
+        "label": "Campaign",
+        "url": "https://www.slsp.sk/sk/aktuality/2024/10/1/kazdy-moze-zdolat-svoj-everest-slovenska-sporitelna-novou-kampanou-povzbudzuje-slovakov"
+      },
+      {
+        "label": "Exact full-resolution production film",
+        "url": "https://www.bistrofilms.com/work/detail/climber-1"
       }
     ],
     "portrait": false,
     "scope": "campaign",
     "attribution": {
       "basis": "explicit-credit",
-      "source": "https://www.creativeembassy.net/wolfberg-cvut",
-      "note": "Exact primary campaign credits explicitly name Dušan Bebčák for the wardrobe/styling role recorded in this project’s facts."
+      "source": "https://www.instagram.com/p/DFh6Sg1smBS/",
+      "note": "Direct campaign publication or Dušan’s own caption explicitly credits @bebcak / Dušan Bebčák. Shared roles remain shared, and the source caption/crew record is retained in the research dossier."
     }
   },
   {
@@ -2676,6 +2482,10 @@ export const projects: Project[] = [
       {
         "label": "Costume assistant",
         "value": "Tereza Nádvorníková"
+      },
+      {
+        "label": "Executive producer",
+        "value": "Petr Oplatka"
       }
     ],
     "sources": [
@@ -2697,510 +2507,83 @@ export const projects: Project[] = [
     }
   },
   {
-    "id": "billa-masterchef",
-    "slug": "billa-masterchef",
-    "title": "BILLA — MasterChef",
+    "id": "adidas-you-got-this",
+    "slug": "adidas-you-got-this",
+    "title": "adidas — You Got This",
     "thumbnail": {
-      "src": "/images/work/billa-masterchef/detail-1.webp",
-      "smallSrc": "/images/work/billa-masterchef/detail-1-480.webp",
+      "src": "/images/work/adidas-you-got-this/hd-detail-4.webp",
+      "smallSrc": "/images/work/adidas-you-got-this/hd-detail-4-480.webp",
       "smallWidth": 480,
-      "width": 1280,
-      "height": 720,
-      "alt": "BILLA — MasterChef — frame from the advert",
+      "width": 1920,
+      "height": 1080,
+      "alt": "adidas — You Got This — red football kit and dark training layers, film still",
       "evidence": {
         "basis": "film-frame",
-        "videoSrc": "/videos/797238968.mp4",
-        "note": "Visually inspected costume frame at 1.2 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        "videoSrc": "/videos/adidas-you-got-this-hd.mp4",
+        "note": "Reviewed frame at 15s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
       }
     },
     "images": [
       {
-        "src": "/images/work/billa-masterchef/797238968-still-3.webp",
-        "smallSrc": "/images/work/billa-masterchef/797238968-still-3-480.webp",
+        "src": "/images/work/adidas-you-got-this/hd-detail-4.webp",
+        "smallSrc": "/images/work/adidas-you-got-this/hd-detail-4-480.webp",
         "smallWidth": 480,
-        "width": 1280,
-        "height": 720,
-        "alt": "BILLA — MasterChef — costume in the finished film, frame 3",
+        "width": 1920,
+        "height": 1080,
+        "alt": "adidas — You Got This — red football kit and dark training layers, film still",
         "evidence": {
           "basis": "film-frame",
-          "videoSrc": "/videos/797238968.mp4",
-          "note": "Extracted from this film."
+          "videoSrc": "/videos/adidas-you-got-this-hd.mp4",
+          "note": "Reviewed frame at 15s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
         }
       },
       {
-        "src": "/images/work/billa-masterchef/detail-1.webp",
-        "smallSrc": "/images/work/billa-masterchef/detail-1-480.webp",
+        "src": "/images/work/adidas-you-got-this/hd-detail-5.webp",
+        "smallSrc": "/images/work/adidas-you-got-this/hd-detail-5-480.webp",
         "smallWidth": 480,
-        "width": 1280,
-        "height": 720,
-        "alt": "BILLA — MasterChef — frame from the advert",
+        "width": 1920,
+        "height": 1080,
+        "alt": "adidas — You Got This — red training top and black padded vest, film still",
         "evidence": {
           "basis": "film-frame",
-          "videoSrc": "/videos/797238968.mp4",
-          "note": "Visually inspected costume frame at 1.2 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+          "videoSrc": "/videos/adidas-you-got-this-hd.mp4",
+          "note": "Reviewed frame at 19s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
         }
       },
       {
-        "src": "/images/work/billa-masterchef/detail-3.webp",
-        "smallSrc": "/images/work/billa-masterchef/detail-3-480.webp",
+        "src": "/images/work/adidas-you-got-this/hd-detail-6.webp",
+        "smallSrc": "/images/work/adidas-you-got-this/hd-detail-6-480.webp",
         "smallWidth": 480,
-        "width": 1280,
-        "height": 720,
-        "alt": "BILLA — MasterChef — frame from the advert",
+        "width": 1920,
+        "height": 1080,
+        "alt": "adidas — You Got This — red kit and blue football boots, film still",
         "evidence": {
           "basis": "film-frame",
-          "videoSrc": "/videos/797238968.mp4",
-          "note": "Visually inspected costume frame at 8.7 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/billa-masterchef/final-detail-4.webp",
-        "smallSrc": "/images/work/billa-masterchef/final-detail-4-480.webp",
-        "smallWidth": 480,
-        "width": 1280,
-        "height": 720,
-        "alt": "BILLA — MasterChef — yellow knitwear, blue apron and green shirt by the kitchen window, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/797238968.mp4",
-          "note": "Visually inspected wardrobe frame at 7.2s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+          "videoSrc": "/videos/adidas-you-got-this-hd.mp4",
+          "note": "Reviewed frame at 24s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
         }
       }
     ],
     "videos": [
       {
         "provider": "native",
-        "title": "BILLA — MasterChef",
-        "url": "https://vimeo.com/797238968",
-        "width": 1280,
-        "height": 720,
-        "src": "/videos/797238968.mp4",
+        "title": "adidas — You Got This",
+        "url": "https://www.advocadofilms.com/work/",
+        "src": "/videos/adidas-you-got-this-hd.mp4",
+        "width": 1920,
+        "height": 1080,
         "poster": {
-          "src": "/images/work/billa-masterchef/797238968-still-2.webp",
-          "smallSrc": "/images/work/billa-masterchef/797238968-still-2-480.webp",
+          "src": "/images/work/adidas-you-got-this/hd-detail-4.webp",
+          "smallSrc": "/images/work/adidas-you-got-this/hd-detail-4-480.webp",
           "smallWidth": 480,
-          "width": 1280,
-          "height": 720,
-          "alt": "BILLA — MasterChef — costume in the finished film, frame 2"
-        }
-      }
-    ],
-    "credit": "Wardrobe / costumes",
-    "facts": [
-      {
-        "label": "Director",
-        "value": "Jakub Švejkar"
-      },
-      {
-        "label": "Production",
-        "value": "Procoma"
-      },
-      {
-        "label": "Cinematography",
-        "value": "Radim Střelka"
-      },
-      {
-        "label": "Agency",
-        "value": "McCann Prague"
-      },
-      {
-        "label": "Wardrobe / costumes",
-        "value": "Dušan Bebčák"
-      },
-      {
-        "label": "Wardrobe assistant",
-        "value": "Monika Černoušková"
-      }
-    ],
-    "sources": [
-      {
-        "label": "Production credits",
-        "url": "https://vimeo.com/797238968"
-      },
-      {
-        "label": "Campaign",
-        "url": "https://www.mediaguru.cz/billa-ma-novou-vernostni-kampan-s-nadobim-masterchef"
-      }
-    ],
-    "portrait": false,
-    "scope": "campaign",
-    "attribution": {
-      "basis": "explicit-credit",
-      "source": "https://vimeo.com/797238968",
-      "note": "Exact director/producer campaign credits explicitly name Dušan Bebčák for wardrobe / costumes."
-    }
-  },
-  {
-    "id": "favorit",
-    "slug": "favorit",
-    "title": "Favorit",
-    "thumbnail": {
-      "src": "/images/work/favorit/268355869-still-1.webp",
-      "smallSrc": "/images/work/favorit/268355869-still-1-480.webp",
-      "smallWidth": 480,
-      "width": 1280,
-      "height": 720,
-      "alt": "Favorit — costume in the finished film, frame 1"
-    },
-    "images": [
-      {
-        "src": "/images/work/favorit/268355869-still-2.webp",
-        "smallSrc": "/images/work/favorit/268355869-still-2-480.webp",
-        "smallWidth": 480,
-        "width": 1280,
-        "height": 532,
-        "alt": "Favorit — costume in the finished film, frame 2",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/268355869.mp4",
-          "note": "Extracted from this film."
-        }
-      },
-      {
-        "src": "/images/work/favorit/detail-1.webp",
-        "smallSrc": "/images/work/favorit/detail-1-480.webp",
-        "smallWidth": 480,
-        "width": 1280,
-        "height": 533,
-        "alt": "Favorit — frame from the advert",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/268355869.mp4",
-          "note": "Visually inspected costume frame at 7.962 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/favorit/detail-2.webp",
-        "smallSrc": "/images/work/favorit/detail-2-480.webp",
-        "smallWidth": 480,
-        "width": 1280,
-        "height": 534,
-        "alt": "Favorit — frame from the advert",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/268355869.mp4",
-          "note": "Visually inspected costume frame at 31.846 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/favorit/detail-4.webp",
-        "smallSrc": "/images/work/favorit/detail-4-480.webp",
-        "smallWidth": 480,
-        "width": 1280,
-        "height": 532,
-        "alt": "Favorit — frame from the advert",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/268355869.mp4",
-          "note": "Visually inspected costume frame at 81.606 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
-        }
-      }
-    ],
-    "videos": [
-      {
-        "provider": "native",
-        "title": "Favorit",
-        "url": "https://vimeo.com/268355869",
-        "width": 1280,
-        "height": 720,
-        "src": "/videos/268355869.mp4",
-        "poster": {
-          "src": "/images/work/favorit/268355869-still-1.webp",
-          "smallSrc": "/images/work/favorit/268355869-still-1-480.webp",
-          "smallWidth": 480,
-          "width": 1280,
-          "height": 720,
-          "alt": "Favorit — costume in the finished film, frame 1"
-        }
-      }
-    ],
-    "credit": "Wardrobe",
-    "facts": [
-      {
-        "label": "Director",
-        "value": "Wolfberg"
-      },
-      {
-        "label": "Production",
-        "value": "Creative Embassy"
-      },
-      {
-        "label": "Cinematography",
-        "value": "Martin Matiášek"
-      },
-      {
-        "label": "Wardrobe",
-        "value": "Dušan Bebčák / Tereza Nádvorníková"
-      },
-      {
-        "label": "Agency",
-        "value": "Y&R"
-      }
-    ],
-    "sources": [
-      {
-        "label": "Production credits",
-        "url": "https://vimeo.com/268355869"
-      },
-      {
-        "label": "Director’s portfolio",
-        "url": "https://www.wearefred.co/wolfberg"
-      }
-    ],
-    "portrait": false,
-    "scope": "campaign",
-    "attribution": {
-      "basis": "explicit-credit",
-      "source": "https://vimeo.com/268355869",
-      "note": "Exact director/producer campaign credits explicitly name Dušan Bebčák for wardrobe."
-    }
-  },
-  {
-    "id": "rossmann",
-    "slug": "rossmann",
-    "title": "ROSSMANN",
-    "thumbnail": {
-      "src": "/images/work/rossmann/detail-2.webp",
-      "smallSrc": "/images/work/rossmann/detail-2-480.webp",
-      "smallWidth": 480,
-      "width": 1032,
-      "height": 720,
-      "alt": "ROSSMANN — frame from the advert",
-      "evidence": {
-        "basis": "film-frame",
-        "videoSrc": "/videos/DQd6DDdjAqh.mp4",
-        "note": "Visually inspected costume frame at 19.84 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
-      }
-    },
-    "images": [
-      {
-        "src": "/images/work/rossmann/DQd6DDdjAqh-still-2.webp",
-        "smallSrc": "/images/work/rossmann/DQd6DDdjAqh-still-2-480.webp",
-        "smallWidth": 480,
-        "width": 1032,
-        "height": 720,
-        "alt": "ROSSMANN — costume in the finished film, frame 2",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/DQd6DDdjAqh.mp4",
-          "note": "Extracted from this film."
-        }
-      },
-      {
-        "src": "/images/work/rossmann/detail-2.webp",
-        "smallSrc": "/images/work/rossmann/detail-2-480.webp",
-        "smallWidth": 480,
-        "width": 1032,
-        "height": 720,
-        "alt": "ROSSMANN — frame from the advert",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/DQd6DDdjAqh.mp4",
-          "note": "Visually inspected costume frame at 19.84 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/rossmann/detail-4.webp",
-        "smallSrc": "/images/work/rossmann/detail-4-480.webp",
-        "smallWidth": 480,
-        "width": 1032,
-        "height": 720,
-        "alt": "ROSSMANN — frame from the advert",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/DQd6DDdjAqh.mp4",
-          "note": "Visually inspected costume frame at 50.84 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/rossmann/published-47.webp",
-        "smallSrc": "/images/work/rossmann/published-47-480.webp",
-        "smallWidth": 480,
-        "width": 1440,
-        "height": 810,
-        "alt": "ROSSMANN — published campaign image 4",
-        "evidence": {
-          "basis": "visual-match",
-          "videoSrc": "/videos/DQd6DDdjAqh.mp4",
-          "note": "Same mother/daughter campaign, apartment set and performers in the director’s detailed campaign carousel. Directors, DOP, client, agency and production match the portfolio film; caption explicitly credits @bebcak and @ze_ni_ta jointly."
-        }
-      }
-    ],
-    "videos": [
-      {
-        "provider": "native",
-        "title": "ROSSMANN",
-        "url": "https://www.instagram.com/p/DQd6DDdjAqh/",
-        "src": "/videos/DQd6DDdjAqh.mp4",
-        "width": 1032,
-        "height": 720,
-        "poster": {
-          "src": "/images/work/rossmann/DQd6DDdjAqh-still-1.webp",
-          "smallSrc": "/images/work/rossmann/DQd6DDdjAqh-still-1-480.webp",
-          "smallWidth": 480,
-          "width": 1032,
-          "height": 720,
-          "alt": "ROSSMANN — costume in the finished film, frame 1"
-        }
-      }
-    ],
-    "credit": "Styling",
-    "facts": [
-      {
-        "label": "Director",
-        "value": "Novák & Nguyen"
-      },
-      {
-        "label": "Production",
-        "value": "Armada Films"
-      },
-      {
-        "label": "Cinematography",
-        "value": "Filip Hájek"
-      },
-      {
-        "label": "Agency",
-        "value": "DDB Prague"
-      },
-      {
-        "label": "Wardrobe",
-        "value": "Dušan Bebčák / @ze_ni_ta"
-      }
-    ],
-    "sources": [
-      {
-        "label": "Instagram",
-        "url": "https://www.instagram.com/p/DQd6DDdjAqh/"
-      },
-      {
-        "label": "Campaign",
-        "url": "https://www.rossmann.cz/obsah/o-nas/tiskove-zpravy/2025/rossmann-predstavuje-novy-emotivni-spot-pece-ma-mnoho-podob-lasku-ale-najdete-v-kazde-z-nich-a-pokracuje-tak-v-tradici-empatie-a-lidskosti"
-      },
-      {
-        "label": "Producer’s explicit styling credit",
-        "url": "https://cz.linkedin.com/company/armada-films"
-      }
-    ],
-    "portrait": false,
-    "scope": "campaign",
-    "attribution": {
-      "basis": "explicit-credit",
-      "source": "https://cz.linkedin.com/company/armada-films",
-      "note": "Armada’s exact mother/daughter production publication explicitly credits Stylist Dusan Bebcak and agrees with Dušan’s Novák & Nguyen / Filip Hájek caption. The shared wardrobe entry is separately corroborated by the matched professional fitting publication. Not the earlier Mugshots ROSSMANN film, which has different stylists."
-    }
-  },
-  {
-    "id": "vitana-gorilovacka",
-    "slug": "vitana-gorilovacka",
-    "title": "Vitana — Gorilovačka",
-    "thumbnail": {
-      "src": "/images/work/vitana-gorilovacka/detail-1.webp",
-      "smallSrc": "/images/work/vitana-gorilovacka/detail-1-480.webp",
-      "smallWidth": 480,
-      "width": 1280,
-      "height": 720,
-      "alt": "Vitana — Gorilovačka — frame from the advert",
-      "evidence": {
-        "basis": "film-frame",
-        "videoSrc": "/videos/540684470.mp4",
-        "note": "Visually inspected costume frame at 2.4 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
-      }
-    },
-    "images": [
-      {
-        "src": "/images/work/vitana-gorilovacka/540684470-still-2.webp",
-        "smallSrc": "/images/work/vitana-gorilovacka/540684470-still-2-480.webp",
-        "smallWidth": 480,
-        "width": 1280,
-        "height": 720,
-        "alt": "Vitana — Gorilovačka — costume in the finished film, frame 2",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/540684470.mp4",
-          "note": "Extracted from this film."
-        }
-      },
-      {
-        "src": "/images/work/vitana-gorilovacka/detail-1.webp",
-        "smallSrc": "/images/work/vitana-gorilovacka/detail-1-480.webp",
-        "smallWidth": 480,
-        "width": 1280,
-        "height": 720,
-        "alt": "Vitana — Gorilovačka — frame from the advert",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/540684470.mp4",
-          "note": "Visually inspected costume frame at 2.4 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/vitana-gorilovacka/detail-3.webp",
-        "smallSrc": "/images/work/vitana-gorilovacka/detail-3-480.webp",
-        "smallWidth": 480,
-        "width": 1280,
-        "height": 720,
-        "alt": "Vitana — Gorilovačka — frame from the advert",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/540684470.mp4",
-          "note": "Visually inspected costume frame at 17.4 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/vitana-gorilovacka/final-detail-2.webp",
-        "smallSrc": "/images/work/vitana-gorilovacka/final-detail-2-480.webp",
-        "smallWidth": 480,
-        "width": 1280,
-        "height": 720,
-        "alt": "Vitana — Gorilovačka — striped red-and-white neckline, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/540684470.mp4",
-          "note": "Visually inspected wardrobe frame at 6.6s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/vitana-gorilovacka/final-detail-5.webp",
-        "smallSrc": "/images/work/vitana-gorilovacka/final-detail-5-480.webp",
-        "smallWidth": 480,
-        "width": 1280,
-        "height": 720,
-        "alt": "Vitana — Gorilovačka — teal blouse at the garden table, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/540684470.mp4",
-          "note": "Visually inspected wardrobe frame at 18.6s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/vitana-gorilovacka/final-detail-6.webp",
-        "smallSrc": "/images/work/vitana-gorilovacka/final-detail-6-480.webp",
-        "smallWidth": 480,
-        "width": 1280,
-        "height": 720,
-        "alt": "Vitana — Gorilovačka — denim waistcoat, jeans and the garden-party ensemble, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/540684470.mp4",
-          "note": "Visually inspected wardrobe frame at 22.8s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
-        }
-      }
-    ],
-    "videos": [
-      {
-        "provider": "native",
-        "title": "Vitana — Gorilovačka",
-        "url": "https://vimeo.com/540684470",
-        "width": 1280,
-        "height": 720,
-        "src": "/videos/540684470.mp4",
-        "poster": {
-          "src": "/images/work/vitana-gorilovacka/540684470-still-1.webp",
-          "smallSrc": "/images/work/vitana-gorilovacka/540684470-still-1-480.webp",
-          "smallWidth": 480,
-          "width": 1280,
-          "height": 720,
-          "alt": "Vitana — Gorilovačka — costume in the finished film, frame 1"
+          "width": 1920,
+          "height": 1080,
+          "alt": "adidas — You Got This — red football kit and dark training layers, film still",
+          "evidence": {
+            "basis": "film-frame",
+            "videoSrc": "/videos/adidas-you-got-this-hd.mp4",
+            "note": "Reviewed frame at 15s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
+          }
         }
       }
     ],
@@ -3208,149 +2591,192 @@ export const projects: Project[] = [
     "facts": [
       {
         "label": "Director",
-        "value": "Pavel Soukup"
+        "value": "Luboš Rezler"
       },
       {
         "label": "Production",
-        "value": "Creative Embassy"
+        "value": "ADvocado Films"
       },
       {
         "label": "Cinematography",
-        "value": "Radim Střelka"
+        "value": "Tomáš Kotas"
       },
       {
         "label": "Agency",
-        "value": "WMC Grey"
+        "value": "KaspenJVM / 180heartbeats"
       },
       {
         "label": "Costume design",
         "value": "Dušan Bebčák"
       },
       {
-        "label": "Costume assistant",
-        "value": "Klára Macková"
+        "label": "Costume assistants",
+        "value": "Martina O’Neill / Milina Havrlantová"
+      },
+      {
+        "label": "Photography",
+        "value": "Alexander Dobrovodský"
+      },
+      {
+        "label": "Producers",
+        "value": "Jan Šipan / Lucie Jánová"
       }
     ],
     "sources": [
       {
-        "label": "Production credits",
-        "url": "https://vimeo.com/540684470"
+        "label": "Exact full-resolution source film",
+        "url": "https://www.advocadofilms.com/work/"
+      },
+      {
+        "label": "Explicit professional credit",
+        "url": "https://vimeo.com/1088383230"
       }
     ],
     "portrait": false,
     "scope": "campaign",
     "attribution": {
       "basis": "explicit-credit",
-      "source": "https://vimeo.com/540684470",
+      "source": "https://vimeo.com/1088383230",
       "note": "Exact director/producer campaign credits explicitly name Dušan Bebčák for costume design."
     }
   },
   {
-    "id": "skoda-130-let",
-    "slug": "skoda-130-let",
-    "title": "Škoda — 130 let",
+    "id": "komercni-banka",
+    "slug": "komercni-banka",
+    "title": "Komerční banka — Eva Adamczyková",
     "thumbnail": {
-      "src": "/images/work/skoda-130-let/1143365815-still-1.webp",
-      "smallSrc": "/images/work/skoda-130-let/1143365815-still-1-480.webp",
+      "src": "/images/work/komercni-banka/hd-detail-1.webp",
+      "smallSrc": "/images/work/komercni-banka/hd-detail-1-480.webp",
       "smallWidth": 480,
-      "width": 1366,
-      "height": 684,
-      "alt": "Škoda — 130 let — costume in the finished film, frame 1"
+      "width": 1920,
+      "height": 1080,
+      "alt": "Komerční banka — Eva Adamczyková — full red dress in motion, film still",
+      "evidence": {
+        "basis": "film-frame",
+        "videoSrc": "/videos/komercni-banka-hd.mp4",
+        "note": "Reviewed frame at 3s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
+      }
     },
     "images": [
       {
-        "src": "/images/work/skoda-130-let/1143365815-still-3.webp",
-        "smallSrc": "/images/work/skoda-130-let/1143365815-still-3-480.webp",
+        "src": "/images/work/komercni-banka/hd-detail-1.webp",
+        "smallSrc": "/images/work/komercni-banka/hd-detail-1-480.webp",
         "smallWidth": 480,
-        "width": 1366,
-        "height": 684,
-        "alt": "Škoda — 130 let — costume in the finished film, frame 3",
+        "width": 1920,
+        "height": 1080,
+        "alt": "Komerční banka — Eva Adamczyková — full red dress in motion, film still",
         "evidence": {
           "basis": "film-frame",
-          "videoSrc": "/videos/1143365815.mp4",
-          "note": "Extracted from this film."
+          "videoSrc": "/videos/komercni-banka-hd.mp4",
+          "note": "Reviewed frame at 3s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
         }
       },
       {
-        "src": "/images/work/skoda-130-let/detail-1.webp",
-        "smallSrc": "/images/work/skoda-130-let/detail-1-480.webp",
+        "src": "/images/work/komercni-banka/hd-detail-2.webp",
+        "smallSrc": "/images/work/komercni-banka/hd-detail-2-480.webp",
         "smallWidth": 480,
-        "width": 1366,
-        "height": 684,
-        "alt": "Škoda — 130 let — frame from the advert",
+        "width": 1920,
+        "height": 1080,
+        "alt": "Komerční banka — Eva Adamczyková — red dress and shoulder detail, film still",
         "evidence": {
           "basis": "film-frame",
-          "videoSrc": "/videos/1143365815.mp4",
-          "note": "Visually inspected costume frame at 4.864 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+          "videoSrc": "/videos/komercni-banka-hd.mp4",
+          "note": "Reviewed frame at 7s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
         }
       },
       {
-        "src": "/images/work/skoda-130-let/detail-4.webp",
-        "smallSrc": "/images/work/skoda-130-let/detail-4-480.webp",
+        "src": "/images/work/komercni-banka/hd-detail-3.webp",
+        "smallSrc": "/images/work/komercni-banka/hd-detail-3-480.webp",
         "smallWidth": 480,
-        "width": 1366,
-        "height": 684,
-        "alt": "Škoda — 130 let — frame from the advert",
+        "width": 1920,
+        "height": 1080,
+        "alt": "Komerční banka — Eva Adamczyková — high red neckline and gathered fabric, film still",
         "evidence": {
           "basis": "film-frame",
-          "videoSrc": "/videos/1143365815.mp4",
-          "note": "Visually inspected costume frame at 49.856 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+          "videoSrc": "/videos/komercni-banka-hd.mp4",
+          "note": "Reviewed frame at 11s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
+        }
+      },
+      {
+        "src": "/images/work/komercni-banka/hd-detail-4.webp",
+        "smallSrc": "/images/work/komercni-banka/hd-detail-4-480.webp",
+        "smallWidth": 480,
+        "width": 1920,
+        "height": 1080,
+        "alt": "Komerční banka — Eva Adamczyková — full-length red dress with raised arms, film still",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/komercni-banka-hd.mp4",
+          "note": "Reviewed frame at 15s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
         }
       }
     ],
     "videos": [
       {
         "provider": "native",
-        "title": "Škoda — 130 let",
-        "url": "https://vimeo.com/1143365815",
-        "width": 1366,
-        "height": 684,
-        "src": "/videos/1143365815.mp4",
+        "title": "Komerční banka — Eva Adamczyková",
+        "url": "https://www.advocadofilms.com/work/",
+        "src": "/videos/komercni-banka-hd.mp4",
+        "width": 1920,
+        "height": 1080,
         "poster": {
-          "src": "/images/work/skoda-130-let/1143365815-still-1.webp",
-          "smallSrc": "/images/work/skoda-130-let/1143365815-still-1-480.webp",
+          "src": "/images/work/komercni-banka/hd-detail-1.webp",
+          "smallSrc": "/images/work/komercni-banka/hd-detail-1-480.webp",
           "smallWidth": 480,
-          "width": 1366,
-          "height": 684,
-          "alt": "Škoda — 130 let — costume in the finished film, frame 1"
+          "width": 1920,
+          "height": 1080,
+          "alt": "Komerční banka — Eva Adamczyková — full red dress in motion, film still",
+          "evidence": {
+            "basis": "film-frame",
+            "videoSrc": "/videos/komercni-banka-hd.mp4",
+            "note": "Reviewed frame at 3s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
+          }
         }
       }
     ],
-    "credit": "Styling",
+    "credit": "Costume design",
     "facts": [
       {
         "label": "Director",
-        "value": "Mugshots"
+        "value": "Andrii Lagutin"
       },
       {
         "label": "Production",
-        "value": "Boogie Films"
+        "value": "ADvocado Films"
       },
       {
         "label": "Cinematography",
-        "value": "Radim Střelka"
+        "value": "Oleksandr Drobilko"
       },
       {
-        "label": "Production design",
-        "value": "Richard Dvořák"
+        "label": "Featuring",
+        "value": "Eva Adamczyková Samková"
       },
       {
-        "label": "Styling",
+        "label": "Agency",
+        "value": "VCCP"
+      },
+      {
+        "label": "Costume design",
         "value": "Dušan Bebčák"
       }
     ],
     "sources": [
       {
-        "label": "Production credits",
-        "url": "https://www.mugshots.cz/"
+        "label": "Exact full-resolution source film",
+        "url": "https://www.advocadofilms.com/work/"
+      },
+      {
+        "label": "Explicit professional credit",
+        "url": "https://vimeo.com/1020676248"
       }
     ],
     "portrait": false,
     "scope": "campaign",
     "attribution": {
       "basis": "explicit-credit",
-      "source": "https://www.mugshots.cz/",
-      "note": "Exact director/producer campaign credits explicitly name Dušan Bebčák for styling."
+      "source": "https://vimeo.com/1020676248",
+      "note": "Exact director/producer campaign credits explicitly name Dušan Bebčák for costume design."
     }
   },
   {
@@ -3638,6 +3064,1112 @@ export const projects: Project[] = [
     }
   },
   {
+    "id": "loreal-men-expert",
+    "slug": "loreal-men-expert",
+    "title": "L’Oréal Men Expert — Hydra Energetic",
+    "thumbnail": {
+      "src": "/images/work/loreal-men-expert/published-29.webp",
+      "smallSrc": "/images/work/loreal-men-expert/published-29-480.webp",
+      "smallWidth": 360,
+      "width": 1204,
+      "height": 1605,
+      "alt": "loreal men expert — published campaign photograph",
+      "evidence": {
+        "basis": "same-publication",
+        "videoSrc": "/videos/loreal-men-expert.mp4",
+        "note": "The director publishes this Hydra Energetic campaign series together and explicitly credits @bebcak. The portrait photographs include Boris Valábik and Gergely Siklósi; the attached complete film features Lukáš Sedlák. These are campaign photographs, not claimed as frames or fitting photographs from that individual cut."
+      }
+    },
+    "images": [
+      {
+        "src": "/images/work/loreal-men-expert/published-29.webp",
+        "smallSrc": "/images/work/loreal-men-expert/published-29-480.webp",
+        "smallWidth": 360,
+        "width": 1204,
+        "height": 1605,
+        "alt": "L’Oréal Men Expert — Hydra Energetic — published campaign image 1",
+        "evidence": {
+          "basis": "same-publication",
+          "videoSrc": "/videos/loreal-men-expert.mp4",
+          "note": "The director publishes this Hydra Energetic campaign series together and explicitly credits @bebcak. The portrait photographs include Boris Valábik and Gergely Siklósi. The attached complete 20-second variant is from the same publication. Photographs of series performers are not claimed to be frames or fitting photographs from that individual cut."
+        }
+      },
+      {
+        "src": "/images/work/loreal-men-expert/published-26.webp",
+        "smallSrc": "/images/work/loreal-men-expert/published-26-480.webp",
+        "smallWidth": 360,
+        "width": 1200,
+        "height": 1600,
+        "alt": "L’Oréal Men Expert — Hydra Energetic — published campaign image 2",
+        "evidence": {
+          "basis": "same-publication",
+          "videoSrc": "/videos/loreal-men-expert.mp4",
+          "note": "The director publishes this Hydra Energetic campaign series together and explicitly credits @bebcak. The portrait photographs include Boris Valábik and Gergely Siklósi. The attached complete 20-second variant is from the same publication. Photographs of series performers are not claimed to be frames or fitting photographs from that individual cut."
+        }
+      },
+      {
+        "src": "/images/work/loreal-men-expert/published-28.webp",
+        "smallSrc": "/images/work/loreal-men-expert/published-28-480.webp",
+        "smallWidth": 360,
+        "width": 1206,
+        "height": 1608,
+        "alt": "L’Oréal Men Expert — Hydra Energetic — published campaign image 3",
+        "evidence": {
+          "basis": "same-publication",
+          "videoSrc": "/videos/loreal-men-expert.mp4",
+          "note": "The director publishes this Hydra Energetic campaign series together and explicitly credits @bebcak. The portrait photographs include Boris Valábik and Gergely Siklósi. The attached complete 20-second variant is from the same publication. Photographs of series performers are not claimed to be frames or fitting photographs from that individual cut."
+        }
+      },
+      {
+        "src": "/images/work/loreal-men-expert/published-30.webp",
+        "smallSrc": "/images/work/loreal-men-expert/published-30-480.webp",
+        "smallWidth": 360,
+        "width": 1440,
+        "height": 1920,
+        "alt": "L’Oréal Men Expert — Hydra Energetic — published campaign image 4",
+        "evidence": {
+          "basis": "same-publication",
+          "videoSrc": "/videos/loreal-men-expert.mp4",
+          "note": "The director publishes this Hydra Energetic campaign series together and explicitly credits @bebcak. The portrait photographs include Boris Valábik and Gergely Siklósi. The attached complete 20-second variant is from the same publication. Photographs of series performers are not claimed to be frames or fitting photographs from that individual cut."
+        }
+      },
+      {
+        "src": "/images/work/loreal-men-expert/published-31.webp",
+        "smallSrc": "/images/work/loreal-men-expert/published-31-480.webp",
+        "smallWidth": 360,
+        "width": 1440,
+        "height": 1920,
+        "alt": "L’Oréal Men Expert — Hydra Energetic — published campaign image 5",
+        "evidence": {
+          "basis": "same-publication",
+          "videoSrc": "/videos/loreal-men-expert.mp4",
+          "note": "The director publishes this Hydra Energetic campaign series together and explicitly credits @bebcak. The portrait photographs include Boris Valábik and Gergely Siklósi. The attached complete 20-second variant is from the same publication. Photographs of series performers are not claimed to be frames or fitting photographs from that individual cut."
+        }
+      },
+      {
+        "src": "/images/work/loreal-men-expert/published-extra-27.webp",
+        "smallSrc": "/images/work/loreal-men-expert/published-extra-27-480.webp",
+        "smallWidth": 360,
+        "width": 1202,
+        "height": 1602,
+        "alt": "L’Oréal Men Expert — Hydra Energetic — white t-shirt and orange campaign portrait",
+        "evidence": {
+          "basis": "same-publication",
+          "videoSrc": "/videos/loreal-men-expert.mp4",
+          "note": "The director publishes this Hydra Energetic campaign series together and explicitly credits @bebcak. The portrait photographs include Boris Valábik and Gergely Siklósi. The attached complete 20-second variant is from the same publication. Photographs of series performers are not claimed to be frames or fitting photographs from that individual cut."
+        }
+      }
+    ],
+    "videos": [
+      {
+        "provider": "native",
+        "title": "L’Oréal Men Expert — Hydra Energetic",
+        "url": "https://www.instagram.com/p/DUoPG4EEp4z/",
+        "src": "/videos/loreal-men-expert.mp4",
+        "width": 360,
+        "height": 480,
+        "poster": {
+          "src": "/images/work/loreal-men-expert/film-cover.webp",
+          "smallSrc": "/images/work/loreal-men-expert/film-cover-480.webp",
+          "width": 360,
+          "height": 480,
+          "smallWidth": 360,
+          "alt": "L’Oréal Men Expert — Hydra Energetic — film preview"
+        }
+      }
+    ],
+    "credit": "",
+    "facts": [
+      {
+        "label": "Director",
+        "value": "@shotbykill"
+      },
+      {
+        "label": "Production",
+        "value": "Unreal Visual"
+      },
+      {
+        "label": "Agency",
+        "value": "B&T / McCann Prague"
+      },
+      {
+        "label": "Costumes",
+        "value": "Dušan Bebčák"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Director’s campaign publication",
+        "url": "https://www.instagram.com/p/DUoPG4EEp4z/"
+      }
+    ],
+    "portrait": true,
+    "scope": "campaign",
+    "attribution": {
+      "basis": "explicit-credit",
+      "source": "https://www.instagram.com/p/DUoPG4EEp4z/",
+      "note": "Direct campaign publication or Dušan’s own caption explicitly credits @bebcak / Dušan Bebčák. Shared roles remain shared, and the source caption/crew record is retained in the research dossier."
+    }
+  },
+  {
+    "id": "skoda-social-stories",
+    "slug": "skoda-social-stories",
+    "title": "Škoda — Social stories",
+    "thumbnail": {
+      "src": "/images/work/skoda-social-stories/published-24.webp",
+      "smallSrc": "/images/work/skoda-social-stories/published-24-480.webp",
+      "smallWidth": 384,
+      "width": 1080,
+      "height": 1350,
+      "alt": "skoda social stories — published campaign photograph",
+      "evidence": {
+        "basis": "unassigned",
+        "note": "Director’s client-specific campaign publication explicitly credits @bebcak. No film is attached: these photographs are not paired with the unrelated 130-year advert."
+      }
+    },
+    "images": [
+      {
+        "src": "/images/work/skoda-social-stories/published-24.webp",
+        "smallSrc": "/images/work/skoda-social-stories/published-24-480.webp",
+        "smallWidth": 384,
+        "width": 1080,
+        "height": 1350,
+        "alt": "Škoda — Social stories — published campaign image 1",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "Director’s client-specific campaign publication explicitly credits @bebcak. No film is attached: these photographs are not paired with the unrelated 130-year advert."
+        }
+      },
+      {
+        "src": "/images/work/skoda-social-stories/published-15.webp",
+        "smallSrc": "/images/work/skoda-social-stories/published-15-480.webp",
+        "smallWidth": 384,
+        "width": 1080,
+        "height": 1350,
+        "alt": "Škoda — Social stories — published campaign image 2",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "Director’s client-specific campaign publication explicitly credits @bebcak. No film is attached: these photographs are not paired with the unrelated 130-year advert."
+        }
+      },
+      {
+        "src": "/images/work/skoda-social-stories/published-25.webp",
+        "smallSrc": "/images/work/skoda-social-stories/published-25-480.webp",
+        "smallWidth": 384,
+        "width": 1080,
+        "height": 1350,
+        "alt": "Škoda — Social stories — published campaign image 3",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "Director’s client-specific campaign publication explicitly credits @bebcak. No film is attached: these photographs are not paired with the unrelated 130-year advert."
+        }
+      },
+      {
+        "src": "/images/work/skoda-social-stories/published-22.webp",
+        "smallSrc": "/images/work/skoda-social-stories/published-22-480.webp",
+        "smallWidth": 384,
+        "width": 1080,
+        "height": 1350,
+        "alt": "Škoda — Social stories — published campaign image 4",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "Director’s client-specific campaign publication explicitly credits @bebcak. No film is attached: these photographs are not paired with the unrelated 130-year advert."
+        }
+      },
+      {
+        "src": "/images/work/skoda-social-stories/published-extra-13.webp",
+        "smallSrc": "/images/work/skoda-social-stories/published-extra-13-480.webp",
+        "smallWidth": 384,
+        "width": 1536,
+        "height": 1920,
+        "alt": "Škoda — Social stories — purple character mask and sleeveless costume",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "Director’s client-specific campaign publication explicitly credits @bebcak. No film is attached: these photographs are not paired with the unrelated 130-year advert."
+        }
+      },
+      {
+        "src": "/images/work/skoda-social-stories/published-extra-16.webp",
+        "smallSrc": "/images/work/skoda-social-stories/published-extra-16-480.webp",
+        "smallWidth": 384,
+        "width": 1080,
+        "height": 1350,
+        "alt": "Škoda — Social stories — costumed performers on the studio set",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "Director’s client-specific campaign publication explicitly credits @bebcak. No film is attached: these photographs are not paired with the unrelated 130-year advert."
+        }
+      }
+    ],
+    "videos": [],
+    "credit": "",
+    "facts": [
+      {
+        "label": "Director",
+        "value": "@shotbykill"
+      },
+      {
+        "label": "Production",
+        "value": "Heroes Prague"
+      },
+      {
+        "label": "Agency",
+        "value": "FCB London"
+      },
+      {
+        "label": "Costumes",
+        "value": "Dušan Bebčák"
+      },
+      {
+        "label": "Photography",
+        "value": "Vojtěch Veškrna"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Director’s exact campaign publication",
+        "url": "https://www.instagram.com/p/DYfX4ByGmOi/"
+      }
+    ],
+    "portrait": true,
+    "scope": "study",
+    "attribution": {
+      "basis": "explicit-credit",
+      "source": "https://www.instagram.com/p/DYfX4ByGmOi/",
+      "note": "Direct campaign publication or Dušan’s own caption explicitly credits @bebcak / Dušan Bebčák. Shared roles remain shared, and the source caption/crew record is retained in the research dossier."
+    }
+  },
+  {
+    "id": "skoda-split-screen",
+    "slug": "skoda-split-screen",
+    "title": "Škoda Superb — Split-screen campaign",
+    "thumbnail": {
+      "src": "/images/work/skoda-split-screen/published-4.webp",
+      "smallSrc": "/images/work/skoda-split-screen/published-4-480.webp",
+      "smallWidth": 480,
+      "width": 1944,
+      "height": 1093,
+      "alt": "skoda split screen — published campaign photograph",
+      "evidence": {
+        "basis": "unassigned",
+        "note": "Director’s exact split-screen Superb campaign publication credits @bebcak. The actress and brown jacket match its film; no playable film is attached because the recovered DASH tracks have inconsistent timing."
+      }
+    },
+    "images": [
+      {
+        "src": "/images/work/skoda-split-screen/published-4.webp",
+        "smallSrc": "/images/work/skoda-split-screen/published-4-480.webp",
+        "smallWidth": 480,
+        "width": 1944,
+        "height": 1093,
+        "alt": "Škoda Superb — City & forest — published campaign image 1",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "Director’s exact split-screen Superb campaign publication credits @bebcak. The actress and brown jacket match its film; no playable film is attached because the recovered DASH tracks have inconsistent timing."
+        }
+      },
+      {
+        "src": "/images/work/skoda-split-screen/published-9.webp",
+        "smallSrc": "/images/work/skoda-split-screen/published-9-480.webp",
+        "smallWidth": 480,
+        "width": 2274,
+        "height": 1283,
+        "alt": "Škoda Superb — City & forest — published campaign image 2",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "Director’s exact split-screen Superb campaign publication credits @bebcak. The actress and brown jacket match its film; no playable film is attached because the recovered DASH tracks have inconsistent timing."
+        }
+      },
+      {
+        "src": "/images/work/skoda-split-screen/film-detail-3.webp",
+        "smallSrc": "/images/work/skoda-split-screen/film-detail-3-480.webp",
+        "smallWidth": 480,
+        "width": 1920,
+        "height": 1080,
+        "alt": "Škoda Superb — City & forest — checked coat, shirt and glasses, frame from the film",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "Visually reviewed frame from this exact credited publication’s film. Kept in the verified photographic collection without attaching an incorrectly timed film."
+        }
+      },
+      {
+        "src": "/images/work/skoda-split-screen/film-detail-5.webp",
+        "smallSrc": "/images/work/skoda-split-screen/film-detail-5-480.webp",
+        "smallWidth": 480,
+        "width": 1920,
+        "height": 1080,
+        "alt": "Škoda Superb — City & forest — contrasting outdoor wardrobes, frame from the film",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "Visually reviewed frame from this exact credited publication’s film. Kept in the verified photographic collection without attaching an incorrectly timed film."
+        }
+      }
+    ],
+    "videos": [],
+    "credit": "",
+    "facts": [
+      {
+        "label": "Director",
+        "value": "@shotbykill"
+      },
+      {
+        "label": "Production",
+        "value": "Heroes Prague"
+      },
+      {
+        "label": "Agency",
+        "value": "FCB London"
+      },
+      {
+        "label": "Costumes",
+        "value": "Dušan Bebčák"
+      },
+      {
+        "label": "Photography",
+        "value": "Vojtěch Veškrna"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Director’s exact campaign publication",
+        "url": "https://www.instagram.com/p/DbJJC7pGubh/"
+      }
+    ],
+    "portrait": false,
+    "scope": "study",
+    "attribution": {
+      "basis": "explicit-credit",
+      "source": "https://www.instagram.com/p/DbJJC7pGubh/",
+      "note": "Direct campaign publication or Dušan’s own caption explicitly credits @bebcak / Dušan Bebčák. Shared roles remain shared, and the source caption/crew record is retained in the research dossier."
+    }
+  },
+  {
+    "id": "skoda-130-let",
+    "slug": "skoda-130-let",
+    "title": "Škoda — 130 let",
+    "thumbnail": {
+      "src": "/images/work/skoda-130-let/1143365815-still-1.webp",
+      "smallSrc": "/images/work/skoda-130-let/1143365815-still-1-480.webp",
+      "smallWidth": 480,
+      "width": 1366,
+      "height": 684,
+      "alt": "Škoda — 130 let — costume in the finished film, frame 1"
+    },
+    "images": [
+      {
+        "src": "/images/work/skoda-130-let/1143365815-still-3.webp",
+        "smallSrc": "/images/work/skoda-130-let/1143365815-still-3-480.webp",
+        "smallWidth": 480,
+        "width": 1366,
+        "height": 684,
+        "alt": "Škoda — 130 let — costume in the finished film, frame 3",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/1143365815.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "src": "/images/work/skoda-130-let/detail-1.webp",
+        "smallSrc": "/images/work/skoda-130-let/detail-1-480.webp",
+        "smallWidth": 480,
+        "width": 1366,
+        "height": 684,
+        "alt": "Škoda — 130 let — frame from the advert",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/1143365815.mp4",
+          "note": "Visually inspected costume frame at 4.864 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/skoda-130-let/detail-4.webp",
+        "smallSrc": "/images/work/skoda-130-let/detail-4-480.webp",
+        "smallWidth": 480,
+        "width": 1366,
+        "height": 684,
+        "alt": "Škoda — 130 let — frame from the advert",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/1143365815.mp4",
+          "note": "Visually inspected costume frame at 49.856 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      }
+    ],
+    "videos": [
+      {
+        "provider": "native",
+        "title": "Škoda — 130 let",
+        "url": "https://vimeo.com/1143365815",
+        "width": 1366,
+        "height": 684,
+        "src": "/videos/1143365815.mp4",
+        "poster": {
+          "src": "/images/work/skoda-130-let/1143365815-still-1.webp",
+          "smallSrc": "/images/work/skoda-130-let/1143365815-still-1-480.webp",
+          "smallWidth": 480,
+          "width": 1366,
+          "height": 684,
+          "alt": "Škoda — 130 let — costume in the finished film, frame 1"
+        }
+      }
+    ],
+    "credit": "Styling",
+    "facts": [
+      {
+        "label": "Director",
+        "value": "Mugshots"
+      },
+      {
+        "label": "Production",
+        "value": "Boogie Films"
+      },
+      {
+        "label": "Cinematography",
+        "value": "Radim Střelka"
+      },
+      {
+        "label": "Production design",
+        "value": "Richard Dvořák"
+      },
+      {
+        "label": "Styling",
+        "value": "Dušan Bebčák"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Production credits",
+        "url": "https://www.mugshots.cz/"
+      }
+    ],
+    "portrait": false,
+    "scope": "campaign",
+    "attribution": {
+      "basis": "explicit-credit",
+      "source": "https://www.mugshots.cz/",
+      "note": "Exact director/producer campaign credits explicitly name Dušan Bebčák for styling."
+    }
+  },
+  {
+    "id": "rohlik-mothers",
+    "slug": "rohlik-mothers",
+    "title": "Rohlík — Mothers",
+    "thumbnail": {
+      "src": "/images/work/rohlik-mothers/final-detail-7-clean.webp",
+      "smallSrc": "/images/work/rohlik-mothers/final-detail-7-clean-480.webp",
+      "smallWidth": 480,
+      "width": 998,
+      "height": 600,
+      "alt": "Rohlík — Mothers — blue cardigan and white vest, film still",
+      "evidence": {
+        "basis": "film-frame",
+        "videoSrc": "/videos/rohlik-mothers.mp4",
+        "note": "Visually inspected wardrobe frame at 81.15s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+      }
+    },
+    "images": [
+      {
+        "src": "/images/work/rohlik-mothers/rohlik-mothers-still-2.webp",
+        "smallSrc": "/images/work/rohlik-mothers/rohlik-mothers-still-2-480.webp",
+        "smallWidth": 480,
+        "width": 998,
+        "height": 720,
+        "alt": "Rohlík — Mothers — costume in the finished film, frame 2",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/rohlik-mothers.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "src": "/images/work/rohlik-mothers/detail-1.webp",
+        "smallSrc": "/images/work/rohlik-mothers/detail-1-480.webp",
+        "smallWidth": 480,
+        "width": 997,
+        "height": 720,
+        "alt": "Rohlík — Mothers — frame from the advert",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/rohlik-mothers.mp4",
+          "note": "Visually inspected costume frame at 7.378 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/rohlik-mothers/detail-2.webp",
+        "smallSrc": "/images/work/rohlik-mothers/detail-2-480.webp",
+        "smallWidth": 480,
+        "width": 998,
+        "height": 720,
+        "alt": "Rohlík — Mothers — frame from the advert",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/rohlik-mothers.mp4",
+          "note": "Visually inspected costume frame at 29.51 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/rohlik-mothers/final-detail-2-clean.webp",
+        "smallSrc": "/images/work/rohlik-mothers/final-detail-2-clean-480.webp",
+        "smallWidth": 480,
+        "width": 998,
+        "height": 720,
+        "alt": "Rohlík — Mothers — orange T-shirt and casual teenage wardrobe, film still",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/rohlik-mothers.mp4",
+          "note": "Visually inspected wardrobe frame at 20.29s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/rohlik-mothers/final-detail-3-clean.webp",
+        "smallSrc": "/images/work/rohlik-mothers/final-detail-3-clean-480.webp",
+        "smallWidth": 480,
+        "width": 998,
+        "height": 720,
+        "alt": "Rohlík — Mothers — pink maternity dress and checked shirt, film still",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/rohlik-mothers.mp4",
+          "note": "Visually inspected wardrobe frame at 32.28s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/rohlik-mothers/final-detail-7-clean.webp",
+        "smallSrc": "/images/work/rohlik-mothers/final-detail-7-clean-480.webp",
+        "smallWidth": 480,
+        "width": 998,
+        "height": 600,
+        "alt": "Rohlík — Mothers — blue cardigan and white vest, film still",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/rohlik-mothers.mp4",
+          "note": "Visually inspected wardrobe frame at 81.15s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      }
+    ],
+    "videos": [
+      {
+        "provider": "native",
+        "title": "Rohlík — Mothers",
+        "url": "https://vimeo.com/1056747428",
+        "src": "/videos/rohlik-mothers.mp4",
+        "width": 1280,
+        "height": 720,
+        "poster": {
+          "src": "/images/work/rohlik-mothers/rohlik-mothers-still-1.webp",
+          "smallSrc": "/images/work/rohlik-mothers/rohlik-mothers-still-1-480.webp",
+          "smallWidth": 480,
+          "width": 1280,
+          "height": 720,
+          "alt": "Rohlík — Mothers — costume in the finished film, frame 1"
+        }
+      }
+    ],
+    "credit": "Wardrobe styling",
+    "facts": [
+      {
+        "label": "Director",
+        "value": "Maca Rubio"
+      },
+      {
+        "label": "Production",
+        "value": "Stink Prague"
+      },
+      {
+        "label": "Cinematography",
+        "value": "Santi Cantillo"
+      },
+      {
+        "label": "Agency",
+        "value": "B&T"
+      },
+      {
+        "label": "Wardrobe styling",
+        "value": "Dušan Bebčák"
+      },
+      {
+        "label": "BTS photography",
+        "value": "Stefano Marotta"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/p/DCCz2MCRSd2/"
+      },
+      {
+        "label": "Director’s portfolio",
+        "url": "https://www.kryptonfilmsinternational.com/director/maca_rubio"
+      }
+    ],
+    "portrait": false,
+    "scope": "campaign",
+    "attribution": {
+      "basis": "explicit-credit",
+      "source": "https://www.instagram.com/p/DCCz2MCRSd2/",
+      "note": "Direct campaign publication or Dušan’s own caption explicitly credits @bebcak / Dušan Bebčák. Shared roles remain shared, and the source caption/crew record is retained in the research dossier."
+    }
+  },
+  {
+    "id": "czech-technical-university",
+    "slug": "czech-technical-university",
+    "title": "ČVUT — Science across generations",
+    "thumbnail": {
+      "src": "/images/work/czech-technical-university/hd-costume-2.webp",
+      "smallSrc": "/images/work/czech-technical-university/hd-costume-2-480.webp",
+      "smallWidth": 480,
+      "width": 1920,
+      "height": 1080,
+      "alt": "ČVUT — Science across generations — white laboratory coat and period shirt, film still",
+      "evidence": {
+        "basis": "film-frame",
+        "videoSrc": "/videos/cvut-hd.mp4",
+        "note": "Visually reviewed frame at 14.03s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+      }
+    },
+    "images": [
+      {
+        "src": "/images/work/czech-technical-university/hd-costume-2.webp",
+        "smallSrc": "/images/work/czech-technical-university/hd-costume-2-480.webp",
+        "smallWidth": 480,
+        "width": 1920,
+        "height": 1080,
+        "alt": "ČVUT — Science across generations — white laboratory coat and period shirt, film still",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/cvut-hd.mp4",
+          "note": "Visually reviewed frame at 14.03s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/czech-technical-university/hd-costume-3.webp",
+        "smallSrc": "/images/work/czech-technical-university/hd-costume-3-480.webp",
+        "smallWidth": 480,
+        "width": 1920,
+        "height": 1080,
+        "alt": "ČVUT — Science across generations — checked work shirt in the workshop, film still",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/cvut-hd.mp4",
+          "note": "Visually reviewed frame at 22.21s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/czech-technical-university/hd-costume-4.webp",
+        "smallSrc": "/images/work/czech-technical-university/hd-costume-4-480.webp",
+        "smallWidth": 480,
+        "width": 1920,
+        "height": 1080,
+        "alt": "ČVUT — Science across generations — green sweater, grey shorts and football socks, film still",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/cvut-hd.mp4",
+          "note": "Visually reviewed frame at 30.39s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/czech-technical-university/hd-costume-6.webp",
+        "smallSrc": "/images/work/czech-technical-university/hd-costume-6-480.webp",
+        "smallWidth": 480,
+        "width": 1920,
+        "height": 1080,
+        "alt": "ČVUT — Science across generations — period waistcoat, white shirt and tie, film still",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/cvut-hd.mp4",
+          "note": "Visually reviewed frame at 46.76s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/czech-technical-university/hd-costume-7.webp",
+        "smallSrc": "/images/work/czech-technical-university/hd-costume-7-480.webp",
+        "smallWidth": 480,
+        "width": 1920,
+        "height": 1080,
+        "alt": "ČVUT — Science across generations — helmet and illuminated futuristic costume, film still",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/cvut-hd.mp4",
+          "note": "Visually reviewed frame at 54.36s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
+        }
+      }
+    ],
+    "videos": [
+      {
+        "provider": "native",
+        "title": "ČVUT — Science across generations",
+        "url": "https://www.creativeembassy.net/wolfberg-cvut",
+        "src": "/videos/cvut-hd.mp4",
+        "width": 1920,
+        "height": 1080,
+        "poster": {
+          "src": "/images/work/czech-technical-university/hd-film-poster.webp",
+          "smallSrc": "/images/work/czech-technical-university/hd-film-poster-480.webp",
+          "smallWidth": 480,
+          "width": 1920,
+          "height": 1080,
+          "alt": "ČVUT — Science across generations — film preview",
+          "evidence": {
+            "basis": "film-frame",
+            "videoSrc": "/videos/cvut-hd.mp4",
+            "note": "Poster from the exact full film, preserving its native frame."
+          }
+        }
+      }
+    ],
+    "credit": "",
+    "facts": [
+      {
+        "label": "Director",
+        "value": "Wolfberg"
+      },
+      {
+        "label": "Production",
+        "value": "Creative Embassy"
+      },
+      {
+        "label": "Cinematography",
+        "value": "David Hofmann"
+      },
+      {
+        "label": "Styling",
+        "value": "Dušan Bebčák"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/p/C8UXeVTNMyO/"
+      },
+      {
+        "label": "Verified full film and production source",
+        "url": "https://www.creativeembassy.net/wolfberg-cvut"
+      }
+    ],
+    "portrait": false,
+    "scope": "campaign",
+    "attribution": {
+      "basis": "explicit-credit",
+      "source": "https://www.creativeembassy.net/wolfberg-cvut",
+      "note": "Exact primary campaign credits explicitly name Dušan Bebčák for the wardrobe/styling role recorded in this project’s facts."
+    }
+  },
+  {
+    "id": "billa-masterchef",
+    "slug": "billa-masterchef",
+    "title": "BILLA — MasterChef",
+    "thumbnail": {
+      "src": "/images/work/billa-masterchef/detail-1.webp",
+      "smallSrc": "/images/work/billa-masterchef/detail-1-480.webp",
+      "smallWidth": 480,
+      "width": 1280,
+      "height": 720,
+      "alt": "BILLA — MasterChef — frame from the advert",
+      "evidence": {
+        "basis": "film-frame",
+        "videoSrc": "/videos/797238968.mp4",
+        "note": "Visually inspected costume frame at 1.2 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+      }
+    },
+    "images": [
+      {
+        "src": "/images/work/billa-masterchef/797238968-still-3.webp",
+        "smallSrc": "/images/work/billa-masterchef/797238968-still-3-480.webp",
+        "smallWidth": 480,
+        "width": 1280,
+        "height": 720,
+        "alt": "BILLA — MasterChef — costume in the finished film, frame 3",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/797238968.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "src": "/images/work/billa-masterchef/detail-1.webp",
+        "smallSrc": "/images/work/billa-masterchef/detail-1-480.webp",
+        "smallWidth": 480,
+        "width": 1280,
+        "height": 720,
+        "alt": "BILLA — MasterChef — frame from the advert",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/797238968.mp4",
+          "note": "Visually inspected costume frame at 1.2 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/billa-masterchef/detail-3.webp",
+        "smallSrc": "/images/work/billa-masterchef/detail-3-480.webp",
+        "smallWidth": 480,
+        "width": 1280,
+        "height": 720,
+        "alt": "BILLA — MasterChef — frame from the advert",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/797238968.mp4",
+          "note": "Visually inspected costume frame at 8.7 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/billa-masterchef/final-detail-4.webp",
+        "smallSrc": "/images/work/billa-masterchef/final-detail-4-480.webp",
+        "smallWidth": 480,
+        "width": 1280,
+        "height": 720,
+        "alt": "BILLA — MasterChef — yellow knitwear, blue apron and green shirt by the kitchen window, film still",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/797238968.mp4",
+          "note": "Visually inspected wardrobe frame at 7.2s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      }
+    ],
+    "videos": [
+      {
+        "provider": "native",
+        "title": "BILLA — MasterChef",
+        "url": "https://vimeo.com/797238968",
+        "width": 1280,
+        "height": 720,
+        "src": "/videos/797238968.mp4",
+        "poster": {
+          "src": "/images/work/billa-masterchef/797238968-still-2.webp",
+          "smallSrc": "/images/work/billa-masterchef/797238968-still-2-480.webp",
+          "smallWidth": 480,
+          "width": 1280,
+          "height": 720,
+          "alt": "BILLA — MasterChef — costume in the finished film, frame 2"
+        }
+      }
+    ],
+    "credit": "Wardrobe / costumes",
+    "facts": [
+      {
+        "label": "Director",
+        "value": "Jakub Švejkar"
+      },
+      {
+        "label": "Production",
+        "value": "Procoma"
+      },
+      {
+        "label": "Cinematography",
+        "value": "Radim Střelka"
+      },
+      {
+        "label": "Agency",
+        "value": "McCann Prague"
+      },
+      {
+        "label": "Wardrobe / costumes",
+        "value": "Dušan Bebčák"
+      },
+      {
+        "label": "Wardrobe assistant",
+        "value": "Monika Černoušková"
+      },
+      {
+        "label": "Producer",
+        "value": "Alžběta Šerclová"
+      },
+      {
+        "label": "Production design",
+        "value": "Nina Feriancová"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Production credits",
+        "url": "https://vimeo.com/797238968"
+      },
+      {
+        "label": "Campaign",
+        "url": "https://www.mediaguru.cz/billa-ma-novou-vernostni-kampan-s-nadobim-masterchef"
+      }
+    ],
+    "portrait": false,
+    "scope": "campaign",
+    "attribution": {
+      "basis": "explicit-credit",
+      "source": "https://vimeo.com/797238968",
+      "note": "Exact director/producer campaign credits explicitly name Dušan Bebčák for wardrobe / costumes."
+    }
+  },
+  {
+    "id": "konto-bariery",
+    "slug": "konto-bariery",
+    "title": "Konto Bariéry",
+    "thumbnail": {
+      "src": "/images/work/konto-bariery/detail-2.webp",
+      "smallSrc": "/images/work/konto-bariery/detail-2-480.webp",
+      "smallWidth": 480,
+      "width": 1280,
+      "height": 659,
+      "alt": "Konto Bariéry — frame from the advert",
+      "evidence": {
+        "basis": "film-frame",
+        "videoSrc": "/videos/891619491.mp4",
+        "note": "Visually inspected costume frame at 9.6 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+      }
+    },
+    "images": [
+      {
+        "src": "/images/work/konto-bariery/891619491-still-3.webp",
+        "smallSrc": "/images/work/konto-bariery/891619491-still-3-480.webp",
+        "smallWidth": 480,
+        "width": 1280,
+        "height": 660,
+        "alt": "Konto Bariéry — costume in the finished film, frame 3",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/891619491.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "src": "/images/work/konto-bariery/detail-2.webp",
+        "smallSrc": "/images/work/konto-bariery/detail-2-480.webp",
+        "smallWidth": 480,
+        "width": 1280,
+        "height": 659,
+        "alt": "Konto Bariéry — frame from the advert",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/891619491.mp4",
+          "note": "Visually inspected costume frame at 9.6 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/konto-bariery/detail-4.webp",
+        "smallSrc": "/images/work/konto-bariery/detail-4-480.webp",
+        "smallWidth": 480,
+        "width": 1280,
+        "height": 660,
+        "alt": "Konto Bariéry — frame from the advert",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/891619491.mp4",
+          "note": "Visually inspected costume frame at 24.6 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/konto-bariery/final-detail-1.webp",
+        "smallSrc": "/images/work/konto-bariery/final-detail-1-480.webp",
+        "smallWidth": 480,
+        "width": 1280,
+        "height": 720,
+        "alt": "Konto Bariéry — indoor family wardrobe, striped knitwear and grey shirt, film still",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/891619491.mp4",
+          "note": "Visually inspected wardrobe frame at 2.4s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/konto-bariery/final-detail-2.webp",
+        "smallSrc": "/images/work/konto-bariery/final-detail-2-480.webp",
+        "smallWidth": 480,
+        "width": 1280,
+        "height": 720,
+        "alt": "Konto Bariéry — black roll-neck and grey shirt in close-up, film still",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/891619491.mp4",
+          "note": "Visually inspected wardrobe frame at 6.6s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/konto-bariery/final-detail-7.webp",
+        "smallSrc": "/images/work/konto-bariery/final-detail-7-480.webp",
+        "smallWidth": 480,
+        "width": 1280,
+        "height": 720,
+        "alt": "Konto Bariéry — striped jumper at the cinema, film still",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/891619491.mp4",
+          "note": "Visually inspected wardrobe frame at 26.4s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
+        }
+      }
+    ],
+    "videos": [
+      {
+        "provider": "native",
+        "title": "Konto Bariéry",
+        "url": "https://vimeo.com/891619491",
+        "width": 1280,
+        "height": 720,
+        "src": "/videos/891619491.mp4",
+        "poster": {
+          "src": "/images/work/konto-bariery/891619491-still-1.webp",
+          "smallSrc": "/images/work/konto-bariery/891619491-still-1-480.webp",
+          "smallWidth": 480,
+          "width": 1280,
+          "height": 720,
+          "alt": "Konto Bariéry — costume in the finished film, frame 1"
+        }
+      }
+    ],
+    "credit": "Costume design",
+    "facts": [
+      {
+        "label": "Director",
+        "value": "Jakub Žídek"
+      },
+      {
+        "label": "Production",
+        "value": "ADvocado Films"
+      },
+      {
+        "label": "Cinematography",
+        "value": "Tomáš Šťastný"
+      },
+      {
+        "label": "Agency",
+        "value": "VCCP"
+      },
+      {
+        "label": "Costume design",
+        "value": "Dušan Bebčák"
+      },
+      {
+        "label": "Wardrobe styling",
+        "value": "Adéla Terčová"
+      },
+      {
+        "label": "Executive producer",
+        "value": "Lucie Jánová"
+      },
+      {
+        "label": "Producer",
+        "value": "Jan Šipan"
+      },
+      {
+        "label": "Production design",
+        "value": "Alex Kurel"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Production credits",
+        "url": "https://www.advocadofilms.com/work/"
+      },
+      {
+        "label": "Explicit professional credit",
+        "url": "https://vimeo.com/891619491"
+      }
+    ],
+    "portrait": false,
+    "scope": "campaign",
+    "attribution": {
+      "basis": "explicit-credit",
+      "source": "https://vimeo.com/891619491",
+      "note": "Exact director/producer campaign credits explicitly name Dušan Bebčák for costume design."
+    }
+  },
+  {
     "id": "vodafone-youth",
     "slug": "vodafone-youth",
     "title": "Vodafone — Unlimited Honesty",
@@ -3788,117 +4320,122 @@ export const projects: Project[] = [
     }
   },
   {
-    "id": "loreal-men-expert",
-    "slug": "loreal-men-expert",
-    "title": "L’Oréal Men Expert — Hydra Energetic",
+    "id": "innogy-domaci-asistence",
+    "slug": "innogy-domaci-asistence",
+    "title": "innogy — Domácí asistence",
     "thumbnail": {
-      "src": "/images/work/loreal-men-expert/published-29.webp",
-      "smallSrc": "/images/work/loreal-men-expert/published-29-480.webp",
-      "smallWidth": 360,
-      "width": 1204,
-      "height": 1605,
-      "alt": "loreal men expert — published campaign photograph",
+      "src": "/images/work/innogy-domaci-asistence/official-hd-1.webp",
+      "smallSrc": "/images/work/innogy-domaci-asistence/official-hd-1-480.webp",
+      "smallWidth": 480,
+      "width": 1920,
+      "height": 1080,
+      "alt": "innogy — Domácí asistence — green overshirt and yellow T-shirt, film still",
       "evidence": {
-        "basis": "same-publication",
-        "videoSrc": "/videos/loreal-men-expert.mp4",
-        "note": "The director publishes this Hydra Energetic campaign series together and explicitly credits @bebcak. The portrait photographs include Boris Valábik and Gergely Siklósi; the attached complete film features Lukáš Sedlák. These are campaign photographs, not claimed as frames or fitting photographs from that individual cut."
+        "basis": "film-frame",
+        "videoSrc": "/videos/innogy-domaci-asistence-hd.mp4",
+        "note": "Inspected frame at 1.3244s from innogycz’s complete 33-second official advert. Same performers, green/yellow outfit, grandfather’s shirt changes, red cardigan, blue repair uniform, kitchen/laundry story and end card as Dušan’s cropped Instagram repost. Not a fitting or BTS photograph."
       }
     },
     "images": [
       {
-        "src": "/images/work/loreal-men-expert/published-29.webp",
-        "smallSrc": "/images/work/loreal-men-expert/published-29-480.webp",
-        "smallWidth": 360,
-        "width": 1204,
-        "height": 1605,
-        "alt": "L’Oréal Men Expert — Hydra Energetic — published campaign image 1",
+        "src": "/images/work/innogy-domaci-asistence/official-hd-1.webp",
+        "smallSrc": "/images/work/innogy-domaci-asistence/official-hd-1-480.webp",
+        "smallWidth": 480,
+        "width": 1920,
+        "height": 1080,
+        "alt": "innogy — Domácí asistence — green overshirt and yellow T-shirt, film still",
         "evidence": {
-          "basis": "same-publication",
-          "videoSrc": "/videos/loreal-men-expert.mp4",
-          "note": "The director publishes this Hydra Energetic campaign series together and explicitly credits @bebcak. The portrait photographs include Boris Valábik and Gergely Siklósi. The attached complete 20-second variant is from the same publication. Photographs of series performers are not claimed to be frames or fitting photographs from that individual cut."
+          "basis": "film-frame",
+          "videoSrc": "/videos/innogy-domaci-asistence-hd.mp4",
+          "note": "Inspected frame at 1.3244s from innogycz’s complete 33-second official advert. Same performers, green/yellow outfit, grandfather’s shirt changes, red cardigan, blue repair uniform, kitchen/laundry story and end card as Dušan’s cropped Instagram repost. Not a fitting or BTS photograph."
         }
       },
       {
-        "src": "/images/work/loreal-men-expert/published-26.webp",
-        "smallSrc": "/images/work/loreal-men-expert/published-26-480.webp",
-        "smallWidth": 360,
-        "width": 1200,
-        "height": 1600,
-        "alt": "L’Oréal Men Expert — Hydra Energetic — published campaign image 2",
+        "src": "/images/work/innogy-domaci-asistence/official-hd-2.webp",
+        "smallSrc": "/images/work/innogy-domaci-asistence/official-hd-2-480.webp",
+        "smallWidth": 480,
+        "width": 1920,
+        "height": 1080,
+        "alt": "innogy — Domácí asistence — green shirt and braces with the laundry basket, film still",
         "evidence": {
-          "basis": "same-publication",
-          "videoSrc": "/videos/loreal-men-expert.mp4",
-          "note": "The director publishes this Hydra Energetic campaign series together and explicitly credits @bebcak. The portrait photographs include Boris Valábik and Gergely Siklósi. The attached complete 20-second variant is from the same publication. Photographs of series performers are not claimed to be frames or fitting photographs from that individual cut."
+          "basis": "film-frame",
+          "videoSrc": "/videos/innogy-domaci-asistence-hd.mp4",
+          "note": "Inspected frame at 11.8s from innogycz’s complete 33-second official advert. Same performers, green/yellow outfit, grandfather’s shirt changes, red cardigan, blue repair uniform, kitchen/laundry story and end card as Dušan’s cropped Instagram repost. Not a fitting or BTS photograph."
         }
       },
       {
-        "src": "/images/work/loreal-men-expert/published-28.webp",
-        "smallSrc": "/images/work/loreal-men-expert/published-28-480.webp",
-        "smallWidth": 360,
-        "width": 1206,
-        "height": 1608,
-        "alt": "L’Oréal Men Expert — Hydra Energetic — published campaign image 3",
+        "src": "/images/work/innogy-domaci-asistence/official-hd-3.webp",
+        "smallSrc": "/images/work/innogy-domaci-asistence/official-hd-3-480.webp",
+        "smallWidth": 480,
+        "width": 1920,
+        "height": 1080,
+        "alt": "innogy — Domácí asistence — pale shirt and striped braces, film still",
         "evidence": {
-          "basis": "same-publication",
-          "videoSrc": "/videos/loreal-men-expert.mp4",
-          "note": "The director publishes this Hydra Energetic campaign series together and explicitly credits @bebcak. The portrait photographs include Boris Valábik and Gergely Siklósi. The attached complete 20-second variant is from the same publication. Photographs of series performers are not claimed to be frames or fitting photographs from that individual cut."
+          "basis": "film-frame",
+          "videoSrc": "/videos/innogy-domaci-asistence-hd.mp4",
+          "note": "Inspected frame at 14.9s from innogycz’s complete 33-second official advert. Same performers, green/yellow outfit, grandfather’s shirt changes, red cardigan, blue repair uniform, kitchen/laundry story and end card as Dušan’s cropped Instagram repost. Not a fitting or BTS photograph."
         }
       },
       {
-        "src": "/images/work/loreal-men-expert/published-30.webp",
-        "smallSrc": "/images/work/loreal-men-expert/published-30-480.webp",
-        "smallWidth": 360,
-        "width": 1440,
-        "height": 1920,
-        "alt": "L’Oréal Men Expert — Hydra Energetic — published campaign image 4",
+        "src": "/images/work/innogy-domaci-asistence/official-hd-4.webp",
+        "smallSrc": "/images/work/innogy-domaci-asistence/official-hd-4-480.webp",
+        "smallWidth": 480,
+        "width": 1920,
+        "height": 1080,
+        "alt": "innogy — Domácí asistence — red cardigan over a black-and-white striped shirt, film still",
         "evidence": {
-          "basis": "same-publication",
-          "videoSrc": "/videos/loreal-men-expert.mp4",
-          "note": "The director publishes this Hydra Energetic campaign series together and explicitly credits @bebcak. The portrait photographs include Boris Valábik and Gergely Siklósi. The attached complete 20-second variant is from the same publication. Photographs of series performers are not claimed to be frames or fitting photographs from that individual cut."
+          "basis": "film-frame",
+          "videoSrc": "/videos/innogy-domaci-asistence-hd.mp4",
+          "note": "Inspected frame at 17.4s from innogycz’s complete 33-second official advert. Same performers, green/yellow outfit, grandfather’s shirt changes, red cardigan, blue repair uniform, kitchen/laundry story and end card as Dušan’s cropped Instagram repost. Not a fitting or BTS photograph."
         }
       },
       {
-        "src": "/images/work/loreal-men-expert/published-31.webp",
-        "smallSrc": "/images/work/loreal-men-expert/published-31-480.webp",
-        "smallWidth": 360,
-        "width": 1440,
-        "height": 1920,
-        "alt": "L’Oréal Men Expert — Hydra Energetic — published campaign image 5",
+        "src": "/images/work/innogy-domaci-asistence/official-hd-5.webp",
+        "smallSrc": "/images/work/innogy-domaci-asistence/official-hd-5-480.webp",
+        "smallWidth": 480,
+        "width": 1920,
+        "height": 1080,
+        "alt": "innogy — Domácí asistence — blue repairer’s polo shirt and overalls, film still",
         "evidence": {
-          "basis": "same-publication",
-          "videoSrc": "/videos/loreal-men-expert.mp4",
-          "note": "The director publishes this Hydra Energetic campaign series together and explicitly credits @bebcak. The portrait photographs include Boris Valábik and Gergely Siklósi. The attached complete 20-second variant is from the same publication. Photographs of series performers are not claimed to be frames or fitting photographs from that individual cut."
+          "basis": "film-frame",
+          "videoSrc": "/videos/innogy-domaci-asistence-hd.mp4",
+          "note": "Inspected frame at 21.5s from innogycz’s complete 33-second official advert. Same performers, green/yellow outfit, grandfather’s shirt changes, red cardigan, blue repair uniform, kitchen/laundry story and end card as Dušan’s cropped Instagram repost. Not a fitting or BTS photograph."
         }
       },
       {
-        "src": "/images/work/loreal-men-expert/published-extra-27.webp",
-        "smallSrc": "/images/work/loreal-men-expert/published-extra-27-480.webp",
-        "smallWidth": 360,
-        "width": 1202,
-        "height": 1602,
-        "alt": "L’Oréal Men Expert — Hydra Energetic — white t-shirt and orange campaign portrait",
+        "src": "/images/work/innogy-domaci-asistence/official-hd-6.webp",
+        "smallSrc": "/images/work/innogy-domaci-asistence/official-hd-6-480.webp",
+        "smallWidth": 480,
+        "width": 1920,
+        "height": 1080,
+        "alt": "innogy — Domácí asistence — the family’s contrasting domestic wardrobes, film still",
         "evidence": {
-          "basis": "same-publication",
-          "videoSrc": "/videos/loreal-men-expert.mp4",
-          "note": "The director publishes this Hydra Energetic campaign series together and explicitly credits @bebcak. The portrait photographs include Boris Valábik and Gergely Siklósi. The attached complete 20-second variant is from the same publication. Photographs of series performers are not claimed to be frames or fitting photographs from that individual cut."
+          "basis": "film-frame",
+          "videoSrc": "/videos/innogy-domaci-asistence-hd.mp4",
+          "note": "Inspected frame at 28s from innogycz’s complete 33-second official advert. Same performers, green/yellow outfit, grandfather’s shirt changes, red cardigan, blue repair uniform, kitchen/laundry story and end card as Dušan’s cropped Instagram repost. Not a fitting or BTS photograph."
         }
       }
     ],
     "videos": [
       {
         "provider": "native",
-        "title": "L’Oréal Men Expert — Hydra Energetic",
-        "url": "https://www.instagram.com/p/DUoPG4EEp4z/",
-        "src": "/videos/loreal-men-expert.mp4",
-        "width": 360,
-        "height": 480,
+        "title": "innogy — Domácí asistence",
+        "url": "https://www.youtube.com/watch?v=kIVgujoxAFQ",
+        "src": "/videos/innogy-domaci-asistence-hd.mp4",
+        "width": 1920,
+        "height": 1080,
         "poster": {
-          "src": "/images/work/loreal-men-expert/film-cover.webp",
-          "smallSrc": "/images/work/loreal-men-expert/film-cover-480.webp",
-          "width": 360,
-          "height": 480,
-          "smallWidth": 360,
-          "alt": "L’Oréal Men Expert — Hydra Energetic — film preview"
+          "src": "/images/work/innogy-domaci-asistence/official-hd-1.webp",
+          "smallSrc": "/images/work/innogy-domaci-asistence/official-hd-1-480.webp",
+          "smallWidth": 480,
+          "width": 1920,
+          "height": 1080,
+          "alt": "innogy — Domácí asistence — green overshirt and yellow T-shirt, film still",
+          "evidence": {
+            "basis": "film-frame",
+            "videoSrc": "/videos/innogy-domaci-asistence-hd.mp4",
+            "note": "Inspected frame at 1.3244s from innogycz’s complete 33-second official advert. Same performers, green/yellow outfit, grandfather’s shirt changes, red cardigan, blue repair uniform, kitchen/laundry story and end card as Dušan’s cropped Instagram repost. Not a fitting or BTS photograph."
+          }
         }
       }
     ],
@@ -3906,33 +4443,171 @@ export const projects: Project[] = [
     "facts": [
       {
         "label": "Director",
-        "value": "@shotbykill"
+        "value": "Jiří Havelka"
       },
       {
         "label": "Production",
-        "value": "Unreal Visual"
+        "value": "Armada Films"
       },
       {
         "label": "Agency",
-        "value": "B&T / McCann Prague"
-      },
-      {
-        "label": "Costumes",
-        "value": "Dušan Bebčák"
+        "value": "VML"
       }
     ],
     "sources": [
       {
-        "label": "Director’s campaign publication",
-        "url": "https://www.instagram.com/p/DUoPG4EEp4z/"
+        "label": "Instagram",
+        "url": "https://www.instagram.com/p/C8TzvRXNBoK/"
+      },
+      {
+        "label": "Campaign",
+        "url": "https://www.mediar.cz/galerie-reklamy/innogy-laka-na-bezplatne-opravy-spotrebicu-ke-smlouve-na-energie/"
+      },
+      {
+        "label": "Exact official full-HD film",
+        "url": "https://www.youtube.com/watch?v=kIVgujoxAFQ"
       }
     ],
-    "portrait": true,
+    "portrait": false,
+    "scope": "campaign",
+    "attribution": {
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/C8TzvRXNBoK/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    }
+  },
+  {
+    "id": "rossmann",
+    "slug": "rossmann",
+    "title": "ROSSMANN",
+    "thumbnail": {
+      "src": "/images/work/rossmann/detail-2.webp",
+      "smallSrc": "/images/work/rossmann/detail-2-480.webp",
+      "smallWidth": 480,
+      "width": 1032,
+      "height": 720,
+      "alt": "ROSSMANN — frame from the advert",
+      "evidence": {
+        "basis": "film-frame",
+        "videoSrc": "/videos/DQd6DDdjAqh.mp4",
+        "note": "Visually inspected costume frame at 19.84 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+      }
+    },
+    "images": [
+      {
+        "src": "/images/work/rossmann/DQd6DDdjAqh-still-2.webp",
+        "smallSrc": "/images/work/rossmann/DQd6DDdjAqh-still-2-480.webp",
+        "smallWidth": 480,
+        "width": 1032,
+        "height": 720,
+        "alt": "ROSSMANN — costume in the finished film, frame 2",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/DQd6DDdjAqh.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "src": "/images/work/rossmann/detail-2.webp",
+        "smallSrc": "/images/work/rossmann/detail-2-480.webp",
+        "smallWidth": 480,
+        "width": 1032,
+        "height": 720,
+        "alt": "ROSSMANN — frame from the advert",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/DQd6DDdjAqh.mp4",
+          "note": "Visually inspected costume frame at 19.84 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/rossmann/detail-4.webp",
+        "smallSrc": "/images/work/rossmann/detail-4-480.webp",
+        "smallWidth": 480,
+        "width": 1032,
+        "height": 720,
+        "alt": "ROSSMANN — frame from the advert",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/DQd6DDdjAqh.mp4",
+          "note": "Visually inspected costume frame at 50.84 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/rossmann/published-47.webp",
+        "smallSrc": "/images/work/rossmann/published-47-480.webp",
+        "smallWidth": 480,
+        "width": 1440,
+        "height": 810,
+        "alt": "ROSSMANN — published campaign image 4",
+        "evidence": {
+          "basis": "visual-match",
+          "videoSrc": "/videos/DQd6DDdjAqh.mp4",
+          "note": "Same mother/daughter campaign, apartment set and performers in the director’s detailed campaign carousel. Directors, DOP, client, agency and production match the portfolio film; caption explicitly credits @bebcak and @ze_ni_ta jointly."
+        }
+      }
+    ],
+    "videos": [
+      {
+        "provider": "native",
+        "title": "ROSSMANN",
+        "url": "https://www.instagram.com/p/DQd6DDdjAqh/",
+        "src": "/videos/DQd6DDdjAqh.mp4",
+        "width": 1032,
+        "height": 720,
+        "poster": {
+          "src": "/images/work/rossmann/DQd6DDdjAqh-still-1.webp",
+          "smallSrc": "/images/work/rossmann/DQd6DDdjAqh-still-1-480.webp",
+          "smallWidth": 480,
+          "width": 1032,
+          "height": 720,
+          "alt": "ROSSMANN — costume in the finished film, frame 1"
+        }
+      }
+    ],
+    "credit": "Styling",
+    "facts": [
+      {
+        "label": "Director",
+        "value": "Novák & Nguyen"
+      },
+      {
+        "label": "Production",
+        "value": "Armada Films"
+      },
+      {
+        "label": "Cinematography",
+        "value": "Filip Hájek"
+      },
+      {
+        "label": "Agency",
+        "value": "DDB Prague"
+      },
+      {
+        "label": "Wardrobe",
+        "value": "Dušan Bebčák / @ze_ni_ta"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/p/DQd6DDdjAqh/"
+      },
+      {
+        "label": "Campaign",
+        "url": "https://www.rossmann.cz/obsah/o-nas/tiskove-zpravy/2025/rossmann-predstavuje-novy-emotivni-spot-pece-ma-mnoho-podob-lasku-ale-najdete-v-kazde-z-nich-a-pokracuje-tak-v-tradici-empatie-a-lidskosti"
+      },
+      {
+        "label": "Producer’s explicit styling credit",
+        "url": "https://cz.linkedin.com/company/armada-films"
+      }
+    ],
+    "portrait": false,
     "scope": "campaign",
     "attribution": {
       "basis": "explicit-credit",
-      "source": "https://www.instagram.com/p/DUoPG4EEp4z/",
-      "note": "Direct campaign publication or Dušan’s own caption explicitly credits @bebcak / Dušan Bebčák. Shared roles remain shared, and the source caption/crew record is retained in the research dossier."
+      "source": "https://cz.linkedin.com/company/armada-films",
+      "note": "Armada’s exact mother/daughter production publication explicitly credits Stylist Dusan Bebcak and agrees with Dušan’s Novák & Nguyen / Filip Hájek caption. The shared wardrobe entry is separately corroborated by the matched professional fitting publication. Not the earlier Mugshots ROSSMANN film, which has different stylists."
     }
   },
   {
@@ -4183,6 +4858,135 @@ export const projects: Project[] = [
     }
   },
   {
+    "id": "favorit",
+    "slug": "favorit",
+    "title": "Favorit",
+    "thumbnail": {
+      "src": "/images/work/favorit/268355869-still-1.webp",
+      "smallSrc": "/images/work/favorit/268355869-still-1-480.webp",
+      "smallWidth": 480,
+      "width": 1280,
+      "height": 720,
+      "alt": "Favorit — costume in the finished film, frame 1"
+    },
+    "images": [
+      {
+        "src": "/images/work/favorit/268355869-still-2.webp",
+        "smallSrc": "/images/work/favorit/268355869-still-2-480.webp",
+        "smallWidth": 480,
+        "width": 1280,
+        "height": 532,
+        "alt": "Favorit — costume in the finished film, frame 2",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/268355869.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "src": "/images/work/favorit/detail-1.webp",
+        "smallSrc": "/images/work/favorit/detail-1-480.webp",
+        "smallWidth": 480,
+        "width": 1280,
+        "height": 533,
+        "alt": "Favorit — frame from the advert",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/268355869.mp4",
+          "note": "Visually inspected costume frame at 7.962 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/favorit/detail-2.webp",
+        "smallSrc": "/images/work/favorit/detail-2-480.webp",
+        "smallWidth": 480,
+        "width": 1280,
+        "height": 534,
+        "alt": "Favorit — frame from the advert",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/268355869.mp4",
+          "note": "Visually inspected costume frame at 31.846 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/favorit/detail-4.webp",
+        "smallSrc": "/images/work/favorit/detail-4-480.webp",
+        "smallWidth": 480,
+        "width": 1280,
+        "height": 532,
+        "alt": "Favorit — frame from the advert",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/268355869.mp4",
+          "note": "Visually inspected costume frame at 81.606 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      }
+    ],
+    "videos": [
+      {
+        "provider": "native",
+        "title": "Favorit",
+        "url": "https://vimeo.com/268355869",
+        "width": 1280,
+        "height": 720,
+        "src": "/videos/268355869.mp4",
+        "poster": {
+          "src": "/images/work/favorit/268355869-still-1.webp",
+          "smallSrc": "/images/work/favorit/268355869-still-1-480.webp",
+          "smallWidth": 480,
+          "width": 1280,
+          "height": 720,
+          "alt": "Favorit — costume in the finished film, frame 1"
+        }
+      }
+    ],
+    "credit": "Wardrobe",
+    "facts": [
+      {
+        "label": "Director",
+        "value": "Wolfberg"
+      },
+      {
+        "label": "Production",
+        "value": "Creative Embassy"
+      },
+      {
+        "label": "Cinematography",
+        "value": "Martin Matiášek"
+      },
+      {
+        "label": "Wardrobe",
+        "value": "Dušan Bebčák / Tereza Nádvorníková"
+      },
+      {
+        "label": "Agency",
+        "value": "Y&R"
+      },
+      {
+        "label": "Producer",
+        "value": "Petr Oplatka"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Production credits",
+        "url": "https://vimeo.com/268355869"
+      },
+      {
+        "label": "Director’s portfolio",
+        "url": "https://www.wearefred.co/wolfberg"
+      }
+    ],
+    "portrait": false,
+    "scope": "campaign",
+    "attribution": {
+      "basis": "explicit-credit",
+      "source": "https://vimeo.com/268355869",
+      "note": "Exact director/producer campaign credits explicitly name Dušan Bebčák for wardrobe."
+    }
+  },
+  {
     "id": "orange",
     "slug": "orange",
     "title": "Orange — Hockey generations",
@@ -4293,6 +5097,18 @@ export const projects: Project[] = [
       {
         "label": "Production",
         "value": "Armada Films"
+      },
+      {
+        "label": "Agency",
+        "value": "MADE BY VACULIK"
+      },
+      {
+        "label": "Photography",
+        "value": "Jakub Dohnálek"
+      },
+      {
+        "label": "Featuring",
+        "value": "Marián Hossa"
       }
     ],
     "sources": [
@@ -4303,6 +5119,10 @@ export const projects: Project[] = [
       {
         "label": "Campaign",
         "url": "https://www.omediach.com/reklama/26464-orange-prichadza-s-novou-kampanou-tvarou-je-hokejova-legenda-video"
+      },
+      {
+        "label": "Exact campaign crew credits",
+        "url": "https://strategie.hnonline.sk/news/marketing/96144391-orange-prichadza-s-novou-hokejovou-kampanou-s-hviezdou-marianom-hossom"
       }
     ],
     "portrait": false,
@@ -4314,355 +5134,178 @@ export const projects: Project[] = [
     }
   },
   {
-    "id": "leffe",
-    "slug": "leffe",
-    "title": "Leffe — Monks & armour",
-    "thumbnail": {
-      "src": "/images/work/leffe/costume-v1-6.webp",
-      "smallSrc": "/images/work/leffe/costume-v1-6-480.webp",
-      "smallWidth": 360,
-      "width": 480,
-      "height": 640,
-      "alt": "Leffe — Monks & armour — costume in the finished film",
-      "evidence": {
-        "basis": "film-frame",
-        "videoSrc": "/videos/C8UY_Dctrd9.mp4",
-        "note": "Costume-focused frame at 40.848s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
-      }
-    },
-    "images": [
-      {
-        "src": "/images/work/leffe/C8UY_Dctrd9-still-2.webp",
-        "smallSrc": "/images/work/leffe/C8UY_Dctrd9-still-2-480.webp",
-        "smallWidth": 360,
-        "width": 480,
-        "height": 640,
-        "alt": "Leffe — Monks & armour — costume in the finished film, frame 2",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/C8UY_Dctrd9.mp4",
-          "note": "Extracted from this film."
-        }
-      },
-      {
-        "src": "/images/work/leffe/detail-2.webp",
-        "smallSrc": "/images/work/leffe/detail-2-480.webp",
-        "smallWidth": 360,
-        "width": 480,
-        "height": 640,
-        "alt": "Leffe — Monks & armour — frame from the advert",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/C8UY_Dctrd9.mp4",
-          "note": "Visually inspected costume frame at 19.222 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/leffe/costume-v1-6.webp",
-        "smallSrc": "/images/work/leffe/costume-v1-6-480.webp",
-        "smallWidth": 360,
-        "width": 480,
-        "height": 640,
-        "alt": "Leffe — Monks & armour — costume in the finished film",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/C8UY_Dctrd9.mp4",
-          "note": "Costume-focused frame at 40.848s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
-        }
-      },
-      {
-        "src": "/images/work/leffe/costume-v1-7.webp",
-        "smallSrc": "/images/work/leffe/costume-v1-7-480.webp",
-        "smallWidth": 360,
-        "width": 480,
-        "height": 640,
-        "alt": "Leffe — Monks & armour — costume in the finished film",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/C8UY_Dctrd9.mp4",
-          "note": "Costume-focused frame at 46.254s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
-        }
-      }
-    ],
-    "videos": [
-      {
-        "provider": "native",
-        "title": "Leffe — Monks & armour",
-        "url": "https://www.instagram.com/p/C8UY_Dctrd9/",
-        "src": "/videos/C8UY_Dctrd9.mp4",
-        "width": 480,
-        "height": 640,
-        "poster": {
-          "src": "/images/work/leffe/C8UY_Dctrd9-still-1.webp",
-          "smallSrc": "/images/work/leffe/C8UY_Dctrd9-still-1-480.webp",
-          "smallWidth": 360,
-          "width": 480,
-          "height": 640,
-          "alt": "Leffe — Monks & armour — costume in the finished film, frame 1"
-        }
-      }
-    ],
-    "credit": "",
-    "facts": [
-      {
-        "label": "Director",
-        "value": "Wolfberg"
-      }
-    ],
-    "sources": [
-      {
-        "label": "Instagram",
-        "url": "https://www.instagram.com/p/C8UY_Dctrd9/"
-      },
-      {
-        "label": "Production",
-        "url": "https://www.boogiefilms.com/project/wolfberg"
-      }
-    ],
-    "portrait": false,
-    "scope": "campaign",
-    "attribution": {
-      "basis": "own-portfolio",
-      "source": "https://www.instagram.com/p/C8UY_Dctrd9/",
-      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
-    }
-  },
-  {
-    "id": "talkmore-medieval",
-    "slug": "talkmore-duedekning",
-    "title": "Talkmore — Duedekning",
-    "thumbnail": {
-      "src": "/images/work/woodland-costumes/image-1.webp",
-      "smallSrc": "/images/work/woodland-costumes/image-1-480.webp",
-      "smallWidth": 384,
-      "width": 1280,
-      "height": 1600,
-      "alt": "Talkmore — Duedekning — fitted chain-mail hood, brown tunic and segmented armour",
-      "evidence": {
-        "basis": "visual-match",
-        "videoSrc": "/videos/talkmore-duedekning-hd.mp4",
-        "note": "Compared against Einar’s complete 1080p Duedekning film: same two performers, helmet and chin strap, segmented shoulder/body plates, maroon belt and studded leather cuffs; matching chain-mail hood, leaf-shaped shoulders, curved gold neck plate, brown tunic and boots. The separate green workshop armour is not assigned to this film."
-      }
-    },
-    "images": [
-      {
-        "src": "/images/work/woodland-costumes/image-1.webp",
-        "smallSrc": "/images/work/woodland-costumes/image-1-480.webp",
-        "smallWidth": 384,
-        "width": 1280,
-        "height": 1600,
-        "alt": "Talkmore — Duedekning — fitted chain-mail hood, brown tunic and segmented armour",
-        "evidence": {
-          "basis": "visual-match",
-          "videoSrc": "/videos/talkmore-duedekning-hd.mp4",
-          "note": "Compared against Einar’s complete 1080p Duedekning film: same two performers, helmet and chin strap, segmented shoulder/body plates, maroon belt and studded leather cuffs; matching chain-mail hood, leaf-shaped shoulders, curved gold neck plate, brown tunic and boots. The separate green workshop armour is not assigned to this film."
-        }
-      },
-      {
-        "src": "/images/work/talkmore-medieval/verified-hd-1.webp",
-        "smallSrc": "/images/work/talkmore-medieval/verified-hd-1-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 708,
-        "alt": "Talkmore — Duedekning — steel helmet, shoulder armour and chain-mail hood, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/talkmore-duedekning-hd.mp4",
-          "note": "Visually inspected wardrobe frame at 14s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/talkmore-medieval/verified-hd-2.webp",
-        "smallSrc": "/images/work/talkmore-medieval/verified-hd-2-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 708,
-        "alt": "Talkmore — Duedekning — layered tunics, leather belts and metal armour, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/talkmore-duedekning-hd.mp4",
-          "note": "Visually inspected wardrobe frame at 16.5s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/talkmore-medieval/verified-hd-3.webp",
-        "smallSrc": "/images/work/talkmore-medieval/verified-hd-3-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 708,
-        "alt": "Talkmore — Duedekning — full-length medieval wardrobes inside the cottage, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/talkmore-duedekning-hd.mp4",
-          "note": "Visually inspected wardrobe frame at 20s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/talkmore-medieval/verified-hd-4.webp",
-        "smallSrc": "/images/work/talkmore-medieval/verified-hd-4-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 708,
-        "alt": "Talkmore — Duedekning — contrasting armour and layered costumes beside the troll, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/talkmore-duedekning-hd.mp4",
-          "note": "Visually inspected wardrobe frame at 26s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/talkmore-medieval/verified-hd-5.webp",
-        "smallSrc": "/images/work/talkmore-medieval/verified-hd-5-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 708,
-        "alt": "Talkmore — Duedekning — chain-mail hood, neck plate and segmented armour, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/talkmore-duedekning-hd.mp4",
-          "note": "Visually inspected wardrobe frame at 32s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/talkmore-medieval/verified-hd-6.webp",
-        "smallSrc": "/images/work/talkmore-medieval/verified-hd-6-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 708,
-        "alt": "Talkmore — Duedekning — the three character costumes together, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/talkmore-duedekning-hd.mp4",
-          "note": "Visually inspected wardrobe frame at 34.5s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
-        }
-      }
-    ],
-    "videos": [
-      {
-        "provider": "native",
-        "title": "Talkmore — Duedekning",
-        "url": "https://einarfilm.no/directors/stian-johansen/duedekning",
-        "src": "/videos/talkmore-duedekning-hd.mp4",
-        "width": 1920,
-        "height": 1080,
-        "poster": {
-          "src": "/images/work/talkmore-medieval/verified-hd-poster.webp",
-          "smallSrc": "/images/work/talkmore-medieval/verified-hd-poster-480.webp",
-          "smallWidth": 480,
-          "width": 1920,
-          "height": 1080,
-          "alt": "Talkmore — Duedekning — film preview",
-          "evidence": {
-            "basis": "film-frame",
-            "videoSrc": "/videos/talkmore-duedekning-hd.mp4",
-            "note": "Preview from the exact HD film, preserving its native frame."
-          }
-        }
-      }
-    ],
-    "credit": "",
-    "facts": [
-      {
-        "label": "Director",
-        "value": "Stian Johansen"
-      },
-      {
-        "label": "Production",
-        "value": "Einar Film"
-      }
-    ],
-    "sources": [
-      {
-        "label": "Instagram",
-        "url": "https://www.instagram.com/p/DCT3S7tMzxC/"
-      },
-      {
-        "label": "Director’s portfolio",
-        "url": "https://einarfilm.no/directors/stian-johansen"
-      },
-      {
-        "label": "Exact full-resolution production film",
-        "url": "https://einarfilm.no/directors/stian-johansen/duedekning"
-      },
-      {
-        "label": "Original costume fitting",
-        "url": "https://www.instagram.com/p/DFlPHEJMUbB/"
-      }
-    ],
-    "portrait": true,
-    "scope": "campaign",
-    "attribution": {
-      "basis": "own-portfolio",
-      "source": "https://www.instagram.com/p/DCT3S7tMzxC/",
-      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
-    }
-  },
-  {
     "id": "eon",
     "slug": "eon",
-    "title": "E.ON — It’s on us",
+    "title": "E.ON — Nechte to na nás",
     "thumbnail": {
-      "src": "/images/work/eon/checked-blazer-upright.webp",
-      "smallSrc": "/images/work/eon/checked-blazer-upright-480.webp",
+      "src": "/images/work/eon/ferove-ceny-hd.webp",
+      "smallSrc": "/images/work/eon/ferove-ceny-hd-480.webp",
       "smallWidth": 480,
-      "width": 1552,
-      "height": 1170,
-      "alt": "E.ON — It’s on us — checked blazer and blue shirt, published campaign image",
+      "width": 1920,
+      "height": 1080,
+      "alt": "E.ON — Energie vždy za férové ceny — frame from the finished advert",
       "evidence": {
-        "basis": "same-publication",
-        "videoSrc": "/videos/DQd4pgojHgA.mp4",
-        "note": "Same E.ON carousel and visibly identical checked blazer/blue shirt in the attached film."
+        "basis": "film-frame",
+        "videoSrc": "/videos/eon-ferove-ceny-official-hd.mp4",
+        "note": "Inspected frame at 3 seconds from the exact official E.ON full-HD film."
       }
     },
     "images": [
+      {
+        "src": "/images/work/eon/ferove-ceny-hd.webp",
+        "smallSrc": "/images/work/eon/ferove-ceny-hd-480.webp",
+        "smallWidth": 480,
+        "width": 1920,
+        "height": 1080,
+        "alt": "E.ON — Energie vždy za férové ceny — frame from the finished advert",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/eon-ferove-ceny-official-hd.mp4",
+          "note": "Inspected frame at 3 seconds from the exact official E.ON full-HD film."
+        }
+      },
       {
         "src": "/images/work/eon/checked-blazer-upright.webp",
         "smallSrc": "/images/work/eon/checked-blazer-upright-480.webp",
         "smallWidth": 480,
         "width": 1552,
         "height": 1170,
-        "alt": "E.ON — It’s on us — checked blazer and blue shirt, published campaign image",
+        "alt": "E.ON — checked blazer and blue denim shirt",
         "evidence": {
           "basis": "same-publication",
-          "videoSrc": "/videos/DQd4pgojHgA.mp4",
-          "note": "Same E.ON carousel and visibly identical checked blazer/blue shirt in the attached film."
+          "videoSrc": "/videos/eon-ferove-ceny-official-hd.mp4",
+          "note": "Published in Dušan’s E.ON carousel; garment, pattern and layering visually matched to this official campaign film."
         }
       },
       {
-        "src": "/images/work/eon/detail-2.webp",
-        "smallSrc": "/images/work/eon/detail-2-480.webp",
-        "smallWidth": 363,
-        "width": 484,
-        "height": 640,
-        "alt": "E.ON — It’s on us — frame from the advert",
+        "src": "/images/work/eon/image-4.webp",
+        "smallSrc": "/images/work/eon/image-4-480.webp",
+        "smallWidth": 362,
+        "width": 1170,
+        "height": 1552,
+        "alt": "E.ON — patterned knitwear, campaign portrait",
         "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/DQd4pgojHgA.mp4",
-          "note": "Visually inspected costume frame at 9.162 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+          "basis": "same-publication",
+          "videoSrc": "/videos/eon-sdileni-official-hd.mp4",
+          "note": "Published in Dušan’s E.ON carousel; garment, pattern and layering visually matched to this official campaign film."
         }
       },
       {
-        "src": "/images/work/eon/detail-3.webp",
-        "smallSrc": "/images/work/eon/detail-3-480.webp",
-        "smallWidth": 363,
-        "width": 484,
-        "height": 640,
-        "alt": "E.ON — It’s on us — frame from the advert",
+        "src": "/images/work/eon/image-6.webp",
+        "smallSrc": "/images/work/eon/image-6-480.webp",
+        "smallWidth": 362,
+        "width": 1170,
+        "height": 1552,
+        "alt": "E.ON — patterned knitwear and blue collar, fitting",
+        "evidence": {
+          "basis": "same-publication",
+          "videoSrc": "/videos/eon-sdileni-official-hd.mp4",
+          "note": "Published in Dušan’s E.ON carousel; garment, pattern and layering visually matched to this official campaign film."
+        }
+      },
+      {
+        "src": "/images/work/eon/sdileni-hd.webp",
+        "smallSrc": "/images/work/eon/sdileni-hd-480.webp",
+        "smallWidth": 480,
+        "width": 1920,
+        "height": 1080,
+        "alt": "E.ON — Sdílení elektřiny — frame from the finished advert",
         "evidence": {
           "basis": "film-frame",
-          "videoSrc": "/videos/DQd4pgojHgA.mp4",
-          "note": "Visually inspected costume frame at 16.605 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+          "videoSrc": "/videos/eon-sdileni-official-hd.mp4",
+          "note": "Inspected frame at 2 seconds from the exact official E.ON full-HD film."
+        }
+      },
+      {
+        "src": "/images/work/eon/image-7.webp",
+        "smallSrc": "/images/work/eon/image-7-480.webp",
+        "smallWidth": 362,
+        "width": 1170,
+        "height": 1552,
+        "alt": "E.ON — brown leather coat, patterned sweater and denim shirt, fitting",
+        "evidence": {
+          "basis": "same-publication",
+          "videoSrc": "/videos/eon-fotovoltaika-official-hd.mp4",
+          "note": "Published in Dušan’s E.ON carousel; garment, pattern and layering visually matched to this official campaign film."
+        }
+      },
+      {
+        "src": "/images/work/eon/fotovoltaika-hd.webp",
+        "smallSrc": "/images/work/eon/fotovoltaika-hd-480.webp",
+        "smallWidth": 480,
+        "width": 1920,
+        "height": 1080,
+        "alt": "E.ON — Fotovoltaika s Virtuální baterií — frame from the finished advert",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/eon-fotovoltaika-official-hd.mp4",
+          "note": "Inspected frame at 4 seconds from the exact official E.ON full-HD film."
         }
       }
     ],
     "videos": [
       {
         "provider": "native",
-        "title": "E.ON — It’s on us",
-        "url": "https://www.instagram.com/p/DQd4pgojHgA/",
-        "src": "/videos/DQd4pgojHgA.mp4",
-        "width": 484,
-        "height": 640
+        "title": "E.ON — Energie vždy za férové ceny",
+        "url": "https://www.youtube.com/watch?v=x18wL2bbb1A",
+        "src": "/videos/eon-ferove-ceny-official-hd.mp4",
+        "width": 1920,
+        "height": 1080,
+        "poster": {
+          "src": "/images/work/eon/ferove-ceny-hd.webp",
+          "smallSrc": "/images/work/eon/ferove-ceny-hd-480.webp",
+          "smallWidth": 480,
+          "width": 1920,
+          "height": 1080,
+          "alt": "E.ON — Energie vždy za férové ceny — frame from the finished advert",
+          "evidence": {
+            "basis": "film-frame",
+            "videoSrc": "/videos/eon-ferove-ceny-official-hd.mp4",
+            "note": "Inspected frame at 3 seconds from the exact official E.ON full-HD film."
+          }
+        }
+      },
+      {
+        "provider": "native",
+        "title": "E.ON — Fotovoltaika s Virtuální baterií",
+        "url": "https://www.youtube.com/watch?v=rUL9N7FOspU",
+        "src": "/videos/eon-fotovoltaika-official-hd.mp4",
+        "width": 1920,
+        "height": 1080,
+        "poster": {
+          "src": "/images/work/eon/fotovoltaika-hd.webp",
+          "smallSrc": "/images/work/eon/fotovoltaika-hd-480.webp",
+          "smallWidth": 480,
+          "width": 1920,
+          "height": 1080,
+          "alt": "E.ON — Fotovoltaika s Virtuální baterií — frame from the finished advert",
+          "evidence": {
+            "basis": "film-frame",
+            "videoSrc": "/videos/eon-fotovoltaika-official-hd.mp4",
+            "note": "Inspected frame at 4 seconds from the exact official E.ON full-HD film."
+          }
+        }
+      },
+      {
+        "provider": "native",
+        "title": "E.ON — Sdílení elektřiny",
+        "url": "https://www.youtube.com/watch?v=nyEFYpwX1e4",
+        "src": "/videos/eon-sdileni-official-hd.mp4",
+        "width": 1920,
+        "height": 1080,
+        "poster": {
+          "src": "/images/work/eon/sdileni-hd.webp",
+          "smallSrc": "/images/work/eon/sdileni-hd-480.webp",
+          "smallWidth": 480,
+          "width": 1920,
+          "height": 1080,
+          "alt": "E.ON — Sdílení elektřiny — frame from the finished advert",
+          "evidence": {
+            "basis": "film-frame",
+            "videoSrc": "/videos/eon-sdileni-official-hd.mp4",
+            "note": "Inspected frame at 2 seconds from the exact official E.ON full-HD film."
+          }
+        }
       }
     ],
     "credit": "",
@@ -4686,12 +5329,36 @@ export const projects: Project[] = [
       {
         "label": "Agency",
         "value": "VCCP"
+      },
+      {
+        "label": "Featuring",
+        "value": "Martin Myšička"
+      },
+      {
+        "label": "Photography",
+        "value": "Petr Dobiáš"
       }
     ],
     "sources": [
       {
         "label": "Instagram",
         "url": "https://www.instagram.com/p/DQd4pgojHgA/"
+      },
+      {
+        "label": "E.ON campaign announcement",
+        "url": "https://www.eon.cz/pro-media/pro-media-tiskove-zpravy/nechte-to-na-nas,-rika-e-on-v-nove-kampani-s-hercem-martinem-mysickou-od-vccp/"
+      },
+      {
+        "label": "E.ON — Energie vždy za férové ceny",
+        "url": "https://www.youtube.com/watch?v=x18wL2bbb1A"
+      },
+      {
+        "label": "E.ON — Fotovoltaika s Virtuální baterií",
+        "url": "https://www.youtube.com/watch?v=rUL9N7FOspU"
+      },
+      {
+        "label": "E.ON — Sdílení elektřiny",
+        "url": "https://www.youtube.com/watch?v=nyEFYpwX1e4"
       }
     ],
     "portrait": false,
@@ -4699,136 +5366,6 @@ export const projects: Project[] = [
     "attribution": {
       "basis": "own-portfolio",
       "source": "https://www.instagram.com/p/DQd4pgojHgA/",
-      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
-    }
-  },
-  {
-    "id": "garnier",
-    "slug": "garnier",
-    "title": "Garnier — Crazy decisions",
-    "thumbnail": {
-      "src": "/images/work/garnier/costume-v1-3.webp",
-      "smallSrc": "/images/work/garnier/costume-v1-3-480.webp",
-      "smallWidth": 480,
-      "width": 638,
-      "height": 360,
-      "alt": "Garnier — Crazy decisions — costume in the finished film",
-      "evidence": {
-        "basis": "film-frame",
-        "videoSrc": "/videos/C8UVf4mtukg.mp4",
-        "note": "Costume-focused frame at 7.531s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
-      }
-    },
-    "images": [
-      {
-        "src": "/images/work/garnier/detail-3.webp",
-        "smallSrc": "/images/work/garnier/detail-3-480.webp",
-        "smallWidth": 480,
-        "width": 638,
-        "height": 360,
-        "alt": "Garnier — Crazy decisions — frame from the advert",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/C8UVf4mtukg.mp4",
-          "note": "Visually inspected costume frame at 12.134 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/garnier/detail-4.webp",
-        "smallSrc": "/images/work/garnier/detail-4-480.webp",
-        "smallWidth": 480,
-        "width": 638,
-        "height": 360,
-        "alt": "Garnier — Crazy decisions — frame from the advert",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/C8UVf4mtukg.mp4",
-          "note": "Visually inspected costume frame at 17.154 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/garnier/costume-v1-1.webp",
-        "smallSrc": "/images/work/garnier/costume-v1-1-480.webp",
-        "smallWidth": 480,
-        "width": 638,
-        "height": 360,
-        "alt": "Garnier — Crazy decisions — costume in the finished film",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/C8UVf4mtukg.mp4",
-          "note": "Costume-focused frame at 2.51s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
-        }
-      },
-      {
-        "src": "/images/work/garnier/costume-v1-3.webp",
-        "smallSrc": "/images/work/garnier/costume-v1-3-480.webp",
-        "smallWidth": 480,
-        "width": 638,
-        "height": 360,
-        "alt": "Garnier — Crazy decisions — costume in the finished film",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/C8UVf4mtukg.mp4",
-          "note": "Costume-focused frame at 7.531s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
-        }
-      }
-    ],
-    "videos": [
-      {
-        "provider": "native",
-        "title": "Garnier — Crazy decisions",
-        "url": "https://www.instagram.com/p/C8UVf4mtukg/",
-        "src": "/videos/C8UVf4mtukg.mp4",
-        "width": 638,
-        "height": 360,
-        "poster": {
-          "src": "/images/work/garnier/C8UVf4mtukg-still-1.webp",
-          "smallSrc": "/images/work/garnier/C8UVf4mtukg-still-1-480.webp",
-          "smallWidth": 480,
-          "width": 638,
-          "height": 360,
-          "alt": "Garnier — Crazy decisions — costume in the finished film, frame 1"
-        }
-      }
-    ],
-    "credit": "",
-    "facts": [
-      {
-        "label": "Director",
-        "value": "Petr Dvořák"
-      },
-      {
-        "label": "Agency",
-        "value": "Publicis Groupe"
-      },
-      {
-        "label": "Production",
-        "value": "Publicis Groupe"
-      },
-      {
-        "label": "Cinematography",
-        "value": "Filip Knoll"
-      },
-      {
-        "label": "Producer",
-        "value": "Adam Filus"
-      }
-    ],
-    "sources": [
-      {
-        "label": "Instagram",
-        "url": "https://www.instagram.com/p/C8UVf4mtukg/"
-      },
-      {
-        "label": "Campaign",
-        "url": "https://www.mam.cz/novinky/kreativita-a-kampane/kampane/2024-03/garnier-v-nove-kampani-od-publicis-groupe-bojuje-proti-silenym-resenim-pri-problemech-s-vlasy/"
-      }
-    ],
-    "portrait": false,
-    "scope": "campaign",
-    "attribution": {
-      "basis": "own-portfolio",
-      "source": "https://www.instagram.com/p/C8UVf4mtukg/",
       "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
     }
   },
@@ -4963,166 +5500,6 @@ export const projects: Project[] = [
     }
   },
   {
-    "id": "konto-bariery",
-    "slug": "konto-bariery",
-    "title": "Konto Bariéry",
-    "thumbnail": {
-      "src": "/images/work/konto-bariery/detail-2.webp",
-      "smallSrc": "/images/work/konto-bariery/detail-2-480.webp",
-      "smallWidth": 480,
-      "width": 1280,
-      "height": 659,
-      "alt": "Konto Bariéry — frame from the advert",
-      "evidence": {
-        "basis": "film-frame",
-        "videoSrc": "/videos/891619491.mp4",
-        "note": "Visually inspected costume frame at 9.6 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
-      }
-    },
-    "images": [
-      {
-        "src": "/images/work/konto-bariery/891619491-still-3.webp",
-        "smallSrc": "/images/work/konto-bariery/891619491-still-3-480.webp",
-        "smallWidth": 480,
-        "width": 1280,
-        "height": 660,
-        "alt": "Konto Bariéry — costume in the finished film, frame 3",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/891619491.mp4",
-          "note": "Extracted from this film."
-        }
-      },
-      {
-        "src": "/images/work/konto-bariery/detail-2.webp",
-        "smallSrc": "/images/work/konto-bariery/detail-2-480.webp",
-        "smallWidth": 480,
-        "width": 1280,
-        "height": 659,
-        "alt": "Konto Bariéry — frame from the advert",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/891619491.mp4",
-          "note": "Visually inspected costume frame at 9.6 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/konto-bariery/detail-4.webp",
-        "smallSrc": "/images/work/konto-bariery/detail-4-480.webp",
-        "smallWidth": 480,
-        "width": 1280,
-        "height": 660,
-        "alt": "Konto Bariéry — frame from the advert",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/891619491.mp4",
-          "note": "Visually inspected costume frame at 24.6 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/konto-bariery/final-detail-1.webp",
-        "smallSrc": "/images/work/konto-bariery/final-detail-1-480.webp",
-        "smallWidth": 480,
-        "width": 1280,
-        "height": 720,
-        "alt": "Konto Bariéry — indoor family wardrobe, striped knitwear and grey shirt, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/891619491.mp4",
-          "note": "Visually inspected wardrobe frame at 2.4s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/konto-bariery/final-detail-2.webp",
-        "smallSrc": "/images/work/konto-bariery/final-detail-2-480.webp",
-        "smallWidth": 480,
-        "width": 1280,
-        "height": 720,
-        "alt": "Konto Bariéry — black roll-neck and grey shirt in close-up, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/891619491.mp4",
-          "note": "Visually inspected wardrobe frame at 6.6s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/konto-bariery/final-detail-7.webp",
-        "smallSrc": "/images/work/konto-bariery/final-detail-7-480.webp",
-        "smallWidth": 480,
-        "width": 1280,
-        "height": 720,
-        "alt": "Konto Bariéry — striped jumper at the cinema, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/891619491.mp4",
-          "note": "Visually inspected wardrobe frame at 26.4s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
-        }
-      }
-    ],
-    "videos": [
-      {
-        "provider": "native",
-        "title": "Konto Bariéry",
-        "url": "https://vimeo.com/891619491",
-        "width": 1280,
-        "height": 720,
-        "src": "/videos/891619491.mp4",
-        "poster": {
-          "src": "/images/work/konto-bariery/891619491-still-1.webp",
-          "smallSrc": "/images/work/konto-bariery/891619491-still-1-480.webp",
-          "smallWidth": 480,
-          "width": 1280,
-          "height": 720,
-          "alt": "Konto Bariéry — costume in the finished film, frame 1"
-        }
-      }
-    ],
-    "credit": "Costume design",
-    "facts": [
-      {
-        "label": "Director",
-        "value": "Jakub Žídek"
-      },
-      {
-        "label": "Production",
-        "value": "ADvocado Films"
-      },
-      {
-        "label": "Cinematography",
-        "value": "Tomáš Šťastný"
-      },
-      {
-        "label": "Agency",
-        "value": "VCCP"
-      },
-      {
-        "label": "Costume design",
-        "value": "Dušan Bebčák"
-      },
-      {
-        "label": "Wardrobe styling",
-        "value": "Adéla Terčová"
-      }
-    ],
-    "sources": [
-      {
-        "label": "Production credits",
-        "url": "https://www.advocadofilms.com/work/"
-      },
-      {
-        "label": "Explicit professional credit",
-        "url": "https://vimeo.com/891619491"
-      }
-    ],
-    "portrait": false,
-    "scope": "campaign",
-    "attribution": {
-      "basis": "explicit-credit",
-      "source": "https://vimeo.com/891619491",
-      "note": "Exact director/producer campaign credits explicitly name Dušan Bebčák for costume design."
-    }
-  },
-  {
     "id": "mcdonalds-kitchen",
     "slug": "mcdonalds-ronald-mcdonald-house",
     "title": "McDonald’s — Dům Ronalda McDonalda",
@@ -5220,477 +5597,6 @@ export const projects: Project[] = [
     "attribution": {
       "basis": "own-portfolio",
       "source": "https://www.instagram.com/p/C8h_7oZtFtv/",
-      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
-    }
-  },
-  {
-    "id": "innogy-domaci-asistence",
-    "slug": "innogy-domaci-asistence",
-    "title": "innogy — Domácí asistence",
-    "thumbnail": {
-      "src": "/images/work/innogy-domaci-asistence/official-hd-1.webp",
-      "smallSrc": "/images/work/innogy-domaci-asistence/official-hd-1-480.webp",
-      "smallWidth": 480,
-      "width": 1920,
-      "height": 1080,
-      "alt": "innogy — Domácí asistence — green overshirt and yellow T-shirt, film still",
-      "evidence": {
-        "basis": "film-frame",
-        "videoSrc": "/videos/innogy-domaci-asistence-hd.mp4",
-        "note": "Inspected frame at 1.3244s from innogycz’s complete 33-second official advert. Same performers, green/yellow outfit, grandfather’s shirt changes, red cardigan, blue repair uniform, kitchen/laundry story and end card as Dušan’s cropped Instagram repost. Not a fitting or BTS photograph."
-      }
-    },
-    "images": [
-      {
-        "src": "/images/work/innogy-domaci-asistence/official-hd-1.webp",
-        "smallSrc": "/images/work/innogy-domaci-asistence/official-hd-1-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 1080,
-        "alt": "innogy — Domácí asistence — green overshirt and yellow T-shirt, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/innogy-domaci-asistence-hd.mp4",
-          "note": "Inspected frame at 1.3244s from innogycz’s complete 33-second official advert. Same performers, green/yellow outfit, grandfather’s shirt changes, red cardigan, blue repair uniform, kitchen/laundry story and end card as Dušan’s cropped Instagram repost. Not a fitting or BTS photograph."
-        }
-      },
-      {
-        "src": "/images/work/innogy-domaci-asistence/official-hd-2.webp",
-        "smallSrc": "/images/work/innogy-domaci-asistence/official-hd-2-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 1080,
-        "alt": "innogy — Domácí asistence — green shirt and braces with the laundry basket, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/innogy-domaci-asistence-hd.mp4",
-          "note": "Inspected frame at 11.8s from innogycz’s complete 33-second official advert. Same performers, green/yellow outfit, grandfather’s shirt changes, red cardigan, blue repair uniform, kitchen/laundry story and end card as Dušan’s cropped Instagram repost. Not a fitting or BTS photograph."
-        }
-      },
-      {
-        "src": "/images/work/innogy-domaci-asistence/official-hd-3.webp",
-        "smallSrc": "/images/work/innogy-domaci-asistence/official-hd-3-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 1080,
-        "alt": "innogy — Domácí asistence — pale shirt and striped braces, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/innogy-domaci-asistence-hd.mp4",
-          "note": "Inspected frame at 14.9s from innogycz’s complete 33-second official advert. Same performers, green/yellow outfit, grandfather’s shirt changes, red cardigan, blue repair uniform, kitchen/laundry story and end card as Dušan’s cropped Instagram repost. Not a fitting or BTS photograph."
-        }
-      },
-      {
-        "src": "/images/work/innogy-domaci-asistence/official-hd-4.webp",
-        "smallSrc": "/images/work/innogy-domaci-asistence/official-hd-4-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 1080,
-        "alt": "innogy — Domácí asistence — red cardigan over a black-and-white striped shirt, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/innogy-domaci-asistence-hd.mp4",
-          "note": "Inspected frame at 17.4s from innogycz’s complete 33-second official advert. Same performers, green/yellow outfit, grandfather’s shirt changes, red cardigan, blue repair uniform, kitchen/laundry story and end card as Dušan’s cropped Instagram repost. Not a fitting or BTS photograph."
-        }
-      },
-      {
-        "src": "/images/work/innogy-domaci-asistence/official-hd-5.webp",
-        "smallSrc": "/images/work/innogy-domaci-asistence/official-hd-5-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 1080,
-        "alt": "innogy — Domácí asistence — blue repairer’s polo shirt and overalls, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/innogy-domaci-asistence-hd.mp4",
-          "note": "Inspected frame at 21.5s from innogycz’s complete 33-second official advert. Same performers, green/yellow outfit, grandfather’s shirt changes, red cardigan, blue repair uniform, kitchen/laundry story and end card as Dušan’s cropped Instagram repost. Not a fitting or BTS photograph."
-        }
-      },
-      {
-        "src": "/images/work/innogy-domaci-asistence/official-hd-6.webp",
-        "smallSrc": "/images/work/innogy-domaci-asistence/official-hd-6-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 1080,
-        "alt": "innogy — Domácí asistence — the family’s contrasting domestic wardrobes, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/innogy-domaci-asistence-hd.mp4",
-          "note": "Inspected frame at 28s from innogycz’s complete 33-second official advert. Same performers, green/yellow outfit, grandfather’s shirt changes, red cardigan, blue repair uniform, kitchen/laundry story and end card as Dušan’s cropped Instagram repost. Not a fitting or BTS photograph."
-        }
-      }
-    ],
-    "videos": [
-      {
-        "provider": "native",
-        "title": "innogy — Domácí asistence",
-        "url": "https://www.youtube.com/watch?v=kIVgujoxAFQ",
-        "src": "/videos/innogy-domaci-asistence-hd.mp4",
-        "width": 1920,
-        "height": 1080,
-        "poster": {
-          "src": "/images/work/innogy-domaci-asistence/official-hd-1.webp",
-          "smallSrc": "/images/work/innogy-domaci-asistence/official-hd-1-480.webp",
-          "smallWidth": 480,
-          "width": 1920,
-          "height": 1080,
-          "alt": "innogy — Domácí asistence — green overshirt and yellow T-shirt, film still",
-          "evidence": {
-            "basis": "film-frame",
-            "videoSrc": "/videos/innogy-domaci-asistence-hd.mp4",
-            "note": "Inspected frame at 1.3244s from innogycz’s complete 33-second official advert. Same performers, green/yellow outfit, grandfather’s shirt changes, red cardigan, blue repair uniform, kitchen/laundry story and end card as Dušan’s cropped Instagram repost. Not a fitting or BTS photograph."
-          }
-        }
-      }
-    ],
-    "credit": "",
-    "facts": [
-      {
-        "label": "Director",
-        "value": "Jiří Havelka"
-      },
-      {
-        "label": "Production",
-        "value": "Armada Films"
-      },
-      {
-        "label": "Agency",
-        "value": "VML"
-      }
-    ],
-    "sources": [
-      {
-        "label": "Instagram",
-        "url": "https://www.instagram.com/p/C8TzvRXNBoK/"
-      },
-      {
-        "label": "Campaign",
-        "url": "https://www.mediar.cz/galerie-reklamy/innogy-laka-na-bezplatne-opravy-spotrebicu-ke-smlouve-na-energie/"
-      },
-      {
-        "label": "Exact official full-HD film",
-        "url": "https://www.youtube.com/watch?v=kIVgujoxAFQ"
-      }
-    ],
-    "portrait": false,
-    "scope": "campaign",
-    "attribution": {
-      "basis": "own-portfolio",
-      "source": "https://www.instagram.com/p/C8TzvRXNBoK/",
-      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
-    }
-  },
-  {
-    "id": "telekom",
-    "slug": "telekom",
-    "title": "Telekom — Christmas bookshop",
-    "thumbnail": {
-      "src": "/images/work/bookshop-film/cover.webp",
-      "smallSrc": "/images/work/bookshop-film/cover-480.webp",
-      "smallWidth": 270,
-      "width": 563,
-      "height": 1000,
-      "alt": "Bookshop — Film"
-    },
-    "images": [
-      {
-        "src": "/images/work/telekom/C8TzysvtOur-still-3.webp",
-        "smallSrc": "/images/work/telekom/C8TzysvtOur-still-3-480.webp",
-        "smallWidth": 270,
-        "width": 720,
-        "height": 1280,
-        "alt": "Telekom — Christmas bookshop — costume in the finished film, frame 3",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/C8TzysvtOur.mp4",
-          "note": "Extracted from this film."
-        }
-      },
-      {
-        "src": "/images/work/telekom/detail-2.webp",
-        "smallSrc": "/images/work/telekom/detail-2-480.webp",
-        "smallWidth": 270,
-        "width": 720,
-        "height": 1280,
-        "alt": "Telekom — Christmas bookshop — frame from the advert",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/C8TzysvtOur.mp4",
-          "note": "Visually inspected costume frame at 19.213 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/telekom/detail-3.webp",
-        "smallSrc": "/images/work/telekom/detail-3-480.webp",
-        "smallWidth": 270,
-        "width": 720,
-        "height": 1280,
-        "alt": "Telekom — Christmas bookshop — frame from the advert",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/C8TzysvtOur.mp4",
-          "note": "Visually inspected costume frame at 34.823 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
-        }
-      }
-    ],
-    "videos": [
-      {
-        "provider": "native",
-        "title": "Telekom — Christmas bookshop",
-        "url": "https://www.instagram.com/p/C8TzysvtOur/",
-        "src": "/videos/C8TzysvtOur.mp4",
-        "width": 720,
-        "height": 1280,
-        "poster": {
-          "src": "/images/work/telekom/C8TzysvtOur-still-2.webp",
-          "smallSrc": "/images/work/telekom/C8TzysvtOur-still-2-480.webp",
-          "smallWidth": 270,
-          "width": 720,
-          "height": 1280,
-          "alt": "Telekom — Christmas bookshop — costume in the finished film, frame 2"
-        }
-      }
-    ],
-    "credit": "",
-    "facts": [
-      {
-        "label": "Director",
-        "value": "Adam Hashemi"
-      },
-      {
-        "label": "Production",
-        "value": "Armada Films"
-      }
-    ],
-    "sources": [
-      {
-        "label": "Instagram",
-        "url": "https://www.instagram.com/p/C8TzysvtOur/"
-      }
-    ],
-    "portrait": false,
-    "scope": "campaign",
-    "attribution": {
-      "basis": "own-portfolio",
-      "source": "https://www.instagram.com/p/C8TzysvtOur/",
-      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
-    }
-  },
-  {
-    "id": "mbank-maxmilian-turek",
-    "slug": "mbank-maxmilian-turek",
-    "title": "mBank — Colourful wardrobes",
-    "thumbnail": {
-      "src": "/images/work/mbank-maxmilian-turek/detail-2.webp",
-      "smallSrc": "/images/work/mbank-maxmilian-turek/detail-2-480.webp",
-      "smallWidth": 270,
-      "width": 720,
-      "height": 1280,
-      "alt": "mBank — Everyday colour — frame from the advert",
-      "evidence": {
-        "basis": "film-frame",
-        "videoSrc": "/videos/C8madAFtC4z.mp4",
-        "note": "Visually inspected costume frame at 9.6 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
-      }
-    },
-    "images": [
-      {
-        "src": "/images/work/mbank-maxmilian-turek/C8madAFtC4z-still-2.webp",
-        "smallSrc": "/images/work/mbank-maxmilian-turek/C8madAFtC4z-still-2-480.webp",
-        "smallWidth": 270,
-        "width": 720,
-        "height": 1280,
-        "alt": "mBank — Everyday colour — costume in the finished film, frame 2",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/C8madAFtC4z.mp4",
-          "note": "Extracted from this film."
-        }
-      },
-      {
-        "src": "/images/work/mbank-maxmilian-turek/detail-2.webp",
-        "smallSrc": "/images/work/mbank-maxmilian-turek/detail-2-480.webp",
-        "smallWidth": 270,
-        "width": 720,
-        "height": 1280,
-        "alt": "mBank — Everyday colour — frame from the advert",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/C8madAFtC4z.mp4",
-          "note": "Visually inspected costume frame at 9.6 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/mbank-maxmilian-turek/detail-3.webp",
-        "smallSrc": "/images/work/mbank-maxmilian-turek/detail-3-480.webp",
-        "smallWidth": 270,
-        "width": 720,
-        "height": 1280,
-        "alt": "mBank — Everyday colour — frame from the advert",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/C8madAFtC4z.mp4",
-          "note": "Visually inspected costume frame at 17.4 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
-        }
-      }
-    ],
-    "videos": [
-      {
-        "provider": "native",
-        "title": "mBank — Colourful wardrobes",
-        "url": "https://www.instagram.com/p/C8madAFtC4z/",
-        "src": "/videos/C8madAFtC4z.mp4",
-        "width": 720,
-        "height": 1280,
-        "poster": {
-          "src": "/images/work/mbank-maxmilian-turek/C8madAFtC4z-still-1.webp",
-          "smallSrc": "/images/work/mbank-maxmilian-turek/C8madAFtC4z-still-1-480.webp",
-          "smallWidth": 270,
-          "width": 720,
-          "height": 1280,
-          "alt": "mBank — Everyday colour — costume in the finished film, frame 1"
-        }
-      }
-    ],
-    "credit": "",
-    "facts": [
-      {
-        "label": "Director",
-        "value": "Maxmilián Turek"
-      },
-      {
-        "label": "Production",
-        "value": "Boogie Films"
-      },
-      {
-        "label": "Agency",
-        "value": "DDB Prague"
-      }
-    ],
-    "sources": [
-      {
-        "label": "Instagram",
-        "url": "https://www.instagram.com/p/C8madAFtC4z/"
-      }
-    ],
-    "portrait": false,
-    "scope": "campaign",
-    "attribution": {
-      "basis": "own-portfolio",
-      "source": "https://www.instagram.com/p/C8madAFtC4z/",
-      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
-    }
-  },
-  {
-    "id": "pilsner-urquell",
-    "slug": "pilsner-urquell",
-    "title": "Pilsner Urquell — At the pub",
-    "thumbnail": {
-      "src": "/images/work/pilsner-urquell/C8UVrB8tIMe-still-1.webp",
-      "smallSrc": "/images/work/pilsner-urquell/C8UVrB8tIMe-still-1-480.webp",
-      "smallWidth": 480,
-      "width": 638,
-      "height": 360,
-      "alt": "Pilsner Urquell — At the pub — costume in the finished film, frame 1"
-    },
-    "images": [
-      {
-        "src": "/images/work/pilsner-urquell/C8UVrB8tIMe-still-2.webp",
-        "smallSrc": "/images/work/pilsner-urquell/C8UVrB8tIMe-still-2-480.webp",
-        "smallWidth": 480,
-        "width": 638,
-        "height": 360,
-        "alt": "Pilsner Urquell — At the pub — costume in the finished film, frame 2",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/C8UVrB8tIMe.mp4",
-          "note": "Extracted from this film."
-        }
-      },
-      {
-        "src": "/images/work/pilsner-urquell/costume-v1-2.webp",
-        "smallSrc": "/images/work/pilsner-urquell/costume-v1-2-480.webp",
-        "smallWidth": 480,
-        "width": 638,
-        "height": 360,
-        "alt": "Pilsner Urquell — At the pub — costume in the finished film",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/C8UVrB8tIMe.mp4",
-          "note": "Costume-focused frame at 4.602s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
-        }
-      },
-      {
-        "src": "/images/work/pilsner-urquell/costume-v1-5.webp",
-        "smallSrc": "/images/work/pilsner-urquell/costume-v1-5-480.webp",
-        "smallWidth": 480,
-        "width": 638,
-        "height": 360,
-        "alt": "Pilsner Urquell — At the pub — costume in the finished film",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/C8UVrB8tIMe.mp4",
-          "note": "Costume-focused frame at 11.806s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
-        }
-      },
-      {
-        "src": "/images/work/pilsner-urquell/costume-v1-8.webp",
-        "smallSrc": "/images/work/pilsner-urquell/costume-v1-8-480.webp",
-        "smallWidth": 480,
-        "width": 638,
-        "height": 360,
-        "alt": "Pilsner Urquell — At the pub — costume in the finished film",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/C8UVrB8tIMe.mp4",
-          "note": "Costume-focused frame at 17.409s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
-        }
-      }
-    ],
-    "videos": [
-      {
-        "provider": "native",
-        "title": "Pilsner Urquell — At the pub",
-        "url": "https://www.instagram.com/p/C8UVrB8tIMe/",
-        "src": "/videos/C8UVrB8tIMe.mp4",
-        "width": 638,
-        "height": 360,
-        "poster": {
-          "src": "/images/work/pilsner-urquell/C8UVrB8tIMe-still-1.webp",
-          "smallSrc": "/images/work/pilsner-urquell/C8UVrB8tIMe-still-1-480.webp",
-          "smallWidth": 480,
-          "width": 638,
-          "height": 360,
-          "alt": "Pilsner Urquell — At the pub — costume in the finished film, frame 1"
-        }
-      }
-    ],
-    "credit": "",
-    "facts": [
-      {
-        "label": "Director",
-        "value": "Petr Dvořák"
-      },
-      {
-        "label": "Production",
-        "value": "Punk Film"
-      }
-    ],
-    "sources": [
-      {
-        "label": "Instagram",
-        "url": "https://www.instagram.com/p/C8UVrB8tIMe/"
-      },
-      {
-        "label": "Director’s portfolio",
-        "url": "https://charliepapa.cz/director/petr-dvorak/"
-      }
-    ],
-    "portrait": false,
-    "scope": "campaign",
-    "attribution": {
-      "basis": "own-portfolio",
-      "source": "https://www.instagram.com/p/C8UVrB8tIMe/",
       "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
     }
   },
@@ -5799,6 +5705,14 @@ export const projects: Project[] = [
       {
         "label": "Wardrobe styling",
         "value": "Dušan Bebčák"
+      },
+      {
+        "label": "Art direction (Prague)",
+        "value": "Barbara Bencová"
+      },
+      {
+        "label": "Executive producers (Prague)",
+        "value": "Petr Oplatka / Vašek Sládek"
       }
     ],
     "sources": [
@@ -5821,333 +5735,6 @@ export const projects: Project[] = [
       "basis": "explicit-credit",
       "source": "https://vimeo.com/272173846",
       "note": "Exact director/producer campaign credits explicitly name Dušan Bebčák for wardrobe styling."
-    }
-  },
-  {
-    "id": "deeptime",
-    "slug": "deeptime",
-    "title": "Deeptime — We Turn Sand Into Sound",
-    "thumbnail": {
-      "src": "/images/work/deeptime/costume-v1-2.webp",
-      "smallSrc": "/images/work/deeptime/costume-v1-2-480.webp",
-      "smallWidth": 480,
-      "width": 1280,
-      "height": 549,
-      "alt": "Deeptime — We Turn Sand Into Sound — costume in the finished film",
-      "evidence": {
-        "basis": "film-frame",
-        "videoSrc": "/videos/307295801.mp4",
-        "note": "Costume-focused frame at 25.134s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
-      }
-    },
-    "images": [
-      {
-        "src": "/images/work/deeptime/307295801-still-2.webp",
-        "smallSrc": "/images/work/deeptime/307295801-still-2-480.webp",
-        "smallWidth": 480,
-        "width": 1280,
-        "height": 547,
-        "alt": "Deeptime — We Turn Sand Into Sound — costume in the finished film, frame 2",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/307295801.mp4",
-          "note": "Extracted from this film."
-        }
-      },
-      {
-        "src": "/images/work/deeptime/costume-v1-2.webp",
-        "smallSrc": "/images/work/deeptime/costume-v1-2-480.webp",
-        "smallWidth": 480,
-        "width": 1280,
-        "height": 549,
-        "alt": "Deeptime — We Turn Sand Into Sound — costume in the finished film",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/307295801.mp4",
-          "note": "Costume-focused frame at 25.134s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
-        }
-      },
-      {
-        "src": "/images/work/deeptime/costume-v1-6.webp",
-        "smallSrc": "/images/work/deeptime/costume-v1-6-480.webp",
-        "smallWidth": 480,
-        "width": 1280,
-        "height": 548,
-        "alt": "Deeptime — We Turn Sand Into Sound — costume in the finished film",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/307295801.mp4",
-          "note": "Costume-focused frame at 74.31s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
-        }
-      },
-      {
-        "src": "/images/work/deeptime/costume-v1-7.webp",
-        "smallSrc": "/images/work/deeptime/costume-v1-7-480.webp",
-        "smallWidth": 480,
-        "width": 1280,
-        "height": 547,
-        "alt": "Deeptime — We Turn Sand Into Sound — costume in the finished film",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/307295801.mp4",
-          "note": "Costume-focused frame at 84.146s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
-        }
-      }
-    ],
-    "videos": [
-      {
-        "provider": "native",
-        "title": "Deeptime — We Turn Sand Into Sound",
-        "url": "https://vimeo.com/307295801",
-        "width": 1280,
-        "height": 720,
-        "src": "/videos/307295801.mp4",
-        "poster": {
-          "src": "/images/work/deeptime/307295801-still-1.webp",
-          "smallSrc": "/images/work/deeptime/307295801-still-1-480.webp",
-          "smallWidth": 480,
-          "width": 1280,
-          "height": 720,
-          "alt": "Deeptime — We Turn Sand Into Sound — costume in the finished film, frame 1"
-        }
-      }
-    ],
-    "credit": "Costume design",
-    "facts": [
-      {
-        "label": "Director",
-        "value": "Luboš Vacke"
-      },
-      {
-        "label": "Production",
-        "value": "Creative Embassy"
-      },
-      {
-        "label": "Cinematography",
-        "value": "David Hofmann"
-      },
-      {
-        "label": "Costume design",
-        "value": "Dušan Bebčák"
-      }
-    ],
-    "sources": [
-      {
-        "label": "Production credits",
-        "url": "https://www.creativeembassy.net/vacke-deeptime"
-      }
-    ],
-    "portrait": false,
-    "scope": "campaign",
-    "attribution": {
-      "basis": "explicit-credit",
-      "source": "https://www.creativeembassy.net/vacke-deeptime",
-      "note": "Exact director/producer campaign credits explicitly name Dušan Bebčák for costume design."
-    }
-  },
-  {
-    "id": "bitmarkets",
-    "slug": "bitmarkets",
-    "title": "BITmarkets — Investor stories",
-    "thumbnail": {
-      "src": "/images/work/casino-film/cover.webp",
-      "smallSrc": "/images/work/casino-film/cover-480.webp",
-      "smallWidth": 480,
-      "width": 720,
-      "height": 405,
-      "alt": "Casino — Film"
-    },
-    "images": [
-      {
-        "src": "/images/work/bitmarkets/C8UVQNPt85_-still-2.webp",
-        "smallSrc": "/images/work/bitmarkets/C8UVQNPt85_-still-2-480.webp",
-        "smallWidth": 480,
-        "width": 638,
-        "height": 360,
-        "alt": "BITmarkets — Investor stories — costume in the finished film, frame 2",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/C8UVQNPt85_.mp4",
-          "note": "Extracted from this film."
-        }
-      },
-      {
-        "src": "/images/work/bitmarkets/detail-2.webp",
-        "smallSrc": "/images/work/bitmarkets/detail-2-480.webp",
-        "smallWidth": 480,
-        "width": 638,
-        "height": 360,
-        "alt": "BITmarkets — Investor stories — frame from the advert",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/C8UVQNPt85_.mp4",
-          "note": "Visually inspected costume frame at 11.203 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/bitmarkets/detail-4.webp",
-        "smallSrc": "/images/work/bitmarkets/detail-4-480.webp",
-        "smallWidth": 480,
-        "width": 638,
-        "height": 360,
-        "alt": "BITmarkets — Investor stories — frame from the advert",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/C8UVQNPt85_.mp4",
-          "note": "Visually inspected costume frame at 28.708 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
-        }
-      }
-    ],
-    "videos": [
-      {
-        "provider": "native",
-        "title": "BITmarkets — Investor stories",
-        "url": "https://www.instagram.com/p/C8UVQNPt85_/",
-        "src": "/videos/C8UVQNPt85_.mp4",
-        "width": 638,
-        "height": 360,
-        "poster": {
-          "src": "/images/work/bitmarkets/C8UVQNPt85_-still-1.webp",
-          "smallSrc": "/images/work/bitmarkets/C8UVQNPt85_-still-1-480.webp",
-          "smallWidth": 480,
-          "width": 638,
-          "height": 360,
-          "alt": "BITmarkets — Investor stories — costume in the finished film, frame 1"
-        }
-      }
-    ],
-    "credit": "",
-    "facts": [
-      {
-        "label": "Director",
-        "value": "Petr Dvořák"
-      },
-      {
-        "label": "Production",
-        "value": "Punk Film"
-      }
-    ],
-    "sources": [
-      {
-        "label": "Instagram",
-        "url": "https://www.instagram.com/p/C8UVQNPt85_/"
-      },
-      {
-        "label": "Director’s portfolio",
-        "url": "https://charliepapa.cz/director/petr-dvorak/"
-      }
-    ],
-    "portrait": false,
-    "scope": "campaign",
-    "attribution": {
-      "basis": "own-portfolio",
-      "source": "https://www.instagram.com/p/C8UVQNPt85_/",
-      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
-    }
-  },
-  {
-    "id": "lego-ninjago",
-    "slug": "lego-ninjago",
-    "title": "LEGO NINJAGO — Gift Like a Ninja",
-    "thumbnail": {
-      "src": "/images/work/lego-ninjago/detail-1.webp",
-      "smallSrc": "/images/work/lego-ninjago/detail-1-480.webp",
-      "smallWidth": 480,
-      "width": 638,
-      "height": 360,
-      "alt": "LEGO NINJAGO — Gift Like a Ninja — frame from the advert",
-      "evidence": {
-        "basis": "film-frame",
-        "videoSrc": "/videos/C8UezzXNHd1.mp4",
-        "note": "Visually inspected costume frame at 1.206 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
-      }
-    },
-    "images": [
-      {
-        "src": "/images/work/lego-ninjago/detail-1.webp",
-        "smallSrc": "/images/work/lego-ninjago/detail-1-480.webp",
-        "smallWidth": 480,
-        "width": 638,
-        "height": 360,
-        "alt": "LEGO NINJAGO — Gift Like a Ninja — frame from the advert",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/C8UezzXNHd1.mp4",
-          "note": "Visually inspected costume frame at 1.206 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/lego-ninjago/detail-4.webp",
-        "smallSrc": "/images/work/lego-ninjago/detail-4-480.webp",
-        "smallWidth": 480,
-        "width": 638,
-        "height": 360,
-        "alt": "LEGO NINJAGO — Gift Like a Ninja — frame from the advert",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/C8UezzXNHd1.mp4",
-          "note": "Visually inspected costume frame at 12.357 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
-        }
-      },
-      {
-        "src": "/images/work/lego-ninjago/costume-v1-1.webp",
-        "smallSrc": "/images/work/lego-ninjago/costume-v1-1-480.webp",
-        "smallWidth": 480,
-        "width": 638,
-        "height": 360,
-        "alt": "LEGO NINJAGO — Gift Like a Ninja — costume in the finished film",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/C8UezzXNHd1.mp4",
-          "note": "Costume-focused frame at 1.808s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
-        }
-      }
-    ],
-    "videos": [
-      {
-        "provider": "native",
-        "title": "LEGO NINJAGO — Gift Like a Ninja",
-        "url": "https://www.instagram.com/p/C8UezzXNHd1/",
-        "src": "/videos/C8UezzXNHd1.mp4",
-        "width": 638,
-        "height": 360,
-        "poster": {
-          "src": "/images/work/lego-ninjago/C8UezzXNHd1-still-1.webp",
-          "smallSrc": "/images/work/lego-ninjago/C8UezzXNHd1-still-1-480.webp",
-          "smallWidth": 480,
-          "width": 638,
-          "height": 360,
-          "alt": "LEGO NINJAGO — Dragons Rising — costume in the finished film, frame 1"
-        }
-      }
-    ],
-    "credit": "",
-    "facts": [
-      {
-        "label": "Director",
-        "value": "Peder Pedersen"
-      },
-      {
-        "label": "Production",
-        "value": "The Great Escape"
-      }
-    ],
-    "sources": [
-      {
-        "label": "Instagram",
-        "url": "https://www.instagram.com/p/C8UezzXNHd1/"
-      },
-      {
-        "label": "Director’s portfolio",
-        "url": "https://www.klubmoderne.dk/instruktor/peder-pedersen"
-      }
-    ],
-    "portrait": false,
-    "scope": "campaign",
-    "attribution": {
-      "basis": "own-portfolio",
-      "source": "https://www.instagram.com/p/C8UezzXNHd1/",
-      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
     }
   },
   {
@@ -6394,241 +5981,906 @@ export const projects: Project[] = [
     }
   },
   {
-    "id": "skoda-split-screen",
-    "slug": "skoda-split-screen",
-    "title": "Škoda Superb — Split-screen campaign",
+    "id": "deeptime",
+    "slug": "deeptime",
+    "title": "Deeptime — We Turn Sand Into Sound",
     "thumbnail": {
-      "src": "/images/work/skoda-split-screen/published-4.webp",
-      "smallSrc": "/images/work/skoda-split-screen/published-4-480.webp",
+      "src": "/images/work/deeptime/costume-v1-2.webp",
+      "smallSrc": "/images/work/deeptime/costume-v1-2-480.webp",
       "smallWidth": 480,
-      "width": 1944,
-      "height": 1093,
-      "alt": "skoda split screen — published campaign photograph",
+      "width": 1280,
+      "height": 549,
+      "alt": "Deeptime — We Turn Sand Into Sound — costume in the finished film",
       "evidence": {
-        "basis": "unassigned",
-        "note": "Director’s exact split-screen Superb campaign publication credits @bebcak. The actress and brown jacket match its film; no playable film is attached because the recovered DASH tracks have inconsistent timing."
+        "basis": "film-frame",
+        "videoSrc": "/videos/307295801.mp4",
+        "note": "Costume-focused frame at 25.134s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
       }
     },
     "images": [
       {
-        "src": "/images/work/skoda-split-screen/published-4.webp",
-        "smallSrc": "/images/work/skoda-split-screen/published-4-480.webp",
+        "src": "/images/work/deeptime/307295801-still-2.webp",
+        "smallSrc": "/images/work/deeptime/307295801-still-2-480.webp",
         "smallWidth": 480,
-        "width": 1944,
-        "height": 1093,
-        "alt": "Škoda Superb — City & forest — published campaign image 1",
+        "width": 1280,
+        "height": 547,
+        "alt": "Deeptime — We Turn Sand Into Sound — costume in the finished film, frame 2",
         "evidence": {
-          "basis": "unassigned",
-          "note": "Director’s exact split-screen Superb campaign publication credits @bebcak. The actress and brown jacket match its film; no playable film is attached because the recovered DASH tracks have inconsistent timing."
+          "basis": "film-frame",
+          "videoSrc": "/videos/307295801.mp4",
+          "note": "Extracted from this film."
         }
       },
       {
-        "src": "/images/work/skoda-split-screen/published-9.webp",
-        "smallSrc": "/images/work/skoda-split-screen/published-9-480.webp",
+        "src": "/images/work/deeptime/costume-v1-2.webp",
+        "smallSrc": "/images/work/deeptime/costume-v1-2-480.webp",
         "smallWidth": 480,
-        "width": 2274,
-        "height": 1283,
-        "alt": "Škoda Superb — City & forest — published campaign image 2",
+        "width": 1280,
+        "height": 549,
+        "alt": "Deeptime — We Turn Sand Into Sound — costume in the finished film",
         "evidence": {
-          "basis": "unassigned",
-          "note": "Director’s exact split-screen Superb campaign publication credits @bebcak. The actress and brown jacket match its film; no playable film is attached because the recovered DASH tracks have inconsistent timing."
+          "basis": "film-frame",
+          "videoSrc": "/videos/307295801.mp4",
+          "note": "Costume-focused frame at 25.134s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
         }
       },
       {
-        "src": "/images/work/skoda-split-screen/film-detail-3.webp",
-        "smallSrc": "/images/work/skoda-split-screen/film-detail-3-480.webp",
+        "src": "/images/work/deeptime/costume-v1-6.webp",
+        "smallSrc": "/images/work/deeptime/costume-v1-6-480.webp",
         "smallWidth": 480,
-        "width": 1920,
-        "height": 1080,
-        "alt": "Škoda Superb — City & forest — checked coat, shirt and glasses, frame from the film",
+        "width": 1280,
+        "height": 548,
+        "alt": "Deeptime — We Turn Sand Into Sound — costume in the finished film",
         "evidence": {
-          "basis": "unassigned",
-          "note": "Visually reviewed frame from this exact credited publication’s film. Kept in the verified photographic collection without attaching an incorrectly timed film."
+          "basis": "film-frame",
+          "videoSrc": "/videos/307295801.mp4",
+          "note": "Costume-focused frame at 74.31s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
         }
       },
       {
-        "src": "/images/work/skoda-split-screen/film-detail-5.webp",
-        "smallSrc": "/images/work/skoda-split-screen/film-detail-5-480.webp",
+        "src": "/images/work/deeptime/costume-v1-7.webp",
+        "smallSrc": "/images/work/deeptime/costume-v1-7-480.webp",
         "smallWidth": 480,
-        "width": 1920,
-        "height": 1080,
-        "alt": "Škoda Superb — City & forest — contrasting outdoor wardrobes, frame from the film",
+        "width": 1280,
+        "height": 547,
+        "alt": "Deeptime — We Turn Sand Into Sound — costume in the finished film",
         "evidence": {
-          "basis": "unassigned",
-          "note": "Visually reviewed frame from this exact credited publication’s film. Kept in the verified photographic collection without attaching an incorrectly timed film."
+          "basis": "film-frame",
+          "videoSrc": "/videos/307295801.mp4",
+          "note": "Costume-focused frame at 84.146s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
         }
       }
     ],
-    "videos": [],
-    "credit": "",
+    "videos": [
+      {
+        "provider": "native",
+        "title": "Deeptime — We Turn Sand Into Sound",
+        "url": "https://vimeo.com/307295801",
+        "width": 1280,
+        "height": 720,
+        "src": "/videos/307295801.mp4",
+        "poster": {
+          "src": "/images/work/deeptime/307295801-still-1.webp",
+          "smallSrc": "/images/work/deeptime/307295801-still-1-480.webp",
+          "smallWidth": 480,
+          "width": 1280,
+          "height": 720,
+          "alt": "Deeptime — We Turn Sand Into Sound — costume in the finished film, frame 1"
+        }
+      }
+    ],
+    "credit": "Costume design",
     "facts": [
       {
         "label": "Director",
-        "value": "@shotbykill"
+        "value": "Luboš Vacke"
       },
       {
         "label": "Production",
-        "value": "Heroes Prague"
+        "value": "Creative Embassy"
       },
       {
-        "label": "Agency",
-        "value": "FCB London"
+        "label": "Cinematography",
+        "value": "David Hofmann"
       },
       {
-        "label": "Costumes",
+        "label": "Costume design",
         "value": "Dušan Bebčák"
       },
       {
-        "label": "Photography",
-        "value": "Vojtěch Veškrna"
+        "label": "Art direction",
+        "value": "Stella Šonková"
+      },
+      {
+        "label": "Executive producers",
+        "value": "Petr Oplatka / Vašek Sládek"
       }
     ],
     "sources": [
       {
-        "label": "Director’s exact campaign publication",
-        "url": "https://www.instagram.com/p/DbJJC7pGubh/"
+        "label": "Production credits",
+        "url": "https://www.creativeembassy.net/vacke-deeptime"
+      },
+      {
+        "label": "Exact campaign crew credits",
+        "url": "https://vimeo.com/307295801"
       }
     ],
     "portrait": false,
-    "scope": "study",
+    "scope": "campaign",
     "attribution": {
       "basis": "explicit-credit",
-      "source": "https://www.instagram.com/p/DbJJC7pGubh/",
-      "note": "Direct campaign publication or Dušan’s own caption explicitly credits @bebcak / Dušan Bebčák. Shared roles remain shared, and the source caption/crew record is retained in the research dossier."
+      "source": "https://www.creativeembassy.net/vacke-deeptime",
+      "note": "Exact director/producer campaign credits explicitly name Dušan Bebčák for costume design."
     }
   },
   {
-    "id": "skoda-social-stories",
-    "slug": "skoda-social-stories",
-    "title": "Škoda — Social stories",
+    "id": "garnier",
+    "slug": "garnier",
+    "title": "Garnier — Crazy decisions",
     "thumbnail": {
-      "src": "/images/work/skoda-social-stories/published-24.webp",
-      "smallSrc": "/images/work/skoda-social-stories/published-24-480.webp",
-      "smallWidth": 384,
-      "width": 1080,
-      "height": 1350,
-      "alt": "skoda social stories — published campaign photograph",
+      "src": "/images/work/garnier/costume-v1-3.webp",
+      "smallSrc": "/images/work/garnier/costume-v1-3-480.webp",
+      "smallWidth": 480,
+      "width": 638,
+      "height": 360,
+      "alt": "Garnier — Crazy decisions — costume in the finished film",
       "evidence": {
-        "basis": "unassigned",
-        "note": "Director’s client-specific campaign publication explicitly credits @bebcak. No film is attached: these photographs are not paired with the unrelated 130-year advert."
+        "basis": "film-frame",
+        "videoSrc": "/videos/C8UVf4mtukg.mp4",
+        "note": "Costume-focused frame at 7.531s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
       }
     },
     "images": [
       {
-        "src": "/images/work/skoda-social-stories/published-24.webp",
-        "smallSrc": "/images/work/skoda-social-stories/published-24-480.webp",
-        "smallWidth": 384,
-        "width": 1080,
-        "height": 1350,
-        "alt": "Škoda — Social stories — published campaign image 1",
+        "src": "/images/work/garnier/detail-3.webp",
+        "smallSrc": "/images/work/garnier/detail-3-480.webp",
+        "smallWidth": 480,
+        "width": 638,
+        "height": 360,
+        "alt": "Garnier — Crazy decisions — frame from the advert",
         "evidence": {
-          "basis": "unassigned",
-          "note": "Director’s client-specific campaign publication explicitly credits @bebcak. No film is attached: these photographs are not paired with the unrelated 130-year advert."
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UVf4mtukg.mp4",
+          "note": "Visually inspected costume frame at 12.134 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
         }
       },
       {
-        "src": "/images/work/skoda-social-stories/published-15.webp",
-        "smallSrc": "/images/work/skoda-social-stories/published-15-480.webp",
-        "smallWidth": 384,
-        "width": 1080,
-        "height": 1350,
-        "alt": "Škoda — Social stories — published campaign image 2",
+        "src": "/images/work/garnier/detail-4.webp",
+        "smallSrc": "/images/work/garnier/detail-4-480.webp",
+        "smallWidth": 480,
+        "width": 638,
+        "height": 360,
+        "alt": "Garnier — Crazy decisions — frame from the advert",
         "evidence": {
-          "basis": "unassigned",
-          "note": "Director’s client-specific campaign publication explicitly credits @bebcak. No film is attached: these photographs are not paired with the unrelated 130-year advert."
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UVf4mtukg.mp4",
+          "note": "Visually inspected costume frame at 17.154 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
         }
       },
       {
-        "src": "/images/work/skoda-social-stories/published-25.webp",
-        "smallSrc": "/images/work/skoda-social-stories/published-25-480.webp",
-        "smallWidth": 384,
-        "width": 1080,
-        "height": 1350,
-        "alt": "Škoda — Social stories — published campaign image 3",
+        "src": "/images/work/garnier/costume-v1-1.webp",
+        "smallSrc": "/images/work/garnier/costume-v1-1-480.webp",
+        "smallWidth": 480,
+        "width": 638,
+        "height": 360,
+        "alt": "Garnier — Crazy decisions — costume in the finished film",
         "evidence": {
-          "basis": "unassigned",
-          "note": "Director’s client-specific campaign publication explicitly credits @bebcak. No film is attached: these photographs are not paired with the unrelated 130-year advert."
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UVf4mtukg.mp4",
+          "note": "Costume-focused frame at 2.51s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
         }
       },
       {
-        "src": "/images/work/skoda-social-stories/published-22.webp",
-        "smallSrc": "/images/work/skoda-social-stories/published-22-480.webp",
-        "smallWidth": 384,
-        "width": 1080,
-        "height": 1350,
-        "alt": "Škoda — Social stories — published campaign image 4",
+        "src": "/images/work/garnier/costume-v1-3.webp",
+        "smallSrc": "/images/work/garnier/costume-v1-3-480.webp",
+        "smallWidth": 480,
+        "width": 638,
+        "height": 360,
+        "alt": "Garnier — Crazy decisions — costume in the finished film",
         "evidence": {
-          "basis": "unassigned",
-          "note": "Director’s client-specific campaign publication explicitly credits @bebcak. No film is attached: these photographs are not paired with the unrelated 130-year advert."
-        }
-      },
-      {
-        "src": "/images/work/skoda-social-stories/published-extra-13.webp",
-        "smallSrc": "/images/work/skoda-social-stories/published-extra-13-480.webp",
-        "smallWidth": 384,
-        "width": 1536,
-        "height": 1920,
-        "alt": "Škoda — Social stories — purple character mask and sleeveless costume",
-        "evidence": {
-          "basis": "unassigned",
-          "note": "Director’s client-specific campaign publication explicitly credits @bebcak. No film is attached: these photographs are not paired with the unrelated 130-year advert."
-        }
-      },
-      {
-        "src": "/images/work/skoda-social-stories/published-extra-16.webp",
-        "smallSrc": "/images/work/skoda-social-stories/published-extra-16-480.webp",
-        "smallWidth": 384,
-        "width": 1080,
-        "height": 1350,
-        "alt": "Škoda — Social stories — costumed performers on the studio set",
-        "evidence": {
-          "basis": "unassigned",
-          "note": "Director’s client-specific campaign publication explicitly credits @bebcak. No film is attached: these photographs are not paired with the unrelated 130-year advert."
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UVf4mtukg.mp4",
+          "note": "Costume-focused frame at 7.531s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
         }
       }
     ],
-    "videos": [],
+    "videos": [
+      {
+        "provider": "native",
+        "title": "Garnier — Crazy decisions",
+        "url": "https://www.instagram.com/p/C8UVf4mtukg/",
+        "src": "/videos/C8UVf4mtukg.mp4",
+        "width": 638,
+        "height": 360,
+        "poster": {
+          "src": "/images/work/garnier/C8UVf4mtukg-still-1.webp",
+          "smallSrc": "/images/work/garnier/C8UVf4mtukg-still-1-480.webp",
+          "smallWidth": 480,
+          "width": 638,
+          "height": 360,
+          "alt": "Garnier — Crazy decisions — costume in the finished film, frame 1"
+        }
+      }
+    ],
     "credit": "",
     "facts": [
       {
         "label": "Director",
-        "value": "@shotbykill"
-      },
-      {
-        "label": "Production",
-        "value": "Heroes Prague"
+        "value": "Petr Dvořák"
       },
       {
         "label": "Agency",
-        "value": "FCB London"
+        "value": "Publicis Groupe"
       },
       {
-        "label": "Costumes",
-        "value": "Dušan Bebčák"
+        "label": "Production",
+        "value": "Publicis Groupe"
       },
       {
-        "label": "Photography",
-        "value": "Vojtěch Veškrna"
+        "label": "Cinematography",
+        "value": "Filip Knoll"
+      },
+      {
+        "label": "Producer",
+        "value": "Adam Filus"
       }
     ],
     "sources": [
       {
-        "label": "Director’s exact campaign publication",
-        "url": "https://www.instagram.com/p/DYfX4ByGmOi/"
+        "label": "Instagram",
+        "url": "https://www.instagram.com/p/C8UVf4mtukg/"
+      },
+      {
+        "label": "Campaign",
+        "url": "https://www.mam.cz/novinky/kreativita-a-kampane/kampane/2024-03/garnier-v-nove-kampani-od-publicis-groupe-bojuje-proti-silenym-resenim-pri-problemech-s-vlasy/"
       }
     ],
-    "portrait": true,
-    "scope": "study",
+    "portrait": false,
+    "scope": "campaign",
     "attribution": {
-      "basis": "explicit-credit",
-      "source": "https://www.instagram.com/p/DYfX4ByGmOi/",
-      "note": "Direct campaign publication or Dušan’s own caption explicitly credits @bebcak / Dušan Bebčák. Shared roles remain shared, and the source caption/crew record is retained in the research dossier."
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/C8UVf4mtukg/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    }
+  },
+  {
+    "id": "lego-ninjago",
+    "slug": "lego-ninjago",
+    "title": "LEGO NINJAGO — Gift Like a Ninja",
+    "thumbnail": {
+      "src": "/images/work/lego-ninjago/detail-1.webp",
+      "smallSrc": "/images/work/lego-ninjago/detail-1-480.webp",
+      "smallWidth": 480,
+      "width": 638,
+      "height": 360,
+      "alt": "LEGO NINJAGO — Gift Like a Ninja — frame from the advert",
+      "evidence": {
+        "basis": "film-frame",
+        "videoSrc": "/videos/C8UezzXNHd1.mp4",
+        "note": "Visually inspected costume frame at 1.206 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+      }
+    },
+    "images": [
+      {
+        "src": "/images/work/lego-ninjago/detail-1.webp",
+        "smallSrc": "/images/work/lego-ninjago/detail-1-480.webp",
+        "smallWidth": 480,
+        "width": 638,
+        "height": 360,
+        "alt": "LEGO NINJAGO — Gift Like a Ninja — frame from the advert",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UezzXNHd1.mp4",
+          "note": "Visually inspected costume frame at 1.206 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/lego-ninjago/detail-4.webp",
+        "smallSrc": "/images/work/lego-ninjago/detail-4-480.webp",
+        "smallWidth": 480,
+        "width": 638,
+        "height": 360,
+        "alt": "LEGO NINJAGO — Gift Like a Ninja — frame from the advert",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UezzXNHd1.mp4",
+          "note": "Visually inspected costume frame at 12.357 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/lego-ninjago/costume-v1-1.webp",
+        "smallSrc": "/images/work/lego-ninjago/costume-v1-1-480.webp",
+        "smallWidth": 480,
+        "width": 638,
+        "height": 360,
+        "alt": "LEGO NINJAGO — Gift Like a Ninja — costume in the finished film",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UezzXNHd1.mp4",
+          "note": "Costume-focused frame at 1.808s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      }
+    ],
+    "videos": [
+      {
+        "provider": "native",
+        "title": "LEGO NINJAGO — Gift Like a Ninja",
+        "url": "https://www.instagram.com/p/C8UezzXNHd1/",
+        "src": "/videos/C8UezzXNHd1.mp4",
+        "width": 638,
+        "height": 360,
+        "poster": {
+          "src": "/images/work/lego-ninjago/C8UezzXNHd1-still-1.webp",
+          "smallSrc": "/images/work/lego-ninjago/C8UezzXNHd1-still-1-480.webp",
+          "smallWidth": 480,
+          "width": 638,
+          "height": 360,
+          "alt": "LEGO NINJAGO — Dragons Rising — costume in the finished film, frame 1"
+        }
+      }
+    ],
+    "credit": "",
+    "facts": [
+      {
+        "label": "Director",
+        "value": "Peder Pedersen"
+      },
+      {
+        "label": "Production",
+        "value": "The Great Escape"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/p/C8UezzXNHd1/"
+      },
+      {
+        "label": "Director’s portfolio",
+        "url": "https://www.klubmoderne.dk/instruktor/peder-pedersen"
+      }
+    ],
+    "portrait": false,
+    "scope": "campaign",
+    "attribution": {
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/C8UezzXNHd1/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    }
+  },
+  {
+    "id": "bitmarkets",
+    "slug": "bitmarkets",
+    "title": "BITmarkets — Investor stories",
+    "thumbnail": {
+      "src": "/images/work/casino-film/cover.webp",
+      "smallSrc": "/images/work/casino-film/cover-480.webp",
+      "smallWidth": 480,
+      "width": 720,
+      "height": 405,
+      "alt": "Casino — Film"
+    },
+    "images": [
+      {
+        "src": "/images/work/bitmarkets/C8UVQNPt85_-still-2.webp",
+        "smallSrc": "/images/work/bitmarkets/C8UVQNPt85_-still-2-480.webp",
+        "smallWidth": 480,
+        "width": 638,
+        "height": 360,
+        "alt": "BITmarkets — Investor stories — costume in the finished film, frame 2",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UVQNPt85_.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "src": "/images/work/bitmarkets/detail-2.webp",
+        "smallSrc": "/images/work/bitmarkets/detail-2-480.webp",
+        "smallWidth": 480,
+        "width": 638,
+        "height": 360,
+        "alt": "BITmarkets — Investor stories — frame from the advert",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UVQNPt85_.mp4",
+          "note": "Visually inspected costume frame at 11.203 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/bitmarkets/detail-4.webp",
+        "smallSrc": "/images/work/bitmarkets/detail-4-480.webp",
+        "smallWidth": 480,
+        "width": 638,
+        "height": 360,
+        "alt": "BITmarkets — Investor stories — frame from the advert",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UVQNPt85_.mp4",
+          "note": "Visually inspected costume frame at 28.708 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      }
+    ],
+    "videos": [
+      {
+        "provider": "native",
+        "title": "BITmarkets — Investor stories",
+        "url": "https://www.instagram.com/p/C8UVQNPt85_/",
+        "src": "/videos/C8UVQNPt85_.mp4",
+        "width": 638,
+        "height": 360,
+        "poster": {
+          "src": "/images/work/bitmarkets/C8UVQNPt85_-still-1.webp",
+          "smallSrc": "/images/work/bitmarkets/C8UVQNPt85_-still-1-480.webp",
+          "smallWidth": 480,
+          "width": 638,
+          "height": 360,
+          "alt": "BITmarkets — Investor stories — costume in the finished film, frame 1"
+        }
+      }
+    ],
+    "credit": "",
+    "facts": [
+      {
+        "label": "Director",
+        "value": "Petr Dvořák"
+      },
+      {
+        "label": "Production",
+        "value": "Punk Film"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/p/C8UVQNPt85_/"
+      },
+      {
+        "label": "Director’s portfolio",
+        "url": "https://charliepapa.cz/director/petr-dvorak/"
+      }
+    ],
+    "portrait": false,
+    "scope": "campaign",
+    "attribution": {
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/C8UVQNPt85_/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    }
+  },
+  {
+    "id": "pilsner-urquell",
+    "slug": "pilsner-urquell",
+    "title": "Pilsner Urquell — At the pub",
+    "thumbnail": {
+      "src": "/images/work/pilsner-urquell/C8UVrB8tIMe-still-1.webp",
+      "smallSrc": "/images/work/pilsner-urquell/C8UVrB8tIMe-still-1-480.webp",
+      "smallWidth": 480,
+      "width": 638,
+      "height": 360,
+      "alt": "Pilsner Urquell — At the pub — costume in the finished film, frame 1"
+    },
+    "images": [
+      {
+        "src": "/images/work/pilsner-urquell/C8UVrB8tIMe-still-2.webp",
+        "smallSrc": "/images/work/pilsner-urquell/C8UVrB8tIMe-still-2-480.webp",
+        "smallWidth": 480,
+        "width": 638,
+        "height": 360,
+        "alt": "Pilsner Urquell — At the pub — costume in the finished film, frame 2",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UVrB8tIMe.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "src": "/images/work/pilsner-urquell/costume-v1-2.webp",
+        "smallSrc": "/images/work/pilsner-urquell/costume-v1-2-480.webp",
+        "smallWidth": 480,
+        "width": 638,
+        "height": 360,
+        "alt": "Pilsner Urquell — At the pub — costume in the finished film",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UVrB8tIMe.mp4",
+          "note": "Costume-focused frame at 4.602s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      },
+      {
+        "src": "/images/work/pilsner-urquell/costume-v1-5.webp",
+        "smallSrc": "/images/work/pilsner-urquell/costume-v1-5-480.webp",
+        "smallWidth": 480,
+        "width": 638,
+        "height": 360,
+        "alt": "Pilsner Urquell — At the pub — costume in the finished film",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UVrB8tIMe.mp4",
+          "note": "Costume-focused frame at 11.806s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      },
+      {
+        "src": "/images/work/pilsner-urquell/costume-v1-8.webp",
+        "smallSrc": "/images/work/pilsner-urquell/costume-v1-8-480.webp",
+        "smallWidth": 480,
+        "width": 638,
+        "height": 360,
+        "alt": "Pilsner Urquell — At the pub — costume in the finished film",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UVrB8tIMe.mp4",
+          "note": "Costume-focused frame at 17.409s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      }
+    ],
+    "videos": [
+      {
+        "provider": "native",
+        "title": "Pilsner Urquell — At the pub",
+        "url": "https://www.instagram.com/p/C8UVrB8tIMe/",
+        "src": "/videos/C8UVrB8tIMe.mp4",
+        "width": 638,
+        "height": 360,
+        "poster": {
+          "src": "/images/work/pilsner-urquell/C8UVrB8tIMe-still-1.webp",
+          "smallSrc": "/images/work/pilsner-urquell/C8UVrB8tIMe-still-1-480.webp",
+          "smallWidth": 480,
+          "width": 638,
+          "height": 360,
+          "alt": "Pilsner Urquell — At the pub — costume in the finished film, frame 1"
+        }
+      }
+    ],
+    "credit": "",
+    "facts": [
+      {
+        "label": "Director",
+        "value": "Petr Dvořák"
+      },
+      {
+        "label": "Production",
+        "value": "Punk Film"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/p/C8UVrB8tIMe/"
+      },
+      {
+        "label": "Director’s portfolio",
+        "url": "https://charliepapa.cz/director/petr-dvorak/"
+      }
+    ],
+    "portrait": false,
+    "scope": "campaign",
+    "attribution": {
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/C8UVrB8tIMe/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    }
+  },
+  {
+    "id": "leffe",
+    "slug": "leffe",
+    "title": "Leffe — Monks & armour",
+    "thumbnail": {
+      "src": "/images/work/leffe/costume-v1-6.webp",
+      "smallSrc": "/images/work/leffe/costume-v1-6-480.webp",
+      "smallWidth": 360,
+      "width": 480,
+      "height": 640,
+      "alt": "Leffe — Monks & armour — costume in the finished film",
+      "evidence": {
+        "basis": "film-frame",
+        "videoSrc": "/videos/C8UY_Dctrd9.mp4",
+        "note": "Costume-focused frame at 40.848s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+      }
+    },
+    "images": [
+      {
+        "src": "/images/work/leffe/C8UY_Dctrd9-still-2.webp",
+        "smallSrc": "/images/work/leffe/C8UY_Dctrd9-still-2-480.webp",
+        "smallWidth": 360,
+        "width": 480,
+        "height": 640,
+        "alt": "Leffe — Monks & armour — costume in the finished film, frame 2",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UY_Dctrd9.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "src": "/images/work/leffe/detail-2.webp",
+        "smallSrc": "/images/work/leffe/detail-2-480.webp",
+        "smallWidth": 360,
+        "width": 480,
+        "height": 640,
+        "alt": "Leffe — Monks & armour — frame from the advert",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UY_Dctrd9.mp4",
+          "note": "Visually inspected costume frame at 19.222 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/leffe/costume-v1-6.webp",
+        "smallSrc": "/images/work/leffe/costume-v1-6-480.webp",
+        "smallWidth": 360,
+        "width": 480,
+        "height": 640,
+        "alt": "Leffe — Monks & armour — costume in the finished film",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UY_Dctrd9.mp4",
+          "note": "Costume-focused frame at 40.848s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      },
+      {
+        "src": "/images/work/leffe/costume-v1-7.webp",
+        "smallSrc": "/images/work/leffe/costume-v1-7-480.webp",
+        "smallWidth": 360,
+        "width": 480,
+        "height": 640,
+        "alt": "Leffe — Monks & armour — costume in the finished film",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8UY_Dctrd9.mp4",
+          "note": "Costume-focused frame at 46.254s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+        }
+      }
+    ],
+    "videos": [
+      {
+        "provider": "native",
+        "title": "Leffe — Monks & armour",
+        "url": "https://www.instagram.com/p/C8UY_Dctrd9/",
+        "src": "/videos/C8UY_Dctrd9.mp4",
+        "width": 480,
+        "height": 640,
+        "poster": {
+          "src": "/images/work/leffe/C8UY_Dctrd9-still-1.webp",
+          "smallSrc": "/images/work/leffe/C8UY_Dctrd9-still-1-480.webp",
+          "smallWidth": 360,
+          "width": 480,
+          "height": 640,
+          "alt": "Leffe — Monks & armour — costume in the finished film, frame 1"
+        }
+      }
+    ],
+    "credit": "",
+    "facts": [
+      {
+        "label": "Director",
+        "value": "Wolfberg"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/p/C8UY_Dctrd9/"
+      },
+      {
+        "label": "Production",
+        "url": "https://www.boogiefilms.com/project/wolfberg"
+      }
+    ],
+    "portrait": false,
+    "scope": "campaign",
+    "attribution": {
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/C8UY_Dctrd9/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    }
+  },
+  {
+    "id": "telekom",
+    "slug": "telekom",
+    "title": "Telekom — Christmas bookshop",
+    "thumbnail": {
+      "src": "/images/work/bookshop-film/cover.webp",
+      "smallSrc": "/images/work/bookshop-film/cover-480.webp",
+      "smallWidth": 270,
+      "width": 563,
+      "height": 1000,
+      "alt": "Bookshop — Film"
+    },
+    "images": [
+      {
+        "src": "/images/work/telekom/C8TzysvtOur-still-3.webp",
+        "smallSrc": "/images/work/telekom/C8TzysvtOur-still-3-480.webp",
+        "smallWidth": 270,
+        "width": 720,
+        "height": 1280,
+        "alt": "Telekom — Christmas bookshop — costume in the finished film, frame 3",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8TzysvtOur.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "src": "/images/work/telekom/detail-2.webp",
+        "smallSrc": "/images/work/telekom/detail-2-480.webp",
+        "smallWidth": 270,
+        "width": 720,
+        "height": 1280,
+        "alt": "Telekom — Christmas bookshop — frame from the advert",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8TzysvtOur.mp4",
+          "note": "Visually inspected costume frame at 19.213 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/telekom/detail-3.webp",
+        "smallSrc": "/images/work/telekom/detail-3-480.webp",
+        "smallWidth": 270,
+        "width": 720,
+        "height": 1280,
+        "alt": "Telekom — Christmas bookshop — frame from the advert",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8TzysvtOur.mp4",
+          "note": "Visually inspected costume frame at 34.823 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      }
+    ],
+    "videos": [
+      {
+        "provider": "native",
+        "title": "Telekom — Christmas bookshop",
+        "url": "https://www.instagram.com/p/C8TzysvtOur/",
+        "src": "/videos/C8TzysvtOur.mp4",
+        "width": 720,
+        "height": 1280,
+        "poster": {
+          "src": "/images/work/telekom/C8TzysvtOur-still-2.webp",
+          "smallSrc": "/images/work/telekom/C8TzysvtOur-still-2-480.webp",
+          "smallWidth": 270,
+          "width": 720,
+          "height": 1280,
+          "alt": "Telekom — Christmas bookshop — costume in the finished film, frame 2"
+        }
+      }
+    ],
+    "credit": "",
+    "facts": [
+      {
+        "label": "Director",
+        "value": "Adam Hashemi"
+      },
+      {
+        "label": "Production",
+        "value": "Armada Films"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/p/C8TzysvtOur/"
+      }
+    ],
+    "portrait": false,
+    "scope": "campaign",
+    "attribution": {
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/C8TzysvtOur/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    }
+  },
+  {
+    "id": "mbank-maxmilian-turek",
+    "slug": "mbank-maxmilian-turek",
+    "title": "mBank — Colourful wardrobes",
+    "thumbnail": {
+      "src": "/images/work/mbank-maxmilian-turek/detail-2.webp",
+      "smallSrc": "/images/work/mbank-maxmilian-turek/detail-2-480.webp",
+      "smallWidth": 270,
+      "width": 720,
+      "height": 1280,
+      "alt": "mBank — Everyday colour — frame from the advert",
+      "evidence": {
+        "basis": "film-frame",
+        "videoSrc": "/videos/C8madAFtC4z.mp4",
+        "note": "Visually inspected costume frame at 9.6 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+      }
+    },
+    "images": [
+      {
+        "src": "/images/work/mbank-maxmilian-turek/C8madAFtC4z-still-2.webp",
+        "smallSrc": "/images/work/mbank-maxmilian-turek/C8madAFtC4z-still-2-480.webp",
+        "smallWidth": 270,
+        "width": 720,
+        "height": 1280,
+        "alt": "mBank — Everyday colour — costume in the finished film, frame 2",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8madAFtC4z.mp4",
+          "note": "Extracted from this film."
+        }
+      },
+      {
+        "src": "/images/work/mbank-maxmilian-turek/detail-2.webp",
+        "smallSrc": "/images/work/mbank-maxmilian-turek/detail-2-480.webp",
+        "smallWidth": 270,
+        "width": 720,
+        "height": 1280,
+        "alt": "mBank — Everyday colour — frame from the advert",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8madAFtC4z.mp4",
+          "note": "Visually inspected costume frame at 9.6 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      },
+      {
+        "src": "/images/work/mbank-maxmilian-turek/detail-3.webp",
+        "smallSrc": "/images/work/mbank-maxmilian-turek/detail-3-480.webp",
+        "smallWidth": 270,
+        "width": 720,
+        "height": 1280,
+        "alt": "mBank — Everyday colour — frame from the advert",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/C8madAFtC4z.mp4",
+          "note": "Visually inspected costume frame at 17.4 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        }
+      }
+    ],
+    "videos": [
+      {
+        "provider": "native",
+        "title": "mBank — Colourful wardrobes",
+        "url": "https://www.instagram.com/p/C8madAFtC4z/",
+        "src": "/videos/C8madAFtC4z.mp4",
+        "width": 720,
+        "height": 1280,
+        "poster": {
+          "src": "/images/work/mbank-maxmilian-turek/C8madAFtC4z-still-1.webp",
+          "smallSrc": "/images/work/mbank-maxmilian-turek/C8madAFtC4z-still-1-480.webp",
+          "smallWidth": 270,
+          "width": 720,
+          "height": 1280,
+          "alt": "mBank — Everyday colour — costume in the finished film, frame 1"
+        }
+      }
+    ],
+    "credit": "",
+    "facts": [
+      {
+        "label": "Director",
+        "value": "Maxmilián Turek"
+      },
+      {
+        "label": "Production",
+        "value": "Boogie Films"
+      },
+      {
+        "label": "Agency",
+        "value": "DDB Prague"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/p/C8madAFtC4z/"
+      }
+    ],
+    "portrait": false,
+    "scope": "campaign",
+    "attribution": {
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/C8madAFtC4z/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
     }
   },
   {
     "id": "raiffeisen-wardrobe",
     "slug": "raiffeisen-wardrobe",
-    "title": "Raiffeisen — Wardrobe fittings",
+    "title": "Raiffeisen — Shop & workshop",
     "thumbnail": {
       "src": "/images/work/raiffeisen-spooky-vintage-shopping/image-12.webp",
       "smallSrc": "/images/work/raiffeisen-spooky-vintage-shopping/image-12-480.webp",
@@ -6638,7 +6890,7 @@ export const projects: Project[] = [
       "alt": "Raiffeisen — Workshop & casual wardrobe — photograph 8",
       "evidence": {
         "basis": "unassigned",
-        "note": "No advert attached; no campaign association inferred."
+        "note": "The original caption identifies Raiffeisen Bank International and shared wardrobe credits. No exact complete film has been matched to these photographs."
       }
     },
     "images": [
@@ -6651,7 +6903,7 @@ export const projects: Project[] = [
         "alt": "Raiffeisen — Workshop & casual wardrobe — wardrobe photograph 1",
         "evidence": {
           "basis": "unassigned",
-          "note": "No advert attached; no campaign association inferred."
+          "note": "The original caption identifies Raiffeisen Bank International and shared wardrobe credits. No exact complete film has been matched to these photographs."
         }
       },
       {
@@ -6663,7 +6915,7 @@ export const projects: Project[] = [
         "alt": "Raiffeisen — Workshop & casual wardrobe — wardrobe photograph 2",
         "evidence": {
           "basis": "unassigned",
-          "note": "No advert attached; no campaign association inferred."
+          "note": "The original caption identifies Raiffeisen Bank International and shared wardrobe credits. No exact complete film has been matched to these photographs."
         }
       },
       {
@@ -6675,7 +6927,7 @@ export const projects: Project[] = [
         "alt": "Raiffeisen — Workshop & casual wardrobe — wardrobe photograph 3",
         "evidence": {
           "basis": "unassigned",
-          "note": "No advert attached; no campaign association inferred."
+          "note": "The original caption identifies Raiffeisen Bank International and shared wardrobe credits. No exact complete film has been matched to these photographs."
         }
       },
       {
@@ -6687,7 +6939,7 @@ export const projects: Project[] = [
         "alt": "Raiffeisen — Workshop & casual wardrobe — wardrobe photograph 4",
         "evidence": {
           "basis": "unassigned",
-          "note": "No advert attached; no campaign association inferred."
+          "note": "The original caption identifies Raiffeisen Bank International and shared wardrobe credits. No exact complete film has been matched to these photographs."
         }
       },
       {
@@ -6699,7 +6951,7 @@ export const projects: Project[] = [
         "alt": "Raiffeisen — Workshop & casual wardrobe — wardrobe photograph 5",
         "evidence": {
           "basis": "unassigned",
-          "note": "No advert attached; no campaign association inferred."
+          "note": "The original caption identifies Raiffeisen Bank International and shared wardrobe credits. No exact complete film has been matched to these photographs."
         }
       },
       {
@@ -6711,7 +6963,7 @@ export const projects: Project[] = [
         "alt": "Raiffeisen — Workshop & casual wardrobe — wardrobe photograph 6",
         "evidence": {
           "basis": "unassigned",
-          "note": "No advert attached; no campaign association inferred."
+          "note": "The original caption identifies Raiffeisen Bank International and shared wardrobe credits. No exact complete film has been matched to these photographs."
         }
       },
       {
@@ -6723,7 +6975,7 @@ export const projects: Project[] = [
         "alt": "Raiffeisen — Workshop & casual wardrobe — wardrobe photograph 7",
         "evidence": {
           "basis": "unassigned",
-          "note": "No advert attached; no campaign association inferred."
+          "note": "The original caption identifies Raiffeisen Bank International and shared wardrobe credits. No exact complete film has been matched to these photographs."
         }
       },
       {
@@ -6735,7 +6987,7 @@ export const projects: Project[] = [
         "alt": "Raiffeisen — Workshop & casual wardrobe — wardrobe photograph 8",
         "evidence": {
           "basis": "unassigned",
-          "note": "No advert attached; no campaign association inferred."
+          "note": "The original caption identifies Raiffeisen Bank International and shared wardrobe credits. No exact complete film has been matched to these photographs."
         }
       }
     ],
@@ -6778,240 +7030,129 @@ export const projects: Project[] = [
     }
   },
   {
-    "id": "eon-wardrobe",
-    "slug": "eon-wardrobe",
-    "title": "E.ON — Wardrobe fittings",
+    "id": "afk-arena-grezhul-lucius",
+    "slug": "afk-arena-grezhul-lucius",
+    "title": "AFK Arena — Grezhul & Lucius",
     "thumbnail": {
-      "src": "/images/work/eon/image-6.webp",
-      "smallSrc": "/images/work/eon/image-6-480.webp",
-      "smallWidth": 362,
-      "width": 1170,
-      "height": 1552,
-      "alt": "E.ON — Knitwear & coat fittings — photograph 2",
+      "src": "/images/work/blue-haired-armour/image-1.webp",
+      "smallSrc": "/images/work/blue-haired-armour/image-1-480.webp",
+      "smallWidth": 480,
+      "width": 1255,
+      "height": 727,
+      "alt": "Grezhul costume for AFK Arena — photographed armour",
       "evidence": {
         "basis": "unassigned",
-        "note": "No advert attached; no campaign association inferred."
+        "note": "Costume and character reference published by @bebcak. AFK Arena and the character name identified by the website owner on 11 October 2026; exact advert and responsibility remain unassigned."
+      },
+      "crop": {
+        "x": 664,
+        "y": 0,
+        "width": 591,
+        "height": 727
       }
     },
     "images": [
       {
-        "src": "/images/work/eon/image-4.webp",
-        "smallSrc": "/images/work/eon/image-4-480.webp",
-        "smallWidth": 362,
-        "width": 1170,
-        "height": 1552,
-        "alt": "E.ON — Knitwear & coat fittings — wardrobe photograph 1",
+        "src": "/images/work/blue-haired-armour/image-1.webp",
+        "smallSrc": "/images/work/blue-haired-armour/image-1-480.webp",
+        "smallWidth": 480,
+        "width": 1255,
+        "height": 727,
+        "alt": "Grezhul costume for AFK Arena — photographed armour",
         "evidence": {
           "basis": "unassigned",
-          "note": "No advert attached; no campaign association inferred."
+          "note": "Costume and character reference published by @bebcak. AFK Arena and the character name identified by the website owner on 11 October 2026; exact advert and responsibility remain unassigned."
+        },
+        "crop": {
+          "x": 664,
+          "y": 0,
+          "width": 591,
+          "height": 727
         }
       },
       {
-        "src": "/images/work/eon/image-6.webp",
-        "smallSrc": "/images/work/eon/image-6-480.webp",
-        "smallWidth": 362,
-        "width": 1170,
-        "height": 1552,
-        "alt": "E.ON — Knitwear & coat fittings — wardrobe photograph 2",
+        "src": "/images/work/gold-and-white-armour/image-1.webp",
+        "smallSrc": "/images/work/gold-and-white-armour/image-1-480.webp",
+        "smallWidth": 480,
+        "width": 1183,
+        "height": 710,
+        "alt": "Lucius costume for AFK Arena — photographed armour",
         "evidence": {
           "basis": "unassigned",
-          "note": "No advert attached; no campaign association inferred."
+          "note": "Costume and character reference published by @bebcak. AFK Arena and the character name identified by the website owner on 11 October 2026; exact advert and responsibility remain unassigned."
+        },
+        "crop": {
+          "x": 560,
+          "y": 0,
+          "width": 623,
+          "height": 710
         }
       },
       {
-        "src": "/images/work/eon/image-7.webp",
-        "smallSrc": "/images/work/eon/image-7-480.webp",
-        "smallWidth": 362,
-        "width": 1170,
-        "height": 1552,
-        "alt": "E.ON — Knitwear & coat fittings — wardrobe photograph 3",
+        "src": "/images/work/blue-haired-armour/image-1.webp",
+        "smallSrc": "/images/work/blue-haired-armour/image-1-480.webp",
+        "smallWidth": 480,
+        "width": 1255,
+        "height": 727,
+        "alt": "Grezhul character reference from AFK Arena",
         "evidence": {
           "basis": "unassigned",
-          "note": "No advert attached; no campaign association inferred."
+          "note": "Game character reference in @bebcak’s original comparison publication; artwork authorship is not attributed to Dušan. Character identification supplied by the website owner on 11 October 2026."
+        },
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 633,
+          "height": 727
+        }
+      },
+      {
+        "src": "/images/work/gold-and-white-armour/image-1.webp",
+        "smallSrc": "/images/work/gold-and-white-armour/image-1-480.webp",
+        "smallWidth": 480,
+        "width": 1183,
+        "height": 710,
+        "alt": "Lucius character reference from AFK Arena",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "Game character reference in @bebcak’s original comparison publication; artwork authorship is not attributed to Dušan. Character identification supplied by the website owner on 11 October 2026."
+        },
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 551,
+          "height": 710
         }
       }
     ],
     "videos": [],
     "credit": "",
-    "facts": [],
+    "facts": [
+      {
+        "label": "Game",
+        "value": "AFK Arena"
+      },
+      {
+        "label": "Characters",
+        "value": "Grezhul / Lucius"
+      }
+    ],
     "sources": [
       {
         "label": "Instagram",
-        "url": "https://www.instagram.com/p/DQd4pgojHgA/"
-      }
-    ],
-    "portrait": false,
-    "scope": "study",
-    "attribution": {
-      "basis": "own-portfolio",
-      "source": "https://www.instagram.com/p/DQd4pgojHgA/",
-      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
-    }
-  },
-  {
-    "id": "period-fittings",
-    "slug": "period-fittings",
-    "title": "Period wardrobe",
-    "thumbnail": {
-      "src": "/images/work/period-fittings/fitting-15.webp",
-      "smallSrc": "/images/work/period-fittings/fitting-15-480.webp",
-      "smallWidth": 270,
-      "width": 720,
-      "height": 1280,
-      "alt": "Period wardrobe — photograph 5",
-      "evidence": {
-        "basis": "unassigned",
-        "note": "No advert attached; no campaign association inferred."
-      }
-    },
-    "images": [
-      {
-        "src": "/images/work/period-fittings/fitting-05.webp",
-        "smallSrc": "/images/work/period-fittings/fitting-05-480.webp",
-        "smallWidth": 270,
-        "width": 720,
-        "height": 1280,
-        "alt": "Period wardrobe — wardrobe photograph 1",
-        "evidence": {
-          "basis": "unassigned",
-          "note": "No advert attached; no campaign association inferred."
-        }
+        "url": "https://www.instagram.com/p/C8lkOq9Nrts/"
       },
-      {
-        "src": "/images/work/period-fittings/fitting-06.webp",
-        "smallSrc": "/images/work/period-fittings/fitting-06-480.webp",
-        "smallWidth": 270,
-        "width": 720,
-        "height": 1280,
-        "alt": "Period wardrobe — wardrobe photograph 2",
-        "evidence": {
-          "basis": "unassigned",
-          "note": "No advert attached; no campaign association inferred."
-        }
-      },
-      {
-        "src": "/images/work/period-fittings/fitting-07.webp",
-        "smallSrc": "/images/work/period-fittings/fitting-07-480.webp",
-        "smallWidth": 270,
-        "width": 720,
-        "height": 1280,
-        "alt": "Period wardrobe — wardrobe photograph 3",
-        "evidence": {
-          "basis": "unassigned",
-          "note": "No advert attached; no campaign association inferred."
-        }
-      },
-      {
-        "src": "/images/work/period-fittings/fitting-12.webp",
-        "smallSrc": "/images/work/period-fittings/fitting-12-480.webp",
-        "smallWidth": 270,
-        "width": 720,
-        "height": 1280,
-        "alt": "Period wardrobe — wardrobe photograph 4",
-        "evidence": {
-          "basis": "unassigned",
-          "note": "No advert attached; no campaign association inferred."
-        }
-      },
-      {
-        "src": "/images/work/period-fittings/fitting-15.webp",
-        "smallSrc": "/images/work/period-fittings/fitting-15-480.webp",
-        "smallWidth": 270,
-        "width": 720,
-        "height": 1280,
-        "alt": "Period wardrobe — wardrobe photograph 5",
-        "evidence": {
-          "basis": "unassigned",
-          "note": "No advert attached; no campaign association inferred."
-        }
-      },
-      {
-        "src": "/images/work/period-fittings/fitting-16.webp",
-        "smallSrc": "/images/work/period-fittings/fitting-16-480.webp",
-        "smallWidth": 270,
-        "width": 720,
-        "height": 1280,
-        "alt": "Period wardrobe — wardrobe photograph 6",
-        "evidence": {
-          "basis": "unassigned",
-          "note": "No advert attached; no campaign association inferred."
-        }
-      },
-      {
-        "src": "/images/work/period-fittings/fitting-17.webp",
-        "smallSrc": "/images/work/period-fittings/fitting-17-480.webp",
-        "smallWidth": 270,
-        "width": 720,
-        "height": 1280,
-        "alt": "Period wardrobe — wardrobe photograph 7",
-        "evidence": {
-          "basis": "unassigned",
-          "note": "No advert attached; no campaign association inferred."
-        }
-      }
-    ],
-    "videos": [],
-    "credit": "",
-    "facts": [],
-    "sources": [
       {
         "label": "Instagram",
-        "url": "https://www.instagram.com/p/DRzoiZMDLoM/"
+        "url": "https://www.instagram.com/p/C8lkMZzNOy9/"
       }
     ],
     "portrait": true,
     "scope": "study",
     "attribution": {
       "basis": "own-portfolio",
-      "source": "https://www.instagram.com/p/DRzoiZMDLoM/",
-      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
-    }
-  },
-  {
-    "id": "armour-fittings",
-    "slug": "armour-fittings",
-    "title": "Armour workshop",
-    "thumbnail": {
-      "src": "/images/work/woodland-costumes/image-2.webp",
-      "smallSrc": "/images/work/woodland-costumes/image-2-480.webp",
-      "smallWidth": 384,
-      "width": 1280,
-      "height": 1600,
-      "alt": "Armour — Fittings & workshop — wardrobe photograph 2",
-      "evidence": {
-        "basis": "unassigned",
-        "note": "No advert attached; no campaign association inferred."
-      }
-    },
-    "images": [
-      {
-        "src": "/images/work/woodland-costumes/image-2.webp",
-        "smallSrc": "/images/work/woodland-costumes/image-2-480.webp",
-        "smallWidth": 384,
-        "width": 1280,
-        "height": 1600,
-        "alt": "Armour — Fittings & workshop — wardrobe photograph 2",
-        "evidence": {
-          "basis": "unassigned",
-          "note": "No advert attached; no campaign association inferred."
-        }
-      }
-    ],
-    "videos": [],
-    "credit": "",
-    "facts": [],
-    "sources": [
-      {
-        "label": "Instagram",
-        "url": "https://www.instagram.com/p/DFlPHEJMUbB/"
-      }
-    ],
-    "portrait": true,
-    "scope": "study",
-    "attribution": {
-      "basis": "own-portfolio",
-      "source": "https://www.instagram.com/p/DFlPHEJMUbB/",
-      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+      "source": "https://www.instagram.com/p/C8lkOq9Nrts/",
+      "note": "Both costume comparisons published on Dušan’s @bebcak portfolio. The website owner identified AFK Arena’s Grezhul and Lucius on 11 October 2026. No exact advert, design/fabrication credit or game-art authorship is inferred."
     }
   },
   {
@@ -7070,92 +7211,6 @@ export const projects: Project[] = [
     "attribution": {
       "basis": "own-portfolio",
       "source": "https://www.instagram.com/p/C8lmaBTtkQv/",
-      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
-    }
-  },
-  {
-    "id": "blue-haired-armour",
-    "slug": "blue-haired-armour",
-    "title": "Blue-haired character costume",
-    "thumbnail": {
-      "src": "/images/work/blue-haired-armour/cover.webp",
-      "smallSrc": "/images/work/blue-haired-armour/cover-480.webp",
-      "smallWidth": 480,
-      "width": 1000,
-      "height": 579,
-      "alt": "Blue-haired armour & character reference"
-    },
-    "images": [
-      {
-        "src": "/images/work/blue-haired-armour/image-1.webp",
-        "smallSrc": "/images/work/blue-haired-armour/image-1-480.webp",
-        "smallWidth": 480,
-        "width": 1255,
-        "height": 727,
-        "alt": "Blue-haired armour & character reference — wardrobe photograph 1",
-        "evidence": {
-          "basis": "unassigned",
-          "note": "No advert attached; no campaign association inferred."
-        }
-      }
-    ],
-    "videos": [],
-    "credit": "",
-    "facts": [],
-    "sources": [
-      {
-        "label": "Instagram",
-        "url": "https://www.instagram.com/p/C8lkOq9Nrts/"
-      }
-    ],
-    "portrait": false,
-    "scope": "study",
-    "attribution": {
-      "basis": "own-portfolio",
-      "source": "https://www.instagram.com/p/C8lkOq9Nrts/",
-      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
-    }
-  },
-  {
-    "id": "gold-and-white-armour",
-    "slug": "gold-and-white-armour",
-    "title": "Gold and white armour",
-    "thumbnail": {
-      "src": "/images/work/gold-and-white-armour/cover.webp",
-      "smallSrc": "/images/work/gold-and-white-armour/cover-480.webp",
-      "smallWidth": 480,
-      "width": 1000,
-      "height": 600,
-      "alt": "Gold & white armour — Shield & staff"
-    },
-    "images": [
-      {
-        "src": "/images/work/gold-and-white-armour/image-1.webp",
-        "smallSrc": "/images/work/gold-and-white-armour/image-1-480.webp",
-        "smallWidth": 480,
-        "width": 1183,
-        "height": 710,
-        "alt": "Gold & white armour — Shield & staff — wardrobe photograph 1",
-        "evidence": {
-          "basis": "unassigned",
-          "note": "No advert attached; no campaign association inferred."
-        }
-      }
-    ],
-    "videos": [],
-    "credit": "",
-    "facts": [],
-    "sources": [
-      {
-        "label": "Instagram",
-        "url": "https://www.instagram.com/p/C8lkMZzNOy9/"
-      }
-    ],
-    "portrait": false,
-    "scope": "study",
-    "attribution": {
-      "basis": "own-portfolio",
-      "source": "https://www.instagram.com/p/C8lkMZzNOy9/",
       "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
     }
   },
@@ -7283,6 +7338,125 @@ export const projects: Project[] = [
     "attribution": {
       "basis": "own-portfolio",
       "source": "https://www.instagram.com/p/DRvRoeLDIEG/",
+      "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    }
+  },
+  {
+    "id": "period-fittings",
+    "slug": "period-fittings",
+    "title": "Period wardrobe",
+    "thumbnail": {
+      "src": "/images/work/period-fittings/fitting-15.webp",
+      "smallSrc": "/images/work/period-fittings/fitting-15-480.webp",
+      "smallWidth": 270,
+      "width": 720,
+      "height": 1280,
+      "alt": "Period wardrobe — photograph 5",
+      "evidence": {
+        "basis": "unassigned",
+        "note": "No advert attached; no campaign association inferred."
+      }
+    },
+    "images": [
+      {
+        "src": "/images/work/period-fittings/fitting-05.webp",
+        "smallSrc": "/images/work/period-fittings/fitting-05-480.webp",
+        "smallWidth": 270,
+        "width": 720,
+        "height": 1280,
+        "alt": "Period wardrobe — wardrobe photograph 1",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "src": "/images/work/period-fittings/fitting-06.webp",
+        "smallSrc": "/images/work/period-fittings/fitting-06-480.webp",
+        "smallWidth": 270,
+        "width": 720,
+        "height": 1280,
+        "alt": "Period wardrobe — wardrobe photograph 2",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "src": "/images/work/period-fittings/fitting-07.webp",
+        "smallSrc": "/images/work/period-fittings/fitting-07-480.webp",
+        "smallWidth": 270,
+        "width": 720,
+        "height": 1280,
+        "alt": "Period wardrobe — wardrobe photograph 3",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "src": "/images/work/period-fittings/fitting-12.webp",
+        "smallSrc": "/images/work/period-fittings/fitting-12-480.webp",
+        "smallWidth": 270,
+        "width": 720,
+        "height": 1280,
+        "alt": "Period wardrobe — wardrobe photograph 4",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "src": "/images/work/period-fittings/fitting-15.webp",
+        "smallSrc": "/images/work/period-fittings/fitting-15-480.webp",
+        "smallWidth": 270,
+        "width": 720,
+        "height": 1280,
+        "alt": "Period wardrobe — wardrobe photograph 5",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "src": "/images/work/period-fittings/fitting-16.webp",
+        "smallSrc": "/images/work/period-fittings/fitting-16-480.webp",
+        "smallWidth": 270,
+        "width": 720,
+        "height": 1280,
+        "alt": "Period wardrobe — wardrobe photograph 6",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      },
+      {
+        "src": "/images/work/period-fittings/fitting-17.webp",
+        "smallSrc": "/images/work/period-fittings/fitting-17-480.webp",
+        "smallWidth": 270,
+        "width": 720,
+        "height": 1280,
+        "alt": "Period wardrobe — wardrobe photograph 7",
+        "evidence": {
+          "basis": "unassigned",
+          "note": "No advert attached; no campaign association inferred."
+        }
+      }
+    ],
+    "videos": [],
+    "credit": "",
+    "facts": [],
+    "sources": [
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/p/DRzoiZMDLoM/"
+      }
+    ],
+    "portrait": true,
+    "scope": "study",
+    "attribution": {
+      "basis": "own-portfolio",
+      "source": "https://www.instagram.com/p/DRzoiZMDLoM/",
       "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
     }
   },

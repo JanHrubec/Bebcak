@@ -2,6 +2,7 @@
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import type { Project } from '../data/projects'
 import ProjectCard from './ProjectCard.vue'
+import { imageDimensions } from '../utils/galleryLayout'
 const props = defineProps<{ projects: Project[] }>()
 const columnCount = ref(3)
 let tablet: MediaQueryList | undefined
@@ -23,7 +24,8 @@ const columns = computed(() => {
   props.projects.forEach((project, index) => {
     const column = heights.indexOf(Math.min(...heights))
     result[column]!.push({ project, priority: index < 3 })
-    heights[column] += project.thumbnail.height / project.thumbnail.width + .3
+    const dimensions = imageDimensions(project.thumbnail)
+    heights[column] += dimensions.height / dimensions.width + .3
   })
   return result
 })
