@@ -1,5 +1,5 @@
-import { getProjectBySlug } from './data/projects'
-import { instagramUrl, siteDescription, siteName, siteUrl } from './data/site'
+import { getProjectBySlug, projects } from './data/projects'
+import { instagramUrl, siteDescription, siteName, siteUrl, siteIndexable } from './data/site'
 import { getVideoUrl } from './data/media'
 import { contact } from './data/contact'
 
@@ -9,14 +9,22 @@ export function pageMetadata(path: string) {
   const missing = !project && path !== '/' && path !== '/about'
   const about = path === '/about'
   const title = missing ? `Page not found | ${siteName}` : project ? `${project.title} | ${siteName}` : about ? `About & contact | ${siteName}` : `${siteName} | Costume design & wardrobe styling`
-  const description = missing ? 'This portfolio page could not be found.' : project ? `${project.title}. Films and photographs from Dušan Bebčák’s costume and wardrobe portfolio.` : about ? 'I’m Dušan Bebčák, a costume designer and wardrobe stylist working on commercials, films and music videos. Read about my work and get in touch.' : siteDescription
-  const url = siteUrl ? `${siteUrl}${path}` : ''
-  const imagePath = project?.thumbnail.src ?? '/social-preview.png'
+  const description = missing ? 'This portfolio page could not be found.' : project ? `${project.title}. ${project.videos.length ? 'Films and costume photographs' : 'Costume photographs and details'} from Dušan Bebčák’s portfolio.` : about ? 'I’m Dušan Bebčák, a costume designer and wardrobe stylist working on commercials, films and music videos. Read about my work and get in touch.' : siteDescription
+  const url = siteUrl && !missing ? `${siteUrl}${path}` : ''
+  // CSS crop windows cannot be reproduced by social crawlers. Use an intact photo
+  // when available, otherwise the branded preview rather than mismatched artwork.
+  const socialPhoto = project?.thumbnail.crop ? project.images.find(photo => !photo.crop) : project?.thumbnail
+  const imagePath = socialPhoto?.src ?? '/social-preview.png'
   const image = siteUrl ? `${siteUrl}${imagePath}` : imagePath
   const person = { '@type': 'Person', name: siteName, jobTitle: 'Costume designer and wardrobe stylist', sameAs: [instagramUrl], ...(contact.email ? { email: contact.email } : {}), ...(contact.telephone ? { telephone: contact.telephone } : {}), ...(siteUrl ? { '@id': `${siteUrl}/#person`, url: siteUrl } : {}) }
   const work = project ? { '@type': 'CreativeWork', name: project.title, image, ...(url ? { url } : {}), ...(project.attribution.basis === 'explicit-credit' ? { contributor: person } : { about: person }), ...(siteUrl && project.videos.length ? { encoding: project.videos.map(video => ({ '@type': 'MediaObject', contentUrl: new URL(getVideoUrl(video.src), siteUrl).href, encodingFormat: 'video/mp4', width: video.width, height: video.height })) } : {}) } : undefined
-  const structuredData = { '@context': 'https://schema.org', '@graph': [person, { '@type': about ? 'AboutPage' : project || missing ? 'WebPage' : 'CollectionPage', name: title, description, inLanguage: 'en', ...(url ? { url } : {}), ...(work ? { mainEntity: work } : { about: person }) }] }
-  return { title, description, url, image, imageWidth: project?.thumbnail.width ?? 1200, imageHeight: project?.thumbnail.height ?? 630, imageAlt: project?.thumbnail.alt ?? 'Dušan Bebčák — costume design and wardrobe styling', robots: missing ? 'noindex, follow' : 'index, follow, max-image-preview:large', structuredData }
+  const breadcrumbs = project && url ? { '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Work', item: `${siteUrl}/` },
+    { '@type': 'ListItem', position: 2, name: project.title, item: url },
+  ] } : undefined
+  const collection = path === '/' && siteUrl ? { '@type': 'ItemList', itemListElement: projects.map((entry, index) => ({ '@type': 'ListItem', position: index + 1, name: entry.title, url: `${siteUrl}/project/${entry.slug}` })) } : undefined
+  const structuredData = { '@context': 'https://schema.org', '@graph': [person, { '@type': about ? 'AboutPage' : project || missing ? 'WebPage' : 'CollectionPage', name: title, description, inLanguage: 'en', ...(url ? { url } : {}), ...(breadcrumbs ? { breadcrumb: breadcrumbs } : {}), ...(work ? { mainEntity: work } : collection ? { mainEntity: collection, about: person } : { about: person }) }] }
+  return { title, description, url, image, imageWidth: socialPhoto?.width ?? 1200, imageHeight: socialPhoto?.height ?? 630, imageAlt: socialPhoto?.alt ?? 'Dušan Bebčák — costume design and wardrobe styling', robots: missing || !siteIndexable ? 'noindex, follow' : 'index, follow, max-image-preview:large', structuredData }
 }
 
 export function applyPageMetadata(path: string) {

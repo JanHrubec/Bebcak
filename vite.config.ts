@@ -26,4 +26,7 @@ const prerenderedPreview: Plugin = {
     })
   },
 }
-export default defineConfig({ plugins: [vue(), prerenderedPreview] })
+export default defineConfig({
+  plugins: [vue(), prerenderedPreview],
+  define: { 'import.meta.env.VERCEL_ENV': JSON.stringify(process.env.VERCEL_ENV ?? '') },
+})

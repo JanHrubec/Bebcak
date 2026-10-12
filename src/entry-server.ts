@@ -4,11 +4,11 @@ import App from './App.vue'
 import { createPortfolioRouter, legacyProjectRoutes } from './router'
 import { projects } from './data/projects'
 import { pageMetadata } from './seo'
-import { siteUrl } from './data/site'
+import { siteUrl, siteIndexable } from './data/site'
 import { getVideoUrl } from './data/media'
 
 export const paths = ['/', '/about', ...projects.map(project => `/project/${project.slug}`)]
-export { pageMetadata, siteUrl, legacyProjectRoutes }
+export { pageMetadata, siteUrl, siteIndexable, legacyProjectRoutes }
 export const videos = projects.flatMap(project => project.videos.map(video => ({ source: video.src, url: getVideoUrl(video.src) })))
 export async function render(path: string) {
   const router = createPortfolioRouter(true)

@@ -6,11 +6,12 @@
   "scripts": {
     "dev": "vite",
     "test": "node --disable-warning=ExperimentalWarning --experimental-strip-types --test tests/projects.test.mjs",
-    "build": "vue-tsc -b && vite build && node scripts/prerender.mjs",
+    "build": "vue-tsc -b && vite build && node scripts/prerender.mjs && npm run release:check",
     "check": "npm run test && npm run build",
     "preview": "vite preview",
     "media:upload": "node --disable-warning=ExperimentalWarning --experimental-strip-types --env-file-if-exists=.env.local scripts/upload-media.mjs",
-    "media:verify": "node --disable-warning=ExperimentalWarning --experimental-strip-types scripts/verify-media.mjs"
+    "media:verify": "node --disable-warning=ExperimentalWarning --experimental-strip-types scripts/verify-media.mjs",
+    "release:check": "node --disable-warning=ExperimentalWarning --experimental-strip-types scripts/check-release.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^1.6.1",

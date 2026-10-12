@@ -6,7 +6,7 @@ import { build } from 'vite'
 const temporary = resolve('node_modules/.tmp/portfolio-ssr')
 await build({ build: { ssr: 'src/entry-server.ts', outDir: temporary, emptyOutDir: true } })
 try {
-  const { render, paths, pageMetadata, siteUrl, legacyProjectRoutes, videos } = await import(pathToFileURL(`${temporary}/entry-server.js`).href)
+  const { render, paths, pageMetadata, siteUrl, siteIndexable, legacyProjectRoutes, videos } = await import(pathToFileURL(`${temporary}/entry-server.js`).href)
   for (const video of videos) {
     if (video.url.startsWith('https://')) continue
     try { await access(resolve('public', video.source.slice(1))) }
@@ -37,13 +37,13 @@ try {
     await mkdir(dirname(output), { recursive: true })
     await writeFile(output, html)
   }
-  if (siteUrl) {
+  if (siteUrl && siteIndexable) {
     const xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + paths.map(path => `  <url><loc>${escape(siteUrl + path)}</loc></url>`).join('\n') + '\n</urlset>\n'
     await writeFile('dist/sitemap.xml', xml)
   }
-  await writeFile('dist/robots.txt', 'User-agent: *\nAllow: /\n' + (siteUrl ? `\nSitemap: ${siteUrl}/sitemap.xml\n` : ''))
+  await writeFile('dist/robots.txt', 'User-agent: *\nAllow: /\n' + (siteUrl && siteIndexable ? `\nSitemap: ${siteUrl}/sitemap.xml\n` : ''))
   console.log(`Prerendered ${paths.length} portfolio pages, ${legacyProjectRoutes.length} legacy redirects and a noindex 404 page.`)
-  if (!siteUrl) console.log('VITE_SITE_URL is unset: canonical links and sitemap await the confirmed public domain.')
+  console.log(`Canonical origin: ${siteUrl}. ${siteIndexable ? 'Production indexing enabled.' : 'Preview/development pages use noindex; sitemap omitted.'}`)
 } finally {
   await rm(temporary, { recursive: true, force: true })
 }

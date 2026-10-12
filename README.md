@@ -18,7 +18,9 @@ npm run preview
 
 The build pre-renders the home page, About page and every published project into `dist`. Each direct URL includes its own title, metadata, structured data and readable content before JavaScript runs. Serve these static HTML files before falling back to `dist/404.html`; configure the host to return status 404 for genuinely missing URLs. Client navigation remains animated.
 
-Set `VITE_SITE_URL` to the confirmed public origin in `.env.local` or the hosting environment before building for publication. See `.env.example`. Until a domain is supplied, the build deliberately omits canonical URLs and the sitemap rather than asserting ownership of the old `bebcak.com` placeholder. Once configured, the same build emits absolute canonical/social URLs, `sitemap.xml` and its robots reference. No deployment is performed by the build.
+The confirmed canonical origin is **https://bebcak.com**. It is the default even when `VITE_SITE_URL` is unset; set the same value for Production in Vercel and remove any stale preview-domain override. Production builds emit the sitemap and absolute canonical/social URLs. Vercel Preview/Development builds and local development use `noindex`; preview builds omit the sitemap. The build automatically verifies generated page metadata, redirects, sitemap/indexing rules, icons and hosted-media output. No deployment is performed by the build.
+
+Follow [the domain launch and SEO checklist](docs/release-and-seo.md) for DNS, HTTPS, Search Console and final live checks. Another agent should start with [AGENTS.md](AGENTS.md) and [the maintenance guide](docs/maintenance.md).
 
 ## Content maintenance
 

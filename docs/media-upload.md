@@ -1,6 +1,6 @@
 # Upload the portfolio films to Vercel Blob
 
-The website images stay in Git. Only the 50 films currently used by the catalogue are uploaded. Local videos and downloaded research originals remain on this computer as backups but are ignored by Git.
+The website images stay in Git. Only films currently used by the catalogue are uploaded (52 as of 13 October 2026). Local videos and downloaded research originals remain on this computer as backups but are ignored by Git.
 
 1. Open the existing portfolio project in Vercel. In **Storage**, choose **Create Storage → Blob**. Choose **Public** access, name the store, and connect it to the portfolio project for **Development, Preview and Production**. Public access lets the native players load films without an authenticated API.
 2. In a terminal, open this repository and run:
@@ -25,7 +25,7 @@ The website images stay in Git. Only the 50 films currently used by the catalogu
    npm run media:upload
    ```
 
-   Keep the terminal open until all 50 films are ready. The command uses multipart uploads and immutable content-hash paths, saves each public URL in `src/data/hosted-videos.json`, and resumes safely if interrupted. It neither deletes local originals nor overwrites remote files. It does not upload research material or unused films.
+   Keep the terminal open until all catalogue films are ready. The command uses multipart uploads and immutable content-hash paths, saves each public URL in `src/data/hosted-videos.json`, and resumes safely if interrupted. It neither deletes local originals nor overwrites remote files. It does not upload research material or unused films.
 5. Verify public availability and run the project checks:
 
    ```sh
@@ -33,14 +33,14 @@ The website images stay in Git. Only the 50 films currently used by the catalogu
    npm run check
    ```
 
-   Verification checks all 50 public URLs, response content types and sizes, plus checksums against the local files. The Vercel build fails if a catalogue film has neither a public URL nor a local file, so an incomplete migration cannot silently publish broken players.
-6. In Vercel’s **Settings → Environment Variables**, set `VITE_SITE_URL` to the confirmed website origin for Production and Preview. This is a public domain value, not a secret. The video URLs are already stored in the committed manifest; they need no browser-facing credential.
+   Verification checks all catalogue public URLs, response content types and sizes, plus checksums against the local files. The Vercel build fails if a catalogue film has neither a public URL nor a local file, so an incomplete migration cannot silently publish broken players.
+6. In Vercel’s **Settings → Environment Variables**, set Production `VITE_SITE_URL=https://bebcak.com` (also the code default). Preview can use the same canonical origin; Vercel Preview builds are automatically marked noindex. See [the domain-launch checklist](release-and-seo.md). This is a public domain value, not a secret. The video URLs are already stored in the committed manifest; they need no browser-facing credential.
 7. Review and commit the complete portfolio, then push to the connected branch:
 
    ```sh
    git add -A
    git diff --cached --stat
-   git commit -m "Finalize portfolio and host videos on Vercel Blob"
+   git commit -m "Portfolio"
    git push origin main
    ```
 
