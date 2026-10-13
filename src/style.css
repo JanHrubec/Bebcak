@@ -99,6 +99,10 @@ button { cursor: pointer; }
 .about-page { max-width: 700px; padding: 1rem 0 3rem; }
 .about-content { display: grid; gap: 3.5rem; }
 .about-biography { display: grid; gap: 1.5rem; color: var(--color-secondary); line-height: 1.85; font-size: .9375rem; }
+.about-introduction { display: grid; gap: 1.5rem; align-items: start; }
+.about-portrait { width: min(100%, var(--portrait-width)); margin: 0; }
+.about-portrait img { display: block; width: 100%; height: auto; }
+@media (min-width: 640px) { .about-introduction { grid-template-columns: var(--portrait-width) minmax(0, 1fr); } }
 .about-lead { color: var(--color-primary); font-size: 1.25rem; line-height: 1.7; }
 .about-contact h2 { font-size: .875rem; margin-bottom: 1.5rem; }
 .contact-details { display: grid; gap: .75rem; }

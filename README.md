@@ -25,7 +25,7 @@ Follow [the domain launch and SEO checklist](docs/release-and-seo.md) for DNS, H
 ## Content maintenance
 
 - Catalogue, credits, image dimensions and source evidence: `src/data/projects.ts`.
-- First-person biography: `src/data/about.ts`.
+- First-person biography and replaceable About portrait metadata: `src/data/about.ts`.
 - Confirmed phone/email: `src/data/contact.ts`. Email and telephone were supplied by the website owner; the UI uses mailto: and tel: links.
 - Site metadata: `src/data/site.ts` and `src/seo.ts`.
 - Favicon: `public/favicon.svg`, PNG/ICO variants and Apple touch icon. Sharing preview: `public/social-preview.png`.

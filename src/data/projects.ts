@@ -172,7 +172,7 @@ export const projects: Project[] = [
         "url": "https://www.mediar.cz/galerie-reklamy/lehkost-piva-proud-v-kampani-od-vccp-dosahuje-stavu-beztize/"
       }
     ],
-    "portrait": true,
+    "portrait": false,
     "scope": "campaign",
     "attribution": {
       "basis": "own-portfolio",
@@ -185,16 +185,16 @@ export const projects: Project[] = [
     "slug": "lego-hera-hunter",
     "title": "LEGO — Hera & Hunter",
     "thumbnail": {
-      "src": "/images/work/space-suits/image-2.webp",
-      "smallSrc": "/images/work/space-suits/image-2-480.webp",
-      "smallWidth": 384,
-      "width": 1280,
-      "height": 1600,
-      "alt": "Space-suit photograph 2",
+      "src": "/images/work/lego-space/hd-costume-4.webp",
+      "smallSrc": "/images/work/lego-space/hd-costume-4-480.webp",
+      "smallWidth": 480,
+      "width": 1920,
+      "height": 1080,
+      "alt": "LEGO — Hera & Hunter — the two spacesuits side by side, film still",
       "evidence": {
-        "basis": "visual-match",
+        "basis": "film-frame",
         "videoSrc": "/videos/lego-hera-hunter-hd.mp4",
-        "note": "Visually matched against Armada’s full Hera & Hunter film: same actors, helmets, silver heart chest panel and coloured tubing, orange suit with dark stripes. The reference is a design reference published with the actual fitting, not a separate finished costume."
+        "note": "Visually reviewed frame at 52.04s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
       }
     },
     "images": [
@@ -350,7 +350,7 @@ export const projects: Project[] = [
         "url": "https://www.cameo.dk/commercials"
       }
     ],
-    "portrait": true,
+    "portrait": false,
     "scope": "campaign",
     "attribution": {
       "basis": "own-portfolio",
@@ -363,16 +363,16 @@ export const projects: Project[] = [
     "slug": "talkmore-nokken",
     "title": "Talkmore — Nøkken",
     "thumbnail": {
-      "src": "/images/work/woodland-costumes/image-3.webp",
-      "smallSrc": "/images/work/woodland-costumes/image-3-480.webp",
-      "smallWidth": 384,
-      "width": 1200,
-      "height": 1500,
-      "alt": "Woodland & historical costumes — photograph 3",
+      "src": "/images/work/talkmore-nokken/hd-costume-6.webp",
+      "smallSrc": "/images/work/talkmore-nokken/hd-costume-6-480.webp",
+      "smallWidth": 480,
+      "width": 1920,
+      "height": 708,
+      "alt": "Talkmore — Nøkken — headdress, trailing leaves and hand details, film still",
       "evidence": {
-        "basis": "visual-match",
+        "basis": "film-frame",
         "videoSrc": "/videos/talkmore-nokken-hd.mp4",
-        "note": "Compared with the full film: same woodland performer, leafy body, blue/green headpiece and goggles. Unmatched armour photographs remain separate."
+        "note": "Visually reviewed frame at 48.07s from the exact full film above, matched to Dušan’s original publication. A film still, not a behind-the-scenes photograph."
       }
     },
     "images": [
@@ -502,7 +502,7 @@ export const projects: Project[] = [
         "url": "https://www.kreativtforum.no/arbeider/talkmore-lokker-med-kjent-eventyrkarakter"
       }
     ],
-    "portrait": true,
+    "portrait": false,
     "scope": "campaign",
     "attribution": {
       "basis": "own-portfolio",
@@ -833,16 +833,16 @@ export const projects: Project[] = [
     "slug": "talkmore-duedekning",
     "title": "Talkmore — Duedekning",
     "thumbnail": {
-      "src": "/images/work/woodland-costumes/image-1.webp",
-      "smallSrc": "/images/work/woodland-costumes/image-1-480.webp",
-      "smallWidth": 384,
-      "width": 1280,
-      "height": 1600,
-      "alt": "Talkmore — Duedekning — fitted chain-mail hood, brown tunic and segmented armour",
+      "src": "/images/work/talkmore-medieval/verified-hd-4.webp",
+      "smallSrc": "/images/work/talkmore-medieval/verified-hd-4-480.webp",
+      "smallWidth": 480,
+      "width": 1920,
+      "height": 708,
+      "alt": "Talkmore — Duedekning — contrasting armour and layered costumes beside the troll, film still",
       "evidence": {
-        "basis": "visual-match",
+        "basis": "film-frame",
         "videoSrc": "/videos/talkmore-duedekning-hd.mp4",
-        "note": "Compared against Einar’s complete 1080p Duedekning film: same two performers, helmet and chin strap, segmented shoulder/body plates, maroon belt and studded leather cuffs; matching chain-mail hood, leaf-shaped shoulders, curved gold neck plate, brown tunic and boots. The separate green workshop armour is not assigned to this film."
+        "note": "Visually inspected wardrobe frame at 26s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
       }
     },
     "images": [
@@ -990,7 +990,7 @@ export const projects: Project[] = [
         "url": "https://www.instagram.com/p/DFlPHEJMUbB/"
       }
     ],
-    "portrait": true,
+    "portrait": false,
     "scope": "campaign",
     "attribution": {
       "basis": "own-portfolio",
@@ -1484,16 +1484,16 @@ export const projects: Project[] = [
     "slug": "vypsana-fixa-fakin-party",
     "title": "Vypsaná fixa — Fakin party",
     "thumbnail": {
-      "src": "/images/work/vypsana-fixa-fakin-party/published-39.webp",
-      "smallSrc": "/images/work/vypsana-fixa-fakin-party/published-39-480.webp",
+      "src": "/images/work/vypsana-fixa-fakin-party/finished-film-preview.webp",
+      "smallSrc": "/images/work/vypsana-fixa-fakin-party/finished-film-preview-480.webp",
       "smallWidth": 480,
-      "width": 2400,
-      "height": 1599,
-      "alt": "vypsana fixa fakin party — published campaign photograph",
+      "width": 1440,
+      "height": 960,
+      "alt": "Vypsaná fixa — Fakin party — costume in the finished film",
       "evidence": {
-        "basis": "visual-match",
+        "basis": "film-frame",
         "videoSrc": "/videos/fakin-party.mp4",
-        "note": "Exact costumes and performers compared with the full Fakin party film from the credited colourist’s portfolio: blue shirt/red sleeveless knitwear, navy suit, party set and ensemble outfits. Publication explicitly credits Dušan Bebčák / @bebcak for wardrobe."
+        "note": "Visually inspected costume frame at 150 seconds, extracted from the exact attached film without enlargement."
       }
     },
     "images": [
@@ -1613,6 +1613,19 @@ export const projects: Project[] = [
           "videoSrc": "/videos/fakin-party.mp4",
           "note": "Exact costumes and performers compared with the full Fakin party film from the credited colourist’s portfolio: blue shirt/red sleeveless knitwear, navy suit, party set and ensemble outfits. Publication explicitly credits Dušan Bebčák / @bebcak for wardrobe."
         }
+      },
+      {
+        "src": "/images/work/vypsana-fixa-fakin-party/finished-film-preview.webp",
+        "smallSrc": "/images/work/vypsana-fixa-fakin-party/finished-film-preview-480.webp",
+        "smallWidth": 480,
+        "width": 1440,
+        "height": 960,
+        "alt": "Vypsaná fixa — Fakin party — costume in the finished film",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/fakin-party.mp4",
+          "note": "Visually inspected costume frame at 150 seconds, extracted from the exact attached film without enlargement."
+        }
       }
     ],
     "videos": [
@@ -1624,12 +1637,17 @@ export const projects: Project[] = [
         "width": 1440,
         "height": 960,
         "poster": {
-          "src": "/images/work/vypsana-fixa-fakin-party/film-cover.webp",
-          "smallSrc": "/images/work/vypsana-fixa-fakin-party/film-cover-480.webp",
-          "width": 1920,
-          "height": 1280,
+          "src": "/images/work/vypsana-fixa-fakin-party/finished-film-preview.webp",
+          "smallSrc": "/images/work/vypsana-fixa-fakin-party/finished-film-preview-480.webp",
           "smallWidth": 480,
-          "alt": "Vypsaná fixa — Fakin party — film preview"
+          "width": 1440,
+          "height": 960,
+          "alt": "Vypsaná fixa — Fakin party — costume in the finished film",
+          "evidence": {
+            "basis": "film-frame",
+            "videoSrc": "/videos/fakin-party.mp4",
+            "note": "Visually inspected costume frame at 150 seconds, extracted from the exact attached film without enlargement."
+          }
         }
       }
     ],
@@ -1858,7 +1876,7 @@ export const projects: Project[] = [
         "url": "https://ogilvy.cz/ogilvy-pripravilo-novou-kampan-pro-budvar-33"
       }
     ],
-    "portrait": false,
+    "portrait": true,
     "scope": "campaign",
     "attribution": {
       "basis": "explicit-credit",
@@ -1871,16 +1889,16 @@ export const projects: Project[] = [
     "slug": "raiffeisen-spooky-vintage-shopping",
     "title": "Raiffeisen — Spooky Vintage Shopping",
     "thumbnail": {
-      "src": "/images/work/raiffeisen-spooky-vintage-shopping/image-1.webp",
-      "smallSrc": "/images/work/raiffeisen-spooky-vintage-shopping/image-1-480.webp",
+      "src": "/images/work/raiffeisen-spooky-vintage-shopping/finished-film-preview.webp",
+      "smallSrc": "/images/work/raiffeisen-spooky-vintage-shopping/finished-film-preview-480.webp",
       "smallWidth": 480,
-      "width": 877,
-      "height": 657,
-      "alt": "Raiffeisen — Spooky Vintage Shopping — photograph 1",
+      "width": 1048,
+      "height": 718,
+      "alt": "Raiffeisen — Spooky Vintage Shopping — costume in the finished film",
       "evidence": {
-        "basis": "visual-match",
+        "basis": "film-frame",
         "videoSrc": "/videos/DQKqcPIDGy2.mp4",
-        "note": "Compared with the full film: identical distinctive patterned dresses and burgundy coat on the same staircase/set; grey/yellow striped jumper and dark trousers match the opening character. Yellow alternative dress excluded."
+        "note": "Visually inspected costume frame at 16 seconds, extracted from the exact attached film without enlargement."
       }
     },
     "images": [
@@ -1922,6 +1940,19 @@ export const projects: Project[] = [
           "videoSrc": "/videos/DQKqcPIDGy2.mp4",
           "note": "Compared with the full film: identical distinctive patterned dresses and burgundy coat on the same staircase/set; grey/yellow striped jumper and dark trousers match the opening character. Yellow alternative dress excluded."
         }
+      },
+      {
+        "src": "/images/work/raiffeisen-spooky-vintage-shopping/finished-film-preview.webp",
+        "smallSrc": "/images/work/raiffeisen-spooky-vintage-shopping/finished-film-preview-480.webp",
+        "smallWidth": 480,
+        "width": 1048,
+        "height": 718,
+        "alt": "Raiffeisen — Spooky Vintage Shopping — costume in the finished film",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/DQKqcPIDGy2.mp4",
+          "note": "Visually inspected costume frame at 16 seconds, extracted from the exact attached film without enlargement."
+        }
       }
     ],
     "videos": [
@@ -1931,7 +1962,20 @@ export const projects: Project[] = [
         "url": "https://www.instagram.com/p/DQKqcPIDGy2/",
         "src": "/videos/DQKqcPIDGy2.mp4",
         "width": 1048,
-        "height": 718
+        "height": 718,
+        "poster": {
+          "src": "/images/work/raiffeisen-spooky-vintage-shopping/finished-film-preview.webp",
+          "smallSrc": "/images/work/raiffeisen-spooky-vintage-shopping/finished-film-preview-480.webp",
+          "smallWidth": 480,
+          "width": 1048,
+          "height": 718,
+          "alt": "Raiffeisen — Spooky Vintage Shopping — costume in the finished film",
+          "evidence": {
+            "basis": "film-frame",
+            "videoSrc": "/videos/DQKqcPIDGy2.mp4",
+            "note": "Visually inspected costume frame at 16 seconds, extracted from the exact attached film without enlargement."
+          }
+        }
       }
     ],
     "credit": "Wardrobe styling",
@@ -2157,6 +2201,145 @@ export const projects: Project[] = [
     "attribution": {
       "basis": "explicit-credit",
       "source": "https://vimeo.com/396010194",
+      "note": "Exact director/producer campaign credits explicitly name Dušan Bebčák for costume design."
+    }
+  },
+  {
+    "id": "komercni-banka",
+    "slug": "komercni-banka",
+    "title": "Komerční banka — Eva Adamczyková",
+    "thumbnail": {
+      "src": "/images/work/komercni-banka/hd-detail-1.webp",
+      "smallSrc": "/images/work/komercni-banka/hd-detail-1-480.webp",
+      "smallWidth": 480,
+      "width": 1920,
+      "height": 1080,
+      "alt": "Komerční banka — Eva Adamczyková — full red dress in motion, film still",
+      "evidence": {
+        "basis": "film-frame",
+        "videoSrc": "/videos/komercni-banka-hd.mp4",
+        "note": "Reviewed frame at 3s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
+      }
+    },
+    "images": [
+      {
+        "src": "/images/work/komercni-banka/hd-detail-1.webp",
+        "smallSrc": "/images/work/komercni-banka/hd-detail-1-480.webp",
+        "smallWidth": 480,
+        "width": 1920,
+        "height": 1080,
+        "alt": "Komerční banka — Eva Adamczyková — full red dress in motion, film still",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/komercni-banka-hd.mp4",
+          "note": "Reviewed frame at 3s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
+        }
+      },
+      {
+        "src": "/images/work/komercni-banka/hd-detail-2.webp",
+        "smallSrc": "/images/work/komercni-banka/hd-detail-2-480.webp",
+        "smallWidth": 480,
+        "width": 1920,
+        "height": 1080,
+        "alt": "Komerční banka — Eva Adamczyková — red dress and shoulder detail, film still",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/komercni-banka-hd.mp4",
+          "note": "Reviewed frame at 7s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
+        }
+      },
+      {
+        "src": "/images/work/komercni-banka/hd-detail-3.webp",
+        "smallSrc": "/images/work/komercni-banka/hd-detail-3-480.webp",
+        "smallWidth": 480,
+        "width": 1920,
+        "height": 1080,
+        "alt": "Komerční banka — Eva Adamczyková — high red neckline and gathered fabric, film still",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/komercni-banka-hd.mp4",
+          "note": "Reviewed frame at 11s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
+        }
+      },
+      {
+        "src": "/images/work/komercni-banka/hd-detail-4.webp",
+        "smallSrc": "/images/work/komercni-banka/hd-detail-4-480.webp",
+        "smallWidth": 480,
+        "width": 1920,
+        "height": 1080,
+        "alt": "Komerční banka — Eva Adamczyková — full-length red dress with raised arms, film still",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/komercni-banka-hd.mp4",
+          "note": "Reviewed frame at 15s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
+        }
+      }
+    ],
+    "videos": [
+      {
+        "provider": "native",
+        "title": "Komerční banka — Eva Adamczyková",
+        "url": "https://www.advocadofilms.com/work/",
+        "src": "/videos/komercni-banka-hd.mp4",
+        "width": 1920,
+        "height": 1080,
+        "poster": {
+          "src": "/images/work/komercni-banka/hd-detail-1.webp",
+          "smallSrc": "/images/work/komercni-banka/hd-detail-1-480.webp",
+          "smallWidth": 480,
+          "width": 1920,
+          "height": 1080,
+          "alt": "Komerční banka — Eva Adamczyková — full red dress in motion, film still",
+          "evidence": {
+            "basis": "film-frame",
+            "videoSrc": "/videos/komercni-banka-hd.mp4",
+            "note": "Reviewed frame at 3s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
+          }
+        }
+      }
+    ],
+    "credit": "Costume design",
+    "facts": [
+      {
+        "label": "Director",
+        "value": "Andrii Lagutin"
+      },
+      {
+        "label": "Production",
+        "value": "ADvocado Films"
+      },
+      {
+        "label": "Cinematography",
+        "value": "Oleksandr Drobilko"
+      },
+      {
+        "label": "Featuring",
+        "value": "Eva Adamczyková Samková"
+      },
+      {
+        "label": "Agency",
+        "value": "VCCP"
+      },
+      {
+        "label": "Costume design",
+        "value": "Dušan Bebčák"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exact full-resolution source film",
+        "url": "https://www.advocadofilms.com/work/"
+      },
+      {
+        "label": "Explicit professional credit",
+        "url": "https://vimeo.com/1020676248"
+      }
+    ],
+    "portrait": false,
+    "scope": "campaign",
+    "attribution": {
+      "basis": "explicit-credit",
+      "source": "https://vimeo.com/1020676248",
       "note": "Exact director/producer campaign credits explicitly name Dušan Bebčák for costume design."
     }
   },
@@ -2511,16 +2694,16 @@ export const projects: Project[] = [
     "slug": "adidas-you-got-this",
     "title": "adidas — You Got This",
     "thumbnail": {
-      "src": "/images/work/adidas-you-got-this/hd-detail-4.webp",
-      "smallSrc": "/images/work/adidas-you-got-this/hd-detail-4-480.webp",
+      "src": "/images/work/adidas-you-got-this/hd-detail-5.webp",
+      "smallSrc": "/images/work/adidas-you-got-this/hd-detail-5-480.webp",
       "smallWidth": 480,
       "width": 1920,
       "height": 1080,
-      "alt": "adidas — You Got This — red football kit and dark training layers, film still",
+      "alt": "adidas — You Got This — red training top and black padded vest, film still",
       "evidence": {
         "basis": "film-frame",
         "videoSrc": "/videos/adidas-you-got-this-hd.mp4",
-        "note": "Reviewed frame at 15s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
+        "note": "Reviewed frame at 19s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
       }
     },
     "images": [
@@ -2637,145 +2820,6 @@ export const projects: Project[] = [
     "attribution": {
       "basis": "explicit-credit",
       "source": "https://vimeo.com/1088383230",
-      "note": "Exact director/producer campaign credits explicitly name Dušan Bebčák for costume design."
-    }
-  },
-  {
-    "id": "komercni-banka",
-    "slug": "komercni-banka",
-    "title": "Komerční banka — Eva Adamczyková",
-    "thumbnail": {
-      "src": "/images/work/komercni-banka/hd-detail-1.webp",
-      "smallSrc": "/images/work/komercni-banka/hd-detail-1-480.webp",
-      "smallWidth": 480,
-      "width": 1920,
-      "height": 1080,
-      "alt": "Komerční banka — Eva Adamczyková — full red dress in motion, film still",
-      "evidence": {
-        "basis": "film-frame",
-        "videoSrc": "/videos/komercni-banka-hd.mp4",
-        "note": "Reviewed frame at 3s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
-      }
-    },
-    "images": [
-      {
-        "src": "/images/work/komercni-banka/hd-detail-1.webp",
-        "smallSrc": "/images/work/komercni-banka/hd-detail-1-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 1080,
-        "alt": "Komerční banka — Eva Adamczyková — full red dress in motion, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/komercni-banka-hd.mp4",
-          "note": "Reviewed frame at 3s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
-        }
-      },
-      {
-        "src": "/images/work/komercni-banka/hd-detail-2.webp",
-        "smallSrc": "/images/work/komercni-banka/hd-detail-2-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 1080,
-        "alt": "Komerční banka — Eva Adamczyková — red dress and shoulder detail, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/komercni-banka-hd.mp4",
-          "note": "Reviewed frame at 7s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
-        }
-      },
-      {
-        "src": "/images/work/komercni-banka/hd-detail-3.webp",
-        "smallSrc": "/images/work/komercni-banka/hd-detail-3-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 1080,
-        "alt": "Komerční banka — Eva Adamczyková — high red neckline and gathered fabric, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/komercni-banka-hd.mp4",
-          "note": "Reviewed frame at 11s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
-        }
-      },
-      {
-        "src": "/images/work/komercni-banka/hd-detail-4.webp",
-        "smallSrc": "/images/work/komercni-banka/hd-detail-4-480.webp",
-        "smallWidth": 480,
-        "width": 1920,
-        "height": 1080,
-        "alt": "Komerční banka — Eva Adamczyková — full-length red dress with raised arms, film still",
-        "evidence": {
-          "basis": "film-frame",
-          "videoSrc": "/videos/komercni-banka-hd.mp4",
-          "note": "Reviewed frame at 15s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
-        }
-      }
-    ],
-    "videos": [
-      {
-        "provider": "native",
-        "title": "Komerční banka — Eva Adamczyková",
-        "url": "https://www.advocadofilms.com/work/",
-        "src": "/videos/komercni-banka-hd.mp4",
-        "width": 1920,
-        "height": 1080,
-        "poster": {
-          "src": "/images/work/komercni-banka/hd-detail-1.webp",
-          "smallSrc": "/images/work/komercni-banka/hd-detail-1-480.webp",
-          "smallWidth": 480,
-          "width": 1920,
-          "height": 1080,
-          "alt": "Komerční banka — Eva Adamczyková — full red dress in motion, film still",
-          "evidence": {
-            "basis": "film-frame",
-            "videoSrc": "/videos/komercni-banka-hd.mp4",
-            "note": "Reviewed frame at 3s from the exact public 1080p film. The cast, wardrobe and scenes match the previous portfolio version; source director and production credits agree. Not a separate fitting photograph."
-          }
-        }
-      }
-    ],
-    "credit": "Costume design",
-    "facts": [
-      {
-        "label": "Director",
-        "value": "Andrii Lagutin"
-      },
-      {
-        "label": "Production",
-        "value": "ADvocado Films"
-      },
-      {
-        "label": "Cinematography",
-        "value": "Oleksandr Drobilko"
-      },
-      {
-        "label": "Featuring",
-        "value": "Eva Adamczyková Samková"
-      },
-      {
-        "label": "Agency",
-        "value": "VCCP"
-      },
-      {
-        "label": "Costume design",
-        "value": "Dušan Bebčák"
-      }
-    ],
-    "sources": [
-      {
-        "label": "Exact full-resolution source film",
-        "url": "https://www.advocadofilms.com/work/"
-      },
-      {
-        "label": "Explicit professional credit",
-        "url": "https://vimeo.com/1020676248"
-      }
-    ],
-    "portrait": false,
-    "scope": "campaign",
-    "attribution": {
-      "basis": "explicit-credit",
-      "source": "https://vimeo.com/1020676248",
       "note": "Exact director/producer campaign credits explicitly name Dušan Bebčák for costume design."
     }
   },
@@ -3064,154 +3108,6 @@ export const projects: Project[] = [
     }
   },
   {
-    "id": "loreal-men-expert",
-    "slug": "loreal-men-expert",
-    "title": "L’Oréal Men Expert — Hydra Energetic",
-    "thumbnail": {
-      "src": "/images/work/loreal-men-expert/published-29.webp",
-      "smallSrc": "/images/work/loreal-men-expert/published-29-480.webp",
-      "smallWidth": 360,
-      "width": 1204,
-      "height": 1605,
-      "alt": "loreal men expert — published campaign photograph",
-      "evidence": {
-        "basis": "same-publication",
-        "videoSrc": "/videos/loreal-men-expert.mp4",
-        "note": "The director publishes this Hydra Energetic campaign series together and explicitly credits @bebcak. The portrait photographs include Boris Valábik and Gergely Siklósi; the attached complete film features Lukáš Sedlák. These are campaign photographs, not claimed as frames or fitting photographs from that individual cut."
-      }
-    },
-    "images": [
-      {
-        "src": "/images/work/loreal-men-expert/published-29.webp",
-        "smallSrc": "/images/work/loreal-men-expert/published-29-480.webp",
-        "smallWidth": 360,
-        "width": 1204,
-        "height": 1605,
-        "alt": "L’Oréal Men Expert — Hydra Energetic — published campaign image 1",
-        "evidence": {
-          "basis": "same-publication",
-          "videoSrc": "/videos/loreal-men-expert.mp4",
-          "note": "The director publishes this Hydra Energetic campaign series together and explicitly credits @bebcak. The portrait photographs include Boris Valábik and Gergely Siklósi. The attached complete 20-second variant is from the same publication. Photographs of series performers are not claimed to be frames or fitting photographs from that individual cut."
-        }
-      },
-      {
-        "src": "/images/work/loreal-men-expert/published-26.webp",
-        "smallSrc": "/images/work/loreal-men-expert/published-26-480.webp",
-        "smallWidth": 360,
-        "width": 1200,
-        "height": 1600,
-        "alt": "L’Oréal Men Expert — Hydra Energetic — published campaign image 2",
-        "evidence": {
-          "basis": "same-publication",
-          "videoSrc": "/videos/loreal-men-expert.mp4",
-          "note": "The director publishes this Hydra Energetic campaign series together and explicitly credits @bebcak. The portrait photographs include Boris Valábik and Gergely Siklósi. The attached complete 20-second variant is from the same publication. Photographs of series performers are not claimed to be frames or fitting photographs from that individual cut."
-        }
-      },
-      {
-        "src": "/images/work/loreal-men-expert/published-28.webp",
-        "smallSrc": "/images/work/loreal-men-expert/published-28-480.webp",
-        "smallWidth": 360,
-        "width": 1206,
-        "height": 1608,
-        "alt": "L’Oréal Men Expert — Hydra Energetic — published campaign image 3",
-        "evidence": {
-          "basis": "same-publication",
-          "videoSrc": "/videos/loreal-men-expert.mp4",
-          "note": "The director publishes this Hydra Energetic campaign series together and explicitly credits @bebcak. The portrait photographs include Boris Valábik and Gergely Siklósi. The attached complete 20-second variant is from the same publication. Photographs of series performers are not claimed to be frames or fitting photographs from that individual cut."
-        }
-      },
-      {
-        "src": "/images/work/loreal-men-expert/published-30.webp",
-        "smallSrc": "/images/work/loreal-men-expert/published-30-480.webp",
-        "smallWidth": 360,
-        "width": 1440,
-        "height": 1920,
-        "alt": "L’Oréal Men Expert — Hydra Energetic — published campaign image 4",
-        "evidence": {
-          "basis": "same-publication",
-          "videoSrc": "/videos/loreal-men-expert.mp4",
-          "note": "The director publishes this Hydra Energetic campaign series together and explicitly credits @bebcak. The portrait photographs include Boris Valábik and Gergely Siklósi. The attached complete 20-second variant is from the same publication. Photographs of series performers are not claimed to be frames or fitting photographs from that individual cut."
-        }
-      },
-      {
-        "src": "/images/work/loreal-men-expert/published-31.webp",
-        "smallSrc": "/images/work/loreal-men-expert/published-31-480.webp",
-        "smallWidth": 360,
-        "width": 1440,
-        "height": 1920,
-        "alt": "L’Oréal Men Expert — Hydra Energetic — published campaign image 5",
-        "evidence": {
-          "basis": "same-publication",
-          "videoSrc": "/videos/loreal-men-expert.mp4",
-          "note": "The director publishes this Hydra Energetic campaign series together and explicitly credits @bebcak. The portrait photographs include Boris Valábik and Gergely Siklósi. The attached complete 20-second variant is from the same publication. Photographs of series performers are not claimed to be frames or fitting photographs from that individual cut."
-        }
-      },
-      {
-        "src": "/images/work/loreal-men-expert/published-extra-27.webp",
-        "smallSrc": "/images/work/loreal-men-expert/published-extra-27-480.webp",
-        "smallWidth": 360,
-        "width": 1202,
-        "height": 1602,
-        "alt": "L’Oréal Men Expert — Hydra Energetic — white t-shirt and orange campaign portrait",
-        "evidence": {
-          "basis": "same-publication",
-          "videoSrc": "/videos/loreal-men-expert.mp4",
-          "note": "The director publishes this Hydra Energetic campaign series together and explicitly credits @bebcak. The portrait photographs include Boris Valábik and Gergely Siklósi. The attached complete 20-second variant is from the same publication. Photographs of series performers are not claimed to be frames or fitting photographs from that individual cut."
-        }
-      }
-    ],
-    "videos": [
-      {
-        "provider": "native",
-        "title": "L’Oréal Men Expert — Hydra Energetic",
-        "url": "https://www.instagram.com/p/DUoPG4EEp4z/",
-        "src": "/videos/loreal-men-expert.mp4",
-        "width": 360,
-        "height": 480,
-        "poster": {
-          "src": "/images/work/loreal-men-expert/film-cover.webp",
-          "smallSrc": "/images/work/loreal-men-expert/film-cover-480.webp",
-          "width": 360,
-          "height": 480,
-          "smallWidth": 360,
-          "alt": "L’Oréal Men Expert — Hydra Energetic — film preview"
-        }
-      }
-    ],
-    "credit": "",
-    "facts": [
-      {
-        "label": "Director",
-        "value": "@shotbykill"
-      },
-      {
-        "label": "Production",
-        "value": "Unreal Visual"
-      },
-      {
-        "label": "Agency",
-        "value": "B&T / McCann Prague"
-      },
-      {
-        "label": "Costumes",
-        "value": "Dušan Bebčák"
-      }
-    ],
-    "sources": [
-      {
-        "label": "Director’s campaign publication",
-        "url": "https://www.instagram.com/p/DUoPG4EEp4z/"
-      }
-    ],
-    "portrait": true,
-    "scope": "campaign",
-    "attribution": {
-      "basis": "explicit-credit",
-      "source": "https://www.instagram.com/p/DUoPG4EEp4z/",
-      "note": "Direct campaign publication or Dušan’s own caption explicitly credits @bebcak / Dušan Bebčák. Shared roles remain shared, and the source caption/crew record is retained in the research dossier."
-    }
-  },
-  {
     "id": "skoda-social-stories",
     "slug": "skoda-social-stories",
     "title": "Škoda — Social stories",
@@ -3453,7 +3349,12 @@ export const projects: Project[] = [
       "smallWidth": 480,
       "width": 1366,
       "height": 684,
-      "alt": "Škoda — 130 let — costume in the finished film, frame 1"
+      "alt": "Škoda — 130 let — costume in the finished film, frame 1",
+      "evidence": {
+        "basis": "film-frame",
+        "videoSrc": "/videos/1143365815.mp4",
+        "note": "Existing inspected film still, also used as the exact attached film’s poster; retained without changes to its pixels."
+      }
     },
     "images": [
       {
@@ -4002,16 +3903,16 @@ export const projects: Project[] = [
     "slug": "konto-bariery",
     "title": "Konto Bariéry",
     "thumbnail": {
-      "src": "/images/work/konto-bariery/detail-2.webp",
-      "smallSrc": "/images/work/konto-bariery/detail-2-480.webp",
+      "src": "/images/work/konto-bariery/final-detail-2.webp",
+      "smallSrc": "/images/work/konto-bariery/final-detail-2-480.webp",
       "smallWidth": 480,
       "width": 1280,
-      "height": 659,
-      "alt": "Konto Bariéry — frame from the advert",
+      "height": 720,
+      "alt": "Konto Bariéry — black roll-neck and grey shirt in close-up, film still",
       "evidence": {
         "basis": "film-frame",
         "videoSrc": "/videos/891619491.mp4",
-        "note": "Visually inspected costume frame at 9.6 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+        "note": "Visually inspected wardrobe frame at 6.6s from the exact film above. Cast, costumes and sets match the original portfolio publication. Not a fitting or behind-the-scenes photograph."
       }
     },
     "images": [
@@ -4174,16 +4075,16 @@ export const projects: Project[] = [
     "slug": "vodafone-youth",
     "title": "Vodafone — Unlimited Honesty",
     "thumbnail": {
-      "src": "/images/work/vodafone-youth/adc-original-1.webp",
-      "smallSrc": "/images/work/vodafone-youth/adc-original-1-480.webp",
+      "src": "/images/work/vodafone-youth/detail-1.webp",
+      "smallSrc": "/images/work/vodafone-youth/detail-1-480.webp",
       "smallWidth": 270,
-      "width": 1080,
-      "height": 1920,
-      "alt": "Vodafone — Unlimited Honesty — red hat and jacket, purple jacket and yellow checked shirt",
+      "width": 720,
+      "height": 1280,
+      "alt": "Vodafone — Youth — frame from the advert",
       "evidence": {
-        "basis": "visual-match",
+        "basis": "film-frame",
         "videoSrc": "/videos/C8T3ZOJtsUl.mp4",
-        "note": "Official ADC campaign submission: the same cast, location and distinctive outfits as this campaign’s corresponding portfolio short. First image matches the greenhouse group; second matches the outdoor courtside group. Directors Novák & Nguyen and Procoma agree with the original end cards."
+        "note": "Visually inspected costume frame at 1.206 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
       }
     },
     "images": [
@@ -4324,8 +4225,8 @@ export const projects: Project[] = [
     "slug": "innogy-domaci-asistence",
     "title": "innogy — Domácí asistence",
     "thumbnail": {
-      "src": "/images/work/innogy-domaci-asistence/official-hd-1.webp",
-      "smallSrc": "/images/work/innogy-domaci-asistence/official-hd-1-480.webp",
+      "src": "/images/work/innogy-domaci-asistence/clear-green-shirt.webp",
+      "smallSrc": "/images/work/innogy-domaci-asistence/clear-green-shirt-480.webp",
       "smallWidth": 480,
       "width": 1920,
       "height": 1080,
@@ -4333,13 +4234,13 @@ export const projects: Project[] = [
       "evidence": {
         "basis": "film-frame",
         "videoSrc": "/videos/innogy-domaci-asistence-hd.mp4",
-        "note": "Inspected frame at 1.3244s from innogycz’s complete 33-second official advert. Same performers, green/yellow outfit, grandfather’s shirt changes, red cardigan, blue repair uniform, kitchen/laundry story and end card as Dušan’s cropped Instagram repost. Not a fitting or BTS photograph."
+        "note": "Visually inspected frame at 8 seconds from the exact attached official full-HD advert. Replaces the earlier foreground-obstructed shot; green overshirt and yellow T-shirt are unobstructed. A film still, not a fitting photograph."
       }
     },
     "images": [
       {
-        "src": "/images/work/innogy-domaci-asistence/official-hd-1.webp",
-        "smallSrc": "/images/work/innogy-domaci-asistence/official-hd-1-480.webp",
+        "src": "/images/work/innogy-domaci-asistence/clear-green-shirt.webp",
+        "smallSrc": "/images/work/innogy-domaci-asistence/clear-green-shirt-480.webp",
         "smallWidth": 480,
         "width": 1920,
         "height": 1080,
@@ -4347,7 +4248,7 @@ export const projects: Project[] = [
         "evidence": {
           "basis": "film-frame",
           "videoSrc": "/videos/innogy-domaci-asistence-hd.mp4",
-          "note": "Inspected frame at 1.3244s from innogycz’s complete 33-second official advert. Same performers, green/yellow outfit, grandfather’s shirt changes, red cardigan, blue repair uniform, kitchen/laundry story and end card as Dušan’s cropped Instagram repost. Not a fitting or BTS photograph."
+          "note": "Visually inspected frame at 8 seconds from the exact attached official full-HD advert. Replaces the earlier foreground-obstructed shot; green overshirt and yellow T-shirt are unobstructed. A film still, not a fitting photograph."
         }
       },
       {
@@ -4425,8 +4326,8 @@ export const projects: Project[] = [
         "width": 1920,
         "height": 1080,
         "poster": {
-          "src": "/images/work/innogy-domaci-asistence/official-hd-1.webp",
-          "smallSrc": "/images/work/innogy-domaci-asistence/official-hd-1-480.webp",
+          "src": "/images/work/innogy-domaci-asistence/clear-green-shirt.webp",
+          "smallSrc": "/images/work/innogy-domaci-asistence/clear-green-shirt-480.webp",
           "smallWidth": 480,
           "width": 1920,
           "height": 1080,
@@ -4434,7 +4335,7 @@ export const projects: Project[] = [
           "evidence": {
             "basis": "film-frame",
             "videoSrc": "/videos/innogy-domaci-asistence-hd.mp4",
-            "note": "Inspected frame at 1.3244s from innogycz’s complete 33-second official advert. Same performers, green/yellow outfit, grandfather’s shirt changes, red cardigan, blue repair uniform, kitchen/laundry story and end card as Dušan’s cropped Instagram repost. Not a fitting or BTS photograph."
+            "note": "Visually inspected frame at 8 seconds from the exact attached official full-HD advert. Replaces the earlier foreground-obstructed shot; green overshirt and yellow T-shirt are unobstructed. A film still, not a fitting photograph."
           }
         }
       }
@@ -4867,7 +4768,12 @@ export const projects: Project[] = [
       "smallWidth": 480,
       "width": 1280,
       "height": 720,
-      "alt": "Favorit — costume in the finished film, frame 1"
+      "alt": "Favorit — costume in the finished film, frame 1",
+      "evidence": {
+        "basis": "film-frame",
+        "videoSrc": "/videos/268355869.mp4",
+        "note": "Existing inspected film still, also used as the exact attached film’s poster; retained without changes to its pixels."
+      }
     },
     "images": [
       {
@@ -6354,12 +6260,17 @@ export const projects: Project[] = [
     "slug": "bitmarkets",
     "title": "BITmarkets — Investor stories",
     "thumbnail": {
-      "src": "/images/work/casino-film/cover.webp",
-      "smallSrc": "/images/work/casino-film/cover-480.webp",
+      "src": "/images/work/bitmarkets/detail-4.webp",
+      "smallSrc": "/images/work/bitmarkets/detail-4-480.webp",
       "smallWidth": 480,
-      "width": 720,
-      "height": 405,
-      "alt": "Casino — Film"
+      "width": 638,
+      "height": 360,
+      "alt": "BITmarkets — Investor stories — frame from the advert",
+      "evidence": {
+        "basis": "film-frame",
+        "videoSrc": "/videos/C8UVQNPt85_.mp4",
+        "note": "Visually inspected costume frame at 28.708 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+      }
     },
     "images": [
       {
@@ -6454,12 +6365,17 @@ export const projects: Project[] = [
     "slug": "pilsner-urquell",
     "title": "Pilsner Urquell — At the pub",
     "thumbnail": {
-      "src": "/images/work/pilsner-urquell/C8UVrB8tIMe-still-1.webp",
-      "smallSrc": "/images/work/pilsner-urquell/C8UVrB8tIMe-still-1-480.webp",
+      "src": "/images/work/pilsner-urquell/C8UVrB8tIMe-still-2.webp",
+      "smallSrc": "/images/work/pilsner-urquell/C8UVrB8tIMe-still-2-480.webp",
       "smallWidth": 480,
       "width": 638,
       "height": 360,
-      "alt": "Pilsner Urquell — At the pub — costume in the finished film, frame 1"
+      "alt": "Pilsner Urquell — At the pub — costume in the finished film, frame 2",
+      "evidence": {
+        "basis": "film-frame",
+        "videoSrc": "/videos/C8UVrB8tIMe.mp4",
+        "note": "Extracted from this film."
+      }
     },
     "images": [
       {
@@ -6668,7 +6584,7 @@ export const projects: Project[] = [
         "url": "https://www.boogiefilms.com/project/wolfberg"
       }
     ],
-    "portrait": false,
+    "portrait": true,
     "scope": "campaign",
     "attribution": {
       "basis": "own-portfolio",
@@ -6681,12 +6597,17 @@ export const projects: Project[] = [
     "slug": "telekom",
     "title": "Telekom — Christmas bookshop",
     "thumbnail": {
-      "src": "/images/work/bookshop-film/cover.webp",
-      "smallSrc": "/images/work/bookshop-film/cover-480.webp",
+      "src": "/images/work/telekom/detail-2.webp",
+      "smallSrc": "/images/work/telekom/detail-2-480.webp",
       "smallWidth": 270,
-      "width": 563,
-      "height": 1000,
-      "alt": "Bookshop — Film"
+      "width": 720,
+      "height": 1280,
+      "alt": "Telekom — Christmas bookshop — frame from the advert",
+      "evidence": {
+        "basis": "film-frame",
+        "videoSrc": "/videos/C8TzysvtOur.mp4",
+        "note": "Visually inspected costume frame at 19.213 seconds, extracted from the exact advert file shown above; not a separate fitting or behind-the-scenes photograph."
+      }
     },
     "images": [
       {
@@ -6764,7 +6685,7 @@ export const projects: Project[] = [
         "url": "https://www.instagram.com/p/C8TzysvtOur/"
       }
     ],
-    "portrait": false,
+    "portrait": true,
     "scope": "campaign",
     "attribution": {
       "basis": "own-portfolio",
@@ -6869,12 +6790,178 @@ export const projects: Project[] = [
         "url": "https://www.instagram.com/p/C8madAFtC4z/"
       }
     ],
-    "portrait": false,
+    "portrait": true,
     "scope": "campaign",
     "attribution": {
       "basis": "own-portfolio",
       "source": "https://www.instagram.com/p/C8madAFtC4z/",
       "note": "Published on Dušan’s @bebcak professional portfolio. The exact film/costumes were visually compared with this publication. His participation is supported by his own portfolio; the precise role, design/fabrication responsibility and drawing authorship are not independently established and are not assigned."
+    }
+  },
+  {
+    "id": "loreal-men-expert",
+    "slug": "loreal-men-expert",
+    "title": "L’Oréal Men Expert — Hydra Energetic",
+    "thumbnail": {
+      "src": "/images/work/loreal-men-expert/finished-film-preview.webp",
+      "smallSrc": "/images/work/loreal-men-expert/finished-film-preview-480.webp",
+      "smallWidth": 360,
+      "width": 360,
+      "height": 480,
+      "alt": "L’Oréal Men Expert — Hydra Energetic — costume in the finished film",
+      "evidence": {
+        "basis": "film-frame",
+        "videoSrc": "/videos/loreal-men-expert.mp4",
+        "note": "Visually inspected costume frame at 12 seconds, extracted from the exact attached film without enlargement."
+      }
+    },
+    "images": [
+      {
+        "src": "/images/work/loreal-men-expert/published-29.webp",
+        "smallSrc": "/images/work/loreal-men-expert/published-29-480.webp",
+        "smallWidth": 360,
+        "width": 1204,
+        "height": 1605,
+        "alt": "L’Oréal Men Expert — Hydra Energetic — published campaign image 1",
+        "evidence": {
+          "basis": "same-publication",
+          "videoSrc": "/videos/loreal-men-expert.mp4",
+          "note": "The director publishes this Hydra Energetic campaign series together and explicitly credits @bebcak. The portrait photographs include Boris Valábik and Gergely Siklósi. The attached complete 20-second variant is from the same publication. Photographs of series performers are not claimed to be frames or fitting photographs from that individual cut."
+        }
+      },
+      {
+        "src": "/images/work/loreal-men-expert/published-26.webp",
+        "smallSrc": "/images/work/loreal-men-expert/published-26-480.webp",
+        "smallWidth": 360,
+        "width": 1200,
+        "height": 1600,
+        "alt": "L’Oréal Men Expert — Hydra Energetic — published campaign image 2",
+        "evidence": {
+          "basis": "same-publication",
+          "videoSrc": "/videos/loreal-men-expert.mp4",
+          "note": "The director publishes this Hydra Energetic campaign series together and explicitly credits @bebcak. The portrait photographs include Boris Valábik and Gergely Siklósi. The attached complete 20-second variant is from the same publication. Photographs of series performers are not claimed to be frames or fitting photographs from that individual cut."
+        }
+      },
+      {
+        "src": "/images/work/loreal-men-expert/published-28.webp",
+        "smallSrc": "/images/work/loreal-men-expert/published-28-480.webp",
+        "smallWidth": 360,
+        "width": 1206,
+        "height": 1608,
+        "alt": "L’Oréal Men Expert — Hydra Energetic — published campaign image 3",
+        "evidence": {
+          "basis": "same-publication",
+          "videoSrc": "/videos/loreal-men-expert.mp4",
+          "note": "The director publishes this Hydra Energetic campaign series together and explicitly credits @bebcak. The portrait photographs include Boris Valábik and Gergely Siklósi. The attached complete 20-second variant is from the same publication. Photographs of series performers are not claimed to be frames or fitting photographs from that individual cut."
+        }
+      },
+      {
+        "src": "/images/work/loreal-men-expert/published-30.webp",
+        "smallSrc": "/images/work/loreal-men-expert/published-30-480.webp",
+        "smallWidth": 360,
+        "width": 1440,
+        "height": 1920,
+        "alt": "L’Oréal Men Expert — Hydra Energetic — published campaign image 4",
+        "evidence": {
+          "basis": "same-publication",
+          "videoSrc": "/videos/loreal-men-expert.mp4",
+          "note": "The director publishes this Hydra Energetic campaign series together and explicitly credits @bebcak. The portrait photographs include Boris Valábik and Gergely Siklósi. The attached complete 20-second variant is from the same publication. Photographs of series performers are not claimed to be frames or fitting photographs from that individual cut."
+        }
+      },
+      {
+        "src": "/images/work/loreal-men-expert/published-31.webp",
+        "smallSrc": "/images/work/loreal-men-expert/published-31-480.webp",
+        "smallWidth": 360,
+        "width": 1440,
+        "height": 1920,
+        "alt": "L’Oréal Men Expert — Hydra Energetic — published campaign image 5",
+        "evidence": {
+          "basis": "same-publication",
+          "videoSrc": "/videos/loreal-men-expert.mp4",
+          "note": "The director publishes this Hydra Energetic campaign series together and explicitly credits @bebcak. The portrait photographs include Boris Valábik and Gergely Siklósi. The attached complete 20-second variant is from the same publication. Photographs of series performers are not claimed to be frames or fitting photographs from that individual cut."
+        }
+      },
+      {
+        "src": "/images/work/loreal-men-expert/published-extra-27.webp",
+        "smallSrc": "/images/work/loreal-men-expert/published-extra-27-480.webp",
+        "smallWidth": 360,
+        "width": 1202,
+        "height": 1602,
+        "alt": "L’Oréal Men Expert — Hydra Energetic — white t-shirt and orange campaign portrait",
+        "evidence": {
+          "basis": "same-publication",
+          "videoSrc": "/videos/loreal-men-expert.mp4",
+          "note": "The director publishes this Hydra Energetic campaign series together and explicitly credits @bebcak. The portrait photographs include Boris Valábik and Gergely Siklósi. The attached complete 20-second variant is from the same publication. Photographs of series performers are not claimed to be frames or fitting photographs from that individual cut."
+        }
+      },
+      {
+        "src": "/images/work/loreal-men-expert/finished-film-preview.webp",
+        "smallSrc": "/images/work/loreal-men-expert/finished-film-preview-480.webp",
+        "smallWidth": 360,
+        "width": 360,
+        "height": 480,
+        "alt": "L’Oréal Men Expert — Hydra Energetic — costume in the finished film",
+        "evidence": {
+          "basis": "film-frame",
+          "videoSrc": "/videos/loreal-men-expert.mp4",
+          "note": "Visually inspected costume frame at 12 seconds, extracted from the exact attached film without enlargement."
+        }
+      }
+    ],
+    "videos": [
+      {
+        "provider": "native",
+        "title": "L’Oréal Men Expert — Hydra Energetic",
+        "url": "https://www.instagram.com/p/DUoPG4EEp4z/",
+        "src": "/videos/loreal-men-expert.mp4",
+        "width": 360,
+        "height": 480,
+        "poster": {
+          "src": "/images/work/loreal-men-expert/finished-film-preview.webp",
+          "smallSrc": "/images/work/loreal-men-expert/finished-film-preview-480.webp",
+          "smallWidth": 360,
+          "width": 360,
+          "height": 480,
+          "alt": "L’Oréal Men Expert — Hydra Energetic — costume in the finished film",
+          "evidence": {
+            "basis": "film-frame",
+            "videoSrc": "/videos/loreal-men-expert.mp4",
+            "note": "Visually inspected costume frame at 12 seconds, extracted from the exact attached film without enlargement."
+          }
+        }
+      }
+    ],
+    "credit": "",
+    "facts": [
+      {
+        "label": "Director",
+        "value": "@shotbykill"
+      },
+      {
+        "label": "Production",
+        "value": "Unreal Visual"
+      },
+      {
+        "label": "Agency",
+        "value": "B&T / McCann Prague"
+      },
+      {
+        "label": "Costumes",
+        "value": "Dušan Bebčák"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Director’s campaign publication",
+        "url": "https://www.instagram.com/p/DUoPG4EEp4z/"
+      }
+    ],
+    "portrait": true,
+    "scope": "campaign",
+    "attribution": {
+      "basis": "explicit-credit",
+      "source": "https://www.instagram.com/p/DUoPG4EEp4z/",
+      "note": "Direct campaign publication or Dušan’s own caption explicitly credits @bebcak / Dušan Bebčák. Shared roles remain shared, and the source caption/crew record is retained in the research dossier."
     }
   },
   {
@@ -7021,7 +7108,7 @@ export const projects: Project[] = [
         "url": "https://www.instagram.com/p/DQc4eNJjIJ5/"
       }
     ],
-    "portrait": false,
+    "portrait": true,
     "scope": "study",
     "attribution": {
       "basis": "explicit-credit",
@@ -7915,12 +8002,17 @@ export const projects: Project[] = [
     ],
     "portrait": false,
     "thumbnail": {
-      "src": "/images/work/youth-wardrobe/wardrobe-1.webp",
-      "smallSrc": "/images/work/youth-wardrobe/wardrobe-1-480.webp",
+      "src": "/images/work/youth-wardrobe/costume-v1-1.webp",
+      "smallSrc": "/images/work/youth-wardrobe/costume-v1-1-480.webp",
       "smallWidth": 480,
-      "width": 638,
+      "width": 526,
       "height": 360,
-      "alt": "Youth wardrobe — Everyday scenes — costume in the finished film, frame 1"
+      "alt": "Youth wardrobe — Everyday scenes — costume in the finished film",
+      "evidence": {
+        "basis": "film-frame",
+        "videoSrc": "/videos/C8T3SIsN6TJ.mp4",
+        "note": "Costume-focused frame at 5.072s, visually reviewed and extracted from the exact film served on this project; not a fitting photograph."
+      }
     },
     "scope": "campaign",
     "attribution": {

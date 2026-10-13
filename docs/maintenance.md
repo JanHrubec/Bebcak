@@ -1,13 +1,13 @@
 # Portfolio maintenance
 
-Read `AGENTS.md` first. The repository is a Vue 3 / TypeScript / Vite portfolio deployed on Vercel. It intentionally uses one curated archive rather than year or role categories. Current inventory (13 October 2026): **55 projects, 293 gallery images, 52 films**. These are a snapshot, not hardcoded limits.
+Read `AGENTS.md` first. The repository is a Vue 3 / TypeScript / Vite portfolio deployed on Vercel. It intentionally uses one curated archive rather than year or role categories. Current inventory (13 October 2026): **55 projects, 296 gallery images, 52 films**. These are a snapshot, not hardcoded limits.
 
 ## Where changes belong
 
 | Area | Source |
 | --- | --- |
 | Projects, order, captions/alt text, credits, image dimensions, evidence | `src/data/projects.ts` |
-| First-person biography | `src/data/about.ts` |
+| First-person biography and portrait metadata | `src/data/about.ts` |
 | Phone and email | `src/data/contact.ts` |
 | Public domain/name/description and indexing mode | `src/data/site.ts` |
 | Page/social metadata and structured data | `src/seo.ts` |
@@ -28,7 +28,7 @@ Component paths above are under `src/components/`. `src/router/transition.ts` co
 ## Add or update a project
 
 1. Find the exact source publication/film and confirm the person is **Dušan Bebčák, @bebcak**, rather than another similarly named person. Start with the dossier and recent source records under `docs/research/`. Inspect the actual images and the complete film: shared client/crew is insufficient proof of matching garments. Save source URLs and precise findings in a dated research note.
-2. Add/update a `Project` object in `src/data/projects.ts`. Slugs are durable public URLs. Its position in this array sets the home order and previous/next navigation. Use a descriptive campaign title. Do not add visible role/category/year badges or project descriptions; project details currently consist of titles and sourced credits.
+2. Add/update a `Project` object in `src/data/projects.ts`. Slugs are durable public URLs. Its position in this array sets the home order and previous/next navigation. Use a descriptive campaign title. The preview must show the costume in the finished advert/film, using an inspected frame from that exact film. Retain fitting photographs inside the project; a fitting-room image is not the cover for a project with a matched film. Photo-only collections keep their best verified photograph without invented final footage. Do not add visible role/category/year badges or project descriptions; project details currently consist of titles and sourced credits.
 3. `thumbnail` and each photo must have `src`, `smallSrc`, `smallWidth`, intrinsic `width`/`height`, useful `alt` and an evidence record. Store honest dimensions, inspect black bars/orientation and preserve aspect ratio. Use source-quality images; do not upscale. Make a small WebP derivative (usually 480 px wide, no wider than the original), with matching metadata. In fresh clones the committed pictures are available without an additional media download.
 4. Evidence `basis` is `film-frame`, `same-publication`, `visual-match` or `unassigned`. Images attached to a film require an exact matching `videoSrc` and an explanatory note. Extracted screenshots are film frames, not behind-the-scenes photographs. An image with no matched film keeps `unassigned`; do not invent a campaign association to fill a sparse page. Distinguish credited work from game/reference artwork.
 5. Optional `crop: { x, y, width, height }` describes a rectangle **in source pixels**. `PortfolioPhoto.vue` renders it with CSS, preserving the source file. `imageDimensions()` supplies visible dimensions to cards, row layout and the lightbox. Distinct crop rectangles can show separate parts of one source collage; repeated identical crops/photos are forbidden. Social previews do not apply these CSS crops.
@@ -36,6 +36,91 @@ Component paths above are under `src/components/`. `src/router/transition.ts` co
 7. `facts` holds only verifiable credits, with shared credits preserved. `sources` retains the exact publication and corroborating links without displaying random external links in the UI. `attribution.basis` is `explicit-credit` or `own-portfolio`; leave `credit` empty if the precise role is unproven. Do not infer fabrication, design or drawing authorship from a portfolio post alone.
 8. If merging/renaming an existing slug, update both redirect lists. If deleting without a true equivalent, allow a 404 rather than redirecting to unrelated work. Remove stale catalogue references. Retain research history; unused local/Blob originals need not be deleted as part of the content edit.
 9. Run the appropriate checks below and inspect the page on mobile and desktop before release.
+
+## Worked example: adding another project
+
+The following is a **minimal example using real, already verified E.ON assets**, not a new project to paste unchanged. For a new campaign, replace every identity, asset, dimension, credit and source with your own verified values; choose a unique `id`/`slug`. The existing E.ON entry contains additional films and photos that must not be overwritten by this example.
+
+```ts
+// Before `export const projects`, or inline these objects in the new array entry.
+const filmSource = '/videos/eon-ferove-ceny-official-hd.mp4'
+const preview: PortfolioImage = {
+  src: '/images/work/eon/ferove-ceny-hd.webp',
+  smallSrc: '/images/work/eon/ferove-ceny-hd-480.webp',
+  smallWidth: 480,
+  width: 1920,
+  height: 1080,
+  alt: 'E.ON — checked blazer and blue shirt in the finished advert',
+  evidence: {
+    basis: 'film-frame',
+    videoSrc: filmSource,
+    note: 'Inspected frame at 3 seconds from the exact official film.',
+  },
+}
+const fitting: PortfolioImage = {
+  src: '/images/work/eon/checked-blazer-upright.webp',
+  smallSrc: '/images/work/eon/checked-blazer-upright-480.webp',
+  smallWidth: 480,
+  width: 1552,
+  height: 1170,
+  alt: 'E.ON — checked blazer and blue denim shirt, fitting',
+  evidence: {
+    basis: 'same-publication',
+    videoSrc: filmSource,
+    note: 'Original E.ON carousel; blazer pattern and shirt matched to the film.',
+  },
+}
+const example: Project = {
+  id: 'eon',
+  slug: 'eon',
+  title: 'E.ON — Nechte to na nás',
+  thumbnail: preview,
+  images: [fitting, preview], // Unique photographs/frames, in deliberate display order.
+  videos: [{
+    provider: 'native',
+    title: 'E.ON — Energie vždy za férové ceny',
+    url: 'https://www.youtube.com/watch?v=x18wL2bbb1A',
+    src: filmSource,
+    width: 1920,
+    height: 1080,
+    poster: preview, // Full image object, not preview.src.
+  }],
+  credit: '', // Exact role unproven; do not invent one.
+  facts: [{ label: 'Director', value: 'Mugshots' }],
+  sources: [
+    { label: 'Instagram', url: 'https://www.instagram.com/p/DQd4pgojHgA/' },
+    { label: 'Official film', url: 'https://www.youtube.com/watch?v=x18wL2bbb1A' },
+  ],
+  attribution: {
+    basis: 'own-portfolio',
+    source: 'https://www.instagram.com/p/DQd4pgojHgA/',
+    note: 'Published in Dušan’s own portfolio; exact role is not independently established.',
+  },
+  portrait: false,
+  scope: 'campaign',
+}
+```
+
+For your actual new entry:
+
+1. Create `public/images/work/<new-slug>/` and prepare the inspected finished-film preview and distinct costume photographs. The slug and existing asset folder do not have to match, but a matching folder is easiest for new work. Record exact intrinsic sizes after any crop/rotation. A sharp costume-focused shot is more useful than a logo/end card, product-only shot or heavily blurred action frame.
+2. If extracting a preview, use a working FFmpeg installation and inspect the output **before** publishing it. Example commands (replace filename and time with the exact verified film):
+
+   ```sh
+   mkdir -p public/images/work/new-campaign
+   ffmpeg -ss 12.4 -i public/videos/new-campaign.mp4 -frames:v 1 -c:v libwebp -quality 88 public/images/work/new-campaign/finished-preview.webp
+   ffmpeg -i public/images/work/new-campaign/finished-preview.webp -vf "scale='min(480,iw)':-2" -frames:v 1 -c:v libwebp -quality 85 public/images/work/new-campaign/finished-preview-480.webp
+   ```
+
+   Check the actual output size instead of assuming 1920 × 1080. Remove black borders only after inspecting where the picture ends; don't crop costume details or subtitles indiscriminately. Keep the original film unchanged. Do not use AI to invent or enhance missing garment details.
+3. Insert the new `Project` into `projects` at the intended editorial position. Use the example for field shape, not its literal campaign details. Add all sourced costume photos. If there is no verified film, use `videos: []`, omit `videoSrc` from unassigned evidence, and select the best genuine photo; no fictitious film or misleading movie-frame claim. Only existing slug changes need redirects; a new slug does not.
+4. Place the new source film in `public/videos`, run `npm run media:upload`, then `npm run media:verify`. Upload scans the **current catalogue**, so add the project before running it. Review the generated manifest entry for your exact `src`; public URLs must be committed before the build can be released. Photo-only additions do not require a Blob upload.
+5. Run `npm run check` and inspect the home cover plus the direct `/project/<new-slug>` page at mobile/desktop widths. Verify costume-film correspondence, credits, photo order, no repeated images, proportions and image quality. Verify the new canonical and sitemap entry in `dist`. The router, SEO, previous/next links and sitemap are generated automatically from the catalogue; don't add a custom page component or hardcode a new route.
+6. Add a dated research note with source URLs, the frame timestamp/crop and why the costumes match. Review `git diff --check` and the full diff, including the added photos and hosted manifest. Commit/push only within the user’s authorization. Do not stage the ignored film archive, generated build or credentials.
+
+## Replace the About text or portrait
+
+The owner plans to provide a new biography and a larger photo. Edit only `aboutParagraphs` in `src/data/about.ts` for the copy, retaining first person. Replace the portrait file in `public/images/about/` and update `aboutPortrait.src`, intrinsic `width`/`height`, `alt` and source/provenance. The current 100 × 100 Instagram avatar is displayed at native size; the layout allows a future portrait up to 180 px wide without enlarging a small source. On desktop it sits beside the introduction; on phones it sits above it. It is also referenced by Person structured data.
 
 ## Layout principles
 

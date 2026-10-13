@@ -1,0 +1,168 @@
+{
+  "reviewed": "2026-10-13",
+  "method": "All 55 existing covers and available film-frame candidates visually reviewed; three new exact-film frames inspected before extraction.",
+  "changes": [
+    {
+      "slug": "lego-hera-hunter",
+      "old": "/images/work/space-suits/image-2.webp",
+      "new": "/images/work/lego-space/hd-costume-4.webp"
+    },
+    {
+      "slug": "talkmore-nokken",
+      "old": "/images/work/woodland-costumes/image-3.webp",
+      "new": "/images/work/talkmore-nokken/hd-costume-6.webp"
+    },
+    {
+      "slug": "talkmore-duedekning",
+      "old": "/images/work/woodland-costumes/image-1.webp",
+      "new": "/images/work/talkmore-medieval/verified-hd-4.webp"
+    },
+    {
+      "slug": "vypsana-fixa-fakin-party",
+      "old": "/images/work/vypsana-fixa-fakin-party/published-39.webp",
+      "new": "/images/work/vypsana-fixa-fakin-party/finished-film-preview.webp"
+    },
+    {
+      "slug": "raiffeisen-spooky-vintage-shopping",
+      "old": "/images/work/raiffeisen-spooky-vintage-shopping/image-1.webp",
+      "new": "/images/work/raiffeisen-spooky-vintage-shopping/finished-film-preview.webp"
+    },
+    {
+      "slug": "adidas-you-got-this",
+      "old": "/images/work/adidas-you-got-this/hd-detail-4.webp",
+      "new": "/images/work/adidas-you-got-this/hd-detail-5.webp"
+    },
+    {
+      "slug": "loreal-men-expert",
+      "old": "/images/work/loreal-men-expert/published-29.webp",
+      "new": "/images/work/loreal-men-expert/finished-film-preview.webp"
+    },
+    {
+      "slug": "konto-bariery",
+      "old": "/images/work/konto-bariery/detail-2.webp",
+      "new": "/images/work/konto-bariery/final-detail-2.webp"
+    },
+    {
+      "slug": "vodafone-youth",
+      "old": "/images/work/vodafone-youth/adc-original-1.webp",
+      "new": "/images/work/vodafone-youth/detail-1.webp"
+    },
+    {
+      "slug": "bitmarkets",
+      "old": "/images/work/casino-film/cover.webp",
+      "new": "/images/work/bitmarkets/detail-4.webp"
+    },
+    {
+      "slug": "pilsner-urquell",
+      "old": "/images/work/pilsner-urquell/C8UVrB8tIMe-still-1.webp",
+      "new": "/images/work/pilsner-urquell/C8UVrB8tIMe-still-2.webp"
+    },
+    {
+      "slug": "telekom",
+      "old": "/images/work/bookshop-film/cover.webp",
+      "new": "/images/work/telekom/detail-2.webp"
+    },
+    {
+      "slug": "youth-wardrobe",
+      "old": "/images/work/youth-wardrobe/wardrobe-1.webp",
+      "new": "/images/work/youth-wardrobe/costume-v1-1.webp"
+    }
+  ],
+  "order": [
+    "proud-zero-gravity",
+    "lego-hera-hunter",
+    "talkmore-nokken",
+    "national-museum",
+    "lego-friends",
+    "talkmore-duedekning",
+    "mcdonalds-cheese-saga",
+    "post-bellum-mother",
+    "vitana-gorilovacka",
+    "vypsana-fixa-fakin-party",
+    "budvar-33",
+    "raiffeisen-spooky-vintage-shopping",
+    "engelmuller-drive-to-win",
+    "komercni-banka",
+    "slovenska-sporitelna",
+    "bata-all-in-two",
+    "adidas-you-got-this",
+    "tmobile-magenta-tv",
+    "tmobile-magenta-tv-netflix",
+    "skoda-social-stories",
+    "skoda-split-screen",
+    "skoda-130-let",
+    "rohlik-mothers",
+    "czech-technical-university",
+    "billa-masterchef",
+    "konto-bariery",
+    "vodafone-youth",
+    "innogy-domaci-asistence",
+    "rossmann",
+    "mbank",
+    "pilsner-taste-worth-protecting",
+    "favorit",
+    "orange",
+    "eon",
+    "invega",
+    "mcdonalds-ronald-mcdonald-house",
+    "tropicana-vitality",
+    "bolito-one-damn-photo",
+    "bolito",
+    "deeptime",
+    "garnier",
+    "lego-ninjago",
+    "bitmarkets",
+    "pilsner-urquell",
+    "leffe",
+    "telekom",
+    "mbank-maxmilian-turek",
+    "loreal-men-expert",
+    "raiffeisen-wardrobe",
+    "afk-arena-grezhul-lucius",
+    "purple-and-gold-character",
+    "wardrobe-fittings",
+    "period-fittings",
+    "everyday-fittings",
+    "youth-wardrobe"
+  ],
+  "photo_only_exceptions": [
+    "skoda-social-stories",
+    "skoda-split-screen",
+    "raiffeisen-wardrobe",
+    "afk-arena-grezhul-lucius",
+    "purple-and-gold-character",
+    "wardrobe-fittings",
+    "period-fittings",
+    "everyday-fittings"
+  ],
+  "validation": {
+    "catalogue_tests": 8,
+    "prerendered_pages": 57,
+    "responsive_browser_checks": 20,
+    "viewport_widths": [
+      1440,
+      1024,
+      768,
+      390
+    ],
+    "result": "All 55 covers and modified project galleries loaded; no horizontal overflow or hydration errors. About profile picture stayed within its native 100 px width."
+  },
+  "follow_up": [
+    {
+      "slug": "innogy-domaci-asistence",
+      "reason": "Owner requested removal of the foreground blur in the opening image.",
+      "source": "/videos/innogy-domaci-asistence-hd.mp4",
+      "timestamp_seconds": 8,
+      "replacement": "/images/work/innogy-domaci-asistence/clear-green-shirt.webp",
+      "locations": [
+        "thumbnail",
+        "first gallery image",
+        "video poster"
+      ],
+      "dimensions": [
+        1920,
+        1080
+      ]
+    }
+  ]
+}

@@ -133,3 +133,10 @@ test('gallery rows retain every photograph in order, fit the container and prese
   const landscapes = Array.from({ length: 4 }, () => ({ width: 1920, height: 1080 }))
   assert.deepEqual(galleryRows(landscapes, 1051).map(row => row.indexes.length), [2, 2])
 })
+
+test('filmed collections use a verified frame from their own film as the cover', () => {
+  for (const project of projects.filter(project => project.videos.length)) {
+    assert.equal(project.thumbnail.evidence?.basis, 'film-frame', `${project.title}: a fitting is not a finished-film preview`)
+    assert.ok(project.videos.some(video => video.src === project.thumbnail.evidence.videoSrc), `${project.title}: preview must belong to an attached film`)
+  }
+})

@@ -283,3 +283,7 @@ The [gallery and curation review](gallery-and-curation-pass-2026-10-11.md) recor
 ### Final source and gallery review — 11 October 2026
 
 See [Raiffeisen / E.ON source tracing](raiffeisen-eon-source-review-2026-10-11.md) and [gallery and curation review](gallery-and-curation-pass-2026-10-11.md). E.ON is consolidated with three official HD campaign films. Raiffeisen shop/workshop retains verified caption credits without an unmatched film. AFK Arena’s Grezhul and Lucius are combined; the armour-workshop entry is removed.
+
+### Finished-film previews and profile picture — 13 October 2026
+
+Reviewed all 55 project covers and available film frames. Updated 13 covers; all 47 collections with films now use an evidenced frame from an attached film. Photo-only collections keep genuine photographs. Three inspected frames were added (296 gallery images total); no new film was guessed. See [preview selections](preview-selection-2026-10-13.json) and [Instagram profile picture provenance](instagram-profile-picture-2026-10-13.md). The profile avatar is displayed at native size pending the owner’s replacement biography/photo.

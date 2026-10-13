@@ -2,6 +2,7 @@ import { getProjectBySlug, projects } from './data/projects'
 import { instagramUrl, siteDescription, siteName, siteUrl, siteIndexable } from './data/site'
 import { getVideoUrl } from './data/media'
 import { contact } from './data/contact'
+import { aboutPortrait } from './data/about'
 
 export function pageMetadata(path: string) {
   path = path.replace(/\/+$/, '') || '/'
@@ -16,7 +17,7 @@ export function pageMetadata(path: string) {
   const socialPhoto = project?.thumbnail.crop ? project.images.find(photo => !photo.crop) : project?.thumbnail
   const imagePath = socialPhoto?.src ?? '/social-preview.png'
   const image = siteUrl ? `${siteUrl}${imagePath}` : imagePath
-  const person = { '@type': 'Person', name: siteName, jobTitle: 'Costume designer and wardrobe stylist', sameAs: [instagramUrl], ...(contact.email ? { email: contact.email } : {}), ...(contact.telephone ? { telephone: contact.telephone } : {}), ...(siteUrl ? { '@id': `${siteUrl}/#person`, url: siteUrl } : {}) }
+  const person = { '@type': 'Person', name: siteName, jobTitle: 'Costume designer and wardrobe stylist', ...(siteUrl ? { image: `${siteUrl}${aboutPortrait.src}` } : {}), sameAs: [instagramUrl], ...(contact.email ? { email: contact.email } : {}), ...(contact.telephone ? { telephone: contact.telephone } : {}), ...(siteUrl ? { '@id': `${siteUrl}/#person`, url: siteUrl } : {}) }
   const work = project ? { '@type': 'CreativeWork', name: project.title, image, ...(url ? { url } : {}), ...(project.attribution.basis === 'explicit-credit' ? { contributor: person } : { about: person }), ...(siteUrl && project.videos.length ? { encoding: project.videos.map(video => ({ '@type': 'MediaObject', contentUrl: new URL(getVideoUrl(video.src), siteUrl).href, encodingFormat: 'video/mp4', width: video.width, height: video.height })) } : {}) } : undefined
   const breadcrumbs = project && url ? { '@type': 'BreadcrumbList', itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Work', item: `${siteUrl}/` },

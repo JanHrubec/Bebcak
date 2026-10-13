@@ -6,6 +6,7 @@ Read [README.md](README.md), [docs/maintenance.md](docs/maintenance.md) and [doc
 
 - One curated archive, three desktop columns; no filters, year groupings or role categories.
 - Permanent translucent desktop sidebar with contact and previous/next project navigation. Restrained responsive animations and reduced-motion support.
+- Use an inspected finished-film costume frame for every project cover with a verified film; keep fittings inside the detail gallery. Photo-only collections retain verified photographs.
 - Films at the top of project pages, complete costume photographs below. Compact adaptive rows, one image per row on phones; preserve aspect ratios and inspect actual images before publishing them.
 - No project descriptions, zoom toggle, random outbound links or redundant “all work” button. About copy stays first person. Contact is clickable.
 - Never confuse the subject with a namesake, attach costumes to an unverified campaign, invent credits or imply all reference artwork was drawn by him. Keep evidence in the catalogue and research files.
